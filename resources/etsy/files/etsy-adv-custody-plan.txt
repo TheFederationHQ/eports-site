@@ -1,0 +1,40 @@
+ETSY - THE SOVEREIGN CUSTODY PLAN  (Chapter 5)
+
+Ownership isn't having a copy; it's having a copy someone else can't
+take. Three places at once: your working tool, your own computer, and one
+independent cloud account under a SEPARATE login. Sync is not backup (a
+deletion syncs too) - keep a versioned or offline copy as well. Living
+data (the list, the records) changes daily: automate their backup where
+your tools support it; where they don't, a fixed scheduled export - never
+"when I remember", which is abandoned by the third Sunday.
+
+  ASSET             2ND HOME (separate login)  AUTO?  RESTORE-TEST
+  ----------------  -------------------------  -----  ------------
+  1 list + consent  _______________________    Y/N    last: ______
+  2 design/product  _______________________    Y/N    last: ______
+  3 finance/records _______________________    Y/N    last: ______
+
+  the THIRD place (my own computer / an offline or versioned
+  copy that a sync error cannot reach):  _______________________
+
+  [ ] consent evidence (opt-in date + source) is INCLUDED in #1
+      - addresses without their consent record are a liability,
+        not an asset: not permitted to market to under Etsy's
+        policy, and possibly unlawful depending on where they live.
+  restore-test cadence (all rows): every ______ months
+  next restore test: ______
+
+  RULE: living data (list + records) is automated where the tool
+        allows, and on a fixed scheduled export where it doesn't.
+        A backup isn't real until I've restored from it - and
+        re-tested since, because exports and logins drift.
+
+  Note: your Etsy order/financial export is your ACCOUNTING, not
+  your audience - buyer details in it are for fulfilling orders,
+  not marketing. Confirm the current export location in your own
+  Shop Manager.
+
+----------------------------------------------------------------------
+From Etsy - Advanced. The full method is in the book; the free
+worksheets and the lane shelf: eports.global/resources
+ePORTS — your ecom source. eports.global.

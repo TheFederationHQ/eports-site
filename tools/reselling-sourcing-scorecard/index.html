@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reseller sourcing scorecard — one honest price, and does it even sell? | ePORTS</title>
+<meta name="description" content="Free sourcing scorecard for resellers: turn your sold comps into one honest, conservative price, and check whether the item actually moves — sold against listed — before you spend a cent.">
+<link rel="canonical" href="./">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css?v=20261011b">
+<!-- /tools page (Reselling lane). Mirrors Reselling — Basics ch3 (median of ≥3 matching sold comps,
+     rounded DOWN to $5; fewer than 3 → walk) and Reselling — Intermediate ch3 (the demand check:
+     sold ≥ active = moves; active ≥ 3 × sold = slow; between = maybe; under ~20 sold = too thin). -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free tool · Reselling</p>
+    <h1>The sourcing scorecard</h1>
+    <p class="sub">Two checks before you spend a cent: <em>one honest price</em> from what the item has really
+      sold for, and <em>does it even move</em> — how many sold against how many are waiting.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+
+  <section>
+    <h2><span class="n">Check 1</span> One honest price from your sold comps</h2>
+    <div class="calc">
+      <div>
+        <div class="field"><label for="comps">Sold prices that genuinely match your item <span class="u">($, separated by commas)</span></label>
+          <input id="comps" type="text" inputmode="decimal" value="38, 41, 44, 46, 58">
+          <p class="hint">Buyer-paid totals of sold listings — same thing, same condition, complete. Cross off bundles, wrong variants, asking prices, and sold rows that hid a Best Offer (the figure on screen isn't what the buyer paid) first.</p></div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>Your price</h3>
+        <div class="row"><span class="k">Comps counted</span> <span class="v" id="oN">—</span></div>
+        <div class="row"><span class="k">Median (the middle one)</span> <span class="v" id="oMed">—</span></div>
+        <div class="row"><span class="k">Rounded down to a clean price</span> <span class="v" id="oPrice">—</span></div>
+        <div class="row"><span class="k">The call</span> <span class="v verdict" id="oCall1">—</span></div>
+      </div>
+    </div>
+    <div class="viz">
+      <h3>Your comps, the middle, and the price you'll plan on</h3>
+      <div id="strip"></div>
+      <p class="viz-hint">Each dot is one sold comp. The solid line is the median — one lucky high sale can't drag it. The dashed line is the conservative price, rounded down to the nearest $5. Hover a dot for its price, or open the table under the chart for every comp.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2><span class="n">Check 2</span> Does it actually move?</h2>
+    <div class="calc">
+      <div>
+        <div class="field"><label for="act">How many are listed right now <span class="u">(the search's results count)</span></label>
+          <input id="act" type="number" inputmode="numeric" value="180" min="0" step="1"></div>
+        <div class="field"><label for="sold">How many sold in about the last 90 days <span class="u">(same search, Sold filter on)</span></label>
+          <input id="sold" type="number" inputmode="numeric" value="220" min="0" step="1">
+          <p class="hint">Search a specific item the way buyers type it ("Foley food mill"), not a broad category.</p></div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>The shape</h3>
+        <div class="row"><span class="k">Listed for every one sold</span> <span class="v" id="oRatio">—</span></div>
+        <div class="row"><span class="k">Shape</span> <span class="v verdict" id="oShape">—</span></div>
+      </div>
+    </div>
+    <div class="viz">
+      <h3>Waiting versus sold</h3>
+      <div id="piles"></div>
+      <p class="viz-hint">A rough, conservative read, not a precise rate: sold at least as many as are listed = it moves; three or more listed for every one sold = slow; in between = maybe; fewer than about 20 sold = too thin to have a shape.</p>
+    </div>
+
+    <noscript>
+      <p class="calc-fallback"><b>The scorecard needs JavaScript.</b> Check 1: list your matching sold prices,
+        take the middle one (the median), and round it down to the nearest $5; with fewer than three comps, walk.
+        Check 2: with the Sold filter on, compare the sold count with the active count — sold at least as many as
+        listed = moves; three or more listed per sale = slow; between = maybe; under about 20 sold = too thin.</p>
+    </noscript>
+    <p class="cta">Reading the sold screen down to one honest price is chapter 3 of
+      <a href="../../reselling/#basics"><em>Reselling — Basics</em> →</a> · checking a whole category before you
+      commit to it is chapter 3 of <a href="../../reselling/#intermediate"><em>Reselling — Intermediate</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">How to read it</span> Asking prices are hopes; sold prices are facts</h2>
+    <p>Active listings tell you what sellers hope to get. Sold listings tell you what buyers actually paid. The
+      median of a handful of genuinely matching sales — rounded down, so the price you plan on is one you'll
+      probably beat — is the most honest single number a seller can carry into a store.</p>
+    <h3>A worked example</h3>
+    <p>Five matching sold comps: $38, $41, $44, $46 and $58. The median is <b>$44</b> — the $58 outlier doesn't
+      move it — and rounded down to a clean price it's <b>$40</b>. With only two comps, the scorecard says
+      <b>walk</b>: two sales are a coincidence, not a market. For the demand check, 180 listed against 220 sold in
+      about ninety days <b>moves</b>; 400 listed against 60 sold — nearly seven waiting for every one that sells — is
+      <b>slow</b>.</p>
+    <h3>Common questions</h3>
+    <h4>Why round down?</h4>
+    <p>So the plan has room in it. Everything after this — the fee, the postage, the most you can pay — is built on
+      this number; building on an optimistic one is how a good-looking flip loses money.</p>
+    <h4>Why is the demand check "rough"?</h4>
+    <p>Because search counts are messy and the sold filter only reaches back about ninety days. It's a shape you read
+      in a minute in an aisle, not a rate to two decimal places — and a "maybe" is fine: that's what a short test is for.</p>
+  </section>
+
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+
+  <section>
+    <div class="shelf">
+      <b>This scorecard comes from the books.</b>
+      <p>The price check is chapter 3 of <em>Reselling — Basics</em>; the demand check is chapter 3 of
+        <em>Reselling — Intermediate</em>.</p>
+      <a href="../../reselling/">See the Reselling series →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+    <a href="../../resources/reselling/">Reselling downloads</a> ·
+    <a href="../../privacy/">Privacy</a>
+  </div>
+</footer>
+
+<script src="../../assets/viz.js?v=20261011k"></script>
+<script>
+(function () {
+  var V = window.RVIZ;
+  function median(a) { var s = a.slice().sort(function (x, y) { return x - y; }), n = s.length;
+    return n % 2 ? s[(n - 1) / 2] : (s[n / 2 - 1] + s[n / 2]) / 2; }
+  function priceCheck(list) {
+    var c = list.filter(function (x) { return isFinite(x) && x > 0; });
+    if (c.length < 3) return { n: c.length, call: "WALK — not enough evidence" };
+    var m = median(c); return { n: c.length, med: m, price: Math.floor(m / 5) * 5, call: "USE IT" };
+  }
+  function shape(active, sold) {
+    if (!isFinite(active) || !isFinite(sold) || active < 0 || sold < 0) return "";
+    if (sold < 20) return "too thin";
+    if (sold >= active) return "moves";
+    return active >= 3 * sold ? "slow" : "maybe";
+  }
+  window.RESELL_SCORE = { priceCheck: priceCheck, shape: shape };
+  var set = function (id, t) { document.getElementById(id).textContent = t; };
+  function run1() {
+    var list = document.getElementById("comps").value.split(/[,\s]+/).map(parseFloat);
+    var o = priceCheck(list);
+    set("oN", o.n); set("oCall1", o.call);
+    set("oMed", o.med != null ? V.money(o.med) : "—"); set("oPrice", o.price != null ? V.money0(o.price) : "—");
+    var node = document.getElementById("strip"), good = list.filter(function (x) { return isFinite(x) && x > 0; });
+    if (o.med == null) { node.textContent = "Enter at least three matching sold comps to see the chart."; return; }
+    V.strip(node, good, { title: "Your sold comps on one line, with the median and the conservative price",
+      lines: [{ value: o.med, color: V.C.s1, label: "median " + V.money0(o.med) },
+              { value: o.price, color: V.C.s2, dash: true, label: "plan on " + V.money0(o.price) }],
+      legend: [{ name: "A sold comp", color: V.C.s1 }, { name: "Median", color: V.C.s1 },
+               { name: "Conservative price", color: V.C.s2, dash: true }] });
+    V.table(node, "Your sold comps", ["#", "Sold for"], good.map(function (x, i) { return [String(i + 1), V.money(x)]; }));
+  }
+  function run2() {
+    var a = parseFloat(document.getElementById("act").value), s = parseFloat(document.getElementById("sold").value);
+    var sh = shape(a, s);
+    set("oShape", sh || "enter both counts");
+    set("oRatio", isFinite(a) && isFinite(s) && s > 0 ? (a / s).toFixed(1) : "—");
+    var node = document.getElementById("piles");
+    if (!sh) { node.textContent = ""; return; }
+    V.hstack(node, [{ label: "Listed now", totalLabel: String(a), segs: [{ name: "Listed now", value: a, color: V.C.s2 }] },
+                    { label: "Sold, ~90 days", totalLabel: String(s), segs: [{ name: "Sold, ~90 days", value: s, color: V.C.s1 }] }],
+      { title: "Listed now against sold in about the last 90 days", fmt: function (v) { return String(Math.round(v)); },
+        legend: [{ name: "Listed now (waiting)", color: V.C.s2 }, { name: "Sold in ~90 days", color: V.C.s1 }] });
+  }
+  document.getElementById("comps").addEventListener("input", run1);
+  ["act", "sold"].forEach(function (i) { document.getElementById(i).addEventListener("input", run2); });
+  window.addEventListener("resize", function () { run1(); run2(); });
+  run1(); run2();
+})();
+</script>
+</body>
+</html>

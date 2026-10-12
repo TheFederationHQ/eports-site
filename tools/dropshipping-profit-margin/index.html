@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dropshipping profit margin calculator — your real net per order | ePORTS</title>
+<meta name="description" content="Free dropshipping profit margin calculator: enter selling price, product cost, shipping, transaction fee and ad cost per order, and it works out your real net profit per order — after product, shipping, fees and ad cost — plus the profit margin.">
+<link rel="canonical" href="./">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css?v=20261011h">
+<!-- /tools page: live calculator + real editorial content so it is genuinely
+     useful and ranks for search traffic. Ads may sit on /tools pages LATER
+     (never on /resources) once the site qualifies and a consent setup exists.
+     The .ad-slot boxes below are reserved skeleton placeholders for that. -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator</p>
+    <h1>Dropshipping profit margin calculator</h1>
+    <p class="sub">The number that actually matters: the <em>net profit left on one order</em> once the
+      product, the shipping, the fee and the ad spend have all taken their cut.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+
+  <section>
+    <h2><span class="n">The calculator</span> Real net profit per order</h2>
+    <div class="calc">
+      <div>
+        <div class="field">
+          <label for="SP">Selling price <span class="u">(£)</span></label>
+          <input id="SP" type="number" inputmode="decimal" value="29.99" min="0" step="0.01">
+          <p class="hint">what the buyer pays you for the product</p>
+        </div>
+        <div class="field">
+          <label for="C">Product cost <span class="u">(£)</span></label>
+          <input id="C" type="number" inputmode="decimal" value="9.00" min="0" step="0.01">
+          <p class="hint">what your supplier charges</p>
+        </div>
+        <div class="field">
+          <label for="Sh">Shipping you pay <span class="u">(£)</span></label>
+          <input id="Sh" type="number" inputmode="decimal" value="4.00" min="0" step="0.01">
+        </div>
+        <div class="field">
+          <label for="f">Transaction fee <span class="u">(%)</span></label>
+          <input id="f" type="number" inputmode="decimal" value="3" min="0" max="99" step="0.1">
+          <p class="hint">payment + platform % on the sale</p>
+        </div>
+        <div class="field">
+          <label for="Ad">Ad cost per order <span class="u">(£)</span></label>
+          <input id="Ad" type="number" inputmode="decimal" value="6.00" min="0" step="0.01">
+          <p class="hint">total ad spend ÷ orders</p>
+        </div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>Your margin</h3>
+        <div class="row"><span class="k">Total cost per order</span> <span class="v" id="oCost">—</span></div>
+        <div class="row"><span class="k">Net profit per order</span> <span class="v" id="oNet">—</span></div>
+        <div class="row"><span class="k">Profit margin</span> <span class="v" id="oMargin">—</span></div>
+      </div>
+    </div>
+
+        <div class="viz">
+      <h3>Where the selling price goes</h3>
+      <div id="chart" aria-describedby="chart-note"></div>
+      <p class="viz-hint" id="chart-note">One order's selling price, split into what you keep and the four things it pays for. If the costs run past the dashed price line, the order loses money. Hover a segment for its figure, or open the table under the chart for every number.</p>
+      <div id="chart-table"></div>
+    </div>
+
+    <noscript>
+      <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The maths:
+      <em>total cost = product + shipping + (selling price × fee%) + ad cost</em>;
+      <em>net profit = selling price − total cost</em>; then
+      <em>margin = net profit ÷ selling price</em>. Or
+      <a href="../../resources/dropshipping/">grab the dropshipping resources</a> and run your own
+      numbers.</p>
+    </noscript>
+    <p class="cta">Pricing to a margin that survives the ad bill is the money discipline in
+      <a href="../../dropshipping/#basics"><em>Dropshipping: Basics</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">How to read it</span> The order has to pay for itself four times over</h2>
+    <p>A selling price feels like income, but on a dropshipping order it has four mouths to feed before
+      any of it is yours: the supplier's product cost, the shipping you cover, the payment and platform
+      fee, and — the one most people forget — the advertising it took to win that order. <b>Net profit
+      per order</b> is what's left once all four are paid.</p>
+    <p>The margin is that net profit as a share of the selling price. It's the single number that tells
+      you whether the order made you money or merely made you busy. Steer by it, not by revenue: a
+      product can sell all day and still lose a little on every order once the ad cost is counted.</p>
+
+    <h3>The formula, in full</h3>
+    <p><b>Total cost per order</b> = product cost + shipping + (selling price × fee ÷ 100) + ad cost per
+      order. <b>Net profit per order</b> = selling price − total cost. <b>Profit margin</b> = net profit
+      ÷ selling price, shown as a percentage. The fee is applied to the selling price because that's the
+      figure the buyer is charged, which is what payment and platform cuts are taken from.</p>
+
+    <h3>A worked example</h3>
+    <p>Sell at £29.99. The product costs £9.00, shipping is £4.00, the transaction fee is 3% (so
+      £29.99 × 0.03 = £0.90), and the ads that won the order cost £6.00. Add those up and the total cost
+      per order is <b>£19.90</b>. Take that off the £29.99 and the net profit is <b>£10.09</b> — a profit
+      margin of <b>33.6%</b>. Healthy. But watch what the £6.00 ad cost is doing: drop your selling price
+      by a few pounds or let the ad cost drift up, and that comfortable third of the price thins out fast.</p>
+
+    <h3>Edge cases the calculator handles</h3>
+    <ul class="note" style="line-height:1.7">
+      <li><b>A selling price of £0</b> shows "—" for the margin rather than an error, because you can't
+        divide by a price that isn't there.</li>
+      <li><b>A negative net profit</b> is shown honestly, not hidden. If total cost climbs above the
+        selling price, the net and the margin both go negative — that's the order telling you it costs
+        you money to fulfil, usually because the ad cost is too high for the price.</li>
+    </ul>
+
+    <h3>Common questions</h3>
+    <h4>What ad cost per order should I use?</h4>
+    <p>Your real one: total ad spend over a period divided by the orders it produced, not a hopeful guess.
+      That's the true cost of buying a customer, and on a dropshipping order it's usually the largest line
+      after the product itself. Use last week's actual figure from your ad account, and update it as it
+      moves.</p>
+    <h4>Why is the fee taken off the selling price and not the profit?</h4>
+    <p>Because payment processors and platforms take their percentage of the amount the buyer is charged
+      — the selling price — regardless of what the product cost you. So the fee is selling price × fee%,
+      and it's part of the total cost of the order, not a slice of whatever profit is left.</p>
+    <h4>Is this financial advice or a guarantee of profit?</h4>
+    <p>No. It's arithmetic on the numbers you enter — not financial advice and not a promise that any
+      product will make money. What you actually earn depends on your suppliers, your prices, your ad
+      results and your buyers, none of which this box controls. It just shows you, cleanly, what one order
+      leaves once every cost is counted.</p>
+  </section>
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+
+  <section>
+    <div class="shelf">
+      <b>This calculator comes from a book.</b>
+      <p>It's one tool from <em>Dropshipping — Basics</em>, which takes someone from a product idea to
+        their first order that's actually in profit — priced so the ad bill and the fees are covered
+        before a penny counts as yours.</p>
+      <a href="../../dropshipping/">See the Dropshipping series →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+    <a href="../../resources/dropshipping/">Dropshipping downloads</a> ·
+    <a href="../../privacy/">Privacy</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var ids = ["SP", "C", "Sh", "f", "Ad"], el = {};
+  ids.forEach(function (i) { el[i] = document.getElementById(i); });
+  function num(i) { var v = parseFloat(el[i].value); return isNaN(v) || v < 0 ? 0 : v; }
+  function money(x) {
+    return (x < 0 ? "−" : "") + "£" + Math.abs(x).toLocaleString("en-GB", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+  }
+  function set(id, t) { document.getElementById(id).textContent = t; }
+  function run() {
+    var SP = num("SP"), C = num("C"), Sh = num("Sh"), f = num("f"), Ad = num("Ad");
+    var totalCost = C + Sh + SP * (f / 100) + Ad;
+    var net = SP - totalCost;
+    set("oCost", money(totalCost));
+    set("oNet", money(net));
+    set("oMargin", SP === 0 ? "—" : (net / SP * 100).toFixed(1) + "%");
+  }
+  ids.forEach(function (i) { el[i].addEventListener("input", run); });
+  run();
+})();
+</script>
+
+<script src="../../assets/viz.js?v=20261011k"></script>
+<script>
+(function () {
+  "use strict";
+  var V = window.RVIZ, node = document.getElementById("chart"), tnode = document.getElementById("chart-table");
+  function v(id) { var x = parseFloat(document.getElementById(id).value); return isNaN(x) || x < 0 ? 0 : x; }
+  function pct(a, b) { return b > 0 ? Math.round(a / b * 100) + "%" : "—"; }
+  function table(cap, head, rows) { while (tnode.firstChild) tnode.removeChild(tnode.firstChild); V.table(tnode, cap, head, rows); }
+  var timer; function later() { clearTimeout(timer); timer = setTimeout(draw, 60); }
+  document.querySelectorAll("input").forEach(function (i) { i.addEventListener("input", later); });
+  window.addEventListener("resize", later);
+
+  V.currency("£", "en-GB");
+  function draw() {
+    var SP = v("SP"), C = v("C"), Sh = v("Sh"), f = v("f"), Ad = v("Ad");
+    var fee = SP * f / 100, net = SP - (C + Sh + fee + Ad);
+    var row = { label: "One order",
+      segs: [{ name: "You keep", value: Math.max(0, net), color: V.C.s1 },
+             { name: "Transaction fee", value: fee, color: V.C.s2 },
+             { name: "Shipping you pay", value: Sh, color: V.C.s3 },
+             { name: "Product cost", value: C, color: V.C.s4 },
+             { name: "Ad cost", value: Ad, color: V.C.s5 }],
+      totalLabel: net >= 0 ? "= " + V.money(SP) : "loss " + V.money(net) };
+    if (net < 0) row.mark = { value: SP, label: "price " + V.money(SP) };
+    V.hstack(node, [row], { title: "Where the selling price goes: you keep " + V.money(net) + " of " + V.money(SP),
+      legend: row.segs.map(function (g) { return { name: g.name, color: g.color }; }) });
+    table("One order at " + V.money(SP), ["Part", "Amount", "Share of the price"],
+      [["Product cost", V.money(C), pct(C, SP)], ["Shipping you pay", V.money(Sh), pct(Sh, SP)],
+       ["Transaction fee", V.money(fee), pct(fee, SP)], ["Ad cost", V.money(Ad), pct(Ad, SP)],
+       [net >= 0 ? "You keep" : "Loss", V.money(net), pct(net, SP)]]);
+    window.EPORTS_CHART = { net: net, fee: fee, total: C + Sh + fee + Ad };
+  }
+  draw();
+})();
+</script>
+
+</body>
+</html>

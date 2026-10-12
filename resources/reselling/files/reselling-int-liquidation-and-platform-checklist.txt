@@ -1,0 +1,118 @@
+RESELLING — INTERMEDIATE · THE LIQUIDATION PROTOCOL + PLATFORM-FIT CHECKLIST
+Free from ePORTS — eports.global/resources/reselling
+Print it. Keep it with the shipping supplies.
+
+=====================================================================
+1. THE ONE QUESTION (anything over 90 days)
+=====================================================================
+"If this item were handed to me today, for nothing, would I choose to list
+it at this price, on this platform, and hold it until a date I'd write
+down tonight?"
+What you paid gets no vote — it's gone in every version of the future.
+
+=====================================================================
+2. THE PROTOCOL — one rule per band, carried out in the Sunday block
+=====================================================================
+0-30 days ........ Nothing. Let it work. Floor holds.
+31-60 days ....... REFRESH (if fresh comps still support it): new first
+                   photo, sharper title, item details filled; price may step
+                   toward the floor. Comps don't support it? Go straight to
+                   the over-90 decision.
+                   WHEN: the Sunday it crosses 31.
+61-90 days ....... OFFER AND STEP: send an offer to watchers if eligible;
+                   mark down to the floor. The floor is the bottom.
+                   WHEN: the Sunday it crosses 61.
+Over 90 days ..... DECIDE: re-check comps (eBay Product Research reaches
+                   further back than the 90-day sold filter), ask the one
+                   question, pick an exit, write its exit date. The floor is
+                   no longer the test.
+                   WHEN: the Sunday it crosses 90; exit within 30 days.
+Exit date passed,
+or over 180 ...... OUT: lot it, sell it locally for cash, or donate it.
+                   By the next Saturday route (overrides the 30-day window).
+
+=====================================================================
+3. THE FOUR EXITS
+=====================================================================
+[ ] MOVE IT  — heavy/bulky/fragile to local pickup. End the eBay listing THE
+               SAME DAY. One-way exit for one old item. Not cross-listing.
+[ ] LOT IT   — 3-6 stragglers of a kind, one listing, one postage, priced at
+               what you'd rather have than the items.
+[ ] PRICE IT TO GO — one final price, supported by fresh comps and set to sell
+               within 30 days, exit date beside it. Not the start of a slide.
+[ ] DONATE IT — box, drop, mark it donated on the sheet. Broken or unsafe?
+               Dispose. Recalled? Follow the recall notice; never sell it
+               unless the notice says it may be resold after the remedy.
+               Tax treatment: ask whoever does your taxes; your job is the
+               record.
+Seasons are dates, not hopes: a seasonal item's exit can be the end of its
+season — once.
+
+=====================================================================
+4. SLOW BY DESIGN — the strict exception (all three, written on the row)
+=====================================================================
+[ ] Evidence of how often it sells
+    (e.g. "5 sold in the last year, all above $60")
+[ ] The expected net, from the floor card
+[ ] A review date no more than 90 days away
+CAP (this book's control): slow-by-design stock stays under 10% of committed.
+Over the cap -> review that night; the weakest exemption goes back to its band.
+
+=====================================================================
+5. EVERY EXIT MOVES A NUMBER
+=====================================================================
+Cost leaves COMMITTED. Cash back goes in the pot.
+Cash back > cost -> profit -> tax line / draw / retained.
+Cash back < cost -> the difference is a loss -> it comes out of CAPITAL.
+Donated: the whole cost leaves committed AND capital.
+Liquidation log: date · item · band · exit · cost · cash back.
+
+=====================================================================
+6. PLATFORM FIT — three questions (add ONE platform, or none)
+=====================================================================
+[ ] BUYERS THERE?  For each of 3 representative items: at least 3 genuine
+    sales of the same kind in roughly the last 90 days, with the middle price
+    at or above your floor ON THAT PLATFORM. 2 of 3 items = pass.
+    No visible sold history = UNVERIFIED = fail.
+[ ] MONEY WORKS?   Rebuild the floor card with that platform's fee.
+[ ] FITS THE WEEK? Lists from your skeleton in minutes; your shipping
+    windows meet its handling rules.
+"None" is a real result: your base platform is the right one.
+
+=====================================================================
+7. CROSS-LISTING WITHOUT SELLING ANYTHING TWICE
+=====================================================================
+[ ] One inventory: the SHEET is the truth. New column: WHERE (E / M / E+M).
+[ ] Delisting rule: SOLD ANYWHERE MEANS ENDED EVERYWHERE — FIRST.
+    Before replying, before printing a label: end the other listing,
+    mark the row sold.
+[ ] Sale notifications ON for both apps. Sweep every E+M row at every
+    shipping window.
+[ ] Oversold anyway? End any live listing, cancel with the TRUE reason,
+    refund promptly, apologise plainly, log it. (On eBay an out-of-stock
+    cancellation is a transaction defect — take it; never game it.)
+[ ] Pilot rule: 10 items, newest bands, same list price, each platform's
+    floor on the row.
+[ ] Reading rule, written BEFORE the first sale: a threshold and a date
+    four weeks out. (Book example: keep if >= 2 of 10 sell at/above floor
+    with no oversell.)
+
+=====================================================================
+8. THE FOUR-WEEK AUDIT — six items, evidence beside each
+=====================================================================
+[ ] 1 Four consecutive weeks logged — dated lines, every field filled
+[ ] 2 A chosen category — dated, demand check under it
+[ ] 3 The routine ran — sourcing + listing blocks; shipping windows run
+      whenever there were orders (or "no orders")
+[ ] 4 Sell-through recorded — cohort count updated weekly, in counts
+[ ] 5 An aging report — dated, banded, reconciling to committed
+[ ] 6 At least one liquidation action — in the liquidation log
+Fillable hole -> fix it from records, write "added at audit" + the date.
+Unfillable hole (a block didn't run, nothing can rebuild it) -> write one
+line saying which step stalled and why; the four weeks restart.
+Two verdicts, kept apart: COMPLETION (proven / not yet) and PERFORMANCE
+(positive net after fees? falling over-90 share?).
+
+---------------------------------------------------------------------
+The Reselling shelf: Basics · Intermediate · Advanced
+ePORTS — your ecom source. eports.global

@@ -1,0 +1,68 @@
+THE WEEKLY CADENCE PLANNER  —  give the business a heartbeat
+From "The One-Person AI Business — Intermediate", Chapter 10
+
+================================================================
+
+A set of working functions is not a business that runs itself — it's a pile of
+parts, and YOU are still the thing wiring them together in real time. The
+missing piece isn't another function. It's the SCHEDULE that fires them. Design
+your week as a handful of booked GATES; the machine runs continuously between
+them. You stop being the doing with a little thinking squeezed in, and become
+the thinking, with the doing handled underneath you.
+
+⚠️ A cadence in your head is a to-do list, and a to-do list loses to whatever's
+on fire. Booked in the calendar, it's a commitment the week is built around.
+
+
+BOOK YOUR WEEK AROUND GATES, NOT TASKS
+----------------------------------------------------------------
+  Gate (from ch 4–9)              Day     Time      Length
+  ------------------------------  ------  --------  --------
+  Approve the demand queue        ______  ________  ______
+  Escalation window (daily)       daily   ________  ______
+  Delivery gate (before ship)     ______  ________  ______
+  Sales/support exceptions        ______  ________  ______
+  Weekly review                   ______  ________  ______
+  Monthly numbers ritual          ______  (once/mo) ______
+  ______________________________  ______  ________  ______
+
+  Leave deliberate SLACK for escalations and the genuinely new. Then total it:
+    My scheduled founder-time at the gates:  about ______ hrs / week
+
+
+SAM'S WEEK  (a reference, not a rule)
+----------------------------------------------------------------
+  Mon 20m — approve the week's staged demand queue (risky-class posts held)
+  Every weekday 15m — escalation window
+  Tue 25m — delivery gate: check the brief before its Wed 7am send
+  Fri 30m — weekly review
+  Once a month 30m — numbers ritual
+  → the GATES cost about 2.5 focused hours a week; the rest of the month's
+    ~38 owner-hours is deeper judgement, not grind.
+
+
+THE WEEKLY REVIEW  (30 min — how the system gets smarter)
+----------------------------------------------------------------
+  [ ] What did the machine do WELL this week?
+  [ ] Which call did I DISAGREE with → which rule do I sharpen? (feeds ch2 brain)
+  [ ] What's coming that the queue doesn't cover yet?
+
+
+THE FORCING COMMITMENT  (booked and dated — book it before the week starts)
+----------------------------------------------------------------
+  "My operating week, booked in the calendar from ______: [Mon ___, Tue ___,
+   ...], a daily escalation window at ______, the monthly numbers ritual on the
+   ______. Between these blocks, the machine runs. I attend the gates and make the
+   judgement calls; I no longer do the grind."
+
+================================================================
+  Yours to keep — free, and no strings attached.
+
+  One tool from the ePORTS One-Person AI Business series. This one is from
+  Intermediate — the rhythm that turns five separate functions into one business
+  that runs on the system for a week, with you attending gates, not doing the grind.
+
+  The full shelf, whenever you're ready:  eports.global/one-person-ai-business
+================================================================
+
+ePORTS — your ecom source. eports.global.

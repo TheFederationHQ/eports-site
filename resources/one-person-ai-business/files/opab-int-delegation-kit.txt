@@ -1,0 +1,86 @@
+THE FUNCTION-DELEGATION KIT  —  copy one per function
+From "The One-Person AI Business — Intermediate", Chapters 3–7
+================================================================
+
+Handing off a function is not "ask the AI and hope." It's defining a few things
+ONCE, in writing. Get them right and delegation is safe; skip one and it bites.
+This is the template you reuse for EVERY function — demand, sales, delivery,
+support. Print one per function.
+
+FUNCTION:  ______________________________   Date started: __________
+
+
+1 · THE INPUTS  (what AI needs in front of it)
+----------------------------------------------------------------
+  The operating brain, plus the raw material for THIS instance.
+  Vague inputs make vague output — half of "the AI did it wrong" is really
+  "I gave it the wrong things to work from."
+  ______________________________________________________________
+
+
+2 · THE OUTPUT  (exactly what "done" looks like)
+----------------------------------------------------------------
+  Format, length, what it MUST contain, what it must NOT. Specific enough that
+  two runs produce the same KIND of thing.
+  ______________________________________________________________
+
+
+3 · THE ACCEPTANCE LINE  (5–8 pass/fail checks, in your words)
+----------------------------------------------------------------
+  Your decision rules, turned into fast yes/no checks. Each one, if it fails,
+  means the work does NOT go.
+  [ ] ___________________________________________________________
+  [ ] ___________________________________________________________
+  [ ] ___________________________________________________________
+  [ ] ___________________________________________________________
+  [ ] ___________________________________________________________
+
+  ⚠️ It must be checkable in MINUTES, or you haven't delegated — you've just
+  moved the work. If checking takes as long as making, the line is too vague or
+  too long. Tighten until a check is genuinely faster than a redo.
+
+
+4 · THE CONTROL POINT  (where you stand in the flow)
+----------------------------------------------------------------
+  Start as the GATE — you check every output before it goes. Earn your way off
+  it by EVIDENCE, never assumption:
+    Evidence bar to move a class to autonomous:  ______ clean in a row
+    After the bar: the ______________ class runs on its own; exceptions escalate.
+
+
+5 · WHAT THE AI MAY NOT DECIDE  (the bright line)
+----------------------------------------------------------------
+  At least one decision stays yours, named explicitly. However good the AI gets,
+  it does not cross this without you.
+  This function's bright line: __________________________________
+
+  Common bright lines by function:
+    DEMAND   — no unchecked facts, no naming competitors, no public promises.
+    SALES    — no discounts, no off-menu prices, no promises, no exceptions;
+               may STATE the published policy, not act on it.
+    DELIVERY — never ship below the definition-of-done; never move the date.
+    SUPPORT  — may CHECK and PREPARE a refund up to your ceiling; a HUMAN
+               approves and releases it. No credits, extensions, or exceptions.
+
+  ⚠️ THE MONEY RULE (whole business): AI may CHECK a refund against your rule and
+  prepare it; a HUMAN approves AND executes every actual movement of money. AI
+  never approves or moves money itself.
+
+
+THE FORCING COMMITMENT  (dated — the win made concrete)
+----------------------------------------------------------------
+  "On ______ (date), the ______ function ran on the system — AI produced, I
+   checked against a written acceptance line, and the work went out.
+   Time to check: ______ minutes (vs ______ minutes to make it by hand)."
+
+================================================================
+  Yours to keep — free, and no strings attached.
+
+  One tool from the ePORTS One-Person AI Business series. This one is from
+  Intermediate — the reusable kit behind a business one person runs by setting
+  the standard, not doing every task.
+
+  The full shelf, whenever you're ready:  eports.global/one-person-ai-business
+================================================================
+
+ePORTS — your ecom source. eports.global.

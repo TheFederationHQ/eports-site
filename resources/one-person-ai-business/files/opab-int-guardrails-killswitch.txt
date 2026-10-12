@@ -1,0 +1,86 @@
+THE GUARDRAILS & KILL-SWITCH SHEET
+From "The One-Person AI Business — Intermediate", Chapter 8
+================================================================
+
+You don't delegate "functions" — you delegate dozens of small ACTIONS, and they
+are not equally dangerous. Something fast, tireless, and confident-even-when-
+wrong will one day make a bad call with nobody watching. This sheet is the
+governance that means it can't do irreversible harm behind your back: a map of
+what needs a human before it goes live, and a kill switch for when something
+slips through anyway.
+
+⚠️ Write this BEFORE you need it. The one certainty about the middle of a live
+incident is that you won't think clearly inside it.
+
+
+SORT EVERY ACTION BY THREE QUESTIONS
+----------------------------------------------------------------
+  REVERSIBLE?  Can it be undone? (a draft: yes. a public post, a sent email, a
+               released payment: no, or only at a cost.)
+  REACH?       Who sees it if it's wrong? (just me / one customer / the public)
+  COST?        Money, trust, or legal exposure if wrong? (trust is the expensive
+               one — it's the one you can't refund.)
+
+  The more an action is irreversible × public × costly, the more it must pass a
+  human BEFORE it goes live.
+
+
+THE RISK MAP  (sort your actions into three buckets)
+----------------------------------------------------------------
+  RUNS AUTOMATICALLY  (low-risk, reversible, private):
+    ______________________________________________________________
+
+  RUNS BUT I SAMPLE IT:
+    ______________________________________________________________
+
+  HUMAN EVERY TIME, FOREVER  (public claims · promises · exceptions · legal ·
+  the MOVEMENT of money):
+    ______________________________________________________________
+
+  ⚠️ Trust is granted by RISK CLASS, not by FUNCTION. "All demand posts on
+  automatic" is the mistake — a public factual claim must stay human-gated even
+  when the rest of demand has earned autonomy.
+
+  ⚠️ THE MONEY RULE: AI may CHECK and PREPARE a rule-qualifying refund up to your
+  ceiling; a HUMAN approves AND executes every actual movement of money. AI never
+  approves or moves money itself, so it never needs payment wiring.
+
+
+THE KILL SWITCH  (a written procedure — four steps, in order)
+----------------------------------------------------------------
+  1. DISCONNECT — pause every autonomous action at once. Revoke posting/sending
+     permissions or flip each function to draft-only. How, exactly, for me:
+       ____________________________________________________________
+  2. CONTAIN — get the correction out with a PRE-WRITTEN retraction template.
+     Where my template lives: ___________________________________
+  3. AUDIT — find the blast radius, clear the pending queue to zero: what went
+     out, who saw it, who acted on it, what else is queued.
+  4. RESTART — bring functions back GATED, not automatic; re-earn autonomy only
+     on evidence, one class at a time.
+
+
+LIABILITY  (name it — this book does not advise on the law)
+----------------------------------------------------------------
+  You are responsible for what your AI does. Depending on how your business is
+  set up and where you live, the exposure may fall on you personally. When the
+  stakes are real, ask one professional in your country one specific question.
+
+
+THE FORCING COMMITMENT  (dated — before you need it)
+----------------------------------------------------------------
+  "As of ______, these classes require my review before going live: __________.
+   These may run automatically: __________. My kill switch: __________ (the
+   exact steps to pause everything, correct, and restart). I wrote this down
+   before I needed it."
+
+================================================================
+  Yours to keep — free, and no strings attached.
+
+  One tool from the ePORTS One-Person AI Business series. This one is from
+  Intermediate — the governance that makes delegating to AI safe for a business
+  only you are liable for.
+
+  The full shelf, whenever you're ready:  eports.global/one-person-ai-business
+================================================================
+
+ePORTS — your ecom source. eports.global.

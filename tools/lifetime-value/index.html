@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Customer lifetime value & payback calculator | ePORTS</title>
+<meta name="description" content="Free customer lifetime value calculator: enter your average order value, platform fee, orders per customer and acquisition cost to get contribution per order, lifetime value, and when a customer pays you back.">
+<link rel="canonical" href=".">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css?v=20261011h">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator</p>
+    <h1>Lifetime value &amp; payback calculator</h1>
+    <p class="sub">What a customer is actually worth — and <em>when</em> they have paid you back.</p>
+  </div>
+</header>
+<main class="wrap">
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+  <section>
+    <h2><span class="n">The calculator</span> Lifetime value and payback</h2>
+    <div class="calc">
+      <div>
+        <div class="field"><label for="AOV">Average order value <span class="u">(£)</span></label><input id="AOV" type="number" value="44" min="0" step="0.01"></div>
+        <div class="field"><label for="f">Platform + processing fee <span class="u">(%)</span></label><input id="f" type="number" value="6.5" min="0" max="99" step="0.1"></div>
+        <div class="field"><label for="L">Orders per customer over their life</label><input id="L" type="number" value="1.45" min="1" step="0.01">
+          <p class="hint">1.0 = they never repeat; must be at least 1</p></div>
+        <div class="field"><label for="CAC">Cost to acquire a customer, CAC <span class="u">(£)</span></label><input id="CAC" type="number" value="28.80" min="0" step="0.01"></div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>What a customer is worth</h3>
+        <div class="row"><span class="k">Contribution / order</span><span class="v" id="oC">—</span></div>
+        <div class="row"><span class="k">Lifetime contribution</span><span class="v" id="oL">—</span></div>
+        <div class="row"><span class="k">Payback</span><span class="v txt" id="oP">—</span></div>
+      </div>
+    </div>
+        <div class="viz">
+      <h3>When a customer covers what they cost to win</h3>
+      <div id="chart" aria-describedby="chart-note"></div>
+      <p class="viz-hint" id="chart-note">The line is the contribution a customer has brought in after each order (the order value less platform and processing fees, before your other costs); the dashed line is what it cost to win them. Where the line crosses it, they've covered that cost. It assumes every order is the average order — real customers vary. Hover the chart for any order, or open the table under it.</p>
+      <div id="chart-table"></div>
+    </div>
+
+    <noscript><p class="calc-fallback"><b>Needs JavaScript.</b>
+      <a href="../../resources/digital-products/files/dp-adv-cohort-ltv.xlsx">Download the cohort &amp;
+      lifetime-value spreadsheet</a> — same formulas, your numbers.</p></noscript>
+    <p class="cta">Know when a customer pays you back before you scale — it's
+      <a href="../../digital-products/#advanced">the cohort economics in <em>Digital Products: Advanced</em> →</a></p>
+  </section>
+  <section>
+    <h2><span class="n">How to read it</span> Contribution, not revenue — and payback, not just value</h2>
+    <p>Everything here runs on <b>contribution</b>: what actually reaches you after the platform's cut,
+      not the headline price. A customer's <b>lifetime value</b> is that contribution multiplied by
+      how many times they buy over their life with you. But value alone can bankrupt you if it arrives
+      too slowly — which is why <b>payback</b> is the number that governs how fast you can grow.</p>
+    <h3>The formulas</h3>
+    <p><b>Contribution per order</b> = average order value × (1 − fee%). <b>Lifetime value</b> =
+      contribution per order × lifetime orders. <b>Payback</b> is the book's definition: the point at
+      which a customer's cumulative contribution covers what they cost to acquire. If your first-order
+      contribution already exceeds the acquisition cost, they are <em>recouped in the first order</em>
+      — the strongest position there is. Otherwise it is measured in months, at your repeat cadence.</p>
+    <h3>A worked example</h3>
+    <p>£44 average order at 6.5% keeps <b>£41.14</b> of contribution. If a customer buys 1.45 times
+      over their life, their lifetime value is £41.14 × 1.45 = <b>£59.65</b>. If they cost £28.80 to
+      acquire, that is less than the £41.14 they contribute on the very first order — so they are
+      <b>recouped in the first order</b>, and you can spend up to your ceiling with nothing at risk
+      beyond it.</p>
+    <h3>Edge cases the calculator handles</h3>
+    <ul class="note" style="line-height:1.7">
+      <li><b>A customer who never repays</b> — if even their whole lifetime value stays below what they
+        cost to acquire, payback reads <em>"does not pay back over their life"</em> rather than a
+        made-up month count. That is the signal to fix the offer or lower the acquisition cost.</li>
+      <li><b>A fee of 100% or more</b> leaves no contribution, so every line shows "—": there is
+        nothing to have a lifetime value of.</li>
+    </ul>
+    <h3>Common questions</h3>
+    <h4>Why must lifetime orders be at least 1?</h4>
+    <p>Because every acquired customer has, by definition, bought at least once — that is what made
+      them a customer. A figure below 1 is not possible, so the calculator holds the floor at 1.0
+      (which represents a customer who never comes back).</p>
+    <h4>Should I set my ad budget from lifetime value?</h4>
+    <p>Careful — no. Paying up to lifetime value assumes a future that has not happened yet. Spend
+      against first-order contribution until a real paid cohort proves its own payback. The
+      <a href="../cac-ceiling/">CAC ceiling calculator</a> works out the safe number.</p>
+    <h4>Can I keep a copy?</h4>
+    <p><a href="../../resources/digital-products/files/dp-adv-cohort-ltv.xlsx">Download the spreadsheet</a>
+      — it turns your own sales history into lifetime value and a payback period.</p>
+  </section>
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+  <section>
+    <div class="shelf">
+      <b>This calculator comes from a book.</b>
+      <p>It is from <em>Digital Products — Advanced</em>, the third ePORTS book — the one about making
+        a working range worth more, and making it durable.</p>
+      <a href="../../digital-products/">Get the full Digital Products series →</a>
+    </div>
+  </section>
+</main>
+<footer class="foot"><div class="wrap">
+  <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+  <a href="../../resources/digital-products/">Digital Products downloads</a> ·
+  <a href="../../privacy/">Privacy</a>
+</div></footer>
+<script src="../../assets/dp-calc.js?v=20261012"></script>
+<script>
+(function () {
+  var ids = ["AOV","f","L","CAC"], el = {};
+  ids.forEach(function (i){ el[i]=document.getElementById(i); });
+  function num(i){ var v=parseFloat(el[i].value); return isNaN(v)?NaN:v; }
+  function run(){
+    var r = DPCalc.lifetime(num("AOV"),num("f"),num("L"),num("CAC"));
+    document.getElementById("oC").textContent = DPCalc.money(r.contribution);
+    document.getElementById("oL").textContent = DPCalc.money(r.ltv);
+    document.getElementById("oP").textContent = r.payback;
+  }
+  ids.forEach(function (i){ el[i].addEventListener("input", run); });
+  run();
+})();
+</script>
+<script src="../../assets/viz.js?v=20261011k"></script>
+<script>
+(function () {
+  "use strict";
+  var V = window.RVIZ, node = document.getElementById("chart"), tnode = document.getElementById("chart-table");
+  function v(id) { var x = parseFloat(document.getElementById(id).value); return isNaN(x) || x < 0 ? 0 : x; }
+  function pct(a, b) { return b > 0 ? Math.round(a / b * 100) + "%" : "—"; }
+  function table(cap, head, rows) { while (tnode.firstChild) tnode.removeChild(tnode.firstChild); V.table(tnode, cap, head, rows); }
+  var timer; function later() { clearTimeout(timer); timer = setTimeout(draw, 60); }
+  document.querySelectorAll("input").forEach(function (i) { i.addEventListener("input", later); });
+  window.addEventListener("resize", later);
+
+  V.currency("£", "en-GB");
+  function n(id) { var x = parseFloat(document.getElementById(id).value); return isNaN(x) ? NaN : x; }
+  function draw() {
+    var AOV = n("AOV"), f = n("f"), L = n("L"), CAC = n("CAC");
+    var r = DPCalc.lifetime(AOV, f, L, CAC);
+    if (typeof r.contribution !== "number") { while (node.firstChild) node.removeChild(node.firstChild);
+      node.textContent = "Enter the order value and fee to see the chart."; window.EPORTS_CHART = { invalid: true }; return; }
+    var c = r.contribution, cac = isFinite(CAC) ? CAC : 0, life = isFinite(L) ? L : 0;
+    var need = c > 0 ? Math.ceil(cac / c) : 0;
+    var N = Math.max(3, Math.min(12, Math.max(Math.ceil(life), need) + 1));
+    var xs = [], vals = [], rows = [], hit = -1;
+    for (var k = 1; k <= N; k++) { xs.push(String(k)); vals.push(c * k);
+      if (hit < 0 && c * k >= cac && c > 0) hit = k - 1;
+      rows.push([String(k), V.money(c * k), c * k >= cac ? "covered" : "not yet"]); }
+    var opt = { title: "Contribution from one customer by order number, against the " + V.money(cac) + " it cost to win them",
+      threshold: { value: cac, label: "cost to win them " + V.money(cac) }, zero: true, xname: "Order ",
+      yfmt: V.money0, legend: [{ name: "Contribution from this customer so far", color: V.C.s1 }, { name: "Cost to win them", color: V.C.mut, dash: true }] };
+    if (hit >= 0) opt.marker = { i: hit, v: vals[hit], label: "cost covered at order " + (hit + 1) };
+    V.lines(node, xs, [{ name: "Contribution so far", color: V.C.s1, values: vals }], opt);
+    table("Contribution after each order (" + V.money(c) + " per order)", ["Order", "Contribution so far", "Against the cost to win them"], rows);
+    window.EPORTS_CHART = { contribution: c, paybackOrder: hit + 1, ltv: r.ltv };
+  }
+  draw();
+})();
+</script>
+
+</body>
+</html>

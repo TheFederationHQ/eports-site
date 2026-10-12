@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Etsy fee & profit calculator — the fees Etsy takes, and what's left | ePORTS</title>
+<meta name="description" content="Free Etsy fee & profit calculator: the listing, transaction and payment fees Etsy takes, and the profit left after your cost.">
+<link rel="canonical" href="./">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css?v=20261011h">
+<!-- /tools page: live calculator + real editorial content so it is genuinely
+     useful and ranks. Ads may sit on /tools pages LATER (never on /resources)
+     once the site qualifies and a privacy/consent setup exists. The .ad-slot
+     boxes below are reserved skeleton placeholders for that. -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator</p>
+    <h1>Etsy fee &amp; profit calculator</h1>
+    <p class="sub">See the fees Etsy takes on a physical or print-on-demand sale — and the profit that's
+      actually <em>left</em> once your own cost comes out.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+
+  <section>
+    <h2><span class="n">The calculator</span> Etsy's fees, and what you keep</h2>
+    <div class="calc">
+      <div>
+        <div class="field">
+          <label for="P">Item price <span class="u">(£)</span></label>
+          <input id="P" type="number" inputmode="decimal" value="20.00" min="0" step="0.01">
+        </div>
+        <div class="field">
+          <label for="Sh">Shipping you charge the buyer <span class="u">(£)</span></label>
+          <input id="Sh" type="number" inputmode="decimal" value="4.00" min="0" step="0.01">
+          <p class="hint">Etsy's transaction fee applies to shipping too</p>
+        </div>
+        <div class="field">
+          <label for="C">Your cost (blank + printing + the shipping you pay) <span class="u">(£)</span></label>
+          <input id="C" type="number" inputmode="decimal" value="8.00" min="0" step="0.01">
+        </div>
+        <div class="field">
+          <label for="listing">Listing fee <span class="u">(£)</span></label>
+          <input id="listing" type="number" inputmode="decimal" value="0.16" min="0" step="0.01">
+          <p class="hint">about £0.16 / $0.20 to create or renew a listing (the GBP amount moves with
+            exchange rates); a multiple-quantity listing renews after each item sells</p>
+        </div>
+        <div class="field">
+          <label for="txn">Transaction fee <span class="u">(%)</span></label>
+          <input id="txn" type="number" inputmode="decimal" value="6.5" min="0" max="99" step="0.1">
+        </div>
+        <div class="field">
+          <label for="proc">Payment processing <span class="u">(%)</span></label>
+          <input id="proc" type="number" inputmode="decimal" value="4" min="0" max="99" step="0.1">
+          <p class="hint">the % part; varies by country</p>
+        </div>
+        <div class="field">
+          <label for="procFix">Processing fixed fee <span class="u">(£)</span></label>
+          <input id="procFix" type="number" inputmode="decimal" value="0.20" min="0" step="0.01">
+        </div>
+        <div class="field">
+          <label for="Reg">Regulatory / other % fee <span class="u">(%)</span></label>
+          <input id="Reg" type="number" inputmode="decimal" value="0.48" min="0" max="99" step="0.01">
+          <p class="hint">e.g. Etsy's UK Regulatory Operating Fee ~0.48% of the order total; varies by country, 0 if none</p>
+        </div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>Your numbers</h3>
+        <div class="row"><span class="k">Etsy fees (the ones entered)</span> <span class="v" id="oFees">—</span></div>
+        <div class="row"><span class="k">Estimated left after these fees</span> <span class="v" id="oKeep">—</span></div>
+        <div class="row"><span class="k">Profit after your cost</span> <span class="v" id="oProfit">—</span></div>
+        <div class="row"><span class="k">Profit margin</span> <span class="v" id="oMargin">—</span></div>
+      </div>
+    </div>
+
+    <p class="note" style="margin-top:1rem"><b>Estimate based on the fees you entered.</b> It does NOT
+      include VAT charged on Etsy fees (some countries), Offsite Ads (~12–15% on some sales), currency
+      conversion or other conditional fees — add those yourself. Etsy's fees change and differ by country;
+      enter your current rates from Etsy's own fees page.</p>
+
+        <div class="viz">
+      <h3>Where the buyer's money goes</h3>
+      <div id="chart" aria-describedby="chart-note"></div>
+      <p class="viz-hint" id="chart-note">Everything the buyer pays (item plus the shipping you charge), split into what you keep, Etsy's fees (the ones you entered) and your own cost. Hover a segment for its figure, or open the table under the chart to see each fee on its own.</p>
+      <div id="chart-table"></div>
+    </div>
+
+    <noscript>
+      <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The maths:
+      <em>revenue = item price + shipping you charge</em>;
+      <em>fees = listing fee + revenue × transaction% + revenue × processing% + fixed processing fee +
+      revenue × regulatory%</em>; <em>estimated left = revenue − fees</em>; <em>profit = estimated left −
+      your cost</em>; and <em>margin = profit ÷ revenue</em>. Enter your own current rates from Etsy's
+      fees page.</p>
+    </noscript>
+    <p class="cta">Pricing to survive Etsy's fees, not just cover your cost, is the pricing discipline in
+      <a href="../../print-on-demand/#basics"><em>Print on Demand: Basics</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">How to read it</span> The profit that's left after Etsy takes its cut</h2>
+    <p>Etsy doesn't take one fee — it takes several, and some of them are charged on your shipping as well
+      as the item. This tool adds up the fees you enter, subtracts them from what the buyer pays, then
+      subtracts <em>your</em> cost, and shows an estimate of the profit and margin left. It's the
+      difference between a listing that pays you and one that quietly doesn't.</p>
+    <p>The buyer pays the item price plus any shipping you charge — that whole total is your revenue, and
+      it's what Etsy's percentage fees are worked out on. So a "free shipping" listing at a higher item
+      price and a lower-price-plus-postage listing are charged the same percentage fees; only the total
+      matters.</p>
+
+    <h3>The formula, in full</h3>
+    <p><b>Revenue</b> = item price + shipping you charge. <b>Etsy fees (the ones entered)</b> = listing
+      fee + revenue × (transaction% ÷ 100) + revenue × (processing% ÷ 100) + the fixed processing fee +
+      revenue × (regulatory% ÷ 100). <b>Estimated left</b> = revenue − fees. <b>Profit</b> = the estimated
+      left − your cost. <b>Margin</b> = profit ÷ revenue, shown as a percentage. The transaction fee, the
+      processing percentage and the regulatory fee all apply to the item price <em>and</em> the shipping,
+      which is why shipping is folded into revenue before the percentages are taken.</p>
+
+    <h3>A worked example</h3>
+    <p>A £20 item with £4 shipping is £24 of revenue. On the standard rates — a £0.16 listing fee, 6.5%
+      transaction, 4% processing, a £0.20 fixed processing fee and a 0.48% regulatory fee — the fees are
+      £0.16 + £1.56 + £0.96 + £0.20 + £0.12 (the 0.48% line, £0.1152) = <b>£3.00</b>. The estimated left is
+      £24 − £3.00 = £21.00. Take off an £8 cost and the profit is <b>£13.00</b>, a margin of £13.00 ÷ £24 =
+      <b>54.2%</b>. Change any rate and every figure moves with it — which is why the boxes ask for
+      <em>your</em> current rates, not a stand-in.</p>
+
+    <h3>Edge cases the calculator handles</h3>
+    <ul class="note" style="line-height:1.7">
+      <li><b>A price and shipping of zero</b> leaves no revenue to work a margin out from, so the margin
+        shows "—" rather than a divide-by-zero figure.</li>
+      <li><b>A cost above the estimated left</b> gives a negative profit and a negative margin — a real
+        result, and a sign the listing loses money at that price.</li>
+    </ul>
+
+    <h3>Common questions</h3>
+    <h4>What fee rates should I put in?</h4>
+    <p>Your own, from Etsy's official fees page — not a comparison article, because Etsy's fees change and
+      differ by country. The defaults here are the standard UK-ish figures (a ~£0.16 / $0.20 listing fee,
+      6.5% transaction, roughly 4% + £0.20 processing), but your transaction and processing rates depend
+      on where you sell. Look up the current numbers for your own shop and type those in.</p>
+    <h4>Does this include every possible fee?</h4>
+    <p>No — these are the standard per-sale fees you enter. Etsy's <em>Offsite Ads</em> fee (a further
+      ~12–15% on sales that come through Etsy's advertising) can apply to some orders and isn't included
+      here unless you fold it in, and neither is any VAT charged on the fees themselves or currency
+      conversion. The listing fee is charged to create or renew a listing — a multiple-quantity listing
+      renews after each item sells — so treat the numbers as an estimate of the standard fees on one
+      sale, not an all-in permanent total.</p>
+    <h4>Is this financial advice or a guarantee?</h4>
+    <p>No. It's arithmetic on numbers you enter. What you actually earn depends on Etsy's current fees,
+      your costs and your buyers — none of which this box controls. It just shows what's left after the
+      standard fees so you can price with your eyes open.</p>
+  </section>
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+
+  <section>
+    <div class="shelf">
+      <b>This calculator comes from a book.</b>
+      <p>It's one tool from <em>Print on Demand — Basics</em>, which takes you from a blank file to one
+        product listed safely on Etsy, priced to actually pay you after the fees.</p>
+      <a href="../../print-on-demand/">See the Print on Demand series →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+    <a href="../../resources/print-on-demand/">Print on Demand downloads</a> ·
+    <a href="../../privacy/">Privacy</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var ids = ["P", "Sh", "C", "listing", "txn", "proc", "procFix", "Reg"], el = {};
+  ids.forEach(function (i) { el[i] = document.getElementById(i); });
+  function num(i) { var v = parseFloat(el[i].value); return isNaN(v) || v < 0 ? 0 : v; }
+  function money(x) {
+    return (x < 0 ? "−" : "") + "£" + Math.abs(x).toLocaleString("en-GB", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+  }
+  function set(id, t) { document.getElementById(id).textContent = t; }
+  function run() {
+    var P = num("P"), Sh = num("Sh"), C = num("C"),
+        listing = num("listing"), txn = num("txn"), proc = num("proc"), procFix = num("procFix"),
+        Reg = num("Reg");
+    var revenue = P + Sh;
+    var fees = listing + revenue * (txn / 100) + revenue * (proc / 100) + procFix + revenue * (Reg / 100);
+    var keep = revenue - fees;
+    var profit = keep - C;
+    set("oFees", money(fees));
+    set("oKeep", money(keep));
+    set("oProfit", money(profit));
+    if (revenue > 0) {
+      var margin = (profit / revenue) * 100;
+      set("oMargin", margin.toLocaleString("en-GB", {minimumFractionDigits: 1, maximumFractionDigits: 1}) + "%");
+    } else {
+      set("oMargin", "—");
+    }
+  }
+  ids.forEach(function (i) { el[i].addEventListener("input", run); });
+  run();
+})();
+</script>
+
+<script src="../../assets/viz.js?v=20261011k"></script>
+<script>
+(function () {
+  "use strict";
+  var V = window.RVIZ, node = document.getElementById("chart"), tnode = document.getElementById("chart-table");
+  function v(id) { var x = parseFloat(document.getElementById(id).value); return isNaN(x) || x < 0 ? 0 : x; }
+  function pct(a, b) { return b > 0 ? Math.round(a / b * 100) + "%" : "—"; }
+  function table(cap, head, rows) { while (tnode.firstChild) tnode.removeChild(tnode.firstChild); V.table(tnode, cap, head, rows); }
+  var timer; function later() { clearTimeout(timer); timer = setTimeout(draw, 60); }
+  document.querySelectorAll("input").forEach(function (i) { i.addEventListener("input", later); });
+  window.addEventListener("resize", later);
+
+  V.currency("£", "en-GB");
+  function draw() {
+    var P = v("P"), Sh = v("Sh"), C = v("C"), listing = v("listing"), txn = v("txn"), proc = v("proc"),
+        procFix = v("procFix"), Reg = v("Reg");
+    var rev = P + Sh, t = rev * txn / 100, pr = rev * proc / 100 + procFix, rg = rev * Reg / 100;
+    var fees = listing + t + pr + rg, profit = rev - fees - C;
+    var row = { label: "One sale",
+      segs: [{ name: "You keep", value: Math.max(0, profit), color: V.C.s1 },
+             { name: "Etsy fees", value: fees, color: V.C.s2 },
+             { name: "Your cost", value: C, color: V.C.s4 }],
+      totalLabel: profit >= 0 ? "= " + V.money(rev) : "loss " + V.money(profit) };
+    if (profit < 0) row.mark = { value: rev, label: "buyer pays " + V.money(rev) };
+    V.hstack(node, [row], { title: "Where the buyer's money goes: you keep " + V.money(profit) + " of " + V.money(rev),
+      legend: row.segs.map(function (g) { return { name: g.name, color: g.color }; }) });
+    table("One sale: the buyer pays " + V.money(rev), ["Part", "Amount", "Share of what the buyer pays"],
+      [["Listing fee", V.money(listing), pct(listing, rev)], ["Transaction fee", V.money(t), pct(t, rev)],
+       ["Payment processing", V.money(pr), pct(pr, rev)], ["Regulatory / other", V.money(rg), pct(rg, rev)],
+       ["Your cost", V.money(C), pct(C, rev)], [profit >= 0 ? "You keep" : "Loss", V.money(profit), pct(profit, rev)]]);
+    window.EPORTS_CHART = { fees: fees, keep: rev - fees, profit: profit };
+  }
+  draw();
+})();
+</script>
+
+</body>
+</html>

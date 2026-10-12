@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flip profit-per-hour calculator — is this buy worth your time? | ePORTS</title>
+<meta name="description" content="Free flip calculator for resellers: profit, return on cost and profit per HOUR for any item, the most you can pay for it, and a buy-or-walk call against your own hourly hurdle.">
+<link rel="canonical" href="./">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css?v=20261011b">
+<!-- /tools page (Reselling lane). Mirrors the buy-hurdle card in Reselling — Advanced, ch3:
+     max buy = comp × (1 − planning rate) − per-item costs − (hurdle × minutes ÷ 60). -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator · Reselling</p>
+    <h1>Is this flip worth your time?</h1>
+    <p class="sub">Profit, return on what you paid, and the number that actually decides it once your week is
+      full: <em>profit per hour</em> — with the most you can pay and a buy-or-walk call.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+
+  <section>
+    <h2><span class="n">The calculator</span> Profit per hour, and the most you can pay</h2>
+    <p>Try the two items from the book first:
+      <button class="preset" type="button" data-p="2,14">The $2 gadget that sells for $14</button>
+      <button class="preset" type="button" data-p="14,48">The $14 scale that sells for $48</button></p>
+    <div class="calc">
+      <div>
+        <div class="field"><label for="comp">What it sells for <span class="u">(median of recent solds, $)</span></label>
+          <input id="comp" type="number" inputmode="decimal" value="48" min="0" step="0.01"></div>
+        <div class="field"><label for="cost">What it costs you to buy <span class="u">($)</span></label>
+          <input id="cost" type="number" inputmode="decimal" value="14" min="0" step="0.01"></div>
+        <div class="field"><label for="rate">Platform planning rate <span class="u">(%)</span></label>
+          <input id="rate" type="number" inputmode="decimal" value="15" min="0" max="60" step="0.1">
+          <p class="hint">eBay: plan on 15% — its 13.6% is charged on the buyer's sales tax too.</p></div>
+        <div class="field"><label for="pic">Per-item costs <span class="u">(postage + packing + returns allowance + per-order fee, $)</span></label>
+          <input id="pic" type="number" inputmode="decimal" value="8" min="0" step="0.01"></div>
+        <div class="field"><label for="min">Your minutes per item <span class="u">(sourcing to shipped)</span></label>
+          <input id="min" type="number" inputmode="decimal" value="48" min="1" step="1"></div>
+        <div class="field"><label for="hur">Your hurdle <span class="u">($ an hour every buy must pay)</span></label>
+          <input id="hur" type="number" inputmode="decimal" value="20" min="0" step="0.5"></div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>Your numbers</h3>
+        <div class="row"><span class="k">Profit on this item</span> <span class="v" id="oNet">—</span></div>
+        <div class="row"><span class="k">Sells for … × what you paid</span> <span class="v" id="oMult">—</span></div>
+        <div class="row"><span class="k">Profit per hour</span> <span class="v" id="oHr">—</span></div>
+        <div class="row"><span class="k">Most you can pay</span> <span class="v" id="oMax">—</span></div>
+        <div class="row"><span class="k">The call</span> <span class="v verdict" id="oCall">—</span></div>
+      </div>
+    </div>
+
+    <div class="viz">
+      <h3>Profit per hour, for this item's cost, at every selling price</h3>
+      <div id="chart"></div>
+      <p class="viz-hint">The line is what an hour pays at each selling price; the dashed line is your hurdle. The orange dot is this item. Hover the chart to read any point, or open the table under it for every value.</p>
+    </div>
+
+    <noscript>
+      <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The maths: <em>profit = sells for × (1 −
+        planning rate) − per-item costs − what you paid</em>; <em>profit per hour = profit ÷ (minutes ÷ 60)</em>;
+        <em>most you can pay = sells for × (1 − planning rate) − per-item costs − hurdle × minutes ÷ 60</em>; buy only
+        if the price is at or under that, otherwise walk.</p>
+    </noscript>
+    <p class="cta">A hurdle that prices your hour, written on the card you carry, is the method in
+      <a href="../../reselling/#advanced"><em>Reselling — Advanced</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">How to read it</span> A high return on what you paid is not a high return on your time</h2>
+    <p>The usual buying rule is a multiple: buy it if it sells for three, five, seven times what you paid. It's quick
+      and it protects beginners from overpaying. But a cheap thing still has to be cleaned, photographed, listed,
+      answered about and posted — nearly the same minutes as a dear one. Once your week is full, those minutes are
+      the expensive part.</p>
+    <h3>A worked example</h3>
+    <p>The $2 gadget that sells for $14 is a <b>7×</b> buy. After a 15% planning rate and $8 of per-item costs it
+      leaves about <b>$1.90</b> — at 48 minutes, roughly <b>$2.38 an hour</b>. The $14 scale that sells for $48 is
+      only about <b>3.4×</b>, and leaves about <b>$18.80</b> — roughly <b>$23.50 an hour</b>. With a $20 hurdle, the
+      most you could pay for the scale is $40.80 − $8 − $16 = <b>$16.80</b>, so at $14 it's a buy; nothing you could
+      pay for the gadget would clear it.</p>
+    <h3>Common questions</h3>
+    <h4>Where do my minutes per item come from?</h4>
+    <p>From a one-week time study: every block of reselling time, written down, split across the items it served.
+      An honest average beats a guess — guesses are almost always too low.</p>
+    <h4>What should my hurdle be?</h4>
+    <p>A figure between what your hours earn now and what your best kind of item earns, written down with a date —
+      and raised only on a date, with evidence, never lowered in the aisle.</p>
+    <h4>Is this advice?</h4>
+    <p>No — arithmetic on numbers you enter. Your results depend on your buyers, your costs and the platform's
+      current fees.</p>
+  </section>
+
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+
+  <section>
+    <div class="shelf">
+      <b>This calculator comes from a book.</b>
+      <p>It's the buy hurdle from <em>Reselling — Advanced</em>, where a reseller whose week is full learns to grow by
+        changing the economics instead of adding hours.</p>
+      <a href="../../reselling/">See the Reselling series →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+    <a href="../../resources/reselling/">Reselling downloads</a> ·
+    <a href="../../privacy/">Privacy</a>
+  </div>
+</footer>
+
+<script src="../../assets/viz.js?v=20261011k"></script>
+<script>
+(function () {
+  var V = window.RVIZ, ids = ["comp", "cost", "rate", "pic", "min", "hur"], el = {};
+  ids.forEach(function (i) { el[i] = document.getElementById(i); });
+  function num(i) { var v = parseFloat(el[i].value); return isNaN(v) || v < 0 ? NaN : v; }
+  function calc(comp, cost, ratePct, pic, min, hur) {
+    var r = ratePct / 100, net = comp * (1 - r) - pic - cost, hrs = min / 60;
+    var maxBuy = comp * (1 - r) - pic - hur * hrs;
+    return { net: net, perHour: net / hrs, mult: cost > 0 ? comp / cost : NaN, maxBuy: maxBuy,
+      call: maxBuy < 0 ? "WALK — fails at any price" : (cost <= maxBuy ? "BUY" : "WALK") };
+  }
+  window.RESELL_HOUR = calc;
+  function run() {
+    var v = ids.map(num), set = function (id, t) { document.getElementById(id).textContent = t; };
+    if (v.some(isNaN) || v[4] <= 0 || v[2] >= 100) {
+      ["oNet", "oMult", "oHr", "oMax"].forEach(function (k) { set(k, "—"); });
+      set("oCall", "enter every box"); return;
+    }
+    var o = calc.apply(null, v);
+    set("oNet", V.money(o.net));
+    set("oMult", isFinite(o.mult) ? o.mult.toFixed(1) + "×" : "—");
+    set("oHr", V.money(o.perHour));
+    set("oMax", o.maxBuy < 0 ? "nothing" : V.money(o.maxBuy));
+    set("oCall", o.call);
+    var xs = [], ys = [], lo = 10, hi = Math.max(100, Math.ceil(v[0] / 10) * 10 + 20);
+    for (var c = lo; c <= hi; c += 5) { xs.push(c); ys.push(calc(c, v[1], v[2], v[3], v[4], v[5]).perHour); }
+    var idx = Math.round((v[0] - lo) / 5);
+    V.lines(document.getElementById("chart"), xs.map(function (x) { return "$" + x; }),
+      [{ name: "Profit per hour", color: V.C.s1, values: ys, marker: 2.5 }],
+      { title: "Profit per hour at each selling price, for this item's cost", xname: "Sells for ",
+        threshold: { value: v[5], label: "your hurdle " + V.money0(v[5]) + "/h" },
+        marker: idx >= 0 && idx < xs.length ? { i: Math.max(0, Math.min(xs.length - 1, (v[0] - lo) / 5)), v: o.perHour, label: "this item" } : null,
+        legend: [{ name: "Profit per hour", color: V.C.s1 }, { name: "Your hurdle", color: V.C.mut, dash: true },
+                 { name: "This item", color: V.C.s2 }] });
+    V.table(document.getElementById("chart"), "Profit per hour at each selling price",
+      ["Sells for", "Profit per hour"], xs.map(function (x, i) { return ["$" + x, V.money(ys[i])]; }));
+  }
+  ids.forEach(function (i) { el[i].addEventListener("input", run); });
+  Array.prototype.forEach.call(document.querySelectorAll(".preset"), function (b) {
+    b.addEventListener("click", function () {
+      var p = b.getAttribute("data-p").split(","); el.cost.value = p[0]; el.comp.value = p[1]; run();
+    });
+  });
+  window.addEventListener("resize", run);
+  run();
+})();
+</script>
+</body>
+</html>

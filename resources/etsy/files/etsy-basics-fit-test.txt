@@ -1,0 +1,26 @@
+ETSY - FIT TEST: can the platform carry this?  (Chapter 4)
+
+Tests Etsy-imposed constraints only - NOT whether the product is good,
+makeable, profitable or wanted. Ten minutes, no spend. Force the decision.
+
+  Product: _____________________________________________
+
+  1  Permitted   (Chapter 3 permit record = PROCEED)?        Y / N
+  2  Worth it    (Chapter 2 ad-driven take-home justifies
+                  my time per sale)?                          Y / N
+  3  Deliverable (digital, or postable on time, sustainably)? Y / N
+  4  Thumbnail-legible (reads well as a small square photo)?  Y / N
+  5  Representable (an honest Etsy category exists for it)?   Y / N
+
+  Fatal if NO on 1 or 2.  A NO on 3 / 4 / 5 = FIX.
+
+  DECISION:   KILL   /   FIX   /   PROCEED
+  If FIX, the one change + re-score: ___________________________
+
+  I will not begin shop setup for this product unless this says PROCEED.
+  Signed / date: __________
+
+----------------------------------------------------------------------
+From Etsy - Basics. The full method is in the book; the free worksheets
+and the lane shelf: eports.global/resources
+ePORTS — your ecom source. eports.global.

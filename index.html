@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ePORTS — business advice with a date on it</title>
+<meta name="description" content="Short, honest books about making money online. Every fee, rate and platform rule carries the date it was last checked and a link to the platform's own page, so you can verify it rather than trust it.">
+<link rel="canonical" href="./">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="assets/tokens.css">
+
+<!--
+  ============================================================================
+  ePORTS — homepage
+  ============================================================================
+  BUILT ON THE DESIGN SYSTEM. Tokens come from assets/tokens.css, which mirrors
+  the Claude Design project. Type is self-hosted (assets/fonts/) — never the
+  Google CDN, see the note in assets/fonts/fonts.css.
+
+  ----------------------------------------------------------------------------
+  THE PERSUASION BRIEF — every choice below is traceable to
+  docs/SALES_PSYCHOLOGY_PRINCIPLES.md. Do not "improve" these without reading it.
+  ----------------------------------------------------------------------------
+  * CATEGORY DECIDES THE LEAD LEVER (§1.1). This is CONTENT, so the lead is
+    COMMITMENT, not social proof. Reciprocity carries the free material.
+  * ⛔ NO SCARCITY ANYWHERE. It is the weakest lever at every age band (§1).
+    No countdowns, no "limited", no "only N left", no fake launch windows.
+  * ⛔ AUTHORITY NEVER OPENS. Weakest lever for a Western audience and fifth of
+    six for men. The corpus numbers (2,045 sources, 7M words) are real and
+    they are deliberately placed LATE, as support, never as the hook.
+  * ⛔ NO SOCIAL PROOF, because there is none yet. No reviews, no sales, no
+    "trusted by". Inventing it is out of the question and borrowing it
+    ("as seen in") would be the same lie in a nicer coat.
+  * ABOVE THE FOLD ANSWERS "am I in the right place?" — NOT "buy now" (§3.3).
+  * THE SMALL YES is the three questions. Free, portable, no email. Someone
+    who adopts the habit has committed to the frame the books are written in;
+    that is commitment doing real work rather than a checkbox.
+  * GIVE FIRST (§9). The resources page is the primary call to action — free,
+    ungated, genuinely useful. Reciprocity ranked first for every gender, age
+    band and personality type in the evidence, and it is the least used.
+  * ONE DOMINANT ELEMENT PER SCREEN. The accent (#52D6C0) appears ONCE — on
+    the primary call to action. Adding emphasis to more elements makes viewing
+    more scattered, not better directed.
+  * F-PATTERN (§3.1). Headline top-left, primary action on the top sweep,
+    secondary actions down the left edge.
+  * PRICE ANCHORING (§4): three tiers visible, not one, with the bundle shown
+    against the sum of its parts.
+  * BUYING STATE (§2.5): a homepage visitor is EXPLORING, not ready. The job
+    is to be clear and findable, not to close. Checkout optimisation would be
+    solving the wrong problem.
+
+  ----------------------------------------------------------------------------
+  ⚠️⚠️ HONESTY CONSTRAINTS — THE STOREFRONT DOES NOT EXIST YET
+  ----------------------------------------------------------------------------
+  Whop is not open. Nothing can actually be bought. So:
+    - Prices are shown (anchoring works before launch) but NOTHING claims to
+      be purchasable, and there is no dead "Buy" button.
+    - Availability is stated plainly. No "coming soon" theatre, no waitlist
+      framing that implies demand that does not exist.
+    - ⚠️ When Whop opens, replace the availability lines and add real links.
+      Do NOT add urgency at that point either. Same rules apply.
+
+  ⚠️ The email form is INERT — no action attribute, same as the resources
+  page. Wire it to the list provider or delete it. Do not ship it half-wired.
+
+  ----------------------------------------------------------------------------
+  ACCESSIBILITY — hard constraint, not a nicety
+  ----------------------------------------------------------------------------
+  WCAG 2.1 AA. Verified with scripts/check_contrast.py. Geometry verified with
+  scripts/check_layout.py at 1280x900 and 375x812. Re-run both after any edit:
+      python scripts/review.py
+  ============================================================================
+-->
+
+<style>
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--font-body);font-size:18px;line-height:var(--leading-prose);
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--measure-wrap);margin:0 auto;padding:0 var(--space-gutter)}
+a{color:var(--link);text-underline-offset:.18em}
+a:focus-visible,button:focus-visible,input:focus-visible{
+  outline:3px solid var(--accent);outline-offset:3px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);
+  white-space:nowrap}
+
+/* ---------- hero: the only dark band above the fold ---------- */
+.hero{background:var(--deep);color:var(--cream);padding:var(--space-4xl) 0 var(--space-3xl)}
+/* ⚠️⚠️ NO text-transform HERE. This element carries the wordmark.
+   ★ THE MARK IS "ePORTS" — lowercase e, uppercase PORTS. Confirmed 4 Aug 2026.
+   text-transform:uppercase renders it "EPORTS", which loses the lowercase e
+   and reads as "E-PORTS" — a different word, which people then type into a
+   search box. Traffic routes on recall, so the rendered form has to match what
+   people will type. Caught automatically by the BRAND CASING check in
+   scripts/check_layout.py. If you want an uppercase eyebrow on some future
+   page, put a DIFFERENT string in it — not the name. */
+.hero .eyebrow{font-family:var(--font-sans);font-size:.95rem;
+  font-weight:var(--weight-bold);letter-spacing:.02em;color:var(--cream);
+  margin:0 0 var(--space-lg)}
+.hero .eyebrow b{font-weight:var(--weight-light);color:var(--steel)}
+.hero h1{font-family:var(--font-sans);font-weight:var(--weight-black);
+  letter-spacing:var(--track-hero);font-size:clamp(2.1rem,6vw,3.4rem);
+  line-height:var(--leading-hero);margin:0 0 var(--space-lg);
+  text-wrap:balance;max-width:17ch}
+.hero .sub{color:var(--mist);font-size:clamp(1.05rem,2.4vw,1.28rem);
+  line-height:1.5;margin:0 0 var(--space-2xl);max-width:44ch}
+.hero .sub em{font-style:italic;color:var(--cream)}
+
+/* THE one saturated element on this page */
+.cta{display:inline-flex;align-items:center;gap:.55rem;
+  font-family:var(--font-sans);font-weight:var(--weight-bold);font-size:1.02rem;
+  background:var(--accent);color:var(--deep);text-decoration:none;
+  padding:.85rem 1.5rem;border-radius:4px}
+.cta:hover{background:#6FE3CF}
+.cta span{font-weight:var(--weight-regular);opacity:.75}
+.hero .after{font-family:var(--font-sans);font-size:.88rem;color:var(--steel);
+  margin:var(--space-md) 0 0;max-width:46ch}
+
+/* ---------- structure ---------- */
+section{padding:var(--space-section) 0;border-top:1px solid var(--rule)}
+h2{font-family:var(--font-sans);font-weight:var(--weight-bold);
+  letter-spacing:var(--track-h2);font-size:clamp(1.5rem,3.6vw,2rem);
+  line-height:var(--leading-heading);margin:0 0 var(--space-xs);
+  color:var(--deep);text-wrap:balance}
+h2 .n{display:block;font-size:.72rem;font-weight:var(--weight-medium);
+  letter-spacing:.2em;text-transform:uppercase;color:var(--mut);
+  margin-bottom:var(--space-sm)}
+h3{font-family:var(--font-sans);font-size:1.05rem;font-weight:var(--weight-bold);
+  margin:var(--space-xl) 0 var(--space-xs);color:var(--deep)}
+p{margin:0 0 var(--space-md);max-width:64ch}
+.lede{color:var(--mut);margin:0 0 var(--space-xl);max-width:60ch}
+.note{font-family:var(--font-sans);font-size:.88rem;line-height:var(--leading-ui);
+  color:var(--mut);max-width:66ch}
+
+/* ---------- the three questions ---------- */
+.card{background:var(--white);border:1px solid var(--rule);border-radius:4px;
+  padding:1.8rem 1.7rem}
+.card.dark{background:var(--deep);border-color:var(--deep);color:var(--cream)}
+.q{list-style:none;counter-reset:q;margin:0;padding:0}
+.q li{counter-increment:q;position:relative;padding-left:2.6rem;margin:0 0 var(--space-md)}
+.q li:last-child{margin-bottom:0}
+.q li::before{content:counter(q);position:absolute;left:0;top:.05rem;
+  font-family:var(--font-sans);font-weight:var(--weight-black);font-size:1.5rem;
+  line-height:1;color:var(--steel)}
+.q strong{display:block;font-family:var(--font-sans);font-size:1rem;
+  line-height:var(--leading-snug)}
+.q span{display:block;font-size:.94rem;color:var(--mist);margin-top:.2rem}
+
+/* ---------- the series ---------- */
+.books{list-style:none;margin:0;padding:0;display:grid;gap:var(--space-md)}
+.books li{background:var(--white);border:1px solid var(--rule);border-radius:4px;
+  padding:1.3rem 1.4rem;display:grid;grid-template-columns:1fr auto;
+  gap:.3rem 1.4rem;align-items:baseline}
+.books .t{font-family:var(--font-sans);font-weight:var(--weight-bold);
+  font-size:1.02rem;color:var(--deep);line-height:var(--leading-snug)}
+.books .p{font-family:var(--font-sans);font-weight:var(--weight-bold);
+  font-size:1.02rem;color:var(--ink);white-space:nowrap;
+  font-variant-numeric:tabular-nums}
+.books .d{grid-column:1/-1;font-size:.95rem;color:var(--mut);max-width:58ch;
+  margin:.15rem 0 0}
+.books .s{grid-column:1/-1;font-family:var(--font-sans);font-size:.8rem;
+  font-weight:var(--weight-bold);letter-spacing:.08em;text-transform:uppercase;
+  color:var(--mut);margin:.5rem 0 0}
+.books li.bundle{background:var(--deep);border-color:var(--deep)}
+.books li.bundle .t,.books li.bundle .p{color:var(--cream)}
+.books li.bundle .d{color:var(--mist)}
+.books li.bundle .s{color:var(--steel)}
+
+/* ---------- method ---------- */
+.method{list-style:none;margin:0;padding:0}
+.method li{padding:var(--space-md) 0;border-top:1px solid var(--rule);
+  display:grid;grid-template-columns:11rem 1fr;gap:.3rem 1.6rem;align-items:start}
+.method li:last-child{border-bottom:1px solid var(--rule)}
+.method dt,.method .k{font-family:var(--font-sans);font-weight:var(--weight-bold);
+  font-size:.98rem;color:var(--deep);line-height:var(--leading-snug)}
+.method .v{margin:0;font-size:.97rem}
+
+/* ---------- email, last on purpose ---------- */
+.signup{background:var(--deep);color:var(--cream);padding:var(--space-3xl) 0;
+  border-top:0}
+.signup h2,.signup h2 .n{color:var(--cream)}
+.signup h2 .n{color:var(--steel)}
+.signup .lede{color:var(--mist)}
+.signup form{display:flex;flex-wrap:wrap;gap:var(--space-sm);max-width:34rem;
+  margin:var(--space-lg) 0 0}
+.signup input[type=email]{flex:1 1 16rem;font-family:var(--font-sans);font-size:1rem;
+  padding:.8rem .9rem;border:1px solid var(--slate);border-radius:3px;
+  background:var(--deep-sunk);color:var(--cream)}
+.signup input[type=email]::placeholder{color:var(--steel)}
+.signup button{font-family:var(--font-sans);font-weight:var(--weight-bold);
+  font-size:1rem;padding:.8rem 1.5rem;border:0;border-radius:3px;
+  background:var(--cream);color:var(--deep);cursor:pointer}
+.signup button:hover{background:#fff}
+.signup .small{font-family:var(--font-sans);font-size:.84rem;color:var(--steel);
+  margin:var(--space-md) 0 0;max-width:52ch}
+
+footer{padding:2.6rem 0 3.4rem;font-family:var(--font-sans);font-size:.86rem;
+  color:var(--mut)}
+footer .imprint{font-size:1.15rem;font-weight:var(--weight-bold);color:var(--deep);
+  letter-spacing:.02em;margin:0 0 var(--space-xs)}
+footer .imprint b{font-weight:var(--weight-light);color:var(--mut)}
+footer p{max-width:62ch;margin:0 0 var(--space-xs)}
+
+@media (max-width:640px){
+  body{font-size:17px}
+  .hero{padding:3.2rem 0 2.6rem}
+  .method li{grid-template-columns:1fr;gap:.2rem}
+  .books li{grid-template-columns:1fr}
+}
+@media print{
+  .signup form{display:none}
+  a[href^="http"]::after{content:" (" attr(href) ")";font-size:.8em;color:#444}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">ePORTS <b>&middot; publisher</b></p>
+    <h1>Business advice with a date on it.</h1>
+    <!-- ⚠️ Was one 38-word sentence with two em-dashes doing different jobs —
+         the first opened a defining clause, the second pivoted to a
+         consequence. An aside inside an aside. Split into three on 4 Aug 2026.
+         If you edit this, keep it to one idea per sentence. -->
+    <p class="sub">Short books about making money online. Every fee and every platform rule
+      in them carries <em>the date we last checked it</em>, plus a link to the page we
+      checked it on. So you never have to take our word for anything.</p>
+    <!-- ⚠️ The label must describe what is actually THERE. It previously read
+         "Read what changed this quarter", and the page it points at has ten
+         rows of which SIX say "Still current" and the three real changes are
+         dated June 2025, January 2026 and spring 2026. It is a standing
+         reference re-checked quarterly, not a quarterly changelog — and a
+         promise the destination does not keep is the exact failure this whole
+         business is about. If the page changes, change this line with it.
+         ⚠️ "free" was also removed from the button: nothing here was ever
+         presented as costing money, so pricing it planted the idea that it
+         might. The reassurance belongs in the line underneath. -->
+    <a class="cta" href="resources">See the current fees and rules</a>
+    <p class="after">No cost, no email, no sign-up. It&rsquo;s the actual page we keep
+      current, not a sample chapter with the useful part removed.</p>
+  </div>
+</header>
+
+<main>
+
+<!-- ===================== THE HABIT — the small yes, moved up =============
+     Order changed 4 Aug 2026. The give-first block used to sit third, behind
+     the problem statement. Reciprocity works better unearned than argued for,
+     and the hero already establishes the problem well enough for this to land
+     cold. ⚠️ Keep it above the books. If it ever drops below them the page
+     starts asking before it gives, which is the pattern it exists to avoid. -->
+<section id="questions">
+  <div class="wrap">
+    <h2><span class="n">Take this whether you buy anything or not</span>Three questions that
+      work on any business advice</h2>
+    <p class="lede">Including ours. They appear in every book in the series because the
+      facts in any guide expire and this does not. Print it, keep it, use it on the next
+      video you watch.</p>
+
+    <div class="card dark">
+      <ol class="q">
+        <li><strong>Who gets paid if I follow this and it does not work?</strong>
+          <span>Not who is right &mdash; who is paid. It is a faster question and it has a
+          checkable answer.</span></li>
+        <li><strong>What is the date on this specific claim?</strong>
+          <span>Not the date on the video. The date on the claim inside it. A 2026 upload
+          repeating a 2022 fee is a 2022 claim.</span></li>
+        <li><strong>Can I reach the platform&rsquo;s own page in two clicks?</strong>
+          <span>If nobody will show you where the number came from, that is the
+          answer.</span></li>
+      </ol>
+    </div>
+
+    <p class="note">Failing all three doesn&rsquo;t make a claim wrong. It makes it
+      unverified, which isn&rsquo;t the same thing &mdash; treat it as a rumour until
+      you&rsquo;ve checked it yourself.</p>
+  </div>
+</section>
+
+<!-- ===================== WHY ===================== -->
+<section id="why">
+  <div class="wrap">
+    <h2><span class="n">Why this exists</span>Fees moved. Rules changed. Nobody updated the
+      advice.</h2>
+    <p class="lede">Most advice about selling online was true when somebody wrote it. Then
+      Etsy quietly redefined what &ldquo;made by seller&rdquo; means, and a whole category of
+      template businesses that had been perfectly fine the week before stopped qualifying
+      overnight. Amazon reportedly cut affiliate commissions by up to half. Google started answering the question
+      itself, so the ranking you spent months earning stopped producing a visit.</p>
+    <p>And none of it gets corrected. A video from 2022 still earns in 2026, whoever made it
+      has long since moved on to something else, and there&rsquo;s nobody whose job it is to
+      go back and add a line saying the fee went up. So the advice with the most confidence
+      behind it is often the oldest advice on the internet &mdash; and the person carrying
+      the risk of acting on it is you, not them.</p>
+    <p>That&rsquo;s the whole reason this exists.</p>
+  </div>
+</section>
+
+<!-- ===================== THE SERIES ===================== -->
+<section id="books">
+  <div class="wrap">
+    <h2><span class="n">The series &middot; What&rsquo;s actually true</span>Read only the
+      part you need.</h2>
+    <!-- ⚠️ THE CATALOGUE IS A GRID, NOT A LADDER. Clarified 2026-08-05.
+         Topic splits the LANES. Level splits WITHIN a lane. Every sellable
+         topic gets Basics / Intermediate / Advanced, each sold alone or as a
+         lane bundle. The KDP one-offs sit outside the grid — standalone discovery
+         and the only one in KDP Select.
+         ⚠️ Do NOT reintroduce "book 1, book 2, book 3" numbering across topics.
+         That was the old model and it implied a reading order that does not
+         exist. See _HANDOFF.md § DECIDED. -->
+    <p class="lede">Most business books make you work through three hundred pages to reach
+      the forty that apply to you. These don&rsquo;t. Each one covers a single subject at a
+      single level, so you start where your actual problem is &mdash; and you never have to
+      read one to understand another.</p>
+
+    <ul class="books">
+      <li>
+        <span class="t">Start here &middot; Before You Sell Anything Online</span>
+        <p class="d">The five ways to make money in e-commerce and what everyone gets wrong
+          about each one. Written to help you rule four of them out, which is the cheapest
+          thing we can do for you.</p>
+        <p class="s">Finished &middot; not yet on sale</p>
+      </li>
+      <li>
+        <span class="t">Dropshipping &middot; Basics</span>
+        <p class="d">One product, one supplier, one traffic source, one sale. Including the
+          single point in the sequence where most people&rsquo;s money quietly disappears.</p>
+        <p class="s">Finished &middot; not yet on sale</p>
+      </li>
+      <li>
+        <span class="t">Dropshipping &middot; Intermediate and Advanced</span>
+        <p class="d">The same subject, further in. Each one stands on its own &mdash; we
+          assume you know the earlier material, never that you bought it.</p>
+        <p class="s">Finished &middot; not yet on sale</p>
+      </li>
+      <li class="bundle">
+        <span class="t">A whole subject, all three levels</span>
+        <p class="d">Basics, intermediate and advanced together, for less than buying the three
+          separately. The discount is for buying once instead of three times, which is the
+          only thing it is for.</p>
+        <p class="s">Every subject is complete &middot; not yet on sale</p>
+      </li>
+    </ul>
+
+    <h3>Eight subjects, the same three levels</h3>
+    <p>Dropshipping, digital products, print on demand, Etsy, reselling, TikTok Shop affiliate,
+      a one-person AI business, and AI for a business you already run &mdash; each is its own set
+      of three, priced the same way. Subjects are independent &mdash; nothing about dropshipping is
+      required to start print on demand, and you can enter any subject at any level.</p>
+
+    <p class="note">Nothing is on sale yet. When the shop opens, the prices will be right here
+      before you&rsquo;re asked for anything &mdash; and there won&rsquo;t be a countdown.</p>
+  </div>
+</section>
+
+<!-- ===================== METHOD — authority, placed late on purpose ===== -->
+<section id="method">
+  <div class="wrap">
+    <h2><span class="n">How they&rsquo;re made</span>Don&rsquo;t take our word for it.</h2>
+    <p class="lede">This bit sits near the bottom on purpose. Credentials are the weakest
+      reason to believe anything, and ours are worth roughly as much as the checks you can
+      run yourself &mdash; which is rather the point.</p>
+
+    <ul class="method">
+      <li>
+        <div class="k">Everything carries a date</div>
+        <p class="v">Every number has a date beside it. Checked last week and you&rsquo;ll
+          see that. Checked eight months ago and you&rsquo;ll see that too, which means you
+          can weigh it properly instead of assuming it still holds.</p>
+      </li>
+      <li>
+        <div class="k">Sources are reachable</div>
+        <p class="v">Claims link to the platform&rsquo;s own page &mdash; the Etsy fees
+          policy, the Amazon Associates agreement, the TikTok Shop seller centre. Not to
+          somebody&rsquo;s summary of it, and not to us.</p>
+      </li>
+      <li>
+        <div class="k">Corrections get published</div>
+        <p class="v">When something changes we don&rsquo;t quietly swap the number and hope
+          nobody noticed. The row says what changed and when, on the
+          <a href="resources">resources page</a> &mdash; because a printed book can&rsquo;t
+          update itself and pretending otherwise would be the same trick everyone else
+          pulls.</p>
+      </li>
+      <li>
+        <div class="k">Built on a large corpus</div>
+        <p class="v">Twenty-four subject areas, 2,045 sources, about seven million words of
+          primary material, filtered down to what still holds. ⚠️ Volume isn&rsquo;t
+          accuracy, though &mdash; which is exactly why the dates and the links matter more
+          than the size does.</p>
+      </li>
+      <li>
+        <div class="k">Tested on readers</div>
+        <p class="v">Drafts get measured on whether people actually finish them and whether
+          they do anything afterwards, not on whether the prose sounds nice. ⚠️ The first
+          round used simulated readers rather than real ones, and that caveat stands until
+          real ones replace it.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== EMAIL — last, ungated, no urgency ============== -->
+<aside class="signup" id="updates">
+  <div class="wrap">
+    <h2><span class="n">Optional</span>The advice keeps changing. The books should too.</h2>
+    <p class="lede">Coming soon: one message when a fee, rule or policy on the resources page actually
+      moves. One when a book&rsquo;s genuinely ready. Nothing in between, because there
+      isn&rsquo;t anything else worth sending you.</p>
+    <p class="small">Email updates aren&rsquo;t switched on yet. Until they are, every change is dated on the <a href="resources/">resources page</a> &mdash; check back whenever you like.</p>
+  </div>
+</aside>
+
+<footer>
+  <div class="wrap">
+    <!-- The horizontal lockup. Middle dot, not a pipe — · is already the
+         system separator (eyebrows, series lines, option lists), and a
+         second divider doing the same job makes a system feel assembled
+         rather than designed. Stacked form is on the book title page,
+         where there is vertical room; horizontal is for one-line places
+         like this. NEVER on the cover — a URL is illegible at 100px. -->
+    <p class="imprint">ePORTS <b>&middot; eports.global</b></p>
+    <p><a href="resources">Resources &mdash; the current fees, rules and dates</a></p>
+    <p>Nothing here is legal, tax or financial advice. Fees and policies are quoted with the
+      date they were last checked and a link to the source, so that you can verify them
+      rather than trust them.</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+THE OPERATING BRAIN BUILDER  —  the mind of the business
+From "The One-Person AI Business — Intermediate", Chapter 2
+================================================================
+
+Basics gave you a half-page STARTER brain — enough to make AI sound like you.
+This turns it into the real thing: the store of your brand, offers, and — the
+load-bearing new part — the DECISION RULES that let AI act as YOUR company, not
+a generic assistant. An assistant that sounds like you is nice. One that
+DECIDES like you is what you're actually trying to delegate.
+
+⚠️ Never put a secret in it. No passwords, no customer data, no payment details.
+The operating brain holds how your business THINKS, never the keys to it.
+
+
+PART 1 · THE BUSINESS, PRECISELY
+----------------------------------------------------------------
+  Who you serve, the exact problem, the transformation — in the words THEY use.
+  The adjacent things you deliberately DON'T do:
+  ______________________________________________________________
+  ______________________________________________________________
+
+PART 2 · THE OFFERS  (AI will quote these — get them exactly right)
+----------------------------------------------------------------
+  Offer          What it's for        Price     Includes / does NOT include
+  -----------    ------------------    ------    ---------------------------
+  ____________   __________________    £_____    ___________________________
+  ____________   __________________    £_____    ___________________________
+
+PART 3 · THE VOICE, WITH EXAMPLES  (AI matches examples, not adjectives)
+----------------------------------------------------------------
+  A paragraph you'd be PROUD of (paste a real one):
+  ______________________________________________________________
+  A paragraph in the WRONG voice, labelled "NEVER THIS":
+  ______________________________________________________________
+
+PART 4 · THE DECISION RULES  (the actual product of this chapter)
+----------------------------------------------------------------
+  The things you decide without thinking, written as if-then rules AI can apply.
+  The test of a good rule: it removes a judgement call from your day. "Be
+  helpful" removes nothing. Write at least TEN, drawn from your chapter-1 log —
+  for the function you're about to hand off, every judgement call, as a rule.
+
+  [ ] IF __________________________ THEN __________________________
+  [ ] IF __________________________ THEN __________________________
+  [ ] IF __________________________ THEN __________________________
+  [ ] IF __________________________ THEN __________________________
+  [ ] IF __________________________ THEN __________________________
+  (keep going to ten — every rule is a decision you no longer have to be present for)
+
+PART 5 · THE HARD LINES  (guardrails that ride in every prompt)
+----------------------------------------------------------------
+  [ ] No fake urgency.   [ ] No claiming an endorsement we don't have.
+  [ ] Never state a fee or policy as fact without the dated source.
+  [ ] The money rule: AI may CHECK and PREPARE a rule-qualifying refund; a HUMAN
+      approves AND releases every actual movement of money.
+  [ ] ____________________________________________________________
+
+
+ASK YOUR WRITING ENGINE  (the test — and the loop that IS the skill)
+----------------------------------------------------------------
+  Give it the whole brain and one real piece of the function's work. Read what
+  comes back. Every place it went wrong is a MISSING RULE — add it, run again.
+  When it gets a piece right BECAUSE a rule told it how, the brain is working.
+
+  ⚠️ You won't get every rule right, and you don't need to. The brain is a
+  LIVING document: every call you disagree with, all book long, the fix is not
+  to scold the AI — it's to add or sharpen the rule that would have prevented
+  it. That habit, more than any single rule, is what you're building.
+
+
+THE FORCING COMMITMENT  (dated)
+----------------------------------------------------------------
+  "Operating brain built, ___ decision rules for the ______ function. It
+   produced acceptable work on ______ (date)."
+
+================================================================
+  Yours to keep — free, and no strings attached.
+
+  One tool from the ePORTS One-Person AI Business series. This one is from
+  Intermediate — build the operating system that lets one person run the whole
+  business to a standard you set.
+
+  The full shelf, whenever you're ready:  eports.global/one-person-ai-business
+================================================================
+
+ePORTS — your ecom source. eports.global.

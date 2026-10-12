@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Print on demand profit calculator — what a sale really leaves you | ePORTS</title>
+<meta name="description" content="Free print-on-demand profit calculator: enter your item price, base cost, shipping and platform fee to see exactly what reaches you per sale — the contribution — after everyone takes their cut. Shows why charging shipping isn't free money.">
+<link rel="canonical" href="./">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css?v=20261011h">
+<!-- /tools page: live calculator + real editorial content so it is genuinely
+     useful and ranks. Ads may sit on /tools pages LATER (never on /resources)
+     once the site qualifies and a privacy/consent setup exists. Ad slots marked
+     as comments, empty now. -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator</p>
+    <h1>Print on demand profit calculator</h1>
+    <p class="sub">The sticker price is not what you keep. Put your numbers in and see the
+      <em>honest</em> figure — what actually reaches you per sale.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+
+  <section>
+    <h2><span class="n">The calculator</span> What actually reaches you</h2>
+    <div class="calc">
+      <div>
+        <div class="field">
+          <label for="P">Item price <span class="u">(£)</span></label>
+          <input id="P" type="number" inputmode="decimal" value="22" min="0" step="0.01">
+          <p class="hint">what the buyer pays for the item</p>
+        </div>
+        <div class="field">
+          <label for="S">Shipping you charge the buyer <span class="u">(£)</span></label>
+          <input id="S" type="number" inputmode="decimal" value="0" min="0" step="0.01">
+          <p class="hint">0 if you offer "free" shipping and absorb it</p>
+        </div>
+        <div class="field">
+          <label for="B">Base cost <span class="u">(£)</span></label>
+          <input id="B" type="number" inputmode="decimal" value="9" min="0" step="0.01">
+          <p class="hint">the blank + printing your provider charges you</p>
+        </div>
+        <div class="field">
+          <label for="Sp">Shipping you pay the provider <span class="u">(£)</span></label>
+          <input id="Sp" type="number" inputmode="decimal" value="4.80" min="0" step="0.01">
+        </div>
+        <div class="field">
+          <label for="f">Platform fee <span class="u">(%)</span></label>
+          <input id="f" type="number" inputmode="decimal" value="10" min="0" max="99" step="0.1">
+          <p class="hint">all-in cut — Etsy ~10% (6.5% + processing), nearer 12–13% UK</p>
+        </div>
+        <div class="field">
+          <label for="R">Refund / misprint buffer <span class="u">(£)</span></label>
+          <input id="R" type="number" inputmode="decimal" value="0.50" min="0" step="0.01">
+        </div>
+        <div class="field">
+          <label for="Fx">Fixed fee per sale <span class="u">(£)</span></label>
+          <input id="Fx" type="number" inputmode="decimal" value="0" min="0" step="0.01">
+          <p class="hint">flat per-sale charges — Etsy's ~£0.16 listing fee (it renews on each sale) plus the fixed part of card processing (~£0.20 UK); 0 if none</p>
+        </div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>What reaches you</h3>
+        <div class="row"><span class="k">Buyer pays you (total)</span> <span class="v" id="oBT">—</span></div>
+        <div class="row"><span class="k">Platform takes</span> <span class="v" id="oFee">—</span></div>
+        <div class="row"><span class="k">Contribution per sale</span> <span class="v" id="oC">—</span></div>
+      </div>
+    </div>
+
+        <div class="viz">
+      <h3>Where the buyer's money goes</h3>
+      <div id="chart" aria-describedby="chart-note"></div>
+      <p class="viz-hint" id="chart-note">Everything the buyer pays, split into your contribution, the platform's fee, the base cost, the provider's shipping and your refund buffer (fixed fees join the platform fee). Hover a segment for its figure, or open the table under the chart for every number.</p>
+      <div id="chart-table"></div>
+    </div>
+
+    <noscript>
+      <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The maths is simple:
+      <em>contribution = (item price + charged shipping) − base cost − shipping you pay − buffer −
+      fixed fee − fee</em>, where <em>fee = fee% × (item + charged shipping)</em>. Or
+      <a href="../../resources/print-on-demand/files/pod-basics-contribution.xlsx">download the
+      spreadsheet</a> and type your numbers into it.</p>
+    </noscript>
+    <p class="cta">Know your real contribution before you list — it's the number the whole of
+      <a href="../../print-on-demand/#basics"><em>Print on Demand: Basics</em> →</a> runs on.</p>
+  </section>
+
+  <section>
+    <h2><span class="n">How to read it</span> Contribution is the number the business runs on</h2>
+    <p><b>Contribution</b> is what a sale actually leaves you once the printer, the shipping and the
+      platform have taken their share. It is not profit for the month — there is no rent or ad spend in
+      it — but it is the honest per-sale reward, and every later decision (how many you must sell, what
+      you can spend to find a buyer) runs on it.</p>
+    <p>⚠️ <b>Charging the buyer for shipping is not free money.</b> Notice what happens if you move
+      £4.80 from the item price into the shipping box: the buyer still pays the same total, and the
+      platform still takes its cut on that total — so your contribution barely moves. What actually
+      changes it is the total the buyer pays, or your costs.</p>
+
+    <h3>The formula, in full</h3>
+    <p><b>Contribution</b> = (item price + shipping you charge) − base cost − shipping you pay − refund
+      buffer − fixed fee − platform fee. The <b>platform fee</b> is a percentage of the <em>whole</em>
+      amount the buyer pays you (item + charged shipping), not just the item; the <b>fixed fee</b> is any
+      flat per-sale charge on top of it (Etsy's listing fee, plus the fixed part of payment processing).</p>
+
+    <h3>A worked example</h3>
+    <p>A £22 tee with "free" shipping: base cost £9, you pay £4.80 shipping, a 10% platform fee, and a
+      £0.50 buffer for the odd refund. The buyer pays £22, so the platform takes £2.20. What reaches
+      you is £22 − £9 − £4.80 − £0.50 − £2.20 = <b>£5.50</b> — about a quarter of the sticker price.
+      Add a flat fee — Etsy's ~£0.16 listing fee, say — and the same sale nets <b>£5.34</b>. That is the
+      shape of apparel print on demand, and it is why the price has to be set on purpose.</p>
+
+    <h3>Edge cases the calculator handles</h3>
+    <ul class="note" style="line-height:1.7">
+      <li><b>Free vs charged shipping at the same total.</b> £22 delivered and £17.20 + £4.80 shipping
+        give the same contribution — because the buyer's total, and the fee on it, are the same.</li>
+      <li><b>A blank or negative price</b> shows "—" rather than a nonsense figure.</li>
+      <li><b>Contribution can come out negative</b> — that is a real answer: the product loses money at
+        that price, and the calculator shows it in the red instead of hiding it.</li>
+    </ul>
+
+    <h3>Common questions</h3>
+    <h4>What fee percentage should I use?</h4>
+    <p>Your platform's <em>all-in</em> figure, as a percentage. On Etsy that is roughly 10% — the 6.5%
+      transaction fee <em>plus</em> payment processing, charged separately — and nearer 12–13% for a UK
+      seller once VAT on the fees is counted. The current figures, with dates, are on the
+      <a href="../../resources/print-on-demand/">Print on Demand resources page</a>.</p>
+    <h4>What is a healthy contribution?</h4>
+    <p>Working guidance for a beginner: if what reaches you is under about £4–£5 a sale, stop and
+      rethink — change the price, the product, the base cost or the shipping — before you go further. A
+      thin margin is not always fatal, but it makes everything downstream harder.</p>
+    <h4>Can I keep a copy?</h4>
+    <p>Yes — <a href="../../resources/print-on-demand/files/pod-basics-contribution.xlsx">download the
+      same calculation as a spreadsheet</a>. It uses exactly the same formula as this calculator.</p>
+  </section>
+
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+
+  <section>
+    <div class="shelf">
+      <b>This calculator comes from a book.</b>
+      <p>It is one tool from <em>Print on Demand — Basics</em>, which takes you from a blank file to one
+        product listed safely, with its real margin known.</p>
+      <a href="../../print-on-demand/">See the Print on Demand series →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+    <a href="../../resources/print-on-demand/">Print on Demand downloads</a> ·
+    <a href="../../privacy/">Privacy</a>
+  </div>
+</footer>
+
+<script src="../../assets/pod-calc.js?v=20261012"></script>
+<script>
+(function () {
+  var ids = ["P", "S", "B", "Sp", "f", "R", "Fx"], el = {};
+  ids.forEach(function (i) { el[i] = document.getElementById(i); });
+  function num(i) { var v = parseFloat(el[i].value); return isNaN(v) ? 0 : v; }
+  function set(id, t) { document.getElementById(id).textContent = t; }
+  function run() {
+    var r = POD.contribution(num("P"), num("S"), num("B"), num("Sp"), num("f"),
+                             num("R"), num("Fx"));
+    set("oBT", POD.money(r.buyerTotal));
+    set("oFee", POD.money(r.fee));
+    set("oC", POD.money(r.contribution));
+  }
+  ids.forEach(function (i) { el[i].addEventListener("input", run); });
+  run();
+})();
+</script>
+
+<script src="../../assets/viz.js?v=20261011k"></script>
+<script>
+(function () {
+  "use strict";
+  var V = window.RVIZ, node = document.getElementById("chart"), tnode = document.getElementById("chart-table");
+  function v(id) { var x = parseFloat(document.getElementById(id).value); return isNaN(x) || x < 0 ? 0 : x; }
+  function pct(a, b) { return b > 0 ? Math.round(a / b * 100) + "%" : "—"; }
+  function table(cap, head, rows) { while (tnode.firstChild) tnode.removeChild(tnode.firstChild); V.table(tnode, cap, head, rows); }
+  var timer; function later() { clearTimeout(timer); timer = setTimeout(draw, 60); }
+  document.querySelectorAll("input").forEach(function (i) { i.addEventListener("input", later); });
+  window.addEventListener("resize", later);
+
+  V.currency("£", "en-GB");
+  function n(id) { var x = parseFloat(document.getElementById(id).value); return isNaN(x) ? 0 : x; }
+  function draw() {
+    var P = n("P"), S = n("S"), B = n("B"), Sp = n("Sp"), f = n("f"), R = n("R"), Fx = n("Fx");
+    var r = POD.contribution(P, S, B, Sp, f, R, Fx);
+    if (r.invalid) { while (node.firstChild) node.removeChild(node.firstChild);
+      node.textContent = "Enter positive numbers to see the chart."; window.EPORTS_CHART = { invalid: true }; return; }
+    var c = r.contribution, fee = r.fee + Fx;
+    var row = { label: "One sale",
+      segs: [{ name: "Your contribution", value: Math.max(0, c), color: V.C.s1 },
+             { name: "Platform fees", value: fee, color: V.C.s2 },
+             { name: "Provider shipping", value: Sp, color: V.C.s3 },
+             { name: "Base cost", value: B, color: V.C.s4 },
+             { name: "Refund buffer", value: R, color: V.C.s5 }],
+      totalLabel: c >= 0 ? "= " + V.money(r.buyerTotal) : "loss " + V.money(c) };
+    if (c < 0) row.mark = { value: r.buyerTotal, label: "buyer pays " + V.money(r.buyerTotal) };
+    V.hstack(node, [row], { title: "Where the buyer's money goes: contribution " + V.money(c) + " of " + V.money(r.buyerTotal),
+      legend: row.segs.map(function (g) { return { name: g.name, color: g.color }; }) });
+    table("One sale: the buyer pays " + V.money(r.buyerTotal), ["Part", "Amount", "Share"],
+      [["Base cost", V.money(B), pct(B, r.buyerTotal)], ["Provider shipping", V.money(Sp), pct(Sp, r.buyerTotal)],
+       ["Platform fee (%)", V.money(r.fee), pct(r.fee, r.buyerTotal)], ["Fixed fee per sale", V.money(Fx), pct(Fx, r.buyerTotal)],
+       ["Refund buffer", V.money(R), pct(R, r.buyerTotal)], [c >= 0 ? "Your contribution" : "Loss", V.money(c), pct(c, r.buyerTotal)]]);
+    window.EPORTS_CHART = { contribution: c, fee: r.fee, buyerTotal: r.buyerTotal };
+  }
+  draw();
+})();
+</script>
+
+</body>
+</html>

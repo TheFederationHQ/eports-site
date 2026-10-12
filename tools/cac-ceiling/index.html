@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CAC ceiling calculator — the most you can safely pay for a customer | ePORTS</title>
+<meta name="description" content="Free CAC ceiling calculator: enter your average order value, platform fee, safe-ceiling ratio, ad cost per visitor and conversion rate to find your break-even CAC, your safe ceiling, what a customer actually costs, and whether you're within budget.">
+<link rel="canonical" href=".">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator</p>
+    <h1>CAC ceiling calculator</h1>
+    <p class="sub">The most you can pay for a customer <em>before</em> you start buying traffic —
+      not after.</p>
+  </div>
+</header>
+<main class="wrap">
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+  <section>
+    <h2><span class="n">The calculator</span> The most you can safely pay</h2>
+    <div class="calc">
+      <div>
+        <div class="field"><label for="AOV">Average order value <span class="u">(£)</span></label><input id="AOV" type="number" value="44" min="0" step="0.01"></div>
+        <div class="field"><label for="f">Platform + processing fee <span class="u">(%)</span></label><input id="f" type="number" value="6.5" min="0" max="99" step="0.1"></div>
+        <div class="field"><label for="k">Safe-ceiling ratio <span class="u">(%)</span></label><input id="k" type="number" value="70" min="0" max="100" step="1">
+          <p class="hint">how much of contribution you'll risk — 70% is a sound opener</p></div>
+        <div class="field"><label for="cpv">Cost per visitor from ads <span class="u">(£)</span></label><input id="cpv" type="number" value="0.40" min="0" step="0.01"></div>
+        <div class="field"><label for="c">Conversion rate on that traffic <span class="u">(%)</span></label><input id="c" type="number" value="1" min="0" max="100" step="0.1"></div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>Your ceiling</h3>
+        <div class="row"><span class="k">Contribution / order</span><span class="v" id="oC">—</span></div>
+        <div class="row"><span class="k">Break-even CAC</span><span class="v" id="oB">—</span></div>
+        <div class="row"><span class="k">Safe CAC ceiling</span><span class="v" id="oS">—</span></div>
+        <div class="row"><span class="k">What a customer costs</span><span class="v" id="oA">—</span></div>
+        <div class="row"><span class="k">Verdict</span><span class="v txt" id="oV">—</span></div>
+      </div>
+    </div>
+    <noscript><p class="calc-fallback"><b>Needs JavaScript.</b>
+      <a href="../../resources/digital-products/files/dp-adv-cac-ceiling.xlsx">Download the CAC-ceiling
+      spreadsheet</a> — same formulas, your numbers.</p></noscript>
+    <p class="cta">Set your safe ceiling before you buy a single click — it's
+      <a href="../../digital-products/#advanced">the scaling gate in <em>Digital Products: Advanced</em> →</a></p>
+  </section>
+  <section>
+    <h2><span class="n">How to read it</span> The safe ceiling sits below break-even, on purpose</h2>
+    <p>Break-even is where a customer costs exactly what they contribute on the first order — pay that
+      and there is nothing left for the tools, the odd refund, or a bad week at the ad auction. So the
+      <b>safe ceiling</b> sits deliberately below it: about 70% of first-order contribution is a sound
+      opening figure. Spend under the safe ceiling and you keep a buffer; spend between it and
+      break-even and you are burning that buffer; spend above break-even and you are losing money on
+      every first sale.</p>
+    <h3>The formulas</h3>
+    <p><b>Contribution per order</b> = average order value × (1 − fee%). <b>Break-even CAC</b> =
+      contribution per order. <b>Safe ceiling</b> = ratio% × contribution per order. <b>What a
+      customer actually costs</b> = cost per visitor ÷ conversion rate.</p>
+    <h3>A worked example</h3>
+    <p>£44 order at 6.5% keeps £41.14 of contribution, so break-even is <b>£41.14</b> and the 70% safe
+      ceiling is <b>£28.80</b>. If ads cost 40p a visitor and 1% of them buy, each customer costs
+      £0.40 ÷ 0.01 = <b>£40</b>. That is under break-even but well over the £28.80 safe ceiling — so
+      the verdict is <b>burning the buffer</b>. It leaves just £1.14 before refunds, tools, tax and a
+      bad week at the ad auction — profitable on paper, unsafe in practice.</p>
+    <h3>The scaling gate</h3>
+    <p>One rule sits on top of the number: <b>do not scale past the ceiling until a paid cohort has
+      proven its own payback.</b> The ceiling tells you what is safe on paper; the gate stops you
+      betting the business on a projection before real buyers have confirmed it.</p>
+    <h3>Edge cases the calculator handles</h3>
+    <ul class="note" style="line-height:1.7">
+      <li><b>A conversion rate of 0%</b> means you cannot yet know what a customer costs, so the
+        verdict reads <em>"enter a conversion rate"</em> rather than dividing by zero.</li>
+      <li><b>A fee of 100% or more</b> leaves no contribution, so break-even and the ceiling both
+        collapse to nothing — there is no safe spend on a product that keeps nothing.</li>
+    </ul>
+    <h3>Common questions</h3>
+    <h4>Why not just pay up to break-even?</h4>
+    <p>Because break-even assumes everything else is free and nothing goes wrong. Refunds, tools, a bad
+      auction week and ordinary variance all live in the gap between the safe ceiling and break-even.
+      The buffer is what absorbs them.</p>
+    <h4>Can I use lifetime value instead of first-order contribution?</h4>
+    <p>Not until a paid cohort has earned it. Setting the ceiling from lifetime value pays for a future
+      that has not happened. Work out lifetime value with the
+      <a href="../lifetime-value/">lifetime value calculator</a>, but set the ceiling from the first order.</p>
+    <h4>Can I keep a copy?</h4>
+    <p><a href="../../resources/digital-products/files/dp-adv-cac-ceiling.xlsx">Download the spreadsheet</a>
+      — same ceiling logic and the three-way verdict, saved with your numbers.</p>
+  </section>
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+  <section>
+    <div class="shelf">
+      <b>This calculator comes from a book.</b>
+      <p>It is from <em>Digital Products — Advanced</em>, the third ePORTS book — the one about paid
+        acquisition that does not quietly lose money.</p>
+      <a href="../../digital-products/">Get the full Digital Products series →</a>
+    </div>
+  </section>
+</main>
+<footer class="foot"><div class="wrap">
+  <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+  <a href="../../resources/digital-products/">Digital Products downloads</a> ·
+  <a href="../../privacy/">Privacy</a>
+</div></footer>
+<script src="../../assets/dp-calc.js?v=20261012"></script>
+<script>
+(function () {
+  var ids = ["AOV","f","k","cpv","c"], el = {};
+  ids.forEach(function (i){ el[i]=document.getElementById(i); });
+  function num(i){ var v=parseFloat(el[i].value); return isNaN(v)?0:v; }
+  function run(){
+    var r = DPCalc.cacCeiling(num("AOV"),num("f"),num("k"),num("cpv"),num("c"));
+    document.getElementById("oC").textContent = DPCalc.money(r.contribution);
+    document.getElementById("oB").textContent = DPCalc.money(r.breakeven);
+    document.getElementById("oS").textContent = DPCalc.money(r.ceiling);
+    document.getElementById("oA").textContent = r.cac === null ? "—" : DPCalc.money(r.cac);
+    document.getElementById("oV").textContent = r.verdict;
+  }
+  ids.forEach(function (i){ el[i].addEventListener("input", run); });
+  run();
+})();
+</script>
+</body>
+</html>

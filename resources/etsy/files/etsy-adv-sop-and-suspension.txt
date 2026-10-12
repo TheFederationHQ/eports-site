@@ -1,0 +1,64 @@
+ETSY - THE SOP INDEX + THE SUSPENSION-RESPONSE PLAN  (Chapter 8)
+
+A business that only runs when you run it is a single point of failure
+with good habits. Get the load-bearing tasks out of your head, then
+rehearse the one emergency panic is guaranteed to make worse.
+
+  SOP INDEX - the load-bearing few  (written = anyone can run it)
+
+  TASK                          WRITTEN?   LIVES AT
+  ----------------------------  --------   ------------------
+  fulfil + ship an order        [ ]        __________________
+    incl. a NON-Etsy postage path (an account Etsy calls
+    suspended cannot buy Etsy labels).
+  customer message / refund     [ ]        __________________
+  weekly money + buffer check   [ ]        __________________
+  backup + restore-test routine [ ]        __________________
+  ad-rule (CPO) review          [ ]        __________________
+
+  HANDOFF TEST: hand one SOP to someone else - could they run it
+  without asking me?  [ ]   fixed gaps: ______
+
+  SOP TEMPLATE - the same six parts, every time:
+    TASK: ______________________   OWNER: ________________
+    TRIGGERS WHEN: _______________________________________
+    NEEDS (logins / tools / files): _______________________
+    STEPS:  1. ________________________________________
+            2. ________________________________________
+            3. ________________________________________
+            4. ________________________________________
+    IF SOMETHING IS OFF-SCRIPT: ___________________________
+    DONE WHEN (what proves it): ___________________________
+    LAST TESTED BY SOMEONE ELSE: date ______
+
+  SUSPENSION-RESPONSE PLAN
+
+  0. VERIFY it is really from Etsy (phishing is common);
+     CLASSIFY the restriction: temporary / listing /
+     payment / permanent; CHECK what access remains
+     (desktop browser? orders? funds? - an account Etsy
+      calls SUSPENDED cannot use the seller apps or buy
+      Etsy labels; lesser restrictions differ).
+  1. FOLLOW the remedy the notice names
+  2. GATHER evidence from my backups (records, charter, proof)
+  3. If appealing: fix what is fixable, then ONE complete,
+     factual reply via Etsy's official channel only
+  4. KEEP in-rule: ship what I can (non-Etsy label ready);
+     Etsy Messages = order logistics ONLY - never explain,
+     vent, or hint at buying elsewhere; my OWN opted-in list
+     is where I share honest news (still never diverting a
+     live Etsy order)
+  5. ACTIVATE the liquidity buffer
+
+  DRILLED (simulated: fake notice, nothing sent): date ______
+  What broke in the drill, now fixed: __________________
+
+  Not legal advice and not a magic key: some restrictions lift,
+  some appeals succeed and some do not. The plan stops panic making
+  it worse and keeps the rest of the business breathing. Follow the
+  actual notice and Etsy's CURRENT Help pages over anything here.
+
+----------------------------------------------------------------------
+From Etsy - Advanced. The full method is in the book; the free
+worksheets and the lane shelf: eports.global/resources
+ePORTS — your ecom source. eports.global.

@@ -1,0 +1,48 @@
+ETSY - THE CONTINUITY PROTOCOL + THE STRESS TEST  (Chapter 9)
+
+You do not find out whether your protocol works on the day Etsy suspends
+you. You find out now, on purpose, by staging the disaster yourself.
+Deploy everything at once, wired together - then try to break it.
+
+  CONTINUITY PROTOCOL - DEPLOYED (live AND wired together)
+  [ ] owned opted-in list live, backed up = my emergency channel
+  [ ] records + files backed up, restore-tested, reachable
+  [ ] liquidity buffer funded, trigger set
+  [ ] ad spend under the cost-per-order ceiling + stop rule
+  [ ] SOPs written for the load-bearing tasks
+  [ ] suspension SOP wired to the backups + buffer + list
+
+  STRESS TEST - "Etsy is gone this morning"
+
+  PASS CONDITION, written first - for an interruption window of
+  ____ days without Etsy access, the business can: keep its records,
+  fulfil the open orders it can reach, fund committed costs, contact
+  its opted-in subscribers within the consent they gave, and submit
+  an evidenced appeal. (That is what the drill can prove. Not more.)
+
+  run for real, mark each:              HELD?  WHAT BROKE
+  cash: buffer covers the WHOLE window  [ ]    __________
+  records/files: opened, whole          [ ]    __________
+  audience: opted-in message drafted    [ ]    __________
+    (only to people who opted in; never steers an Etsy order).
+  appeal: SOP folder -> draft, not sent [ ]    __________
+  fulfilment: off-Etsy postage tested   [ ]    __________
+    (third-party postage tool + order details from my backup;
+     a DRAFT/test label if the tool offers one - otherwise walk
+     it to the final step and stop: never buy live postage for
+     a simulated order).
+
+  breaks found: _________________  each FIXED + re-run? [ ]
+  (no date below until every break is fixed and re-run)
+  STRESS-TESTED end to end: date ______
+
+  Passing does not mean a suspension would not hurt - Etsy is the
+  storefront and that revenue stops while you fight, and no drill can
+  promise how the fight ends. It proves losing Etsy does not destroy
+  the business in a morning, for the window you declared: a setback,
+  not the end. That is the whole promise, and the honest size of it.
+
+----------------------------------------------------------------------
+From Etsy - Advanced. The full method is in the book; the free
+worksheets and the lane shelf: eports.global/resources
+ePORTS — your ecom source. eports.global.

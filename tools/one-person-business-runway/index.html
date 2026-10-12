@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Business runway calculator — months of cash before you run out | ePORTS</title>
+<meta name="description" content="Free business runway calculator: how many months of cash you have at your current burn rate.">
+<link rel="canonical" href="./">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css?v=20261011h">
+<!-- /tools page: live calculator + real editorial content so it is genuinely
+     useful and ranks for search traffic. Ads may sit on /tools pages LATER
+     (never on /resources) once the site qualifies and a consent setup exists.
+     The .ad-slot boxes below are reserved skeleton placeholders for that. -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator</p>
+    <h1>Business runway calculator</h1>
+    <p class="sub">See how many months of cash your business has before it runs out — at the burn
+      rate you're at <em>today</em>. One number, honestly counted.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+
+  <section>
+    <h2><span class="n">The calculator</span> Months of cash left</h2>
+    <div class="calc">
+      <div>
+        <div class="field">
+          <label for="cash">Cash on hand <span class="u">($)</span></label>
+          <input id="cash" type="number" inputmode="decimal" value="12000" min="0" step="0.01">
+          <p class="hint">money available to the business now</p>
+        </div>
+        <div class="field">
+          <label for="rev">Monthly revenue <span class="u">($)</span></label>
+          <input id="rev" type="number" inputmode="decimal" value="3000" min="0" step="0.01">
+        </div>
+        <div class="field">
+          <label for="exp">Monthly expenses <span class="u">($)</span></label>
+          <input id="exp" type="number" inputmode="decimal" value="5000" min="0" step="0.01">
+          <p class="hint">everything the business spends monthly</p>
+        </div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>Your runway</h3>
+        <div class="row"><span class="k">Net monthly burn</span> <span class="v" id="oBurn">—</span></div>
+        <div class="row"><span class="k">Runway</span> <span class="v" id="oRunway">—</span></div>
+        <div class="row"><span class="k">Cash-out date guidance</span> <span class="v" id="oNote">—</span></div>
+      </div>
+    </div>
+
+        <div class="viz">
+      <h3>Your cash, month by month</h3>
+      <div id="chart" aria-describedby="chart-note"></div>
+      <p class="viz-hint" id="chart-note">The line is your cash if revenue and expenses stay where they are. Where it meets the dashed zero line, the cash balance reaches zero. Hover the chart for any month, or open the table under it.</p>
+      <div id="chart-table"></div>
+    </div>
+
+    <noscript>
+      <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The maths:
+      <em>net monthly burn = monthly expenses − monthly revenue</em>; if that's above zero,
+      <em>runway = cash on hand ÷ burn</em> (in months). If revenue is at or above expenses there's no
+      burn, so cash isn't shrinking and there's no limit.</p>
+    </noscript>
+    <p class="cta">Knowing this one number, and recomputing it monthly, is the money discipline in
+      <a href="../../one-person-ai-business/#basics"><em>The One-Person AI Business: Basics</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">How to read it</span> The one number a solo operator should always know</h2>
+    <p>Runway is how long your cash lasts if nothing changes. You take the money the business has right
+      now and divide it by how much more it spends than it earns each month — the <b>net monthly
+      burn</b>. The answer is a count of months: the point, at today's pace, where the account reaches
+      zero.</p>
+    <p>It's the single most useful number for a one-person business, because it turns a vague worry
+      ("am I going to be okay?") into a concrete deadline you can act on. Runway of eight months is a
+      calm planning horizon. Runway of two months is a decision you needed to make last week.</p>
+
+    <h3>The formula, in full</h3>
+    <p><b>Net monthly burn</b> = monthly expenses − monthly revenue. If that's positive, you're
+      spending more than you bring in, and <b>runway</b> = cash on hand ÷ net monthly burn, counted in
+      months. If revenue is at or above expenses the burn is zero or negative — there's a monthly
+      <em>surplus</em>, cash isn't shrinking, and runway has no limit.</p>
+
+    <h3>A worked example</h3>
+    <p>A business holds $12,000 in cash, brings in $3,000 a month and spends $5,000. The net monthly
+      burn is $5,000 − $3,000 = <b>$2,000</b>. Divide the cash by that burn: $12,000 ÷ $2,000 =
+      <b>6.0 months</b> of runway. That's the deadline. The useful move isn't to panic at month six —
+      it's to act while there's still room, before the runway is down to around three months.</p>
+    <p>Now nudge revenue up to $6,000 against the same $5,000 of expenses. Expenses no longer exceed
+      income, so there's no burn at all — there's a <b>+$1,000.00/month</b> surplus, cash is growing,
+      and runway shows <em>no limit</em>.</p>
+
+    <h3>Edge cases the calculator handles</h3>
+    <ul class="note" style="line-height:1.7">
+      <li><b>Revenue equal to expenses</b> is break-even: burn is exactly zero, so there's no limit —
+        the business isn't losing cash, but it isn't building any either.</li>
+      <li><b>Revenue above expenses</b> flips burn into a surplus, shown as a positive
+        <em>+amount/month</em>, and runway reads "no limit" because the cash pile is rising, not
+        falling.</li>
+    </ul>
+
+    <h3>Common questions</h3>
+    <h4>Is this a forecast of when I'll run out?</h4>
+    <p>No — it's a snapshot at <em>today's</em> burn, not a prediction. Revenue and costs both move,
+      sometimes sharply, and a single good or bad month changes the picture. Treat the runway as a
+      reading of where you stand right now, and recompute it each month as the real numbers land.</p>
+    <h4>What counts as "cash on hand" and "expenses"?</h4>
+    <p>Cash on hand is money the business can actually reach now — not invoices you're owed or money
+      that's tied up. Expenses are everything the business spends in a typical month: tools,
+      subscriptions, fees, anything recurring. Use your own real figures, not hopeful ones, or the
+      runway flatters you.</p>
+    <h4>Is this financial advice or a guarantee?</h4>
+    <p>No. It's arithmetic on numbers you enter, and it isn't financial advice. What actually happens
+      depends on your sales, your costs, and choices this box can't see. It just gives you the single
+      most useful number to know — and a reason to check it every month.</p>
+  </section>
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+
+  <section>
+    <div class="shelf">
+      <b>This calculator comes from a book.</b>
+      <p>It's one tool from <em>The One-Person AI Business — Basics</em>, which takes someone from no
+        idea to a real first sale, running the whole thing solo with AI as the team — and counting the
+        money honestly along the way.</p>
+      <a href="../../one-person-ai-business/">See the One-Person AI Business series →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+    <a href="../../resources/one-person-ai-business/">One-Person AI Business downloads</a> ·
+    <a href="../../privacy/">Privacy</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var ids = ["cash", "rev", "exp"], el = {};
+  ids.forEach(function (i) { el[i] = document.getElementById(i); });
+  function num(i) { var v = parseFloat(el[i].value); return isNaN(v) || v < 0 ? 0 : v; }
+  function money(x) {
+    return (x < 0 ? "−" : "") + "$" + Math.abs(x).toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+  }
+  function set(id, t) { document.getElementById(id).textContent = t; }
+  function run() {
+    var cash = num("cash"), rev = num("rev"), exp = num("exp");
+    var burn = exp - rev;
+    if (burn <= 0) {
+      var surplus = -burn;
+      set("oBurn", "+" + money(surplus) + "/month");
+      set("oRunway", "No limit — you're at or above break-even");
+      set("oNote", "Revenue covers expenses; cash isn't shrinking.");
+    } else {
+      var runway = cash / burn;
+      var r = runway.toFixed(1);
+      set("oBurn", money(burn));
+      set("oRunway", r + " months");
+      set("oNote", "About " + r + " months of cash left at this burn — act before it's ~3 months.");
+    }
+  }
+  ids.forEach(function (i) { el[i].addEventListener("input", run); });
+  run();
+})();
+</script>
+
+<script src="../../assets/viz.js?v=20261011k"></script>
+<script>
+(function () {
+  "use strict";
+  var V = window.RVIZ, node = document.getElementById("chart"), tnode = document.getElementById("chart-table");
+  function v(id) { var x = parseFloat(document.getElementById(id).value); return isNaN(x) || x < 0 ? 0 : x; }
+  function pct(a, b) { return b > 0 ? Math.round(a / b * 100) + "%" : "—"; }
+  function table(cap, head, rows) { while (tnode.firstChild) tnode.removeChild(tnode.firstChild); V.table(tnode, cap, head, rows); }
+  var timer; function later() { clearTimeout(timer); timer = setTimeout(draw, 60); }
+  document.querySelectorAll("input").forEach(function (i) { i.addEventListener("input", later); });
+  window.addEventListener("resize", later);
+
+  V.currency("$", "en-US");
+  function draw() {
+    var cash = v("cash"), rev = v("rev"), exp = v("exp"), burn = exp - rev;
+    var runway = burn > 0 ? cash / burn : Infinity;
+    var N = burn > 0 ? Math.max(3, Math.min(36, Math.ceil(runway))) : 12;
+    var xs = [], vals = [], rows = [];
+    for (var m = 0; m <= N; m++) { xs.push(String(m)); vals.push(cash - burn * m); rows.push([String(m), V.money(cash - burn * m)]); }
+    var opt = { title: burn > 0 ? "Cash falls by " + V.money(burn) + " a month and runs out in about " + runway.toFixed(1) + " months"
+                                : "Cash is not shrinking: revenue covers expenses",
+      threshold: { value: 0, label: "cash gone", side: "left" }, zero: true, xname: "Month ", yfmt: V.money0,
+      legend: [{ name: "Cash on hand", color: V.C.s1 }] };
+    if (burn > 0 && runway <= 36) opt.marker = { i: Math.ceil(runway), v: vals[Math.ceil(runway)], label: "runs out ≈ month " + runway.toFixed(1) };
+    V.lines(node, xs, [{ name: "Cash on hand", color: V.C.s1, values: vals, dots: vals.length <= 13 }], opt);
+    table("Cash at the start of each month", ["Month", "Cash on hand"], rows);
+    window.EPORTS_CHART = { burn: burn, runway: runway };
+  }
+  draw();
+})();
+</script>
+
+</body>
+</html>

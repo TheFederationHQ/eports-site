@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital product pricing calculator — how many sales to hit your target | ePORTS</title>
+<meta name="description" content="Free pricing calculator for digital products: enter your price, platform fee, monthly income target and conversion rate to see what you keep per sale, how many sales you need, and how much traffic that takes.">
+<link rel="canonical" href=".">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css">
+<!-- /tools page: live calculator + real editorial content (formula, example,
+     edge cases, FAQ) so it is genuinely useful and ranks. Ads may sit on /tools
+     pages LATER (never on /resources download pages) once the site qualifies and
+     a privacy/consent setup exists. Ad slots are marked as comments, empty now. -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator</p>
+    <h1>Digital product pricing calculator</h1>
+    <p class="sub">A price is a statement about how much traffic you need. Put your numbers in and
+      see the <em>honest</em> version.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+
+  <section>
+    <h2><span class="n">The calculator</span> How much traffic your price demands</h2>
+    <div class="calc">
+      <div>
+        <div class="field">
+          <label for="P">Price <span class="u">(£)</span></label>
+          <input id="P" type="number" inputmode="decimal" value="24" min="0" step="0.01">
+          <p class="hint">what the buyer pays</p>
+        </div>
+        <div class="field">
+          <label for="f">Platform + processing fee <span class="u">(%)</span></label>
+          <input id="f" type="number" inputmode="decimal" value="6.5" min="0" max="99" step="0.1">
+          <p class="hint">your platform's all-in cut — Whop ~4–6%, Etsy ~10%, Gumroad ~13%</p>
+        </div>
+        <div class="field">
+          <label for="T">Income you want per month <span class="u">(£)</span></label>
+          <input id="T" type="number" inputmode="decimal" value="500" min="0" step="1">
+        </div>
+        <div class="field">
+          <label for="c">Conversion rate <span class="u">(%)</span></label>
+          <input id="c" type="number" inputmode="decimal" value="2" min="0" max="100" step="0.1">
+          <p class="hint">share of visitors who buy — 2% is the working assumption</p>
+        </div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>What that means</h3>
+        <div class="row"><span class="k">Kept per sale</span><span class="v" id="oK">—</span></div>
+        <div class="row"><span class="k">Sales needed / month</span><span class="v" id="oN">—</span></div>
+        <div class="row"><span class="k">Visitors needed / month</span><span class="v" id="oV">—</span></div>
+      </div>
+    </div>
+
+    <noscript>
+      <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The maths is simple, though:
+      <em>kept per sale = price × (1 − fee%)</em>; <em>sales needed = target ÷ kept</em> (round up);
+      <em>visitors needed = sales ÷ conversion%</em>. Or
+      <a href="../../resources/digital-products/files/dp-basics-pricing-sum.xlsx">download the pricing-sum
+      spreadsheet</a> and type your numbers into it.</p>
+    </noscript>
+    <p class="cta">Pick the price that asks for traffic you can actually get — it's the pricing method in
+      <a href="../../digital-products/#basics"><em>Digital Products: Basics</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">How to read it</span> The last line is the one that matters</h2>
+    <p>Two of these numbers feel like they are about the product. They are not. <b>Kept per sale</b>
+      is just your price minus the platform's cut. <b>Sales needed</b> and <b>visitors needed</b> are
+      about one thing only: how many strangers you have to reach. Reaching strangers is the hard part
+      of this business — not making the thing.</p>
+    <p>So the calculator's real job is the bottom line. A £5 product and a £40 product can be the same
+      file; what differs is that one asks you to find twenty times as many buyers. Choose the price
+      that asks for an amount of traffic you can actually imagine getting.</p>
+
+    <h3>The formula, in full</h3>
+    <p><b>Kept per sale</b> = price × (1 − fee ÷ 100). <b>Sales needed</b> = your monthly target ÷
+      kept per sale, rounded <em>up</em> to a whole sale. <b>Visitors needed</b> = sales needed ÷
+      (conversion ÷ 100), rounded up. Rounding up matters: 22 sales at £22.44 is £493.68 — you need
+      the 23rd to actually clear £500.</p>
+
+    <h3>A worked example</h3>
+    <p>Price £24, on a platform that charges about 6.5% all-in. You keep £24 × (1 − 0.065) =
+      <b>£22.44</b>. To reach £500 a month you need £500 ÷ £22.44 = 22.3, rounded up to <b>23 sales</b>.
+      At a 2% conversion rate that is 23 ÷ 0.02 = <b>1,150 visitors</b> a month. That last number is
+      the honest one — and it is the number your whole marketing plan has to solve.</p>
+
+    <h3>Edge cases the calculator handles</h3>
+    <ul class="note" style="line-height:1.7">
+      <li><b>A fee of 100% or more</b> leaves nothing per sale, so the sales and visitor lines show
+        "—" rather than a nonsense number.</li>
+      <li><b>A conversion rate of 0%</b> means no amount of traffic converts — the visitor line shows
+        "—", which is the correct answer, not zero.</li>
+    </ul>
+
+    <h3>Common questions</h3>
+    <h4>What fee percentage should I use?</h4>
+    <p>Use your platform's <em>all-in</em> figure — the platform fee plus payment processing plus any
+      fixed per-sale charge, as a percentage of the price. As a starting point: Whop is around 4–6%,
+      Etsy around 9.5–10.5% (its 6.5% transaction fee <em>plus</em> processing, charged separately),
+      and Gumroad around 13%. The current numbers, with the date each was checked, live on the
+      <a href="../../resources/digital-products/">Digital Products resources page</a>.</p>
+    <h4>Where does the 2% conversion rate come from?</h4>
+    <p>It is a working assumption, not a promise — a common rough figure for a cold digital-product
+      listing. Once you have your own traffic and sales, put your real number in; the calculator is
+      far more useful with a rate you have measured than with a borrowed one.</p>
+    <h4>Is "visitors needed" per month or per day?</h4>
+    <p>Per month, matching your income target. Divide by 30 for a rough daily figure.</p>
+    <h4>Can I keep a copy?</h4>
+    <p>Yes — <a href="../../resources/digital-products/files/dp-basics-pricing-sum.xlsx">download the same
+      calculation as a spreadsheet</a> and save it with your own numbers. The spreadsheet and this
+      calculator use exactly the same formula.</p>
+  </section>
+
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+
+  <section>
+    <div class="shelf">
+      <b>This calculator comes from a book.</b>
+      <p>It is one tool from <em>Digital Products — Basics</em>, the first of three ePORTS books that
+        take you from your first product to a durable range that sells while you sleep.</p>
+      <a href="../../digital-products/">Get the full Digital Products series →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+    <a href="../../resources/digital-products/">Digital Products downloads</a> ·
+  <a href="../../privacy/">Privacy</a>
+  </div>
+</footer>
+
+<script src="../../assets/dp-calc.js?v=20261012"></script>
+<script>
+(function () {
+  var ids = ["P", "f", "T", "c"], el = {};
+  ids.forEach(function (i) { el[i] = document.getElementById(i); });
+  function num(i) { var v = parseFloat(el[i].value); return isNaN(v) ? 0 : v; }
+  function run() {
+    var r = DPCalc.pricing(num("P"), num("f"), num("T"), num("c"));
+    document.getElementById("oK").textContent = DPCalc.money(r.K);
+    document.getElementById("oN").textContent = r.invalid ? "—" : r.N.toLocaleString("en-GB");
+    document.getElementById("oV").textContent = (r.invalid || r.V === "—") ? "—" : r.V.toLocaleString("en-GB");
+  }
+  ids.forEach(function (i) { el[i].addEventListener("input", run); });
+  run();
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+/* =========================================================================
+   ePORTS design tokens — the shared layer
+   =========================================================================
+   Mirrored from the Claude Design system project (tokens/colors.css,
+   tokens/spacing.css, tokens/typography.css) so static pages in site/ can
+   use it with no build step.
+
+   ⚠️ If you change a value here, change it in the design system too, or
+   /design-sync will quietly disagree with the shipped site.
+
+   Rules that travel with these values — do not "tidy" them away:
+   - Restrained field, exactly ONE saturated accent per screen (--accent).
+     Labrecque et al. 2025: ePORTS sits on the SAFETY side of the promise
+     axis, so high saturation is wrong as a field.
+   - Never encode meaning in hue alone. Every status carries a word and a
+     border weight as well as a colour. ~8% of men have a colour vision
+     deficiency and passing a contrast ratio does not fix hue confusion.
+   - Four colours per surface, not more. Feature complexity LOW, design
+     complexity HIGH (Pieters, Wedel & Batra 2010).
+
+   Contrast verified by scripts/check_contrast.py — re-run it if you touch
+   a colour.
+   ========================================================================= */
+:root{
+  /* ---- dark field: hero bands, covers, dark cards ---- */
+  --deep:#0C2733;        /* blue-teal = competence. The dark field. */
+  --deep-sunk:#0A1F29;   /* inputs and recessed wells on --deep */
+  --slate:#2E5566;       /* hairlines and inactive marks on --deep */
+  --steel:#93AFBB;       /* eyebrows, captions on --deep — 6.72:1 */
+  --steel-dim:#7E97A3;   /* large type only */
+  --mist:#C6D6DE;        /* body copy on --deep — 10.40:1 */
+  --cream:#F5F2EA;       /* headlines on --deep — 13.87:1 */
+
+  /* ---- light reading field: all long-form ---- */
+  --paper:#FBFAF7;
+  --ink:#1A1A1A;         /* 16.67:1 on --paper */
+  --mut:#5A5A5A;         /* 6.61:1 on --paper */
+  --rule:#DCD9D2;
+  --link:#2F6F5E;        /* 5.66:1 on --paper */
+  --white:#fff;
+
+  /* ---- the one saturated accent ---- */
+  --accent:#52D6C0;      /* 8.67:1 on --deep. ONE element per screen. */
+
+  /* ---- spacing ---- */
+  --space-2xs:.35rem; --space-xs:.5rem;  --space-sm:.7rem;
+  --space-md:1.1rem;  --space-lg:1.4rem; --space-xl:1.9rem;
+  --space-2xl:2.2rem; --space-3xl:3.4rem; --space-4xl:4.5rem;
+  --space-gutter:1.5rem;
+  --space-section:3.4rem;
+  --measure-wrap:52rem;
+
+  /* ---- type ---- */
+  --leading-hero:1.04; --leading-heading:1.16; --leading-snug:1.4;
+  --leading-ui:1.55;   --leading-prose:1.62;
+  --track-hero:-.03em; --track-h2:-.02em; --track-eyebrow:.22em;
+  --weight-light:300; --weight-regular:400; --weight-medium:600;
+  --weight-bold:700;  --weight-black:800;
+
+  /* ---- lane palettes: the shelf ----------------------------------------
+     One field + one rule + one accent per book. Used by
+     scripts/build_covers.py. ⚠️ A colour that lives in only one of these two
+     places is how a shelf stops matching itself — that drift was found once
+     already, when the dropshipping lane's six values existed only in the
+     builder and the design system did not know the shelf's own palette.
+
+     ⚠️ Colour-blind note, and it is a rule not a caveat: WITHIN a lane the
+     three accents must stay separable (digital-products measures 48 / 51 / 67
+     across protanopia, deuteranopia, tritanopia). ACROSS lanes there is one
+     accepted collision — dp-inter and drop-adv converge under protanopia at
+     separation 30 — accepted only because the cover states subject and level
+     in WORDS. Never rely on the hue alone. */
+  --lane-drop-basics-field:#0C2733; --lane-drop-basics-rule:#2E5566; --lane-drop-basics-accent:#52D6C0;
+  --lane-drop-inter-field:#16213E;  --lane-drop-inter-rule:#33436E;  --lane-drop-inter-accent:#FFB454;
+  --lane-drop-adv-field:#251B31;    --lane-drop-adv-rule:#4A3A5C;    --lane-drop-adv-accent:#C3A6FF;
+
+  --lane-dp-basics-field:#222D18;   --lane-dp-basics-rule:#3F5231;   --lane-dp-basics-accent:#B8E062;
+  --lane-dp-inter-field:#1E2733;    --lane-dp-inter-rule:#3A4A5E;    --lane-dp-inter-accent:#8FB8FF;
+  --lane-dp-adv-field:#2C1A21;      --lane-dp-adv-rule:#55343E;      --lane-dp-adv-accent:#FF9DB2;
+
+  /* tiktok-shop-affiliate lane */
+  --lane-tt-basics-field:#241826;   --lane-tt-basics-rule:#4A2C46;   --lane-tt-basics-accent:#FF4D8D;
+  --lane-tt-inter-field:#2A1630;    --lane-tt-inter-rule:#54295A;    --lane-tt-inter-accent:#FBF46A;
+  --lane-tt-adv-field:#2D1140;      --lane-tt-adv-rule:#5A2E7A;      --lane-tt-adv-accent:#45E0C4;
+
+  /* ai-for-your-business lane — deliberately QUIET graphite */
+  --lane-ai-basics-field:#1C1B19;   --lane-ai-basics-rule:#3A3733;   --lane-ai-basics-accent:#F2884A;
+  --lane-ai-inter-field:#191C1E;    --lane-ai-inter-rule:#343A3E;    --lane-ai-inter-accent:#6FD8E8;
+  --lane-ai-adv-field:#1E1A1C;      --lane-ai-adv-rule:#3D343A;      --lane-ai-adv-accent:#E6D08A;
+
+  /* one-person-ai-business lane — indigo, kept apart from ai-for-your-business */
+  --lane-opab-basics-field:#0F0B2E; --lane-opab-basics-rule:#2B2560; --lane-opab-basics-accent:#4FDB36;
+  --lane-opab-inter-field:#150C33;  --lane-opab-inter-rule:#332764;  --lane-opab-inter-accent:#E5493A;
+  --lane-opab-adv-field:#1A0D38;    --lane-opab-adv-rule:#3B2B70;    --lane-opab-adv-accent:#F5AAF0;
+
+  /* hue-per-lane lanes (2026-10-11): one accent per lane; the field darkens Basics -> Advanced */
+  --lane-pod-basics-field:#391D2B;  --lane-pod-basics-rule:#65344D;  --lane-pod-basics-accent:#E892E2;
+  --lane-pod-inter-field:#2A1620;   --lane-pod-inter-rule:#562C41;   --lane-pod-inter-accent:#E892E2;
+  --lane-pod-adv-field:#1D0F16;     --lane-pod-adv-rule:#482537;     --lane-pod-adv-accent:#E892E2;
+
+  --lane-etsy-basics-field:#38291E; --lane-etsy-basics-rule:#634836; --lane-etsy-basics-accent:#F4BB71;
+  --lane-etsy-inter-field:#291E16;  --lane-etsy-inter-rule:#553D2E;  --lane-etsy-inter-accent:#F4BB71;
+  --lane-etsy-adv-field:#1C140F;    --lane-etsy-adv-rule:#473426;    --lane-etsy-adv-accent:#F4BB71;
+
+  --lane-res-basics-field:#1E382B;  --lane-res-basics-rule:#36634D;  --lane-res-basics-accent:#42EBFA;
+  --lane-res-inter-field:#162920;   --lane-res-inter-rule:#2E5541;   --lane-res-inter-accent:#42EBFA;
+  --lane-res-adv-field:#0F1C16;     --lane-res-adv-rule:#264737;     --lane-res-adv-accent:#42EBFA;
+}

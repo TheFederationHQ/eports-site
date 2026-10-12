@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TikTok Shop affiliate commission calculator — settled, not estimated | ePORTS</title>
+<meta name="description" content="Free TikTok Shop affiliate commission calculator: enter the sale price, commission rate, monthly sales and your return rate, and it projects the commission you would keep after refunds at your own return rate — not the flashy estimated number the app shows first.">
+<link rel="canonical" href="./">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css?v=20261011h">
+<!-- /tools page: live calculator + real editorial content so it is genuinely
+     useful and ranks for search traffic. Ads may sit on /tools pages LATER
+     (never on /resources) once the site qualifies and a consent setup exists.
+     The .ad-slot boxes below are reserved skeleton placeholders for that. -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator</p>
+    <h1>TikTok Shop affiliate commission calculator</h1>
+    <p class="sub">See the commission that actually <em>settles</em> — after returns and refunds claw
+      their share back — not the flashy estimate the app shows you first.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+
+  <section>
+    <h2><span class="n">The calculator</span> Estimated vs settled commission</h2>
+    <div class="calc">
+      <div>
+        <div class="field">
+          <label for="P">Average sale price <span class="u">($)</span></label>
+          <input id="P" type="number" inputmode="decimal" value="28" min="0" step="0.01">
+          <p class="hint">the product's price the buyer pays</p>
+        </div>
+        <div class="field">
+          <label for="c">Commission rate <span class="u">(%)</span></label>
+          <input id="c" type="number" inputmode="decimal" value="15" min="0" max="99" step="0.1">
+          <p class="hint">the seller sets this per product — it varies widely</p>
+        </div>
+        <div class="field">
+          <label for="n">Sales you drive per month <span class="u">(count)</span></label>
+          <input id="n" type="number" inputmode="numeric" value="40" min="0" step="1">
+        </div>
+        <div class="field">
+          <label for="r">Return / refund rate <span class="u">(%)</span></label>
+          <input id="r" type="number" inputmode="decimal" value="12" min="0" max="100" step="0.1">
+          <p class="hint">the share of orders returned or refunded — commission on those is clawed back</p>
+        </div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>Your commission</h3>
+        <div class="row"><span class="k">Commission per settled sale</span> <span class="v" id="oPer">—</span></div>
+        <div class="row"><span class="k">Estimated monthly (the flashy number)</span> <span class="v" id="oEst">—</span></div>
+        <div class="row"><span class="k">Projected settled monthly (on your return rate)</span> <span class="v" id="oSet">—</span></div>
+        <div class="row"><span class="k">What returns quietly take</span> <span class="v" id="oGap">—</span></div>
+      </div>
+    </div>
+
+        <div class="viz">
+      <h3>What returns take out of the headline</h3>
+      <div id="chart" aria-describedby="chart-note"></div>
+      <p class="viz-hint" id="chart-note">The whole bar is the commission your sales earn on paper; the part on the right is what returns take back before it settles. Hover a segment for its figure, or open the table under the chart.</p>
+      <div id="chart-table"></div>
+    </div>
+
+    <noscript>
+      <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The maths:
+      <em>commission per sale = price × rate%</em>; <em>estimated monthly = per-sale × sales</em>; then
+      <em>settled monthly = estimated × (1 − return rate%)</em>. Or
+      <a href="../../resources/tiktok-shop-affiliate/files/ttsa-basics-settled-commission-tracker.xlsx">download
+      the settled-commission tracker</a> and log your own orders.</p>
+    </noscript>
+    <p class="cta">Counting the settled number, never the estimate, is the money discipline in
+      <a href="../../tiktok-shop-affiliate/#basics"><em>TikTok Shop Affiliate: Basics</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">How to read it</span> The number that survives the return window</h2>
+    <p>When a sale lands, TikTok shows you an <em>estimated</em> commission straight away — and it feels
+      like money. It isn't yet. Orders can be returned or refunded for weeks afterward, and when they
+      are, the commission on them is taken back. So the figure worth planning on isn't the estimate — it's the
+      <b>settled</b> commission, what's left once the return window closes.</p>
+    <p>This tool <em>projects</em> that settled figure from a return rate you enter, and shows it beside the
+      estimate so the gap is impossible to ignore. It's a projection, not your exact payout — real
+      settlement depends on which specific orders come back (and can include partial refunds), and settling
+      is a step before the money reaches your bank. But planned against the settled projection a wave of
+      returns is an annoyance; treated as if the estimate were income, the same wave is a shortfall you
+      already spent.</p>
+
+    <h3>The formula, in full</h3>
+    <p><b>Commission per sale</b> = sale price × (rate ÷ 100). <b>Estimated monthly</b> = that per-sale
+      commission × the number of sales you drive. <b>Projected settled monthly</b> = estimated × (1 − return rate
+      ÷ 100) — the share of orders that <em>don't</em> come back. <b>What returns take</b> is simply the
+      difference between the two.</p>
+
+    <h3>A worked example</h3>
+    <p>A $28 product at a 15% commission pays $4.20 a sale. Drive 40 sales in a month and the app
+      cheerfully shows an estimated $168. But if 12% of those orders are returned, the commission on
+      them gets clawed back — so the projected settled amount is $168 × 0.88 = <b>$147.84</b>, and returns
+      quietly took $20.16. The estimate wasn't fake — it just counted money that returns can still take
+      back before it's yours.</p>
+
+    <h3>Edge cases the calculator handles</h3>
+    <ul class="note" style="line-height:1.7">
+      <li><b>A 100% return rate</b> settles to $0 — every order came back, so no commission stays.</li>
+      <li><b>A 0% return rate</b> makes settled equal estimated. Real products rarely sit there; the
+        point of the box is to make you enter <em>your</em> rate, from your own tracker, not a hopeful
+        guess.</li>
+    </ul>
+
+    <h3>Common questions</h3>
+    <h4>What commission rate should I use?</h4>
+    <p>The seller sets it, per product, and it ranges from low single digits up to a large slice — there
+      is no standard. Use the actual rate on the product you're promoting, which you'll see in the
+      affiliate marketplace. Current ranges, with dates, sit on the
+      <a href="../../resources/tiktok-shop-affiliate/">TikTok Shop Affiliate resources page</a>.</p>
+    <h4>Where do I find my return rate?</h4>
+    <p>From your own settled history, not a number off a hype video. The free
+      <a href="../../resources/tiktok-shop-affiliate/files/ttsa-basics-settled-commission-tracker.xlsx">settled-commission
+      tracker</a> logs each order as it matures, so your real return rate falls out of your own data.</p>
+    <h4>Is this financial advice or a guarantee?</h4>
+    <p>No. It's arithmetic on numbers you enter. What you actually earn depends on the products, the
+      platform, and buyers — none of which this box controls. It just stops you counting money that
+      hasn't survived the return window yet.</p>
+  </section>
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+
+  <section>
+    <div class="shelf">
+      <b>This calculator comes from a book.</b>
+      <p>It's one tool from <em>TikTok Shop Affiliate — Basics</em>, which takes someone with a phone and
+        no following to their first real, settled commission — counted honestly, net of clawbacks.</p>
+      <a href="../../tiktok-shop-affiliate/">See the TikTok Shop Affiliate series →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+    <a href="../../resources/tiktok-shop-affiliate/">TikTok Shop Affiliate downloads</a> ·
+    <a href="../../privacy/">Privacy</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var ids = ["P", "c", "n", "r"], el = {};
+  ids.forEach(function (i) { el[i] = document.getElementById(i); });
+  function num(i) { var v = parseFloat(el[i].value); return isNaN(v) || v < 0 ? 0 : v; }
+  function money(x) {
+    return (x < 0 ? "−" : "") + "$" + Math.abs(x).toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+  }
+  function set(id, t) { document.getElementById(id).textContent = t; }
+  function run() {
+    var P = num("P"), c = num("c"), n = num("n"), r = Math.min(num("r"), 100);
+    var per = P * (c / 100);
+    var est = per * n;
+    var settled = est * (1 - r / 100);
+    set("oPer", money(per));
+    set("oEst", money(est));
+    set("oSet", money(settled));
+    set("oGap", money(est - settled));
+  }
+  ids.forEach(function (i) { el[i].addEventListener("input", run); });
+  run();
+})();
+</script>
+
+<script src="../../assets/viz.js?v=20261011k"></script>
+<script>
+(function () {
+  "use strict";
+  var V = window.RVIZ, node = document.getElementById("chart"), tnode = document.getElementById("chart-table");
+  function v(id) { var x = parseFloat(document.getElementById(id).value); return isNaN(x) || x < 0 ? 0 : x; }
+  function pct(a, b) { return b > 0 ? Math.round(a / b * 100) + "%" : "—"; }
+  function table(cap, head, rows) { while (tnode.firstChild) tnode.removeChild(tnode.firstChild); V.table(tnode, cap, head, rows); }
+  var timer; function later() { clearTimeout(timer); timer = setTimeout(draw, 60); }
+  document.querySelectorAll("input").forEach(function (i) { i.addEventListener("input", later); });
+  window.addEventListener("resize", later);
+
+  V.currency("$", "en-US");
+  function draw() {
+    var P = v("P"), c = v("c"), n = v("n"), r = Math.min(v("r"), 100);
+    var gross = P * c / 100 * n, settled = gross * (1 - r / 100), lost = gross - settled;
+    V.hstack(node, [{ label: "A month", segs: [
+        { name: "Commission that settles", value: settled, color: V.C.s1 },
+        { name: "Lost to returns", value: lost, color: V.C.s2 }],
+      totalLabel: "= " + V.money(gross) + " gross" }],
+      { title: "Monthly commission: " + V.money(gross) + " gross, " + V.money(settled) + " settles",
+        legend: [{ name: "Commission that settles", color: V.C.s1 }, { name: "Lost to returns", color: V.C.s2 }] });
+    table("A month at " + n + " sales", ["Part", "Amount", "Share of gross"],
+      [["Gross commission", V.money(gross), "100%"], ["Lost to returns", V.money(lost), pct(lost, gross)],
+       ["Commission that settles", V.money(settled), pct(settled, gross)]]);
+    window.EPORTS_CHART = { gross: gross, settled: settled, lost: lost };
+  }
+  draw();
+})();
+</script>
+
+</body>
+</html>

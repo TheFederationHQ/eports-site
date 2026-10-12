@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Freelance project price calculator — a fixed quote that still pays | ePORTS</title>
+<meta name="description" content="Free project price calculator for freelancers: turn estimated hours, your rate and a buffer into a fixed-price quote.">
+<link rel="canonical" href="./">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css">
+<!-- /tools page: live calculator + real editorial content so it is genuinely
+     useful and ranks for search traffic. Ads may sit on /tools pages LATER
+     (never on /resources) once the site qualifies and a consent setup exists.
+     The .ad-slot boxes below are reserved skeleton placeholders for that. -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator</p>
+    <h1>Freelance project price calculator</h1>
+    <p class="sub">Turn an hours estimate and your rate into a single fixed-price quote that
+      <em>still pays</em> — with a scope buffer for the overruns every project has.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+
+  <section>
+    <h2><span class="n">The calculator</span> Hours and rate into a fixed quote</h2>
+    <div class="calc">
+      <div>
+        <div class="field">
+          <label for="H">Estimated hours <span class="u">(count)</span></label>
+          <input id="H" type="number" inputmode="numeric" value="20" min="0" step="1">
+          <p class="hint">your honest estimate of the hours the work takes</p>
+        </div>
+        <div class="field">
+          <label for="R">Your hourly rate <span class="u">($)</span></label>
+          <input id="R" type="number" inputmode="decimal" value="75" min="0" step="0.01">
+        </div>
+        <div class="field">
+          <label for="B">Scope / risk buffer <span class="u">(%)</span></label>
+          <input id="B" type="number" inputmode="decimal" value="20" min="0" max="200" step="1">
+          <p class="hint">cushion for the overruns every project has</p>
+        </div>
+        <div class="field">
+          <label for="F">Fixed costs for this project <span class="u">($)</span></label>
+          <input id="F" type="number" inputmode="decimal" value="100" min="0" step="0.01">
+          <p class="hint">assets, stock images, subcontractor — 0 if none</p>
+        </div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>Your quote</h3>
+        <div class="row"><span class="k">Labour</span> <span class="v" id="oLabour">—</span></div>
+        <div class="row"><span class="k">Buffer</span> <span class="v" id="oBuffer">—</span></div>
+        <div class="row"><span class="k">Project price (quote this)</span> <span class="v" id="oPrice">—</span></div>
+      </div>
+    </div>
+
+    <noscript>
+      <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The maths:
+      <em>labour = hours × rate</em>; <em>buffer = labour × buffer%</em>; then
+      <em>project price = labour + buffer + fixed costs</em>. Or
+      <a href="../../resources/one-person-ai-business/">grab the free one-person-business tools</a>
+      and work it out on paper.</p>
+    </noscript>
+    <p class="cta">Pricing a fixed job so it still pays is the money discipline in
+      <a href="../../one-person-ai-business/#basics"><em>AI for Your Business: Basics</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">How to read it</span> A quote is your floor, not a market price</h2>
+    <p>A fixed-price quote feels like a single number, but it's really three: the labour you're actually
+      selling, a buffer for the work that always runs longer than you planned, and any hard costs the
+      job forces on you. This calculator adds them up so the number you send isn't a hopeful guess — it's
+      the point below which the job stops being worth doing.</p>
+    <p>Read the <b>project price</b> as your floor. It's the least you can charge and still come out
+      whole if the estimate holds and the overruns stay inside the buffer. Whether the market will pay
+      it is a separate question this box can't answer — but knowing your floor stops you from quoting
+      under it by accident.</p>
+
+    <h3>The formula, in full</h3>
+    <p><b>Labour</b> = estimated hours × your hourly rate. <b>Buffer</b> = labour × (buffer% ÷ 100) —
+      the cushion for scope creep and overruns. <b>Project price</b> = labour + buffer + fixed costs.
+      The buffer exists because fixed-price work carries the overrun risk you'd otherwise just bill by
+      the hour; on a quote, that risk is yours, so you price it in up front.</p>
+
+    <h3>A worked example</h3>
+    <p>Say a job looks like 20 hours at a $75 rate — that's $1,500 of labour. Add a 20% buffer and you
+      set aside $300 for the overruns that always turn up. The project also needs $100 of stock images,
+      so that goes straight on top. The quote you send is $1,500 + $300 + $100 = <b>$1,900</b>. If the
+      work comes in on estimate you keep the buffer; if it runs 20% long, the buffer is exactly what
+      covers it — and you're still whole.</p>
+
+    <h3>Edge cases the calculator handles</h3>
+    <ul class="note" style="line-height:1.7">
+      <li><b>A 0% buffer</b> quotes labour plus fixed costs with no cushion at all — every extra hour
+        then comes straight out of your pay. Real fixed-price work rarely survives at zero.</li>
+      <li><b>$0 fixed costs</b> is the common case for pure services — no assets, no subcontractor — so
+        the price is just labour plus buffer.</li>
+    </ul>
+
+    <h3>Common questions</h3>
+    <h4>What buffer should I use?</h4>
+    <p>Enough to cover the overruns you actually see, not a round number that feels safe. If your last
+      few fixed-price jobs ran 15–25% long, that range is your buffer. The tighter your hours estimate,
+      the smaller the buffer you need — the two work together.</p>
+    <h4>Is the project price the price I should charge?</h4>
+    <p>No — it's your floor, not a market price. This box tells you the least you can accept and stay
+      whole; what a client will actually pay depends on the value of the work, who you're quoting, and
+      what else they can buy. Quote at or above the floor, never below it.</p>
+    <h4>Is this financial advice or a guarantee?</h4>
+    <p>No. It's arithmetic on numbers you enter, and it guarantees nothing about what you'll earn.
+      Under-scoping is the number-one way fixed-price jobs lose money: estimate the hours honestly
+      first, then add the buffer. A cushion on top of a fantasy estimate is still a loss.</p>
+  </section>
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+
+  <section>
+    <div class="shelf">
+      <b>This calculator comes from a book.</b>
+      <p>It's one tool from <em>AI for Your Business — Basics</em>, which takes one person with an idea to
+        a first paid, fixed-price job — priced so the work still pays after the overruns land.</p>
+      <a href="../../one-person-ai-business/">See the AI for Your Business series →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+    <a href="../../resources/one-person-ai-business/">AI for Your Business downloads</a> ·
+    <a href="../../privacy/">Privacy</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var ids = ["H", "R", "B", "F"], el = {};
+  ids.forEach(function (i) { el[i] = document.getElementById(i); });
+  function num(i) { var v = parseFloat(el[i].value); return isNaN(v) || v < 0 ? 0 : v; }
+  function money(x) {
+    return (x < 0 ? "−" : "") + "$" + Math.abs(x).toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+  }
+  function set(id, t) { document.getElementById(id).textContent = t; }
+  function run() {
+    var H = num("H"), R = num("R"), B = num("B"), F = num("F");
+    var labour = H * R;
+    var buffer = labour * (B / 100);
+    var price = labour + buffer + F;
+    set("oLabour", money(labour));
+    set("oBuffer", money(buffer));
+    set("oPrice", money(price));
+  }
+  ids.forEach(function (i) { el[i].addEventListener("input", run); });
+  run();
+})();
+</script>
+
+</body>
+</html>

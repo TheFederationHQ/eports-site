@@ -1,0 +1,69 @@
+THE GOVERNED-AUTONOMY TABLE  —  authority caps + a kill threshold
+From "The One-Person AI Business — Advanced", Chapter 7
+================================================================
+
+To lift the ATTENTION ceiling, more must run without waiting on your judgement —
+safely. Not by trusting more; by SPECIFYING once what may run alone, up to what
+bound, and what trips it all back. This is the DECISION (the spec), not the
+build — you write what "safe to run alone" means and hand it to whoever (or
+whatever) implements it. You do NOT have to build the alarm to govern it.
+
+
+STEP 1 · TIER YOUR ACTION CLASSES
+----------------------------------------------------------------
+  Tier 1 — zero-impact (internal drafts, suggestions)         → full autonomy
+  Tier 2 — reversible, low-reach (routine content/replies)    → autonomy, capped, watched
+  Tier 3 — customer-affecting (anything a customer sees/feels) → narrow, capped, closely watched
+  Tier 4 — money, legal, public factual claims, binding       → NEVER autonomous
+
+
+STEP 2 · THE GOVERNANCE TABLE  (one row per class — fill it in)
+----------------------------------------------------------------
+  CLASS | AI MAY DECIDE | CAP/BOUND | ALWAYS ESCALATES | WATCHED BY | KILL TRIGGER | RESTART
+  ----- | ------------- | --------- | ---------------- | ---------- | ------------ | -------
+  ____  | ____________  | ________  | ______________   | _________  | ___________  | ______
+  ____  | ____________  | ________  | ______________   | _________  | ___________  | ______
+  ____  | ____________  | ________  | ______________   | _________  | ___________  | ______
+
+  ⚠️ THE MONEY RULE (never bends, at any scale): for refunds or other money movements, the AI may
+  TRIAGE and DRAFT only — check rule-qualification and prepare the paperwork; a
+  HUMAN approves AND executes every actual movement of money. AI never approves money.
+
+
+STEP 3 · THE KILL THRESHOLD  (quantitative, not a vibe)
+----------------------------------------------------------------
+  Trips when: [correction rate > __% in a __ window] / [any red-flag event of
+  severity __] / [a core metric falls below __].
+  ⚠️ It BOUNDS EXPOSURE; it does NOT make autonomy "safe." It can't catch a
+  correlated failure, an untraceable harm, damage under the line, or a lagging
+  metric. Grant authority because the trip CAPS how bad an undetected-in-time
+  failure gets — not because it can't happen.
+
+
+STEP 4 · THE REVERSION PROTOCOL  (decide it before you need it)
+----------------------------------------------------------------
+  1. HALT — all Tier 2–3 autonomy drops to gated; nothing further goes out.
+  2. ALERT — you're notified, with the trigger and window that fired.
+  3. ASSESS — find the blast radius: what went out, who saw it, who acted.
+  4. CORRECT & LEARN — fix it; turn the failure into a sharper rule/cap.
+  5. RESTART — one class at a time, on evidence. Never all at once.
+
+
+THE FORCING COMMITMENT  (dated)
+----------------------------------------------------------------
+  "From [date], ________ runs autonomously under cap: ________. Always escalates:
+   ________. Money stays human-executed. Kill trigger: if ________ crosses ____,
+   all Tier 2–3 autonomy reverts to gated and alerts me; I re-enable class by
+   class on evidence. This bounds exposure; it does not eliminate it. I set the caps and
+   answer the trip; I no longer sit at every junction."
+
+================================================================
+  Yours to keep — free, and no strings attached.
+
+  One tool from the ePORTS One-Person AI Business series. This one is from
+  Advanced — compound revenue per hour: leverage, not labour.
+
+  The full shelf, whenever you're ready:  eports.global/one-person-ai-business
+================================================================
+
+ePORTS — your ecom source. eports.global.

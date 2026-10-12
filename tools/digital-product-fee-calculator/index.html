@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital product fee calculator — what you keep after fees | ePORTS</title>
+<meta name="description" content="Free digital product fee calculator: what you keep from each sale after platform and payment fees.">
+<link rel="canonical" href="./">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css">
+<!-- /tools page: live calculator + real editorial content (formula, example,
+     edge cases, FAQ) so it is genuinely useful and ranks. Ads may sit on /tools
+     pages LATER (never on /resources download pages) once the site qualifies and
+     a privacy/consent setup exists. The .ad-slot boxes below are reserved
+     skeleton placeholders for that, empty now. -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator</p>
+    <h1>Digital product fee calculator</h1>
+    <p class="sub">Every sale is smaller than its price tag. Put your numbers in and see how much of
+      each sale you <em>actually keep</em> after the platform and payment fees come out.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+
+  <section>
+    <h2><span class="n">The calculator</span> Price in, kept amount out</h2>
+    <div class="calc">
+      <div>
+        <div class="field">
+          <label for="P">Sale price <span class="u">(£)</span></label>
+          <input id="P" type="number" inputmode="decimal" value="19.00" min="0" step="0.01">
+          <p class="hint">what the buyer pays</p>
+        </div>
+        <div class="field">
+          <label for="f">Platform + payment fee <span class="u">(%)</span></label>
+          <input id="f" type="number" inputmode="decimal" value="10" min="0" max="99" step="0.1">
+          <p class="hint">your platform + processor's all-in cut. This varies by platform, country and
+            channel (and some add a fixed fee too), so enter YOUR current rate from the platform's own pricing page.</p>
+        </div>
+        <div class="field">
+          <label for="Fix">Fixed fee per sale <span class="u">(£)</span></label>
+          <input id="Fix" type="number" inputmode="decimal" value="0.50" min="0" step="0.01">
+          <p class="hint">flat per-sale charge, e.g. £0.30–£0.50; 0 if none</p>
+        </div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>What you keep</h3>
+        <div class="row"><span class="k">Fees per sale</span> <span class="v" id="oFees">—</span></div>
+        <div class="row"><span class="k">What you keep</span> <span class="v" id="oKeep">—</span></div>
+        <div class="row"><span class="k">You keep</span> <span class="v" id="oPct">—</span></div>
+      </div>
+    </div>
+
+    <noscript>
+      <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The maths is simple, though:
+      <em>fees = price × fee% + fixed fee</em>; <em>what you keep = price − fees</em>;
+      <em>you keep % = (kept ÷ price) × 100</em>. Or
+      <a href="../../resources/digital-products/">grab the numbers from the Digital Products resources
+      page</a> and work it out on paper.</p>
+    </noscript>
+    <p class="cta">Knowing your kept amount before you set a price is the first move in
+      <a href="../../digital-products/#basics"><em>Digital Products: Basics</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">How to read it</span> The price is never the payout</h2>
+    <p>When someone buys a £19 file, £19 does not land in your account. The platform takes a percentage,
+      the payment processor takes its slice, and some platforms add a flat charge on top of every sale.
+      <b>What you keep</b>, after the fees you enter, is the number to build your pricing on. (It's before
+      tax and any refunds — those are separate, and yours to account for.)</p>
+    <p><b>You keep</b> — the percentage — is the one to watch as your price moves. A fixed fee barely
+      dents a £40 product but takes a real bite out of a £4 one. That is why two products with the same
+      headline price can leave you with very different amounts once the fees clear.</p>
+
+    <h3>The formula, in full</h3>
+    <p><b>Fees per sale</b> = price × (fee ÷ 100) + fixed fee. <b>What you keep</b> = price − fees.
+      <b>You keep</b> (the percentage) = kept ÷ price × 100. That is the whole thing — no hidden steps.
+      Enter your platform's own all-in rate and the calculator does the rest.</p>
+
+    <h3>A worked example</h3>
+    <p>Sale price £19, an all-in platform fee of 10%, and a fixed fee of £0.50. The percentage part is
+      £19 × 0.10 = £1.90, plus the £0.50 flat charge, so <b>fees are £2.40</b>. That leaves you
+      <b>£16.60</b> — you keep <b>87.4%</b> of the sale. The other 12.6% went to the platform and the
+      processor before you saw a penny of it.</p>
+
+    <h3>Edge cases the calculator handles</h3>
+    <ul class="note" style="line-height:1.7">
+      <li><b>A low price with a fixed fee.</b> A £3 product with a £0.50 flat charge loses that £0.50
+        before any percentage — so the fixed fee alone already takes a sixth of the sale, and the kept
+        percentage drops far below what the same fee does to a £30 product. Cheap products feel the flat
+        fee hardest.</li>
+      <li><b>A price of £0 or less</b> has no sale to split, so every line shows "—" rather than a
+        nonsense figure.</li>
+      <li><b>No fixed fee?</b> Enter 0 and the calculator works from the percentage alone.</li>
+    </ul>
+
+    <h3>Common questions</h3>
+    <h4>What fee percentage should I use?</h4>
+    <p>Use your platform's <em>all-in</em> rate — the platform's cut plus payment processing, as a
+      percentage of the price. Platforms differ in how they present it: some bundle card processing into
+      one headline percentage, while others quote a lower platform fee and add processing separately, so
+      the true all-in figure is higher than the number they lead with. Read the platform's own pricing
+      page for the current number — not a comparison article, which is often out of date or wrong — and
+      enter <em>your</em> rate here.</p>
+    <h4>Should the fixed fee include payment processing?</h4>
+    <p>Only the flat part of it. Many processors charge a percentage <em>and</em> a small fixed amount per
+      transaction (something like a few pence plus a percent). Put the percentage part in the fee box and
+      the flat part in the fixed-fee box. If your platform rolls everything into one percentage, leave the
+      fixed fee at 0.</p>
+    <h4>Is this my profit?</h4>
+    <p>No — this is the fee side only. What you keep here is what the platform pays out; your actual profit
+      also depends on refunds and your own costs, such as tools, ads and the time it took to make the
+      product. Treat the kept amount as the ceiling, then subtract everything else.</p>
+    <h4>Is this financial advice?</h4>
+    <p>No. It is arithmetic on numbers you enter. What you earn depends on your platform, your product and
+      your buyers — none of which this box controls. It just shows you, honestly, how much of each sale
+      survives the fees.</p>
+  </section>
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+
+  <section>
+    <div class="shelf">
+      <b>This calculator comes from a book.</b>
+      <p>It is one tool from <em>Digital Products — Basics</em>, the first of three ePORTS books that
+        take you from your first product to a durable range with steady, independent sales.</p>
+      <a href="../../digital-products/">Get the full Digital Products series →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+    <a href="../../resources/digital-products/">Digital Products downloads</a> ·
+    <a href="../../privacy/">Privacy</a>
+  </div>
+</footer>
+
+<script src="../../assets/dp-calc.js?v=20261012"></script>
+<script>
+(function () {
+  var ids = ["P", "f", "Fix"], el = {};
+  ids.forEach(function (i) { el[i] = document.getElementById(i); });
+  function num(i) { var v = parseFloat(el[i].value); return isNaN(v) ? NaN : v; }
+  function run() {
+    var r = DPCalc.fee(num("P"), num("f"), num("Fix"));
+    document.getElementById("oFees").textContent = DPCalc.money(r.fees);
+    document.getElementById("oKeep").textContent = DPCalc.money(r.keep);
+    document.getElementById("oPct").textContent = DPCalc.pct(r.pct);
+  }
+  ids.forEach(function (i) { el[i].addEventListener("input", run); });
+  run();
+})();
+</script>
+
+</body>
+</html>

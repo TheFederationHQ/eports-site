@@ -1,0 +1,33 @@
+ETSY - CLICK EVIDENCE CYCLE  (Chapter 5)
+
+If clicks are your constraint, the lead image (and the price beside it) wins
+or loses them in the grid. Etsy has NO A/B split test - so test sequentially,
+and judge the photo where the buyer sees it: small, beside its rivals.
+
+  Listing: ___________________  target phrase: ______________
+
+  JUDGED IN THE GRID (a design check - open the real results):
+    reads at small size?             Y / N
+    stands out from its neighbours?  Y / N
+    price in range with the row?     Y / N
+
+  THE ONE CHANGE:  [ ] new lead image only
+    Don't touch the keyword; testing the price LEVEL is a separate test.
+
+  M ~= click rate = visits / impressions - both per listing in Search
+    Analytics (Stats -> Etsy search; organic, ads excluded) - ROUGH
+    baseline (needs enough CLICKS, not just impressions): ______
+    roughly where it sat / what sent it traffic: ______________
+  Window: fixed; compare like weekdays with like
+  VERDICT:  supports  /  contradicts  /  inconclusive
+    INCONCLUSIVE if exposure wasn't comparable: placement or rank
+    drifted, traffic source / phrase mix changed, a badge or promo
+    appeared, or whole-shop click rate moved.
+
+  This is a sequential OBSERVATIONAL test, not a true A/B: a rise is
+  evidence the image helped, never proof in isolation.
+
+----------------------------------------------------------------------
+From Etsy - Intermediate. The full method is in the book; the free
+worksheets and the lane shelf: eports.global/resources
+ePORTS — your ecom source. eports.global.

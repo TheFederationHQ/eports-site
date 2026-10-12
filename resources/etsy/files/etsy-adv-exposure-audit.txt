@@ -1,0 +1,42 @@
+ETSY - THE EXPOSURE AUDIT  (Chapter 2)
+
+"Too dependent on Etsy" has no edges; you cannot set a rule against a fog.
+Turn it into five measured concentrations, each with a LINE it must not
+cross and a MOVE you decide now - while the shop is calm and you are the
+last person tempted to protect a golden goose listing.
+
+  Fill this in from your own stats in one sitting. An estimate marked EST
+  is fine.
+  (No benchmark is printed here on purpose: the lines are YOUR judgement,
+   not Etsy statistics. A rule of thumb to argue with: treat any single
+   thing past HALF your revenue as a line already crossed.)
+
+  #  CONCENTRATION          NOW        MY LINE            RANK
+  1  platform (Etsy %)      ____ %     not rising         ____
+  2  product (+supplier)    ____ %     ceiling: ____%     ____
+  3  top listing            ____ %     ceiling: ____%     ____
+     (its last-90-day revenue / shop revenue, same window).
+  4  owned buyers           ____       floor: ____        ____
+     (opted-in, contactable without Etsy; floor = a real,
+      dated target - reach it by: ________).
+  5  runway (liquidity)     ____ mo    floor: ____ mo     ____
+
+  Rank: 1 = would hurt most if it vanished tomorrow.
+  Row 4 is scored the other way round: a floor to reach (at or above).
+
+  MY PRE-SET MOVE if a line is crossed (a line with no move is a
+  warning light with no brakes):
+    1 platform  -> ______________________________________
+    2 product   -> ______________________________________
+    3 listing   -> ______________________________________
+    4 buyers    -> until at or above the floor, spare growth
+                   effort goes to capture (chapter 3)
+    5 runway    -> hold back ____% of payouts till the floor is met
+
+  WORST (rank 1): ______________________________________
+  Signed / dated: ______________   (a decision, not a note)
+
+----------------------------------------------------------------------
+From Etsy - Advanced. The full method is in the book; the free
+worksheets and the lane shelf: eports.global/resources
+ePORTS — your ecom source. eports.global.

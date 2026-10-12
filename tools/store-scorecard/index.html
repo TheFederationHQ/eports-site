@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Store scorecard calculator — the seven numbers that tell you what's working | ePORTS</title>
+<meta name="description" content="Free store scorecard: enter visitors, orders, revenue, buyers, repeat buyers and refunds to get your seven numbers — conversion, revenue per visitor, average order value, repeat rate, refund rate and contribution per order.">
+<link rel="canonical" href=".">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css">
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator</p>
+    <h1>The seven-number store scorecard</h1>
+    <p class="sub">The whole machine on one screen. Put last month's numbers in and see
+      <em>which part is working</em>.</p>
+  </div>
+</header>
+<main class="wrap">
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+  <section>
+    <h2><span class="n">The calculator</span> Last month, on one screen</h2>
+    <div class="calc">
+      <div>
+        <div class="field"><label for="Vi">Visitors</label><input id="Vi" type="number" value="1000" min="0" step="1"></div>
+        <div class="field"><label for="O">Orders</label><input id="O" type="number" value="20" min="0" step="1"></div>
+        <div class="field"><label for="R">Revenue <span class="u">(£)</span></label><input id="R" type="number" value="575" min="0" step="0.01"></div>
+        <div class="field"><label for="Bu">Buyers <span class="u">(unique people)</span></label><input id="Bu" type="number" value="20" min="0" step="1">
+          <p class="hint">one person buying twice is two orders, one buyer</p></div>
+        <div class="field"><label for="Rb">Repeat buyers <span class="u">(bought again)</span></label><input id="Rb" type="number" value="5" min="0" step="1">
+          <p class="hint">buyers who bought again within your window (e.g. 90 days) — their earlier order can sit in a prior period, so this need not reconcile with this month's orders</p></div>
+        <div class="field"><label for="Rf">Refunds</label><input id="Rf" type="number" value="1" min="0" step="1"></div>
+        <div class="field"><label for="f">Platform + processing fee <span class="u">(%)</span></label><input id="f" type="number" value="6.5" min="0" max="99" step="0.1"></div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>Your seven numbers</h3>
+        <div class="row"><span class="k">1 · Visitors</span><span class="v" id="o1">—</span></div>
+        <div class="row"><span class="k">2 · Conversion rate</span><span class="v" id="o2">—</span></div>
+        <div class="row"><span class="k">3 · Revenue / visitor</span><span class="v" id="o3">—</span></div>
+        <div class="row"><span class="k">4 · Average order value</span><span class="v" id="o4">—</span></div>
+        <div class="row"><span class="k">5 · Repeat rate</span><span class="v" id="o5">—</span></div>
+        <div class="row"><span class="k">6 · Refund rate</span><span class="v" id="o6">—</span></div>
+        <div class="row"><span class="k">7 · Contribution / order</span><span class="v" id="o7">—</span></div>
+        <div class="row"><span class="k">Contribution / visitor</span><span class="v txt" id="o8">—</span></div>
+      </div>
+    </div>
+    <noscript><p class="calc-fallback"><b>Needs JavaScript.</b>
+      <a href="../../resources/digital-products/files/dp-inter-scorecard.xlsx">Download the scorecard
+      spreadsheet</a> and type your numbers into it instead — it uses the same formulas.</p></noscript>
+    <p class="cta">Pick the one number to move this month — it's the seven-number scorecard in
+      <a href="../../digital-products/#intermediate"><em>Digital Products: Intermediate</em> →</a></p>
+  </section>
+  <section>
+    <h2><span class="n">How to read it</span> Revenue per visitor is the one to steer by</h2>
+    <p>Of the seven, <b>revenue per visitor</b> is the number that moves only when the business
+      genuinely gets better, and it survives every change in what traffic costs. Not clicks, not
+      followers — revenue per visitor. But do not spend against it: it is <em>gross</em>, the
+      platform's cut still inside it. The figure you may spend to acquire a visitor is
+      <b>contribution per visitor</b>, always smaller.</p>
+    <h3>The seven formulas</h3>
+    <ul class="note" style="line-height:1.75">
+      <li><b>Conversion rate</b> = orders ÷ visitors</li>
+      <li><b>Revenue per visitor</b> = revenue ÷ visitors</li>
+      <li><b>Average order value</b> = revenue ÷ orders</li>
+      <li><b>Repeat-purchase rate</b> = repeat buyers ÷ <b>buyers</b> (⚠️ buyers, not orders)</li>
+      <li><b>Refund rate</b> = refunds ÷ orders</li>
+      <li><b>Contribution per order</b> = average order value × (1 − fee%)</li>
+    </ul>
+    <p>The one that trips people is the fifth. <b>An order is not a buyer.</b> One person buying twice
+      is two orders and one buyer. Conversion uses orders; repeat-purchase rate uses buyers. Mixing
+      them is how the numbers quietly lie.</p>
+    <h3>A worked example</h3>
+    <p>1,000 visitors, 20 orders, £575 revenue, 20 buyers, 5 who came back within 90 days, 1 refund,
+      6.5% fee: conversion <b>2%</b>, revenue per visitor <b>£0.58</b>, average order <b>£28.75</b>,
+      repeat rate <b>25%</b>, refund rate <b>5%</b>, contribution per order <b>£26.88</b>. That fifth
+      line — five of the twenty buyers came back within 90 days, a later purchase that is not among
+      this month's 20 orders — is usually the most valuable number on the sheet, because it is the one
+      nobody else in your position is measuring.</p>
+    <h3>Edge cases the calculator handles</h3>
+    <ul class="note" style="line-height:1.7">
+      <li><b>A month with no orders</b> (or no visitors, or no buyers) shows "—" for any figure that
+        would divide by zero — average order value, conversion, repeat rate — rather than £0 or an
+        error. A blank is the honest answer when there is nothing to divide.</li>
+      <li><b>The repeat rate stays believable</b> because it divides by unique <em>buyers</em>, not
+        their orders — count orders there and a loyal customer can push it over 100%.</li>
+    </ul>
+    <h3>Common questions</h3>
+    <h4>Why does contribution not subtract refunds?</h4>
+    <p>Because refunds are already their own number (line 6). Contribution per order is what a
+      <em>completed</em> sale leaves you after fees; the refund rate tells you how often a sale does
+      not complete. Keeping them separate is how you see both, rather than blurring one into the other.</p>
+    <h4>What if I do not know my unique buyers?</h4>
+    <p>If every sale last month was a first-time buyer, buyers = orders and the repeat rate is simply
+      repeat buyers ÷ orders. The moment you have returning customers, the two diverge — that is the
+      point at which counting buyers separately starts to matter.</p>
+    <h4>Can I keep a copy?</h4>
+    <p><a href="../../resources/digital-products/files/dp-inter-scorecard.xlsx">Download the scorecard
+      spreadsheet</a> — same seven formulas, your numbers, saved.</p>
+  </section>
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+  <section>
+    <div class="shelf">
+      <b>This scorecard comes from a book.</b>
+      <p>It is the tool at the heart of <em>Digital Products — Intermediate</em>, the second of three
+        ePORTS books — the one about making the same buyer buy again.</p>
+      <a href="../../digital-products/">Get the full Digital Products series →</a>
+    </div>
+  </section>
+</main>
+<footer class="foot"><div class="wrap">
+  <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+  <a href="../../resources/digital-products/">Digital Products downloads</a> ·
+  <a href="../../privacy/">Privacy</a>
+</div></footer>
+<script src="../../assets/dp-calc.js?v=20261012"></script>
+<script>
+(function () {
+  var ids = ["Vi","O","R","Bu","Rb","Rf","f"], el = {};
+  ids.forEach(function (i){ el[i]=document.getElementById(i); });
+  function num(i){ var v=parseFloat(el[i].value); return isNaN(v)?0:v; }
+  function run(){
+    var s = DPCalc.scorecard(num("Vi"),num("O"),num("R"),num("Bu"),num("Rb"),num("Rf"),num("f"));
+    document.getElementById("o1").textContent = num("Vi").toLocaleString("en-GB");
+    document.getElementById("o2").textContent = DPCalc.pct(s.conversion);
+    document.getElementById("o3").textContent = DPCalc.money(s.rpv);
+    document.getElementById("o4").textContent = DPCalc.money(s.aov);
+    document.getElementById("o5").textContent = DPCalc.pct(s.repeat);
+    document.getElementById("o6").textContent = DPCalc.pct(s.refund);
+    document.getElementById("o7").textContent = DPCalc.money(s.contribution);
+    document.getElementById("o8").textContent = DPCalc.money(s.contributionPerVisitor);
+  }
+  ids.forEach(function (i){ el[i].addEventListener("input", run); });
+  run();
+})();
+</script>
+</body>
+</html>

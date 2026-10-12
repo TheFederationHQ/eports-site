@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TikTok Shop affiliate income goal planner — target to reach | ePORTS</title>
+<meta name="description" content="Free TikTok Shop affiliate income goal planner: enter a target and see the sales, clicks and views it implies.">
+<link rel="canonical" href="./">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css">
+<!-- /tools page: live calculator + real editorial content so it is genuinely
+     useful and ranks for search traffic. Ads may sit on /tools pages LATER
+     (never on /resources) once the site qualifies and a consent setup exists.
+     The .ad-slot boxes below are reserved skeleton placeholders for that. -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator</p>
+    <h1>TikTok Shop affiliate income goal planner</h1>
+    <p class="sub">Work <em>backwards</em> from the commission you want to the sales, clicks and views
+      a plan that size would take — so a goal becomes a reach you can actually picture.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+
+  <section>
+    <h2><span class="n">The planner</span> Target commission, worked back to reach</h2>
+    <div class="calc">
+      <div>
+        <div class="field">
+          <label for="T">Target monthly commission <span class="u">($)</span></label>
+          <input id="T" type="number" inputmode="decimal" value="500" min="0" step="1">
+          <p class="hint">the settled commission you want to reach in a month</p>
+        </div>
+        <div class="field">
+          <label for="AOV">Average order value <span class="u">($)</span></label>
+          <input id="AOV" type="number" inputmode="decimal" value="28" min="0" step="0.01">
+          <p class="hint">the typical price of the products you promote</p>
+        </div>
+        <div class="field">
+          <label for="c">Commission rate <span class="u">(%)</span></label>
+          <input id="c" type="number" inputmode="decimal" value="15" min="0" max="99" step="0.1">
+          <p class="hint">the seller sets this per product — it varies widely</p>
+        </div>
+        <div class="field">
+          <label for="r">Return / refund rate <span class="u">(%)</span></label>
+          <input id="r" type="number" inputmode="decimal" value="12" min="0" max="100" step="0.1">
+          <p class="hint">the share of orders returned — commission on those is clawed back</p>
+        </div>
+        <div class="field">
+          <label for="CVR">Conversion rate <span class="u">(%)</span></label>
+          <input id="CVR" type="number" inputmode="decimal" value="2" min="0" max="100" step="0.1">
+          <p class="hint">share of clicks that turn into an order — from your own tracker</p>
+        </div>
+        <div class="field">
+          <label for="CTR">Click-through rate <span class="u">(%)</span></label>
+          <input id="CTR" type="number" inputmode="decimal" value="1.5" min="0" max="100" step="0.1">
+          <p class="hint">share of views that become a click — from your own tracker</p>
+        </div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>The reach this plan would take</h3>
+        <div class="row"><span class="k">Settled commission per order</span> <span class="v" id="oPer">—</span></div>
+        <div class="row"><span class="k">Orders needed / month</span> <span class="v" id="oOrders">—</span></div>
+        <div class="row"><span class="k">Clicks needed</span> <span class="v" id="oClicks">—</span></div>
+        <div class="row"><span class="k">Views needed</span> <span class="v" id="oViews">—</span></div>
+      </div>
+    </div>
+
+    <noscript>
+      <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The maths:
+      <em>per-order commission = price × rate% × (1 − return%)</em>; <em>orders = target ÷ per-order,
+      rounded up</em>; <em>clicks = orders ÷ conversion%</em>; <em>views = clicks ÷ click-through%</em>.
+      Or <a href="../../resources/tiktok-shop-affiliate/files/ttsa-basics-settled-commission-tracker.xlsx">download
+      the settled-commission tracker</a> and read your own conversion and click-through from real data.</p>
+    </noscript>
+    <p class="cta">Setting a target you can actually work back from is the planning discipline in
+      <a href="../../tiktok-shop-affiliate/#basics"><em>TikTok Shop Affiliate: Basics</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">How to read it</span> The reach a plan like this would require</h2>
+    <p>Most earnings calculators run forwards: you feed in your sales and they tell you what you'd make.
+      This one runs the other way. You name the settled commission you're aiming for, and it works back
+      through every step to the raw reach that plan would take — the orders, then the clicks behind those
+      orders, then the views behind those clicks.</p>
+    <p>Read it as a picture of scale, not a promise. It doesn't say you <em>will</em> hit the target; it
+      says a plan of that size, on the assumptions you entered, would need roughly this much reach. That's
+      exactly what makes it useful — it turns a wish into a number you can look at and decide whether it's
+      a month's work or a year's.</p>
+
+    <h3>The formula, in full</h3>
+    <p><b>Settled commission per order</b> = price × (rate ÷ 100) × (1 − return rate ÷ 100) — what one
+      order actually leaves in your pocket after clawbacks. <b>Orders needed</b> = target ÷ per-order,
+      <em>rounded up</em>, because a fraction of an order won't pay you. <b>Clicks needed</b> = orders ÷
+      (conversion rate ÷ 100), rounded up. <b>Views needed</b> = clicks ÷ (click-through rate ÷ 100),
+      rounded up. Every step rounds up, because you need <em>at least</em> that many.</p>
+
+    <h3>A worked example</h3>
+    <p>Say you want $500 a month. On a $28 product at 15% commission with a 12% return rate, each order
+      settles to $28 × 0.15 × 0.88 = <b>$3.70</b>. To reach $500 you'd need $500 ÷ $3.70 rounded up =
+      <b>136 orders</b>. At a 2% conversion rate that's 136 ÷ 0.02 = <b>6,800 clicks</b>. And at a 1.5%
+      click-through rate, those clicks sit behind 6,800 ÷ 0.015 = <b>453,334 views</b>. The target was
+      never the hard part — the reach behind it is what the plan is really asking for.</p>
+
+    <h3>Edge cases the calculator handles</h3>
+    <ul class="note" style="line-height:1.7">
+      <li><b>A per-order commission of $0</b> — price, rate or a 100% return rate wipes it out — makes the
+        orders target impossible, so it shows <b>—</b> rather than a fake infinity.</li>
+      <li><b>A 0% conversion or click-through rate</b> means the step it feeds can't be reached at all;
+        that output shows <b>—</b> too, because dividing by nothing isn't a number you can plan against.</li>
+    </ul>
+
+    <h3>Common questions</h3>
+    <h4>Is this a guarantee I'll earn the target?</h4>
+    <p>No. It's the reach a plan that size would take, not a promise you'll get there. What you actually
+      earn depends on the products, the platform, and buyers — none of which this box controls. It just
+      turns a target into the scale of effort behind it.</p>
+    <h4>Where do the conversion and click-through numbers come from?</h4>
+    <p>From your own tracker, not this page. They're assumptions you enter — your best read of how your
+      content converts today — not fixed truths. Change them and the reach changes, which is the point:
+      it shows you which lever moves the plan most. The free
+      <a href="../../resources/tiktok-shop-affiliate/files/ttsa-basics-settled-commission-tracker.xlsx">settled-commission
+      tracker</a> lets you read real rates off your own orders.</p>
+    <h4>So a plan is the same as an outcome?</h4>
+    <p>It isn't. A plan is a target with the maths behind it made visible; an outcome is what the month
+      actually delivers. This planner is honest about being the first thing, never the second — use it to
+      size the work and sanity-check the goal, then let your real numbers correct the assumptions.</p>
+  </section>
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+
+  <section>
+    <div class="shelf">
+      <b>This calculator comes from a book.</b>
+      <p>It's one tool from <em>TikTok Shop Affiliate — Basics</em>, which takes someone with a phone and
+        no following to their first real, settled commission — counted honestly, net of clawbacks.</p>
+      <a href="../../tiktok-shop-affiliate/">See the TikTok Shop Affiliate series →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+    <a href="../../resources/tiktok-shop-affiliate/">TikTok Shop Affiliate downloads</a> ·
+    <a href="../../privacy/">Privacy</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var ids = ["T", "AOV", "c", "r", "CVR", "CTR"], el = {};
+  ids.forEach(function (i) { el[i] = document.getElementById(i); });
+  function num(i) { var v = parseFloat(el[i].value); return isNaN(v) || v < 0 ? 0 : v; }
+  function money(x) {
+    return (x < 0 ? "−" : "") + "$" + Math.abs(x).toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+  }
+  function count(x) { return x.toLocaleString("en-US"); }
+  function set(id, t) { document.getElementById(id).textContent = t; }
+  function run() {
+    var T = num("T"), AOV = num("AOV"), c = num("c"),
+        r = Math.min(num("r"), 100), CVR = num("CVR"), CTR = num("CTR");
+    var per = AOV * (c / 100) * (1 - r / 100);
+    if (per <= 0) {
+      set("oPer", "—"); set("oOrders", "—"); set("oClicks", "—"); set("oViews", "—");
+      return;
+    }
+    set("oPer", money(per));
+    var orders = Math.ceil(T / per);
+    set("oOrders", count(orders));
+    if (CVR <= 0) {
+      set("oClicks", "—"); set("oViews", "—");
+      return;
+    }
+    var clicks = Math.ceil(orders / (CVR / 100));
+    set("oClicks", count(clicks));
+    if (CTR <= 0) {
+      set("oViews", "—");
+      return;
+    }
+    var views = Math.ceil(clicks / (CTR / 100));
+    set("oViews", count(views));
+  }
+  ids.forEach(function (i) { el[i].addEventListener("input", run); });
+  run();
+})();
+</script>
+
+</body>
+</html>

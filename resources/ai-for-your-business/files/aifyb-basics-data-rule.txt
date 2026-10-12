@@ -1,0 +1,83 @@
+YOUR ONE-PAGE DATA RULE
+From "AI for Your Business — Basics", chapter 5
+================================================================
+
+The rule your whole team follows, so AI stays a help and never becomes the
+thing that costs you a fine or a customer. Keep it short enough that people
+actually read it. Fill it in, then sit the team down, read it out, and have
+everyone who touches these tools -- you included -- put their name to it.
+
+⚠️ Not legal advice. For anything tricky, ask a professional. This is UK data-
+protection law (UK GDPR) in plain English; elsewhere the shape is similar, but
+check your own.
+
+
+1 - WHAT WE MAY PUT IN  (your lower-risk list)
+----------------------------------------------------------------
+Public and yours (website copy, published prices, marketing); your own drafts;
+real examples with names and identifying details removed -- removed enough that
+no one could be worked out; general "how do I..." questions with no private
+data in them.
+
+  ______________________________________________________________
+  ______________________________________________________________
+
+
+2 - WHAT WE NEVER PUT IN
+----------------------------------------------------------------
+  [ ] Customer or staff personal details, unless it's our approved business
+      tool AND we have a lawful reason
+  [ ] Card, bank or account numbers
+  [ ] Anything sensitive: health, ethnicity, religion, sexuality (the
+      "special-category" list)
+  [ ] Passwords, keys, logins
+  [ ] Anything under a confidentiality agreement, or a live legal matter
+  [ ] Employee records, complaints, anything about children or safeguarding
+  [ ] Trade secrets -- the recipe, the supplier list, the thing a competitor
+      would love to see
+  [ ] ________________________________________  (your own additions)
+
+
+3 - WHICH ACCOUNT WE USE FOR REAL WORK
+----------------------------------------------------------------
+Approved business tool (a seat per person, never a shared login): ____________
+
+  [ ] The admin has ACCEPTED the vendor's data-processing terms in the settings
+  [ ] "Train on our data" is turned OFF
+  [ ] It covers our data leaving the UK  (most tools process it abroad)
+
+(A business plan is the right FOUNDATION -- not a certificate that says you're
+compliant. It only helps once these three are actually done; a seat you bought
+but never set up is not a shield. You still need a lawful reason to use personal
+data, and for anything involving real personal data at scale, get proper advice.)
+
+
+4 - WHO OWNS THIS
+----------------------------------------------------------------
+Named person responsible for the rule and the settings: ______________________
+
+
+5 - IF SOMETHING SLIPS IN BY ACCIDENT
+----------------------------------------------------------------
+Because one day it will. The plan, in one line:
+  Delete it, and tell ______________________ straight away. Then we decide
+  together whether anyone needs telling. Panic helps no one; a quick, honest
+  flag does.
+
+
+6 - REVIEW DATE  (the tools keep changing)
+----------------------------------------------------------------
+Next review: ______________________
+
+
+WE'VE READ THIS AND WE'LL FOLLOW IT
+----------------------------------------------------------------
+  Name ____________________  Name ____________________
+  Name ____________________  Name ____________________
+  Owner ___________________  Date ____________________
+
+
+================================================================
+From AI for Your Business - Basics, chapter 5.
+The full method + the books: eports.global/ai-for-your-business
+ePORTS — your ecom source. eports.global

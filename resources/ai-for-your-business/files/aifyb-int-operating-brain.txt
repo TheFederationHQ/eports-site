@@ -1,0 +1,108 @@
+======================================================================
+  THE OPERATING BRAIN — a template
+  AI for Your Business — Intermediate, Chapter 2
+======================================================================
+
+Your AI is only ever as good as what it knows about your business. The
+operating brain is that knowledge, written down once, in one shared place
+the whole team — and the tool — works from, so the output sounds like ONE
+company no matter whose hands are on the keyboard.
+
+This is a starting shape. Change the words to fit your business; it's
+yours, not a form to file. Keep each section short enough that someone
+actually reads it.
+
+----------------------------------------------------------------------
+  VERSION
+----------------------------------------------------------------------
+Brain version: v____        Last updated: __ / __ / ____
+Custodian (the one person who edits this and stamps a new version): ______________________
+
+----------------------------------------------------------------------
+  1. WHO WE ARE, AND WHAT WE SELL
+----------------------------------------------------------------------
+The business in a paragraph a new starter would understand — the true
+version, not the website gloss:
+
+
+
+The real list of services / products, and what each costs:
+
+
+
+----------------------------------------------------------------------
+  2. WHO WE SERVE
+----------------------------------------------------------------------
+Our customers, their world, the words they use, what keeps them up at
+night. (AI always writes to a reader — this tells it who the reader is.)
+
+
+
+----------------------------------------------------------------------
+  3. HOW WE SOUND
+----------------------------------------------------------------------
+Two or three words for our voice: ______________________________________
+We say it like this: ___________________________________________________
+We never say it like this: _____________________________________________
+How we sound when a customer is upset: _________________________________
+
+----------------------------------------------------------------------
+  4. WHAT WE ALWAYS DO, AND NEVER DO
+----------------------------------------------------------------------
+The promises we always keep:
+
+
+
+The lines we never cross (the fee we never raise in a first reminder, the
+guarantee we'll never make, the tone we'll never take):
+
+
+
+The data rule — which tool takes what. On your APPROVED business/team tool
+(training off by default, a data-processing agreement accepted, transfers
+checked) you may use real customer data for a genuine business reason. On a
+general or personal tool, keep customer/staff personal details out. And on
+ANY tool, never put in: card / bank / password details; special-category
+data (health, ethnicity, religion, sexuality, union, biometrics); or trade
+secrets. (Not legal advice — for real personal data at scale, take proper
+advice.) Write your line here:
+
+
+
+----------------------------------------------------------------------
+  5. THE FACTS THAT MUST BE RIGHT
+----------------------------------------------------------------------
+Prices, policies, deadlines, the details AI must never guess at — the
+exact list a fluent machine would otherwise invent with a straight face:
+
+
+
+======================================================================
+  THE RULE THAT MAKES IT REAL (not just a document nobody opens)
+======================================================================
+Using the brain is not optional — and, the part that makes that stick,
+it is CHECKABLE:
+
+  • Every piece of AI-assisted work carries a marker: which version of
+    the brain it was built from (e.g. "brain v3, 14 March").
+
+  • Before the work moves on, the approver's FIRST look is provenance —
+    not quality yet, just: does it carry the brain marker? No marker, or
+    a stale one, and it goes straight back, unread, to be redone from
+    the brain.
+
+  • When a thin or out-of-date brain lets a miss through, that's a
+    correction — logged and folded back into the master by the custodian,
+    so the same miss can't happen twice.
+
+Build it as the TEAM'S, not a memo from you: you draft the skeleton, but
+each function's operator fills in their corner (the questions clients
+actually ask, the three things juniors get wrong). One master copy, one
+custodian, one queue of improvements. Everyone points the tool at the
+same copy; nobody keeps a private one.
+
+----------------------------------------------------------------------
+Pin at the top of the brain:  *No brain, no sign-off.*
+----------------------------------------------------------------------
+
+ePORTS — your ecom source. eports.global

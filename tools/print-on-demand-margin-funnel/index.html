@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Print on demand margin &amp; funnel dashboard — read your shop's numbers | ePORTS</title>
+<meta name="description" content="Free print-on-demand dashboard: work out each design's unit AND total contribution, read the funnel (views, favourites, orders) to see where buyers fall away, and price a multi-item basket — the per-order fee only counts once. Judge keep-or-cut on evidence, not affection.">
+<link rel="canonical" href="./">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css">
+<!-- /tools page: live calculators + editorial content. Derives from the same
+     pod-calc.js engine the Intermediate spreadsheet uses, so tool and download
+     never disagree. Ad slots deferred. -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator</p>
+    <h1>Margin &amp; funnel dashboard</h1>
+    <p class="sub">Stop flying on feel. Read the two instruments a print-on-demand shop runs on —
+      <em>what each design earns</em>, and <em>where buyers fall away</em>.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+
+  <section>
+    <h2><span class="n">One</span> What a design earns — unit <em>and</em> total</h2>
+    <div class="calc">
+      <div>
+        <div class="field"><label for="P">Item price <span class="u">(£)</span></label>
+          <input id="P" type="number" inputmode="decimal" value="16" min="0" step="0.01"></div>
+        <div class="field"><label for="S">Shipping you charge <span class="u">(£)</span></label>
+          <input id="S" type="number" inputmode="decimal" value="0" min="0" step="0.01">
+          <p class="hint">0 if you absorb it</p></div>
+        <div class="field"><label for="B">Base cost <span class="u">(£)</span></label>
+          <input id="B" type="number" inputmode="decimal" value="7" min="0" step="0.01"></div>
+        <div class="field"><label for="Sp">Shipping you pay <span class="u">(£)</span></label>
+          <input id="Sp" type="number" inputmode="decimal" value="4.50" min="0" step="0.01"></div>
+        <div class="field"><label for="f">Platform fee <span class="u">(%)</span></label>
+          <input id="f" type="number" inputmode="decimal" value="13" min="0" max="99" step="0.1">
+          <p class="hint">all-in — Etsy ~13% UK (with VAT on fees)</p></div>
+        <div class="field"><label for="R">Refund buffer <span class="u">(£)</span></label>
+          <input id="R" type="number" inputmode="decimal" value="0.40" min="0" step="0.01"></div>
+        <div class="field"><label for="Fx">Fixed fee per sale <span class="u">(£)</span></label>
+          <input id="Fx" type="number" inputmode="decimal" value="0.43" min="0" step="0.01">
+          <p class="hint">Etsy UK ~£0.43 (listing renewal + fixed processing + VAT)</p></div>
+        <div class="field"><label for="N">Sold this window <span class="u">(count)</span></label>
+          <input id="N" type="number" inputmode="numeric" value="18" min="0" step="1"></div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>What it earns</h3>
+        <div class="row"><span class="k">Buyer pays you (total)</span> <span class="v" id="oBT">—</span></div>
+        <div class="row"><span class="k">Platform takes</span> <span class="v" id="oFee">—</span></div>
+        <div class="row"><span class="k">Unit contribution</span> <span class="v" id="oC">—</span></div>
+        <div class="row"><span class="k"><b>Total contribution</b> (unit × sold)</span> <span class="v" id="oT">—</span></div>
+      </div>
+    </div>
+    <p class="note" style="margin-top:1rem">⚠️ Judge keep-or-cut on <b>total contribution</b>, never unit
+      alone. A "thin" £1.59 design that sells 18 (£28.62) can beat a "fat" one that sells once.</p>
+    <p class="cta">Rank this design by total, not by gut — it's
+      <a href="../../print-on-demand/#intermediate">the keep-or-cut method in <em>Print on Demand: Intermediate</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">Two</span> The funnel — where do buyers fall away?</h2>
+    <div class="calc">
+      <div>
+        <div class="field"><label for="V">Views <span class="u">(this listing)</span></label>
+          <input id="V" type="number" inputmode="numeric" value="600" min="0" step="1"></div>
+        <div class="field"><label for="Fv">Favourites</label>
+          <input id="Fv" type="number" inputmode="numeric" value="2" min="0" step="1"></div>
+        <div class="field"><label for="O">Orders</label>
+          <input id="O" type="number" inputmode="numeric" value="0" min="0" step="1"></div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>The read</h3>
+        <div class="row"><span class="k">Favourite rate</span> <span class="v" id="oFav">—</span></div>
+        <div class="row"><span class="k">View → order rate</span> <span class="v" id="oConv">—</span></div>
+        <div class="row"><span class="k">Likeliest suspect</span> <span class="v" id="oCode">—</span></div>
+      </div>
+    </div>
+    <p class="note" id="oDiag" role="status" aria-live="polite" style="margin-top:1rem"></p>
+    <p class="note">These are per-listing <em>engagement signals</em> — not the shop conversion Etsy also
+      reports (orders ÷ <em>visits</em>, a different denominator). And a tiny sample proves nothing: give
+      a listing a few hundred views before you trust the read.</p>
+    <p class="cta">Pick the one thing to fix, then set a date — it's
+      <a href="../../print-on-demand/#intermediate">the review loop in <em>Print on Demand: Intermediate</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">Three</span> The basket lever — two in one order</h2>
+    <div class="calc">
+      <div>
+        <div class="field"><label for="uA">Design A — unit contribution <span class="u">(£)</span></label>
+          <input id="uA" type="number" inputmode="decimal" value="4.41" min="-999" step="0.01"></div>
+        <div class="field"><label for="qA">Design A — quantity</label>
+          <input id="qA" type="number" inputmode="numeric" value="1" min="0" step="1"></div>
+        <div class="field"><label for="uB">Design B — unit contribution <span class="u">(£)</span></label>
+          <input id="uB" type="number" inputmode="decimal" value="1.59" min="-999" step="0.01"></div>
+        <div class="field"><label for="qB">Design B — quantity</label>
+          <input id="qB" type="number" inputmode="numeric" value="1" min="0" step="1"></div>
+        <div class="field"><label for="poF">Per-order fee saved per extra item <span class="u">(£)</span></label>
+          <input id="poF" type="number" inputmode="decimal" value="0.24" min="0" step="0.01">
+          <p class="hint">the per-ORDER part of the fixed fee (Etsy UK ~£0.24)</p></div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>One basket vs separate orders</h3>
+        <div class="row"><span class="k">Bought separately</span> <span class="v" id="oSep">—</span></div>
+        <div class="row"><span class="k">In one basket</span> <span class="v" id="oTog">—</span></div>
+        <div class="row"><span class="k"><b>Basket saving</b></span> <span class="v" id="oSav">—</span></div>
+      </div>
+    </div>
+    <div class="calc" style="margin-top:1rem">
+      <div>
+        <div class="field"><label for="cP">Coupon check — item price <span class="u">(£)</span></label>
+          <input id="cP" type="number" inputmode="decimal" value="16" min="0" step="0.01"></div>
+        <div class="field"><label for="cC">Coupon check — its unit contribution <span class="u">(£)</span></label>
+          <input id="cC" type="number" inputmode="decimal" value="1.59" min="-999" step="0.01"></div>
+        <div class="field"><label for="cO">Coupon <span class="u">(% off)</span></label>
+          <input id="cO" type="number" inputmode="decimal" value="10" min="0" max="99" step="1"></div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>Does the coupon still leave margin?</h3>
+        <div class="row"><span class="k">Discount</span> <span class="v" id="oDisc">—</span></div>
+        <div class="row"><span class="k">Contribution after</span> <span class="v" id="oAfter">—</span></div>
+        <div class="row"><span class="k"><b>Verdict</b></span> <span class="v" id="oCoup">—</span></div>
+      </div>
+    </div>
+    <p class="note" style="margin-top:1rem">A bigger average basket lifts <b>margin</b>, not just revenue —
+      because one order pays the per-order fee once. That is what the repeat and cross-sell engine is really
+      buying you. A blanket coupon, though, can gut a thin design. Ten percent off a £16 item knocks £1.60
+      off the price — but you keep ~13% of that in the fee you no longer pay, so a £1.59 contribution falls
+      to about 20p: not below zero, but almost nothing left, and a deeper coupon does turn negative. So set
+      a minimum-basket floor. (The coupon check uses the platform fee % from the margin box above.)</p>
+
+    <noscript><p class="calc-fallback"><b>The calculators need JavaScript.</b> Or
+      <a href="../../resources/print-on-demand/files/pod-int-margin-funnel.xlsx">download the spreadsheet</a>
+      — it uses exactly the same formulas.</p></noscript>
+    <p class="cta">Set a minimum-basket rule before you discount — it's
+      <a href="../../print-on-demand/#intermediate">the repeat engine in <em>Print on Demand: Intermediate</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">How to read it</span> Two instruments, read separately</h2>
+    <p><b>Contribution</b> is what one sale leaves you after base cost, shipping, the platform's percentage
+      and its fixed fee. <b>Total contribution</b> is that figure times how many sold in a window — the
+      number that actually pays your bills, and the one you judge a design on.</p>
+    <p>The <b>funnel</b> tells you <em>where</em> a design fails, and each pattern points somewhere
+      different to look first: few views is a discovery problem (get it seen), plenty of views but almost
+      no favourites is a listing problem (photo, title, offer, price), and favourites with no orders is
+      likely friction at the till (price, shipping, thin reviews). None of these is a proven verdict —
+      they are the first place to look.</p>
+    <p>Keep a copy: <a href="../../resources/print-on-demand/files/pod-int-margin-funnel.xlsx">the same
+      dashboard as a spreadsheet</a>, and the fill-in
+      <a href="../../resources/print-on-demand/files/pod-int-cull.txt">cull worksheet</a> that turns these
+      numbers into a keep-or-cut decision.</p>
+  </section>
+
+  <section>
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+
+    <div class="shelf">
+      <b>This dashboard comes from a book.</b>
+      <p>It is the instrument at the heart of <em>Print on Demand — Intermediate</em>, which turns a
+        scatter of listings into a niche one buyer returns to.</p>
+      <a href="../../print-on-demand/">See the Print on Demand series →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+    <a href="../../resources/print-on-demand/">Print on Demand downloads</a> ·
+    <a href="../../privacy/">Privacy</a>
+  </div>
+</footer>
+
+<script src="../../assets/pod-calc.js?v=20261012"></script>
+<script>
+(function () {
+  function n(id) { var v = parseFloat(document.getElementById(id).value); return isNaN(v) ? 0 : v; }
+  function set(id, t) { document.getElementById(id).textContent = t; }
+
+  function margin() {
+    var r = POD.contribution(n("P"), n("S"), n("B"), n("Sp"), n("f"), n("R"), n("Fx"));
+    set("oBT", POD.money(r.buyerTotal)); set("oFee", POD.money(r.fee));
+    set("oC", POD.money(r.contribution));
+    var total = r.invalid ? "—" : POD.money(r.contribution * Math.max(0, Math.floor(n("N"))));
+    set("oT", total);
+  }
+  function funnel() {
+    var r = POD.funnel(n("V"), n("Fv"), n("O"));
+    if (r.invalid) { set("oFav","—"); set("oConv","—"); set("oCode","—"); set("oDiag",""); return; }
+    set("oFav", POD.pct(r.favRate)); set("oConv", POD.pct(r.convRate));
+    var labels = { working:"Working — leave it", listing:"Listing not landing",
+                   discovery:"Discovery gap", friction:"Friction at the till" };
+    set("oCode", labels[r.code] || "—"); set("oDiag", r.diagnosis);
+  }
+  function basket() {
+    var r = POD.orderContribution(
+      [{unit:n("uA"), qty:Math.max(0,Math.floor(n("qA")))},
+       {unit:n("uB"), qty:Math.max(0,Math.floor(n("qB")))}], n("poF"));
+    if (r.invalid) { set("oSep","—"); set("oTog","—"); set("oSav","—"); return; }
+    set("oSep", POD.money(r.separate)); set("oTog", POD.money(r.together));
+    set("oSav", POD.money(r.saved));
+  }
+  function coupon() {
+    var r = POD.couponImpact(n("cP"), n("cC"), n("cO"), n("f"));
+    if (r.invalid) { set("oDisc","—"); set("oAfter","—"); set("oCoup","—"); return; }
+    set("oDisc", POD.money(r.discount)); set("oAfter", POD.money(r.after));
+    var v = r.losesMoney ? "Loss — set a basket floor"
+          : (r.after < n("cC") / 2 ? "Gutted — set a basket floor" : "OK — safe here");
+    set("oCoup", v);
+  }
+  var groups = [["P","S","B","Sp","f","R","Fx","N"], margin],
+      fg = [["V","Fv","O"], funnel], bg = [["uA","qA","uB","qB","poF"], basket],
+      cg = [["cP","cC","cO","f"], coupon];
+  [groups, fg, bg, cg].forEach(function (g) {
+    g[0].forEach(function (id) { document.getElementById(id).addEventListener("input", g[1]); });
+    g[1]();
+  });
+})();
+</script>
+
+</body>
+</html>

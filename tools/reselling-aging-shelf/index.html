@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reseller aging report — how long has your money been asleep? (3D shelf) | ePORTS</title>
+<meta name="description" content="Free inventory aging report for resellers: put in your stock by age band and see it as a 3D shelf you can turn — how much of your cash has sat more than 90 days, by item count and by cost.">
+<link rel="canonical" href="./">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css?v=20261011b">
+<!-- /tools page (Reselling lane). Mirrors Reselling — Intermediate, ch7: four age bands by item count
+     AND cost basis; the over-90 share is the number to watch. Ordinal blue ramp validated light. -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free tool · Reselling</p>
+    <h1>How long has your money been asleep?</h1>
+    <p class="sub">Your stock, sorted by how long it's been listed, built as a shelf you can turn — and the one
+      number that tells you whether the shelf is getting younger or older.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+
+  <section>
+    <h2><span class="n">The aging report</span> Four bands, counted two ways</h2>
+    <div class="calc">
+      <div>
+        <div class="field"><label for="n1">0–30 days: items · cost <span class="u">($)</span></label>
+          <input id="n1" type="number" inputmode="numeric" value="20" min="0" step="1" aria-label="0 to 30 days, items">
+          <input id="c1" type="number" inputmode="decimal" value="99" min="0" step="1" aria-label="0 to 30 days, cost" style="margin-top:.35rem"></div>
+        <div class="field"><label for="n2">31–60 days: items · cost <span class="u">($)</span></label>
+          <input id="n2" type="number" inputmode="numeric" value="6" min="0" step="1" aria-label="31 to 60 days, items">
+          <input id="c2" type="number" inputmode="decimal" value="66" min="0" step="1" aria-label="31 to 60 days, cost" style="margin-top:.35rem"></div>
+        <div class="field"><label for="n3">61–90 days: items · cost <span class="u">($)</span></label>
+          <input id="n3" type="number" inputmode="numeric" value="7" min="0" step="1" aria-label="61 to 90 days, items">
+          <input id="c3" type="number" inputmode="decimal" value="94" min="0" step="1" aria-label="61 to 90 days, cost" style="margin-top:.35rem"></div>
+        <div class="field"><label for="n4">Over 90 days: items · cost <span class="u">($)</span></label>
+          <input id="n4" type="number" inputmode="numeric" value="23" min="0" step="1" aria-label="Over 90 days, items">
+          <input id="c4" type="number" inputmode="decimal" value="422" min="0" step="1" aria-label="Over 90 days, cost" style="margin-top:.35rem"></div>
+        <div class="field"><label for="n5">Not yet listed (float + drafts): items · cost <span class="u">($)</span></label>
+          <input id="n5" type="number" inputmode="numeric" value="3" min="0" step="1" aria-label="Not yet listed, items">
+          <input id="c5" type="number" inputmode="decimal" value="14" min="0" step="1" aria-label="Not yet listed, cost" style="margin-top:.35rem"></div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>The headline</h3>
+        <div class="row"><span class="k">Everything you own, at cost</span> <span class="v" id="oTot">—</span></div>
+        <div class="row"><span class="k">Over 90 days — items</span> <span class="v" id="oN">—</span></div>
+        <div class="row"><span class="k">Over 90 days — share of items</span> <span class="v" id="oNs">—</span></div>
+        <div class="row"><span class="k">Over 90 days — share of cost</span> <span class="v" id="oCs">—</span></div>
+      </div>
+    </div>
+
+    <div class="viz">
+      <h3>Your shelf, by age — drag to turn it (or use the arrow keys)</h3>
+      <div id="shelf"></div>
+      <p class="viz-hint">Oldest stock on the bottom shelf, newest on top; each shelf is labelled with its age band,
+        item count and cost. A box is one item (up to 24 per shelf), drawn bigger when that band's items cost more on
+        average. Hover a box for its band, or open the table under the shelf for every figure.</p>
+      <p><button class="preset" type="button" id="spinL">Turn left</button>
+         <button class="preset" type="button" id="spinR">Turn right</button></p>
+    </div>
+
+    <noscript>
+      <p class="calc-fallback"><b>The report needs JavaScript.</b> By hand: for every item still listed, days listed =
+        today's date minus the date it first went up; put it in 0–30, 31–60, 61–90 or over 90; add the not-yet-listed
+        stock as its own line. Count each band and add up its cost. Over-90 share of cost = over-90 cost ÷ total cost —
+        the number to put on your weekly log and watch fall.</p>
+    </noscript>
+    <p class="cta">Building this report — and the dated protocol that clears each band — is chapters 7 and 8 of
+      <a href="../../reselling/#intermediate"><em>Reselling — Intermediate</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">How to read it</span> Count it twice: by items, then by dollars</h2>
+    <p>A listing looks the same on day 3 and day 300, so memory fills the shelf in with the recent things — and the
+      old ones go uncounted. Counted by items, old stock can look like a few stragglers. Counted by what you paid, it
+      is often most of your money, because the things that sit tend to be the dear ones you bought with the most
+      confidence.</p>
+    <h3>A worked example</h3>
+    <p>The defaults are the book's: 59 items, <b>$695</b> at cost. Over 90 days: 23 items — <b>39%</b> of the items
+      but <b>61%</b> of the money. Ninety days matters because by then the sold listings you priced against have rolled
+      out of the standard sold filter, and the listing has been through about three monthly renewals without a buyer:
+      the price is unchecked, and the item has become a decision you owe.</p>
+    <h3>Common questions</h3>
+    <h4>What do I do with the over-90 band?</h4>
+    <p>Give every band a dated action: refresh at 31 days, offer and step down to your floor at 61, and at 90 ask one
+      question — if this were handed to you today for nothing, would you list it here, at this price, and hold it to a
+      date? If not: move it, lot it, price it to go, or donate it, by a date.</p>
+    <h4>Does old stock cost me fees?</h4>
+    <p>On eBay, at small sizes, mostly not — monthly renewals count against the free-listing allowance. The real cost
+      is the cash: every dollar on the bottom shelf is a dollar your next Saturday can't spend.</p>
+  </section>
+
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+
+  <section>
+    <div class="shelf">
+      <b>This report comes from a book.</b>
+      <p>It's the low point of <em>Reselling — Intermediate</em> — and the next chapter is the protocol that turns the
+        pile into a process.</p>
+      <a href="../../reselling/">See the Reselling series →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+    <a href="../../resources/reselling/">Reselling downloads</a> ·
+    <a href="../../privacy/">Privacy</a>
+  </div>
+</footer>
+
+<script src="../../assets/viz.js?v=20261011k"></script>
+<script>
+(function () {
+  var V = window.RVIZ, names = ["0–30 days", "31–60 days", "61–90 days", "Over 90 days"], shelf = null, yaw = -0.55;
+  function num(i) { var v = parseFloat(document.getElementById(i).value); return isNaN(v) || v < 0 ? NaN : v; }
+  function report(n, c) {
+    var tn = n.reduce(function (a, b) { return a + b; }, 0), tc = c.reduce(function (a, b) { return a + b; }, 0);
+    return { tn: tn, tc: tc, o90n: n[3], o90c: c[3], shareN: tn ? n[3] / tn : NaN, shareC: tc ? c[3] / tc : NaN };
+  }
+  window.RESELL_AGING = report;
+  function pct(x) { return isFinite(x) ? Math.round(x * 100) + "%" : "—"; }
+  function run() {
+    var n = [1, 2, 3, 4, 5].map(function (i) { return num("n" + i); }), c = [1, 2, 3, 4, 5].map(function (i) { return num("c" + i); });
+    var set = function (id, t) { document.getElementById(id).textContent = t; };
+    if (n.concat(c).some(isNaN)) { ["oTot", "oN", "oNs", "oCs"].forEach(function (k) { set(k, "enter every box"); }); return; }
+    var r = report(n, c);
+    set("oTot", V.money0(r.tc) + " · " + r.tn + " items");
+    set("oN", r.o90n + " items · " + V.money0(r.o90c));
+    set("oNs", r.tn ? pct(r.shareN) : "no stock entered");
+    set("oCs", r.tc ? pct(r.shareC) : "no stock entered");
+    var bands = names.map(function (nm, i) { return { name: nm, items: n[i], cost: c[i], color: V.C.ramp[i] }; });
+    if (shelf) yaw = shelf.state.yaw;
+    shelf = V.shelf3d(document.getElementById("shelf"), bands, { title: "A 3D shelf of your stock by age band", yaw: yaw });
+    V.legend(document.getElementById("shelf"), bands.map(function (b) { return { name: b.name, color: b.color }; }));
+    V.table(document.getElementById("shelf"), "Your stock by age band", ["Band", "Items", "Cost", "Share of items", "Share of cost"],
+      bands.concat([{ name: "Not yet listed", items: n[4], cost: c[4] }]).map(function (b) {
+        return [b.name, String(b.items), V.money0(b.cost), pct(r.tn ? b.items / r.tn : NaN), pct(r.tc ? b.cost / r.tc : NaN)];
+      }));
+  }
+  for (var i = 1; i <= 5; i++) { document.getElementById("n" + i).addEventListener("input", run); document.getElementById("c" + i).addEventListener("input", run); }
+  document.getElementById("spinL").addEventListener("click", function () { shelf.rotate(shelf.state.yaw - 0.35); });
+  document.getElementById("spinR").addEventListener("click", function () { shelf.rotate(shelf.state.yaw + 0.35); });
+  window.addEventListener("resize", run);
+  run();
+})();
+</script>
+</body>
+</html>

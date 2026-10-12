@@ -1,0 +1,151 @@
+RESELLING — ADVANCED · THE OPERATIONS PACK
+Free from ePORTS — eports.global/resources/reselling
+Print it. Keep it in the business folder.
+
+=====================================================================
+1. THE HOURS RULE (ch1)
+=====================================================================
+My ceiling: ___ hours a week.
+"If a target calculates above ___ hours a week, I do not add listing or
+sourcing hours. I first change a buy, a channel, a price, a process — or
+a delegation gate — and rerun the calculation until it fits."
+
+=====================================================================
+2. PROFESSIONAL-REFERRAL TRIGGERS (ch4) — any one true = book it
+=====================================================================
+[ ] I've made direct sales (flea market, local, pop-up) and don't know
+    whether I need a seller's permit.
+[ ] More than 1 sale in 20 in my records has no cost I can show.
+[ ] I've had a notice or letter from any tax authority.
+[ ] I'm about to pay anyone to help me.
+[ ] I'm thinking about forming a business entity, or I've been told I should.
+[ ] A platform has sent me a tax form I don't understand.
+Tax/records -> an enrolled agent or CPA who works with small sellers.
+Paying people / forming a business -> whoever handles that where you live.
+Bring: the gap list, off-platform records, the platform reports.
+
+=====================================================================
+2b. SALES-TAX AND RESALE-CERTIFICATE RECORD (ch4, ch9) — a record, not advice
+=====================================================================
+Fill it in from what your professional and your state's tax agency tell
+you. Keep it with the year's records.
+
+Channel / where I sell | Marketplace collects tax? (Y/N) | Direct? (Y/N)
+_______________________|__________________________________|______________
+_______________________|__________________________________|______________
+_______________________|__________________________________|______________
+
+State / local authority involved: ______________________________________
+Seller's permit — status: ____  authority: ____  number: ____  from: ____
+Resale certificate — status: ____  authority: ____  number: ____  from: ____
+Filing schedule set by my professional (if any): _______________________
+Who told me / source: __________________________  date: _______________
+Still unanswered: ______________________________________________________
+Next action: ___________________________________  by: _________________
+
+=====================================================================
+3. THE EXCEPTIONS ROUTINE (ch5) — record at the touch
+=====================================================================
+INTAKE ....... every item gets a row and a cost before the shelf; box
+               lots split by comp share; row code on the bag.
+OFF-PLATFORM . price + row-code sticker -> sales book; cash banked by
+               the next business day, reconciled to the book.
+RETURNS ...... a log line the day it lands: item, reason, refund,
+               return postage, outcome.
+RUNNING COSTS  one mileage line per route; receipts photographed.
+
+GATES:
+[ ] No item on the shelf without a cost and a row code.
+[ ] No listing live without condition grade, tested-and-measured line,
+    and (where triggered) a recall check.
+[ ] No next sourcing/selling session until the weekly review is done.
+
+WEEKLY EXCEPTIONS REVIEW (four questions — a NO to all four is normal):
+1. Anything in this week without a cost on its row?
+2. Any off-platform sale not in the sales book, or cash not banked?
+3. Any return, refund or claim not in the log?
+4. This week's miles and receipts captured?
+
+EXCEPTIONS LOG
+Date | Item / row | What happened | Amount | Outcome | Done
+_____|___________|_______________|________|_________|_____
+_____|___________|_______________|________|_________|_____
+_____|___________|_______________|________|_________|_____
+
+=====================================================================
+4. RETURNS & CONDITION POLICY — template (ch5)
+=====================================================================
+Condition scale (use the same words every time):
+  Excellent — clean, complete, works as it should.
+  Good ...... light wear; every mark photographed and named.
+  Fair ...... works, but marked/worn/cosmetic flaw; see every photo.
+  For parts or not working — doesn't fully work or is incomplete;
+              say exactly what's wrong and what was tested.
+Tested-and-measured line in every listing: what I checked + measurements.
+Return setting: chosen from MY OWN returns count (eBay's guarantee covers
+  not-as-described items whatever the setting; the seller pays return
+  postage on those). Mine: _______________________________
+Never sell: a recalled item, unless its recall notice / the CPSC says it
+  may be resold after the remedy (check cpsc.gov/recalls for anything
+  electrical, for children, or an unfamiliar brand-and-model); anything I
+  can't confidently say is genuine.
+
+=====================================================================
+5. DELEGATION TRIAL SHEET (ch8)
+=====================================================================
+Task test: [ ] many of my minutes per item  [ ] definable standard
+           [ ] checking is quick and certain   (all three, or not this task)
+Break-even: my minutes saved per item x my hurdle rate / 60 = $____
+            pay per item $____ -> checking must stay under ____ minutes
+Before the pay arrangement or first payment, ask the right professional:
+  [ ] worker status  [ ] pay rules  [ ] payroll / insurance / records
+  [ ] extra rules if under 18
+Quality bar (pass/fail per item): ______________________________
+Bands for a 20-item trial:  >= 18 pass: continue, consider more
+                            16-17: one more batch, fix the instructions
+                            < 16, or checking > break-even: STOP
+Trial: items ___  cap $___  end date ___  passed ___/20  checking ___ min
+
+=====================================================================
+6. THE DECISION PAGE (ch6-ch9)
+=====================================================================
+Date | Option | Gates (cash/hours/payback/trial) | Decision | Reason
+_____|________|__________________________________|__________|_______
+_____|________|__________________________________|__________|_______
+At least one entry should be a growth option you decided NOT to take.
+
+=====================================================================
+7. THE OPERATING CALENDAR (ch10)
+=====================================================================
+Each automatic action:
+  IF this number crosses this line -> THIS happens -> UNTIL this.
+WEEKLY (Sunday, ~30 min): log line; exceptions review; actual beside
+  forecast; age bands.
+  AUTO: review not done -> no sourcing/selling session until it is.
+        open-to-buy under the cash gate -> next Saturday is a clearing
+        session, until it's back over the gate.
+        hours over the ceiling 2 weeks running -> the lowest net-per-hour
+        row is suspended for 4 weeks.
+MONTHLY (first Sunday, ~1 h): reconcile account to records; net per hour
+  by row; over-90 share; demand check; roll the forecast 4 weeks.
+  AUTO: a row under its floor rate 2 months running -> stop-doing list,
+        switched off by a date, until a quarterly re-test clears it.
+        over-90 share rising 2 months running -> Saturday buying capped
+        at half the per-trip limit until the share falls.
+QUARTERLY (~2-3 h): re-run the time study; re-check hurdle, card, gates
+  against the quarter's evidence; decide trials; check the triggers.
+  AUTO: every passing item cleared the hurdle by $3+ -> hurdle up $1, dated.
+        a trial at its end date -> decided by its own bands that day.
+        any referral trigger true -> appointment booked that day.
+YEARLY (one weekend): close the year's records with the professional;
+  keep records (often three years, longer in some cases); recalculate
+  the ceiling (hours x 60 / minutes per sale x net per item); write the
+  choice.
+  AUTO: a target above the hours ceiling -> no added hours; cut the
+        target to the ceiling, or write one dated economic change.
+Lines move ONLY at the quarterly review (hurdle, card, gates) or the
+yearly review (ceiling, target, shape of the business). Never in an aisle.
+
+---------------------------------------------------------------------
+The Reselling shelf: Basics · Intermediate · Advanced
+ePORTS — your ecom source. eports.global

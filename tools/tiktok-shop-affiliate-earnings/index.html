@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TikTok Shop affiliate earnings calculator — what your reach really pays | ePORTS</title>
+<meta name="description" content="Free TikTok Shop affiliate earnings calculator estimating monthly commission from views, CTR, conversion, AOV and commission rate, net of returns.">
+<link rel="canonical" href="./">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css">
+<!-- /tools page: live calculator + real editorial content so it is genuinely
+     useful and ranks for search traffic. Ads may sit on /tools pages LATER
+     (never on /resources) once the site qualifies and a consent setup exists.
+     The .ad-slot boxes below are reserved skeleton placeholders for that. -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator</p>
+    <h1>TikTok Shop affiliate earnings calculator</h1>
+    <p class="sub">Turn your monthly views into an honest estimate of commission income — down the funnel
+      from reach to clicks to orders, and net of the returns that claw part of it back.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+
+  <section>
+    <h2><span class="n">The calculator</span> From views to settled commission</h2>
+    <div class="calc">
+      <div>
+        <div class="field">
+          <label for="V">Monthly views <span class="u">(count)</span></label>
+          <input id="V" type="number" inputmode="numeric" value="100000" min="0" step="1">
+        </div>
+        <div class="field">
+          <label for="CTR">Click-through rate <span class="u">(%)</span></label>
+          <input id="CTR" type="number" inputmode="decimal" value="1.5" min="0" max="100" step="0.1">
+          <p class="hint">share of viewers who tap the product</p>
+        </div>
+        <div class="field">
+          <label for="CVR">Conversion rate <span class="u">(%)</span></label>
+          <input id="CVR" type="number" inputmode="decimal" value="2" min="0" max="100" step="0.1">
+          <p class="hint">share of clicks that buy</p>
+        </div>
+        <div class="field">
+          <label for="AOV">Average order value <span class="u">($)</span></label>
+          <input id="AOV" type="number" inputmode="decimal" value="28" min="0" step="0.01">
+        </div>
+        <div class="field">
+          <label for="c">Commission rate <span class="u">(%)</span></label>
+          <input id="c" type="number" inputmode="decimal" value="15" min="0" max="99" step="0.1">
+          <p class="hint">seller-set, varies widely</p>
+        </div>
+        <div class="field">
+          <label for="r">Return / refund rate <span class="u">(%)</span></label>
+          <input id="r" type="number" inputmode="decimal" value="12" min="0" max="100" step="0.1">
+          <p class="hint">the share of orders returned or refunded — commission on those is clawed back</p>
+        </div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>Your monthly estimate</h3>
+        <div class="row"><span class="k">Product clicks</span> <span class="v" id="oClicks">—</span></div>
+        <div class="row"><span class="k">Orders</span> <span class="v" id="oOrders">—</span></div>
+        <div class="row"><span class="k">Sales volume (GMV)</span> <span class="v" id="oGMV">—</span></div>
+        <div class="row"><span class="k">Estimated commission (the flashy number)</span> <span class="v" id="oEst">—</span></div>
+        <div class="row"><span class="k">Projected settled commission (on your return rate)</span> <span class="v" id="oSet">—</span></div>
+      </div>
+    </div>
+
+    <noscript>
+      <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The maths:
+      <em>clicks = views × CTR%</em>; <em>orders = clicks × conversion%</em>; <em>GMV = orders × average
+      order value</em>; <em>estimated commission = GMV × commission%</em>; then
+      <em>settled = estimated × (1 − return rate%)</em>. Or
+      <a href="../../resources/tiktok-shop-affiliate/files/ttsa-basics-settled-commission-tracker.xlsx">download
+      the settled-commission tracker</a> and log your own orders.</p>
+    </noscript>
+    <p class="cta">Building reach that actually converts — and counting the settled number, never the
+      estimate — is the money discipline in
+      <a href="../../tiktok-shop-affiliate/#basics"><em>TikTok Shop Affiliate: Basics</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">How to read it</span> An estimate from your reach, not a promise</h2>
+    <p>Nobody pays you for views. Views turn into a few clicks, clicks turn into fewer orders, orders add
+      up to sales volume, and a slice of that volume is your commission — before returns take part of it
+      back. This calculator walks that whole funnel so you can see, roughly, what a month of reach is
+      worth instead of guessing from a big view count.</p>
+    <p>Treat the answer as an <em>informed estimate</em>, not income. The two numbers that matter are the
+      estimated commission the app would flash at you and the <b>settled</b> commission that survives the
+      return window. Pay yourself from the settled figure and a wave of returns is an annoyance; treat the
+      estimate as income and the same wave is a shortfall you already spent.</p>
+
+    <h3>The formula, in full</h3>
+    <p><b>Clicks</b> = monthly views × (CTR ÷ 100). <b>Orders</b> = clicks × (conversion rate ÷ 100).
+      <b>Sales volume (GMV)</b> = orders × average order value. <b>Estimated commission</b> = GMV ×
+      (commission rate ÷ 100). <b>Settled commission</b> = estimated × (1 − return rate ÷ 100) — the
+      share of orders that <em>don't</em> come back.</p>
+
+    <h3>A worked example</h3>
+    <p>Take 100,000 monthly views. At a 1.5% click-through rate that's 1,500 clicks; at a 2% conversion
+      rate that's 30 orders. Thirty orders at a $28 average order value is $840 of sales volume (GMV). A
+      15% commission on that is an estimated <b>$126.00</b>. But if 12% of those orders are returned, the
+      commission on them is clawed back — so the projected settled amount is $126 × 0.88 =
+      <b>$110.88</b>. The estimate was never wrong, exactly; it was just never yours to keep in full.</p>
+
+    <h3>Edge cases the calculator handles</h3>
+    <ul class="note" style="line-height:1.7">
+      <li><b>A 100% return rate</b> settles to $0 — every order came back, so no commission stays.</li>
+      <li><b>A 0% return rate</b> makes settled equal estimated. Real products rarely sit there; the
+        point of the box is to make you enter <em>your</em> rate, from your own tracker, not a hopeful
+        guess.</li>
+      <li><b>Zero anywhere in the funnel</b> — no CTR, no conversion, no commission — zeroes the money.
+        Every stage has to work for the last one to pay.</li>
+    </ul>
+
+    <h3>Common questions</h3>
+    <h4>How much do TikTok Shop affiliates actually make?</h4>
+    <p>There's no single figure, and anyone quoting one is selling something. It's entirely a function of
+      the funnel above: how many views you get, how many turn into clicks and orders, the order value, the
+      seller's commission rate, and how many orders come back. Change any one of those and the answer
+      moves. This tool lets you put in your own numbers instead of trusting a screenshot.</p>
+    <h4>What click-through and conversion rates should I use?</h4>
+    <p>Your own, from your own posts and your own tracker — not the numbers off a hype video. Early on you
+      won't know them, so run the calculator low and high to see the range you're playing in, and replace
+      the guesses with real figures as your own data comes in.</p>
+    <h4>What commission rate should I use?</h4>
+    <p>The seller sets it, per product, and it ranges from low single digits up to a large slice — there
+      is no standard. Use the actual rate on the product you're promoting, which you'll see in the
+      affiliate marketplace. Current ranges, with dates, sit on the
+      <a href="../../resources/tiktok-shop-affiliate/">TikTok Shop Affiliate resources page</a>.</p>
+    <h4>Is this a guarantee or an income promise?</h4>
+    <p>No — it's an informed estimate, not a guarantee and not an income promise. No public calculator can
+      see private payouts or qualified-view data, so this can't tell you what you'll earn; it can only
+      show what a set of numbers implies. What you actually earn depends on the products, the platform,
+      and buyers — none of which this box controls. For the real figure, log each order as it matures in
+      the free
+      <a href="../../resources/tiktok-shop-affiliate/files/ttsa-basics-settled-commission-tracker.xlsx">settled-commission
+      tracker</a>, and let your settled earnings fall out of your own data.</p>
+  </section>
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+
+  <section>
+    <div class="shelf">
+      <b>This calculator comes from a book.</b>
+      <p>It's one tool from <em>TikTok Shop Affiliate — Basics</em>, which takes someone with a phone and
+        no following to their first real, settled commission — counted honestly, net of clawbacks.</p>
+      <a href="../../tiktok-shop-affiliate/">See the TikTok Shop Affiliate series →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+    <a href="../../resources/tiktok-shop-affiliate/">TikTok Shop Affiliate downloads</a> ·
+    <a href="../../privacy/">Privacy</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var ids = ["V", "CTR", "CVR", "AOV", "c", "r"], el = {};
+  ids.forEach(function (i) { el[i] = document.getElementById(i); });
+  function num(i) { var v = parseFloat(el[i].value); return isNaN(v) || v < 0 ? 0 : v; }
+  function money(x) {
+    return (x < 0 ? "−" : "") + "$" + Math.abs(x).toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+  }
+  function whole(x) {
+    return Math.round(x).toLocaleString("en-US");
+  }
+  function set(id, t) { document.getElementById(id).textContent = t; }
+  function run() {
+    var V = num("V"), CTR = num("CTR"), CVR = num("CVR"),
+        AOV = num("AOV"), c = num("c"), r = Math.min(num("r"), 100);
+    var clicks = V * (CTR / 100);
+    var orders = clicks * (CVR / 100);
+    var gmv = orders * AOV;
+    var est = gmv * (c / 100);
+    var settled = est * (1 - r / 100);
+    set("oClicks", whole(clicks));
+    set("oOrders", whole(orders));
+    set("oGMV", money(gmv));
+    set("oEst", money(est));
+    set("oSet", money(settled));
+  }
+  ids.forEach(function (i) { el[i].addEventListener("input", run); });
+  run();
+})();
+</script>
+
+</body>
+</html>

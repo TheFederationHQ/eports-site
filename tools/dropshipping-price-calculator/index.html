@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dropshipping price calculator — the price you need for your margin | ePORTS</title>
+<meta name="description" content="Free dropshipping price calculator: the selling price you need for a target profit margin after product, shipping, fees and ad cost.">
+<link rel="canonical" href="./">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css">
+<!-- /tools page: live calculator + real editorial content so it is genuinely
+     useful and ranks for search traffic. Ads may sit on /tools pages LATER
+     (never on /resources) once the site qualifies and a consent setup exists.
+     The .ad-slot boxes below are reserved skeleton placeholders for that. -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator</p>
+    <h1>Dropshipping price calculator</h1>
+    <p class="sub">Work it the other way round: you set the <em>profit margin you want to keep</em>, and it
+      tells you the selling price you have to charge to hit it — once the product, the shipping, the fee
+      and the ad spend are all covered.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+
+  <section>
+    <h2><span class="n">The calculator</span> The price that hits your target margin</h2>
+    <div class="calc">
+      <div>
+        <div class="field">
+          <label for="C">Product cost <span class="u">(£)</span></label>
+          <input id="C" type="number" inputmode="decimal" value="9.00" min="0" step="0.01">
+          <p class="hint">what your supplier charges</p>
+        </div>
+        <div class="field">
+          <label for="Sh">Shipping you pay <span class="u">(£)</span></label>
+          <input id="Sh" type="number" inputmode="decimal" value="4.00" min="0" step="0.01">
+        </div>
+        <div class="field">
+          <label for="Ad">Ad cost per order <span class="u">(£)</span></label>
+          <input id="Ad" type="number" inputmode="decimal" value="6.00" min="0" step="0.01">
+          <p class="hint">total ad spend ÷ orders</p>
+        </div>
+        <div class="field">
+          <label for="f">Transaction fee <span class="u">(%)</span></label>
+          <input id="f" type="number" inputmode="decimal" value="3" min="0" max="99" step="0.1">
+          <p class="hint">payment + platform % on the sale</p>
+        </div>
+        <div class="field">
+          <label for="Mg">Target profit margin <span class="u">(%)</span></label>
+          <input id="Mg" type="number" inputmode="decimal" value="20" min="0" max="99" step="0.1">
+          <p class="hint">profit as a % of the selling price</p>
+        </div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>Your price</h3>
+        <div class="row"><span class="k">Required selling price</span> <span class="v" id="oPrice">—</span></div>
+        <div class="row"><span class="k">Profit per order at that price</span> <span class="v" id="oProfit">—</span></div>
+      </div>
+    </div>
+
+    <noscript>
+      <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The maths:
+      <em>denominator = 1 − fee% − margin%</em>;
+      <em>price = (product + shipping + ad cost) ÷ denominator</em>; then
+      <em>profit = price × margin%</em>. Or
+      <a href="../../resources/dropshipping/">grab the dropshipping resources</a> and run your own
+      numbers.</p>
+    </noscript>
+    <p class="cta">Pricing to a margin that survives the ad bill is the money discipline in
+      <a href="../../dropshipping/#basics"><em>Dropshipping: Basics</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">How to read it</span> You name the margin; it names the price</h2>
+    <p>Most calculators start from a price and tell you what's left. This one runs the other way. You
+      decide the <b>profit margin</b> you want to walk away with — profit as a share of the selling price —
+      and it hands you the price you have to charge for that to come true, after the product, the
+      shipping, the fee and the advertising have each taken their cut.</p>
+    <p>The reason it can't just add the margin on top of your costs is the transaction fee. The fee is
+      charged on the selling price, and so is your margin — both are slices of a number you don't know
+      yet. So the price has to be solved for, not stacked up. That's what the denominator below does.</p>
+
+    <h3>The formula, in full</h3>
+    <p>Add your three flat costs — <b>product cost + shipping + ad cost per order</b> — into one figure.
+      Then work out the <b>denominator</b>: 1 − (fee ÷ 100) − (margin ÷ 100). The <b>required selling
+      price</b> = flat costs ÷ denominator. The <b>profit per order</b> = price × (margin ÷ 100). The fee
+      and the margin sit in the denominator together because each one claims its percentage of the final
+      selling price, which is exactly what you're solving for.</p>
+
+    <h3>A worked example</h3>
+    <p>Product cost £9.00, shipping £4.00, ad cost per order £6.00 — that's £19.00 of flat costs. You want
+      a 20% profit margin, and the transaction fee is 3%. The denominator is 1 − 0.03 − 0.20 = 0.77.
+      Divide: £19.00 ÷ 0.77 = £24.675, which rounds <em>up</em> to the next penny — a floor, so you never
+      land a hair under target — giving a required selling price of <b>£24.68</b>. The profit at that
+      price is £24.68 × 0.20 = <b>£4.94</b>. Note what margin means here: profit ÷ selling price, not
+      profit ÷ cost.</p>
+
+    <h3>Margin on price vs markup on cost</h3>
+    <p>These two get mixed up constantly, and confusing them is an easy way to price too low without noticing. <b>Margin</b> is
+      profit measured against the <em>selling price</em> — a 20% margin means £1 of every £5 you take is
+      profit. <b>Markup</b> is profit measured against the <em>cost</em> — a 20% markup on a £9 product
+      adds £1.80. The same percentage gives two different prices, and markup always sounds bigger than the
+      margin it actually delivers. This calculator works in margin-on-price throughout, because that's the
+      figure that tells you what you keep.</p>
+
+    <h3>Edge cases the calculator handles</h3>
+    <ul class="note" style="line-height:1.7">
+      <li><b>A fee% + margin% of 100% or more</b> shows "—" for both outputs instead of a wild number.
+        When the fee and the target margin together claim the entire selling price (or more), the
+        denominator drops to zero or below and there is no price that works — you'd be asking the price to
+        pay out 100%+ of itself before covering a single flat cost. Lower the margin, or the fee, until
+        the two together leave room under 100%.</li>
+      <li><b>Blank or negative inputs</b> are read as zero, so the box never throws an error while you're
+        still typing.</li>
+    </ul>
+
+    <h3>Common questions</h3>
+    <h4>Why is the price rounded up and not to the nearest penny?</h4>
+    <p>Because rounding down would land you a fraction under your target margin on every order. Rounding
+      up to the next penny is a floor: the price it gives you always meets or just clears the margin you
+      asked for, never falls short of it. Over thousands of orders that discipline is the difference
+      between hitting your number and drifting under it.</p>
+    <h4>What ad cost per order should I use?</h4>
+    <p>Your real one: total ad spend over a period divided by the orders it produced, not a hopeful guess.
+      That's the true cost of buying a customer, and on a dropshipping order it's often the biggest single cost
+      after the product itself. Use last week's actual figure from your ad account, and update it as it
+      moves — the required price moves with it.</p>
+    <h4>Is this financial advice or a guarantee of profit?</h4>
+    <p>No. It's arithmetic on the numbers you enter — not financial advice, not a promise that pricing to
+      a margin will make a product sell. What you actually earn depends on your suppliers, your ad
+      results and whether buyers accept the price, none of which this box controls. It just shows you,
+      cleanly, the price your own numbers demand for the margin you chose.</p>
+  </section>
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+
+  <section>
+    <div class="shelf">
+      <b>This calculator comes from a book.</b>
+      <p>It's one tool from <em>Dropshipping — Basics</em>, which takes someone from a product idea to
+        their first order that's actually in profit — priced so the ad bill and the fees are covered
+        before a penny counts as yours.</p>
+      <a href="../../dropshipping/">See the Dropshipping series →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+    <a href="../../resources/dropshipping/">Dropshipping downloads</a> ·
+    <a href="../../privacy/">Privacy</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var ids = ["C", "Sh", "Ad", "f", "Mg"], el = {};
+  ids.forEach(function (i) { el[i] = document.getElementById(i); });
+  function num(i) { var v = parseFloat(el[i].value); return isNaN(v) || v < 0 ? 0 : v; }
+  function money(x) {
+    return (x < 0 ? "−" : "") + "£" + Math.abs(x).toLocaleString("en-GB", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+  }
+  function set(id, t) { document.getElementById(id).textContent = t; }
+  function run() {
+    var C = num("C"), Sh = num("Sh"), Ad = num("Ad"), f = num("f"), Mg = num("Mg");
+    var denom = 1 - f / 100 - Mg / 100;
+    if (denom <= 0) {
+      set("oPrice", "—");
+      set("oProfit", "—");
+      return;
+    }
+    var price = Math.ceil((C + Sh + Ad) / denom * 100) / 100;
+    var profit = price * (Mg / 100);
+    set("oPrice", money(price));
+    set("oProfit", money(profit));
+  }
+  ids.forEach(function (i) { el[i].addEventListener("input", run); });
+  run();
+})();
+</script>
+
+</body>
+</html>

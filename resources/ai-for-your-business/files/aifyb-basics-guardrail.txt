@@ -1,0 +1,55 @@
+THE GUARDRAIL -- FOR WHEN AI IS CONFIDENTLY WRONG
+From "AI for Your Business — Basics", chapter 7
+================================================================
+
+AI can hand you an answer whose tone is flawless and whose facts are invented --
+a made-up price, a date, a "policy" that isn't yours -- and it reads as calm and
+certain as the truth. The review gate (chapter 6) catches a wrong TONE at a
+glance. It cannot catch a wrong FACT. This does.
+
+⚠️ A gatekeeper who reads the draft without checking the source isn't a
+guardrail -- they're a rubber stamp. Good grammar talks busy people out of
+checking. This rule stops that.
+
+THE PRINCIPLE:
+  Never let AI have the final word on anything you're legally or financially
+  responsible for. It drafts; a person with the authority checks the facts
+  against a real source, and signs. That's just who carries the can -- you.
+
+
+THE RULE  (four lines; pin it up)
+================================================================
+
+1 - TRIGGER  (which outputs get a fact-check -- not everything, just these)
+----------------------------------------------------------------
+  Anything with a PRICE, a DATE, a PROMISE, a POLICY, or a legal or money
+  figure. Tune this list to your business:
+  ______________________________________________________________
+  ______________________________________________________________
+
+2 - OWNER  (who checks the high-stakes ones)
+----------------------------------------------------------------
+  Checker: ____________________   Backup (when they're away): ____________________
+
+3 - AGAINST  (check it against a real source -- never memory, never the AI itself)
+----------------------------------------------------------------
+  A system of record OUTSIDE the tool. Name yours:
+    Prices ->  ______________________  (e.g. the live rate sheet)
+    Dates / availability ->  ______________________  (e.g. the diary)
+    Policies ->  ______________________  (e.g. the written policy)
+    ______________________  ->  ______________________
+
+4 - STOP
+----------------------------------------------------------------
+  If there's no current, trustworthy source to check it against, it doesn't go.
+
+
+THE TEST, IN ONE SENTENCE FOR THE TEAM:
+  "If you send an AI draft with a price or a date in it without checking the
+  live source, you're signing my name to a guess."
+
+
+================================================================
+From AI for Your Business - Basics, chapter 7.
+The full method + the books: eports.global/ai-for-your-business
+ePORTS — your ecom source. eports.global

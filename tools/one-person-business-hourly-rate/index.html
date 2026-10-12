@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Freelance / solo hourly rate calculator — the rate that keeps you solvent | ePORTS</title>
+<meta name="description" content="Free freelance / solo hourly rate calculator: turn your target income, expenses, tax and billable hours into the rate you must charge.">
+<link rel="canonical" href="./">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css">
+<!-- /tools page: live calculator + real editorial content so it is genuinely
+     useful and ranks for search traffic. Ads may sit on /tools pages LATER
+     (never on /resources) once the site qualifies and a consent setup exists.
+     The .ad-slot boxes below are reserved skeleton placeholders for that. -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator</p>
+    <h1>Freelance / solo hourly rate calculator</h1>
+    <p class="sub">Work out the rate a one-person operator must charge to hit the income they want —
+      <em>after</em> expenses, tax and all the hours no client ever pays for.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+
+  <section>
+    <h2><span class="n">The calculator</span> The hourly rate that keeps you solvent</h2>
+    <div class="calc">
+      <div>
+        <div class="field">
+          <label for="TH">Desired annual take-home <span class="u">($)</span></label>
+          <input id="TH" type="number" inputmode="decimal" value="60000" min="0" step="100">
+          <p class="hint">what you want to keep after tax + expenses</p>
+        </div>
+        <div class="field">
+          <label for="E">Annual business expenses <span class="u">($)</span></label>
+          <input id="E" type="number" inputmode="decimal" value="6000" min="0" step="100">
+          <p class="hint">tools, software, subscriptions</p>
+        </div>
+        <div class="field">
+          <label for="tax">Tax set-aside <span class="u">(%)</span></label>
+          <input id="tax" type="number" inputmode="decimal" value="25" min="0" max="99" step="0.1">
+          <p class="hint">your rough income-tax + social/self-employment set-aside</p>
+        </div>
+        <div class="field">
+          <label for="BH">Billable hours per week <span class="u">(count)</span></label>
+          <input id="BH" type="number" inputmode="numeric" value="25" min="0" step="1">
+          <p class="hint">real client hours — not admin/sales</p>
+        </div>
+        <div class="field">
+          <label for="WK">Working weeks per year <span class="u">(count)</span></label>
+          <input id="WK" type="number" inputmode="numeric" value="46" min="0" max="52" step="1">
+          <p class="hint">52 minus holiday/sick/slack</p>
+        </div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>Your rate</h3>
+        <div class="row"><span class="k">Gross income you must bill</span> <span class="v" id="oGross">—</span></div>
+        <div class="row"><span class="k">Billable hours per year</span> <span class="v" id="oHours">—</span></div>
+        <div class="row"><span class="k">Your hourly rate</span> <span class="v" id="oRate">—</span></div>
+      </div>
+    </div>
+
+    <noscript>
+      <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The maths:
+      <em>gross = take-home ÷ (1 − tax%) + expenses</em>; <em>billable hours = hours/week × weeks/year</em>;
+      then <em>hourly rate = gross ÷ billable hours</em>. Do it by hand and the same floor falls out.</p>
+    </noscript>
+    <p class="cta">Pricing your time so the business actually pays you is chapter one of running a
+      <a href="../../one-person-ai-business/#basics"><em>One-Person AI Business: Basics</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">How to read it</span> A floor, not a promise</h2>
+    <p>This is the rate below which the one-person business quietly loses money. It works backward from the
+      life you want — the take-home you need to keep — and adds back everything that eats into a bill before
+      it reaches you: the tax you must set aside, the expenses of running the show, and the blunt fact that
+      you can't bill forty hours a week when a chunk of every week goes to sales, admin and email.</p>
+    <p>Read the result as a <b>floor</b>. It's the lowest rate that keeps you solvent at the numbers you
+      entered. It is <em>not</em> what the market will pay — the market sets the ceiling, and it neither knows
+      nor cares what your rent is. If your floor sits above what clients in your niche will pay, that's a
+      signal to change something (fewer expenses, more billable hours, a different niche), not a number to
+      apologise for.</p>
+
+    <h3>The formula, in full</h3>
+    <p><b>Gross you must bill</b> = take-home ÷ (1 − tax ÷ 100) + expenses — grossing the take-home back up
+      for tax, then adding the cost of running the business. <b>Billable hours a year</b> = billable hours a
+      week × working weeks a year. <b>Hourly rate</b> = gross ÷ billable hours: the total you must bill,
+      spread across the hours you can actually charge for.</p>
+
+    <h3>A worked example</h3>
+    <p>You want to keep <b>$60,000</b>, run <b>$6,000</b> of expenses, set aside <b>25%</b> for tax, and can
+      bill <b>25</b> real client hours across <b>46</b> working weeks. Grossing the take-home up for tax gives
+      $60,000 ÷ 0.75 = $80,000; add the $6,000 of expenses and you must bill <b>$86,000</b> in the year. You
+      have 25 × 46 = <b>1,150</b> billable hours to do it in. So your floor is $86,000 ÷ 1,150 =
+      <b>$74.78 an hour</b>. Charge less and one of the inputs — the income, the tax, or the unpaid hours —
+      comes out of your own pocket.</p>
+
+    <h3>Edge cases the calculator handles</h3>
+    <ul class="note" style="line-height:1.7">
+      <li><b>A tax set-aside of 100% or more</b> can't be grossed up — there'd be nothing left — so the rate
+        shows <em>—</em>. Tax takes a share of income; it can't take all of it and leave a take-home.</li>
+      <li><b>Zero billable hours</b> (or zero working weeks) means there are no hours to spread the bill
+        across, so the rate is undefined and shows <em>—</em>. You can't divide a target by nothing.</li>
+    </ul>
+
+    <h3>Common questions</h3>
+    <h4>Why are billable hours so far below 40 a week?</h4>
+    <p>Because no one pays you to find them. Sales calls, proposals, invoicing, admin, learning, the email
+      that never ends — none of it is billable, and for a solo operator it easily swallows a third to a half
+      of the week. Entering a real billable figure (often 20–30, not 40) is what stops the rate coming out
+      fantasy-low. If you assume 40 billable hours, every unbilled hour is a quiet pay cut.</p>
+    <h4>What tax percentage should I put in?</h4>
+    <p>A rough set-aside for your own country — income tax plus any self-employment or social contribution —
+      not a precise figure. Rates, bands and thresholds vary by country and by how much you earn, and they
+      change. Treat the box as a placeholder and confirm your real number with an accountant or your tax
+      authority before you rely on it.</p>
+    <h4>Is this financial or tax advice, or a guarantee of income?</h4>
+    <p>No. It's arithmetic on numbers you enter, and it is not financial or tax advice. It tells you the rate
+      your own figures require — not what any client will agree to pay, and not what you'll earn. The market
+      sets the ceiling; this only shows you the floor.</p>
+  </section>
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+
+  <section>
+    <div class="shelf">
+      <b>This calculator comes from a book.</b>
+      <p>It's one tool from <em>One-Person AI Business — Basics</em>, which takes someone with no team and no
+        idea yet to a business a single person can run — priced so it actually pays them, not just keeps them
+        busy.</p>
+      <a href="../../one-person-ai-business/">See the One-Person AI Business series →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+    <a href="../../resources/one-person-ai-business/">One-Person AI Business downloads</a> ·
+    <a href="../../privacy/">Privacy</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var ids = ["TH", "E", "tax", "BH", "WK"], el = {};
+  ids.forEach(function (i) { el[i] = document.getElementById(i); });
+  function num(i) { var v = parseFloat(el[i].value); return isNaN(v) || v < 0 ? 0 : v; }
+  function money(x) {
+    return (x < 0 ? "−" : "") + "$" + Math.abs(x).toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+  }
+  function count(x) { return x.toLocaleString("en-US"); }
+  function set(id, t) { document.getElementById(id).textContent = t; }
+  function run() {
+    var TH = num("TH"), E = num("E"), tax = num("tax"), BH = num("BH"), WK = num("WK");
+    var hours = BH * WK;
+    if (tax >= 100 || hours <= 0) {
+      set("oGross", tax >= 100 ? "—" : money(TH / (1 - tax / 100) + E));
+      set("oHours", hours > 0 ? count(hours) : "—");
+      set("oRate", "—");
+      return;
+    }
+    var gross = TH / (1 - tax / 100) + E;
+    var rate = gross / hours;
+    set("oGross", money(gross));
+    set("oHours", count(hours));
+    set("oRate", money(rate));
+  }
+  ids.forEach(function (i) { el[i].addEventListener("input", run); });
+  run();
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>eBay vs Mercari vs Poshmark vs Depop vs Facebook — what you actually keep | ePORTS</title>
+<meta name="description" content="Free reseller fee calculator: put in one sale and see what you keep on eBay, Mercari, Poshmark, Depop and Facebook Marketplace, side by side, after fees, postage and what you paid.">
+<link rel="canonical" href="./">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css?v=20261011b">
+<!-- /tools page (Reselling lane). Fees verified at each platform's own page, 2026-10-10/11:
+     eBay selling-fees page; Mercari help 169; Poshmark support + blog; Depop help "Seller fees and
+     charges"; Meta Seller Protection Policy (individual Marketplace sellers). Ads may sit on /tools
+     pages LATER — the .ad-slot boxes are reserved skeletons. -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator · Reselling</p>
+    <h1>What you actually keep, platform by platform</h1>
+    <p class="sub">One sale, five platforms, side by side — after each one's fees, the postage you pay and what
+      you paid for the item. The fee percentage is not what you keep.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+
+  <section>
+    <h2><span class="n">The calculator</span> One sale, five platforms</h2>
+    <div class="calc">
+      <div>
+        <div class="field"><label for="P">Sale price <span class="u">($)</span></label>
+          <input id="P" type="number" inputmode="decimal" value="34" min="0" step="0.01"></div>
+        <div class="field"><label for="S">Shipping you charge the buyer <span class="u">($)</span></label>
+          <input id="S" type="number" inputmode="decimal" value="0" min="0" step="0.01">
+          <p class="hint">0 if you offer free shipping and build postage into the price. Not used for Poshmark, where the buyer pays Poshmark's label.</p></div>
+        <div class="field"><label for="Post">Postage it costs you <span class="u">($)</span></label>
+          <input id="Post" type="number" inputmode="decimal" value="6" min="0" step="0.01">
+          <p class="hint">Your real label cost. Poshmark's prepaid label is paid by the buyer up to 5 lb, so it's $0 there.</p></div>
+        <div class="field"><label for="K">What you paid for the item (plus packing) <span class="u">($)</span></label>
+          <input id="K" type="number" inputmode="decimal" value="4.60" min="0" step="0.01"></div>
+        <div class="field"><label for="T">Buyer's sales tax <span class="u">(%)</span></label>
+          <input id="T" type="number" inputmode="decimal" value="8" min="0" max="20" step="0.1">
+          <p class="hint">eBay, Depop and Facebook charge their percentage on the tax too.</p></div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>You keep</h3>
+        <div class="row"><span class="k">eBay</span> <span class="v" id="o-ebay">—</span></div>
+        <div class="row"><span class="k">Mercari</span> <span class="v" id="o-mercari">—</span></div>
+        <div class="row"><span class="k">Poshmark</span> <span class="v" id="o-posh">—</span></div>
+        <div class="row"><span class="k">Depop</span> <span class="v" id="o-depop">—</span></div>
+        <div class="row"><span class="k">Facebook (shipped)</span> <span class="v" id="o-fb">—</span></div>
+      </div>
+    </div>
+
+    <div class="viz">
+      <h3>Where each sale's money goes</h3>
+      <div id="chart" aria-describedby="chart-note"></div>
+      <p class="viz-hint" id="chart-note">Each bar is the whole amount the sale brings in, split into what you keep, the platform's fee, the postage you pay and what the item cost you. Hover a segment for its figure, or open the table under the chart for every number.</p>
+    </div>
+
+    <p class="note" style="margin-top:1rem"><b>Checked 10–11 October 2026, at each platform's own page.</b>
+      eBay: 13.6% of the whole order including sales tax, plus 40¢ per order over $10 (30¢ at $10 or less), most
+      categories. Mercari: 10% of the item price plus any shipping the buyer pays. Poshmark: $2.95 under $15, 20%
+      from $15; the buyer pays the shipping label. Depop (US): no selling fee; payment processing 3.3% + 45¢ on the
+      total including shipping and tax. Facebook Marketplace, shipped orders from individual sellers: 10% of the
+      whole transaction, $0.80 minimum (local sales paid in person: no fee). Promoted listings, boosts, buyer-side
+      fees and heavier-label charges are not included. Fees change — check each platform's own page before you
+      rely on a number.</p>
+
+    <noscript>
+      <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The maths, per platform:
+        <em>you keep = sale price + shipping you charge − the platform's fee − postage you pay − what you paid</em>.
+        Fees: eBay 13.6% × (price + shipping) × (1 + tax) + $0.40 (or $0.30 on orders of $10 or less);
+        Mercari 10% × (price + shipping); Poshmark $2.95 under $15, otherwise 20% × price (and no shipping
+        income or postage cost — the buyer pays the label); Depop 3.3% × (price + shipping) × (1 + tax) + $0.45;
+        Facebook shipped 10% × (price + shipping) × (1 + tax), at least $0.80.</p>
+    </noscript>
+    <p class="cta">Choosing one platform on purpose, and pricing to a net you can name, is the method in
+      <a href="../../reselling/#basics"><em>Reselling — Basics</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">How to read it</span> The cheapest fee isn't always the most you keep</h2>
+    <p>A platform's headline percentage is only one line of the sum. What decides what you keep is <em>what the
+      percentage is charged on</em> (some include the shipping and the buyer's sales tax), whether there's a fixed
+      charge per order, who pays the postage, and what you paid for the thing in the first place. Put the same sale
+      through all five and the order can surprise you.</p>
+    <h3>A worked example</h3>
+    <p>A $34 kitchen tool, shipped free (so no shipping charged), costing you $6 to post and $4.60 to buy and pack,
+      to a buyer paying 8% sales tax. eBay takes 13.6% of $36.72 plus 40¢ — about $5.39 — leaving <b>$18.01</b>.
+      Mercari takes $3.40, leaving <b>$20.00</b>. Depop's processing is about $1.66, leaving <b>$21.74</b>. Facebook
+      takes about $3.67, leaving <b>$19.73</b>. Poshmark takes 20% — $6.80 — but you pay no postage, leaving
+      <b>$22.60</b>. On paper, Poshmark wins — but its buyer also pays $6.49 for the label, so the same $34 costs them
+      $40.49. Whether your buyers will pay that, on that platform, is a question about <em>buyers</em>, not fees.</p>
+    <h3>What this can't tell you</h3>
+    <p>Which platform is <em>best</em> for you depends on where buyers for your kind of item actually are, and how
+      long each sale takes you. A lower fee on a platform where things sell slowly can be the most expensive hour you
+      spend. That's why the <em>Reselling</em> books pick a platform by fit and judge it on net per hour, not on its
+      fee table.</p>
+    <h3>Common questions</h3>
+    <h4>Why does eBay charge on the sales tax?</h4>
+    <p>eBay's percentage applies to the total amount of the sale, which includes any sales tax it collects. You
+      don't keep the tax — it goes to the state — but the fee is still worked out on it.</p>
+    <h4>Is this advice about which platform to use?</h4>
+    <p>No. It's arithmetic on the numbers you enter and the published fees as checked on the date above. Your own
+      results depend on your buyers, your items and the platforms' current terms.</p>
+  </section>
+
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+
+  <section>
+    <div class="shelf">
+      <b>This calculator comes from a book.</b>
+      <p>It's one idea from the <em>Reselling</em> series: <em>Basics</em> gets you one profitable flip at a net you
+        can name; <em>Intermediate</em> builds the weekly system; <em>Advanced</em> runs it as a real business.</p>
+      <a href="../../reselling/">See the Reselling series →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+    <a href="../../resources/reselling/">Reselling downloads</a> ·
+    <a href="../../privacy/">Privacy</a>
+  </div>
+</footer>
+
+<script src="../../assets/viz.js?v=20261011k"></script>
+<script>
+(function () {
+  var V = window.RVIZ, ids = ["P", "S", "Post", "K", "T"], el = {};
+  ids.forEach(function (i) { el[i] = document.getElementById(i); });
+  function num(i) { var v = parseFloat(el[i].value); return isNaN(v) || v < 0 ? NaN : v; }
+  function calc(P, S, Post, K, T) {
+    var t = T / 100, gross = P + S, total = gross * (1 + t);
+    var plat = [
+      { key: "ebay", name: "eBay", fee: 0.136 * total + (total > 10 ? 0.40 : 0.30), income: gross, post: Post },
+      { key: "mercari", name: "Mercari", fee: 0.10 * gross, income: gross, post: Post },
+      { key: "posh", name: "Poshmark", fee: P < 15 ? 2.95 : 0.20 * P, income: P, post: 0 },
+      { key: "depop", name: "Depop", fee: 0.033 * total + 0.45, income: gross, post: Post },
+      { key: "fb", name: "Facebook (shipped)", fee: Math.max(0.80, 0.10 * total), income: gross, post: Post }
+    ];
+    plat.forEach(function (p) { p.cost = K; p.keep = p.income - p.fee - p.post - K; });
+    return plat;
+  }
+  window.RESELL_FEES = calc;
+  function run() {
+    var v = ids.map(num);
+    if (v.some(isNaN)) {
+      ["ebay", "mercari", "posh", "depop", "fb"].forEach(function (k) { document.getElementById("o-" + k).textContent = "enter every box"; });
+      return;
+    }
+    var plat = calc.apply(null, v);
+    plat.forEach(function (p) { document.getElementById("o-" + p.key).textContent = V.money(p.keep); });
+    var sorted = plat.slice().sort(function (a, b) { return b.keep - a.keep; });
+    var chart = document.getElementById("chart");
+    V.hstack(chart, sorted.map(function (p) {
+      return { label: p.name, totalLabel: "keep " + V.money0(p.keep),
+        segs: [{ name: "You keep", value: Math.max(0, p.keep), color: V.C.s1 },
+               { name: "Platform fee", value: p.fee, color: V.C.s2 },
+               { name: "Postage you pay", value: p.post, color: V.C.s3 },
+               { name: "What you paid", value: p.cost, color: V.C.s4 }] };
+    }), { title: "What you keep on each platform, sorted from most to least",
+      legend: [{ name: "You keep", color: V.C.s1 }, { name: "Platform fee", color: V.C.s2 },
+               { name: "Postage you pay", color: V.C.s3 }, { name: "What you paid", color: V.C.s4 }] });
+    V.table(chart, "What you keep, by platform", ["Platform", "Comes in", "Fee", "Postage", "Item cost", "You keep"],
+      sorted.map(function (p) { return [p.name, V.money(p.income), V.money(p.fee), V.money(p.post), V.money(p.cost), V.money(p.keep)]; }));
+  }
+  ids.forEach(function (i) { el[i].addEventListener("input", run); });
+  window.addEventListener("resize", run);
+  run();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+THE LEVERAGE-CYCLE PLANNER  —  the move that raises revenue per hour, + the cadence
+From "The One-Person AI Business — Advanced", Chapters 10–11
+================================================================
+
+A leverage cycle is a closed loop that raises the ratio and then FEEDS itself:
+you deploy assets you already own so revenue rises while your recurring hours
+don't climb above where you started, and the proceeds make the next turn easier.
+This plans one cycle — and books the cadence that turns one win into years of them.
+
+
+THE STRICT TEST  (what makes it leverage, not a job you gave yourself)
+----------------------------------------------------------------
+  Revenue per hour must RISE, and recurring hours must NOT climb above your
+  starting baseline. One-time build hours are a separate investment (with its own payback);
+  they NEVER enter the ratio's denominator.
+
+
+STEP 1 · BUILD THE LOOP FROM OWNED PIECES
+----------------------------------------------------------------
+  [ ] Owned distribution (the list) carries it — no new rented reach
+  [ ] Points to productised judgement (earns without recurring hours)
+  [ ] At your risen price (pricing power)
+  [ ] Routine questions run under a governed-autonomy cap (no added attention)
+  My loop: ______________________________________________________
+
+
+STEP 2 · THE LEDGER  (before → build → after; recurring hours only in the ratio)
+----------------------------------------------------------------
+  Stage                    Net rev/mo   Recurring hrs   One-time build   Ratio
+  ----------------------   ----------   -------------   --------------   -----
+  Before                   £________     ______          —               £____
+  Build quarter            £________     ______          ______ (once)   (build)
+  After (steady state)     £________     ______          — (paid once)   £____
+  Check: after-ratio > before-ratio? ___   after recurring hrs <= baseline? ___
+
+
+STEP 3 · THE RULE THAT MAKES RETREAT COSTLY
+----------------------------------------------------------------
+Bind yourself before nerve can vote: announce the date/price to your owned list
+so pulling back has a public cost; commit the price in writing; set "no added
+RECURRING hours" as a hard line.
+  My retreat-costly commitment: ________________________________
+
+
+STEP 4 · IF THE RATIO DOESN'T MOVE  (a result, not a failure)
+----------------------------------------------------------------
+  Which ceiling prevented the ratio from moving: ______  Working hypothesis: ______  Next test: ______
+  What would prove the fix wrong: ______  (never a flat "it can't be done")
+
+
+STEP 5 · THE COMPOUNDING CADENCE  (book it, or it's a wish)
+----------------------------------------------------------------
+Each quarter, on the calendar: re-measure the ratio (rolling trend) · re-run the
+durability audit and fix the worst axis · name the ceiling that binds NOW (it moves)
+· deploy one governed cycle against it.
+  My four quarterly reviews (dates): ____  ____  ____  ____
+
+
+THE FORCING COMMITMENT  (dated)
+----------------------------------------------------------------
+  "Cycle launched [date]: [loop]. Retreat-costly rule: ________. Ledger — before
+   £__/__hrs=£__/hr; after £__/__recurring hrs=£__/hr (build __hrs once). Result:
+   [compounded £__→£__] OR [ceiling ____ + hypothesis + next test]. Next review:
+   [date]. Ceiling I expect next: ____; cycle I'll test: ____."
+
+================================================================
+  Yours to keep — free, and no strings attached.
+
+  One tool from the ePORTS One-Person AI Business series. This one is from
+  Advanced — compound revenue per hour: leverage, not labour.
+
+  The full shelf, whenever you're ready:  eports.global/one-person-ai-business
+================================================================
+
+ePORTS — your ecom source. eports.global.

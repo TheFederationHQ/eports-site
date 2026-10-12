@@ -1,0 +1,68 @@
+THE DURABILITY SCORECARD  —  how much of this do you actually own?
+From "The One-Person AI Business — Advanced", Chapter 9
+================================================================
+
+A profitable, growing business is not the same as a STRONG one. Profitability
+is whether you make money today; durability is whether you survive a shock you
+don't control tomorrow — a deplatforming, a frozen processor, an algorithm
+change, a big customer leaving. The more leveraged you get, the more
+concentrated you tend to become, so score this BEFORE it finds you. Set the
+bands first; grade against them; fix worst-first.
+
+
+THE BANDS  (define before you look)
+----------------------------------------------------------------
+  GREEN = within threshold. AMBER = a breach that hurts a quarter (or one you're
+  already mitigating). RED = a breach that could END the business fast (a true
+  single point of failure, or a dependency most of your revenue/acquisition rides on).
+
+
+SCORE EACH AXIS   (g / a / r below = green / amber / red)
+----------------------------------------------------------------
+  CONCENTRATION
+    Largest customer's revenue share   g<15  a15-25  r>25    → ____%  [ ]
+    Largest product's revenue share    g<60  a60-75  r>75    → ____%  [ ]
+    Biggest channel's share of NEW customers g<40 a40-55 r>55    → ____%  [ ]
+  OPERATIONAL DEPENDENCE  (list every platform/account/processor/tool/domain that
+    would sink you if it vanished tomorrow; each needs a <30-day fallback)
+    g = all have a fallback · a = slow/partial · r = a single point, no fallback
+    Single points of failure with NO fallback: ______________  [ ]
+  OWNED-DEMAND SHARE
+    New customers via a channel YOU own  g>50  a35-50  r<35   → ____%  [ ]
+
+
+WHAT YOU ACTUALLY OWN
+----------------------------------------------------------------
+Most of what feels like an asset is RENTED (reach, platform, payment rail).
+Usually only two things are genuinely yours: the OPERATING BRAIN (judgement,
+archive, rules — your IP) and the AUDIENCE LIST (portable, though not immune —
+deliverability, consent, domain). Build on those; use them to cut dependence on
+everything else.
+
+
+PRIORITY & REMEDIATION  (reds first; failure that would happen fastest or cause the greatest damage first)
+----------------------------------------------------------------
+  Channel concentration → shift acquisition to the owned list (the flywheel).
+  Operational single point of failure → a SECOND provider set up and tested (a
+    <30-day fallback), plus a monthly export of your list held where YOU control it.
+  Product concentration → a second real revenue line (productised judgement).
+  Fix #1 (worst): ______________  by [date]: ______
+
+
+THE FORCING COMMITMENT  (dated)
+----------------------------------------------------------------
+  "Durability audit, [date]. Customer __% / product __% / channel __%.
+   Single points of failure, no fallback: ____________. Owned-demand share __%.
+   What I actually own: brain + list. Fix order (worst first): 1. ____  2. ____  3. ____.
+   First fix by [date]: ____________."
+
+================================================================
+  Yours to keep — free, and no strings attached.
+
+  One tool from the ePORTS One-Person AI Business series. This one is from
+  Advanced — compound revenue per hour: leverage, not labour.
+
+  The full shelf, whenever you're ready:  eports.global/one-person-ai-business
+================================================================
+
+ePORTS — your ecom source. eports.global.

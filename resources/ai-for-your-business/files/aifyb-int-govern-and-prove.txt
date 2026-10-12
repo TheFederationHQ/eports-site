@@ -1,0 +1,130 @@
+======================================================================
+  GOVERN & PROVE THE WHOLE OPERATION
+  AI for Your Business — Intermediate, Chapters 9–11
+======================================================================
+
+Each function has its own fence. This is the layer ABOVE them — the way
+you govern the whole, run it to a weekly rhythm, and prove, on evidence,
+that it holds without you.
+
+======================================================================
+  1. THE GOVERNANCE ONE-PAGER  (Chapter 9)
+======================================================================
+
+THE POLICY THAT BINDS EVERY FUNCTION AT ONCE (a new function inherits
+these or it doesn't launch):
+  • AI never states a policy, price, or fact that isn't in the brain.
+  • AI never moves money or admits fault without a person.
+  • Every customer-facing AI is labelled as AI where it matters.
+  • Every function keeps its escalation triggers and its fallback.
+
+THE KILL SWITCH (the answer to "who can stop it"):
+  For each function — how it's switched off fast (revert to that
+  function's manual fallback), and WHO may pull it. Give that person real
+  authority: they stop a function the moment it's visibly misbehaving,
+  with no meeting and no sign-off, and are never second-guessed for
+  stopping it in good faith. (Stopping is reversible. A wave of damage
+  isn't.)
+    Function ____________  off-switch ____________  holder ____________
+    Function ____________  off-switch ____________  holder ____________
+
+A WATCH ON THE WHOLE (not "keep an eye out" — an actual control):
+  Governance owner (watches the pattern ACROSS functions): ______________
+  One cross-function log every function drops a signal into, on a beat:
+    - each function's signal + its MAX interval (customer-facing = daily,
+      slower = weekly), so nothing hides for a month;
+    - a rough "look now" threshold (spike / run of the same odd output /
+      number off its range);
+    - the route when one trips: governance owner → the function's
+      kill-switch holder → (if customers affected) that function's
+      remediation plan.
+
+DATA & LIABILITY:
+  A fixed quarterly date to confirm the business-tier settings are still
+  right and the approved tools are still the ones being used: __ / __ / __
+  You are responsible for what your AI tells your customers, whatever your
+  jurisdiction. Put a professional (solicitor / insurer) on the real legal
+  questions. Never let AI have the last word on anything you carry the can
+  for. (Name the risk; don't take legal advice from a template.)
+
+THE CASCADE DRILL (rehearse it — a policy you haven't tested is fiction).
+  Pick a failure that SPREADS: e.g. the service AI, after an update,
+  starts telling clients a deadline that's wrong — and the pipeline
+  repeats it in quotes, and it lands in account notes as if true. Run the
+  clock as a team and answer honestly:
+    - Who notices first, and after how long?
+    - Through how many functions has it travelled by then?
+    - Who has authority to stop ALL of them — do they use it or hesitate?
+    - Which customers already have it in writing; who calls them, by when?
+  Close every gap it exposes: authority to stop any function on sight, a
+  shared place signals land, a "wrong information out" plan.
+
+======================================================================
+  2. THE WEEKLY OPERATING CADENCE  (Chapter 10)
+======================================================================
+
+One short, standing weekly meeting — same day, same time, 30 minutes,
+standing — that reads the operation's instruments and acts. Not a status
+meeting; a pulse.
+
+  Fixed slot: ______________  Chair (hand to a senior now and then): ______
+
+  Running order (each owner reports their own — you mostly listen):
+    [ ] Each function, its ONE number (gate pass-rate / SLA / recovery /
+        critical-miss count / open items on the register). A number off
+        its range is the reason to be in the room.
+    [ ] The cross-function catch (the pipeline owner says "heavy week
+        coming"; service staffs up BEFORE the queue backs up).
+    [ ] Brain & rules kept current (a new "never", a spec change, a fix
+        from an exception log — ratified and folded into the brain).
+    [ ] The register, chased (every open decision: done / on track / stuck;
+        stuck ones get an owner + date on the spot).
+
+  THE RULE that keeps it from decaying into a status meeting: nothing
+  that's off leaves the room without a DISPOSITION — a named owner, one
+  action, a date — on the same register, chased next week until closed.
+
+======================================================================
+  3. THE OWNER-ABSENT VERIFICATION  (Chapter 11)  — the proof
+======================================================================
+
+The only honest test of "it runs without me" is to leave — and to check
+the EVIDENCE, not your gut, when you're back. Reassurance ("all good?")
+isn't proof; a trail is.
+
+STEP 1 — WRITE THE EXAM BEFORE YOU GO (so you can't grade to what you
+find):
+  Set a bar PER FUNCTION — they differ — not one bar for all (at least 3):
+
+   Function             Sample size   Pass bar (its standard)   A critical miss is
+   _______________      _________     ____________________      _________________
+   _______________      _________     ____________________      _________________
+   _______________      _________     ____________________      _________________
+
+  THE RULE (every function): one with a critical miss, or a control left
+  uncovered while you were away, does NOT pass — it gets fixed and re-run.
+
+STEP 2 — GO GENUINELY DARK for a set window (a week if you can, a few days
+minimum). No cc, no check-in. Tell the team it's a proof, not a trap, and
+to keep the trail.
+
+STEP 3 — AUDIT ON THE EVIDENCE when you're back (five checks):
+  [ ] Sampled output vs the spec — pull the sample you pre-set; does it
+      pass the written test?
+  [ ] Usage, not lip service — did they run the loops, or quietly revert?
+      (brain markers / gate records / tool usage)
+  [ ] Gate compliance — what got HELD: escalations fired, drafts sent
+      back, refusals routed to a person.
+  [ ] The exception & register trail — oddities caught, cross-function log
+      flagged, the cadence chased in your absence.
+  [ ] The numbers — each function's measure vs the range you'd marked
+      normal.
+
+STEP 4 — ADD THE TEAM'S ACCOUNT as ONE input, not the verdict. Where it
+disagrees with the trail, the trail wins.
+
+STEP 5 — READ IT STRAIGHT. Functions clearing the bar you set = your
+proof; bank it. A function that drifted or had a control off = a
+diagnosis, not a defeat: name it, fix the gap, and re-run that one.
+
+ePORTS — your ecom source. eports.global

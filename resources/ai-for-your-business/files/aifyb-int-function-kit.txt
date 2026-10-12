@@ -1,0 +1,140 @@
+======================================================================
+  THE FUNCTION DEPLOYMENT KIT
+  AI for Your Business — Intermediate, Chapters 3–7
+======================================================================
+
+One repeatable template for standing up ANY function on AI so it runs to
+standard, operated by your team, without you in the loop. Copy it once
+per function. Parts A and D apply to every function; use Part B for
+customer-facing functions and Part C for back-office ones.
+
+Function name: ________________________________________________________
+Operator (runs it day to day — a name, not "the team"): _______________
+Approver (signs off — ideally NOT you): _______________________________
+
+======================================================================
+  PART A — THE LOOP & THE GATE  (every function)
+======================================================================
+
+THE LOOP (the work runs the same way every time; none of the steps is you):
+  1. Brain in   — operator starts from the operating brain (the canonical
+                  project), never a blank chat, and adds the specifics.
+  2. Draft out  — the AI produces a first version, shaped by the brain.
+  3. Check      — the work is checked against a written standard — but HOW
+                  it's checked depends on the function (see the release model).
+  4. Release    — it goes out. The constant is that the standard is written
+                  and the check is never you. The MODEL varies:
+
+THE RELEASE MODEL — pick the one that fits this function. They are NOT all
+per-item sign-off; forcing that on every function just rebuilds the
+bottleneck you're removing.
+  ( ) Per-item approval — a named approver signs every piece before it goes.
+      For high-stakes, lower-volume work (client comms). Uses the gate below.
+  ( ) Escalation-only — the AI runs automatically; a person only touches the
+      calls on the never-decide line (a sales pipeline: capture, qualify and
+      draft run on their own; price / promise / refusal escalate). See Part B.
+  ( ) Sampling — the work releases, and a named checker marks a SAMPLE
+      against the definition of done, by the sampling rule. For high-volume
+      back-office work. See Part C.
+
+THE PUBLISH GATE (for the per-item model — your standard, made portable, a
+fixed list, not a feeling). Fill in 5–6 yes/no questions every piece must
+pass. Anything short of a clear YES goes back to step 2; nothing that hasn't
+cleared them all reaches a customer.
+  [ ] ___________________________________________________________________
+  [ ] ___________________________________________________________________
+  [ ] ___________________________________________________________________
+  [ ] ___________________________________________________________________
+  [ ] ___________________________________________________________________
+
+======================================================================
+  PART B — CUSTOMER-FACING EXTRAS  (sales pipeline, service)
+======================================================================
+
+THE NEVER-DECIDE LINE (things AI drafts but never DECIDES). At least:
+  • PRICE   — AI lays out standard rates; a person sets the number sent.
+  • PROMISE — any deadline / guarantee / "yes we can" is a person's word.
+  • REFUSAL — who you turn away is a person's judgement.
+  Add any other call where a wrong AI answer costs real money:
+  • ____________________________________________________________________
+
+THE ESCALATION RULE + SLA (for a pipeline):
+  Trigger (price asked / promise wanted / refuse-flag / AI unsure) →
+  routes to (name): __________________  backup: __________________
+  Response promise: an escalated item gets a real answer within ____ hours.
+  A breach doesn't just remind — it MOVES the work: past the clock the
+  backup becomes owner; past ____ hours it goes to __________________ and
+  the AI sends nothing new until a person has it.
+
+AUTHORITY CAP (for customer service — what AI may NEVER do):
+  • Never move money (no refund / credit / discount — a person decides).
+  • Never admit fault or liability (sorry for the EXPERIENCE, never the
+    cause: "we were negligent" / "that was our error" are evidence).
+  • Never invent policy ("let me check and come back" is always safe).
+  Pre-approved menu it MAY offer (specific gestures only): ______________
+
+SEVERITY & HANDOFF (route by how bad it is; a handoff is a transfer of
+ownership, not a notification — named owner + backup + deadline + the
+whole thread attached):
+  Routine (question / mild grumble)  → stays with AI (spot-checked)
+  Remedy ask (wants money / a fix)   → ____________  by: same working day
+  Hot (angry / complaint / repeat / "get me a human") → ______ within 1 hr
+  Serious (threat / safety / injury / vulnerable) → ______ immediately
+
+MEASURE RECOVERY, NOT DEFLECTION: of customers who arrived unhappy, how
+many stayed / were sorted without a repeat / confirmed it was resolved;
+plus correct-handoff rate and (the one that matters) MISSED-handoff rate.
+Keep deflection small, at the bottom.
+
+======================================================================
+  PART C — BACK-OFFICE EXTRAS  (cross-desk work with no customer to
+  catch the miss)
+======================================================================
+
+DEFINITION OF DONE (there's no reader to please, so write "done" as a
+checklist the output either meets or doesn't — each box a yes/no):
+  [ ] ___________________________________________________________________
+  [ ] ___________________________________________________________________
+  [ ] ___________________________________________________________________
+
+THE SAMPLING RULE (you can't check everything — check a sample, by a rule
+that bites):
+  A CRITICAL miss (one that actually hurts): _______________________
+  A MINOR miss (typo / clumsy line): _______________________
+  Rule: check EVERY case for the first 20; drop to 1-in-10 only after two
+  straight weeks with zero critical misses and under 1-in-20 minor; a
+  single critical miss snaps checking back to 100% until five clean in a
+  row. Only the flow owner may loosen the rate. Every failure logged and
+  folded into the brain.
+  Checker (pulls & marks the sample): __________________
+
+TWO OWNERS (because the work crosses desks):
+  Flow owner (owns the whole thing end to end): __________________
+  Exception owner (owns the log of oddities; a 5th repeat triggers a spec
+  change, not a shrug): __________________
+
+======================================================================
+  PART D — MAKING IT STICK: THE CONDITIONAL SUNSET  (Chapter 4)
+======================================================================
+
+The new way only sticks when the old way stops being an option — but you
+force adoption WITHOUT burning the house down. Set a date, and four
+conditions that must be true by then:
+
+  Target date to switch the old way OFF (2–4 weeks out): __ / __ / ____
+
+  1. PROOF IT HOLDS — two clean weeks on the measured test (nothing walked
+     back, every piece through the route, no unplanned owner rescues).
+  2. PROOF IT'S BUILT — operator trained · approver cover named · a
+     one-page "here's the loop" for new starters · escalation line tested
+     on a real awkward case.
+  3. A FALLBACK for when the tool is down — a narrow emergency path that
+     survives the tool itself being unavailable (kept OUTSIDE the tool).
+  4. A NAMED ROLLBACK TRIGGER — the one condition that says "stop, go
+     back": _______________________________________________________
+
+  On the date: conditions met → archive the old way (don't merely
+  discourage it). Not met → the sunset doesn't happen; book a named review
+  date to try again. Proof gates it; the calendar can't force it.
+
+ePORTS — your ecom source. eports.global

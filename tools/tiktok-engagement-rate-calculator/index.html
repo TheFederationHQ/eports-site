@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TikTok engagement rate calculator — your rate, with a benchmark read | ePORTS</title>
+<meta name="description" content="Free TikTok engagement rate calculator: your rate from views, likes, comments, shares and saves, with a benchmark read.">
+<link rel="canonical" href="./">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css">
+<!-- /tools page: live calculator + real editorial content so it is genuinely
+     useful and ranks for search traffic. Ads may sit on /tools pages LATER
+     (never on /resources) once the site qualifies and a consent setup exists.
+     The .ad-slot boxes below are reserved skeleton placeholders for that. -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator</p>
+    <h1>TikTok engagement rate calculator</h1>
+    <p class="sub">Turn a video's views and interactions into one clean <em>engagement rate</em> — then
+      see, in plain words, whether that rate is quiet, average, or genuinely strong.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+
+  <section>
+    <h2><span class="n">The calculator</span> Your engagement rate, read against the benchmark</h2>
+    <div class="calc">
+      <div>
+        <div class="field">
+          <label for="V">Views <span class="u">(count)</span></label>
+          <input id="V" type="number" inputmode="numeric" value="10000" min="0" step="1">
+          <p class="hint">total plays on the video</p>
+        </div>
+        <div class="field">
+          <label for="L">Likes <span class="u">(count)</span></label>
+          <input id="L" type="number" inputmode="numeric" value="800" min="0" step="1">
+        </div>
+        <div class="field">
+          <label for="C">Comments <span class="u">(count)</span></label>
+          <input id="C" type="number" inputmode="numeric" value="50" min="0" step="1">
+        </div>
+        <div class="field">
+          <label for="S">Shares <span class="u">(count)</span></label>
+          <input id="S" type="number" inputmode="numeric" value="100" min="0" step="1">
+        </div>
+        <div class="field">
+          <label for="Sv">Saves <span class="u">(count)</span></label>
+          <input id="Sv" type="number" inputmode="numeric" value="50" min="0" step="1">
+          <p class="hint">if you have the number; 0 if not</p>
+        </div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>Your engagement</h3>
+        <div class="row"><span class="k">Total engagements</span> <span class="v" id="oEng">—</span></div>
+        <div class="row"><span class="k">Engagement rate (by views)</span> <span class="v" id="oER">—</span></div>
+        <div class="row"><span class="k">How that reads</span> <span class="v" id="oVerdict">—</span></div>
+      </div>
+    </div>
+
+    <noscript>
+      <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The maths:
+      <em>engagements = likes + comments + shares + saves</em>; then
+      <em>engagement rate = engagements ÷ views × 100</em>. As a rough benchmark, TikTok engagement
+      by views tends to run around 3–9%. Or
+      <a href="../../resources/tiktok-shop-affiliate/">grab the free TikTok Shop Affiliate resources</a>
+      to track your own numbers over time.</p>
+    </noscript>
+    <p class="cta">Reading your engagement honestly — as a signal, not a scoreboard — is the reach discipline in
+      <a href="../../tiktok-shop-affiliate/#basics"><em>TikTok Shop Affiliate: Basics</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">How to read it</span> One rate that says how hard your audience leans in</h2>
+    <p>Views tell you how many people the algorithm showed a video to. Engagement rate tells you how
+      many of them <em>did something about it</em> — liked, commented, shared, saved. It's the more
+      honest number of the two, because it's a ratio: a video with 2,000 views and heavy interaction can
+      out-engage one with 200,000 passive plays. That's why sellers and brands pay
+      attention to the rate, not just the view count.</p>
+    <p>This tool takes the four interaction types plus your views and returns a single percentage, then
+      reads it against the typical range so you're not left guessing whether a given rate is good. It's a
+      snapshot of one video (or one account, if you paste totals) — not a verdict on your whole channel,
+      and not a promise about what happens next. But it turns a scatter of raw counts into a number you
+      can actually compare, post to post.</p>
+
+    <h3>The formula, in full</h3>
+    <p><b>Engagement rate</b> = (likes + comments + shares + saves) ÷ views × 100. Add up every
+      interaction, divide by the views that produced them, and multiply by 100 to read it as a percent.
+      Saves count fully here — many calculators leave them out, but a save is a strong signal of intent
+      (someone wants to come back to it), so if you can see the number, include it.</p>
+    <p>One thing to know: some tools divide by <em>followers</em> instead of views, which gives an
+      <em>account-level</em> engagement rate rather than a per-video one. Neither is wrong — they answer
+      different questions. Dividing by views asks "of the people who saw this, how many reacted?"; dividing
+      by followers asks "of the people who chose to follow me, how many still show up?" This calculator
+      uses views, because on TikTok a video's reach is driven by the algorithm far more than by your
+      follower count, so the by-views rate is the fairer read of a single post.</p>
+
+    <h3>A worked example</h3>
+    <p>A video pulls 10,000 views with 800 likes, 50 comments, 100 shares, and 50 saves. Add the
+      interactions: 800 + 50 + 100 + 50 = 1,000 engagements. Divide by views and multiply by 100:
+      1,000 ÷ 10,000 × 100 = <b>10.0%</b>. Against a widely-cited typical range of roughly 3–9%, that sits <b>well above the typical
+      range</b> — the audience isn't just watching, it's reacting.</p>
+
+    <h3>Edge cases the calculator handles</h3>
+    <ul class="note" style="line-height:1.7">
+      <li><b>Zero views</b> can't produce a rate — you can't divide by nothing — so the rate shows as
+        <em>—</em> until a real view count is in. Total engagements still add up regardless.</li>
+      <li><b>A rate over 100%?</b> Possible, not a bug — one viewer can like, comment, share and save the same video, so counted actions can exceed views. It just means unusually heavy interaction.</li>
+      <li><b>No saves number?</b> Leave it at 0. Saves aren't always visible, and the rate is still
+        meaningful without them — it'll just read a touch lower than the true figure.</li>
+    </ul>
+
+    <h3>Common questions</h3>
+    <h4>What's a good engagement rate on TikTok?</h4>
+    <p>As a working benchmark, engagement by views tends to land around 3–9%. Under about 3% sits
+      below that range, 3–6% is around it, 6–9% is above it, and 9%+ is well above it. These are rough
+      rules of thumb, not laws — the exact numbers vary by account size, niche and the dataset you're
+      comparing against, smaller tighter audiences often engage harder, and one breakout video can sit
+      well outside the band.</p>
+    <h4>Should I divide by views or followers?</h4>
+    <p>For judging a single video on TikTok, by views is the fairer measure, because the algorithm — not
+      your follower list — decides who sees it. Dividing by followers gives an account-level rate that's
+      more common on follower-driven platforms. If you want that number, use your follower count in place
+      of views; just don't compare a by-views rate to a by-followers one, they aren't the same scale.</p>
+    <h4>Does a high engagement rate mean the video sells?</h4>
+    <p>Not on its own. For a TikTok Shop affiliate, a strong engagement rate is real evidence you can
+      bring to a seller when you ask for a better commission rate — it shows your content earns reaction
+      and reach. But it's a signal, not a guarantee of sales: a video can engage beautifully and still
+      convert poorly if the product, the offer, or the intent behind the interaction isn't there.
+      Engagement gets you the conversation; conversion is a separate job. The
+      <a href="../../tiktok-shop-affiliate/">TikTok Shop Affiliate series</a> walks through turning reach
+      into sales you actually keep.</p>
+    <h4>Is this financial advice or a guarantee?</h4>
+    <p>No. It's arithmetic on numbers you enter, plus a plain-English read of the result. What a video
+      earns depends on the product, the platform, and buyers — none of which this box controls. It just
+      turns your raw counts into one rate you can compare and act on.</p>
+  </section>
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+
+  <section>
+    <div class="shelf">
+      <b>This calculator comes from a book.</b>
+      <p>It's one tool from <em>TikTok Shop Affiliate — Basics</em>, which takes someone with a phone and
+        no following to their first real, settled commission — and shows how to read reach honestly along
+        the way, so you know what your numbers are actually worth.</p>
+      <a href="../../tiktok-shop-affiliate/">See the TikTok Shop Affiliate series →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+    <a href="../../resources/tiktok-shop-affiliate/">TikTok Shop Affiliate downloads</a> ·
+    <a href="../../privacy/">Privacy</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var ids = ["V", "L", "C", "S", "Sv"], el = {};
+  ids.forEach(function (i) { el[i] = document.getElementById(i); });
+  function num(i) { var v = parseFloat(el[i].value); return isNaN(v) || v < 0 ? 0 : v; }
+  function count(x) { return x.toLocaleString("en-US"); }
+  function set(id, t) { document.getElementById(id).textContent = t; }
+  function verdict(er) {
+    if (er < 3) return "below the typical range";
+    if (er < 6) return "around the typical range";
+    if (er < 9) return "above the typical range";
+    return "well above the typical range";
+  }
+  function run() {
+    var V = num("V"), L = num("L"), C = num("C"), S = num("S"), Sv = num("Sv");
+    var eng = L + C + S + Sv;
+    set("oEng", count(eng));
+    if (V <= 0) {
+      set("oER", "—");
+      set("oVerdict", "—");
+      return;
+    }
+    var er = (eng / V) * 100;
+    set("oER", er.toFixed(1) + "%");
+    set("oVerdict", verdict(er));
+  }
+  ids.forEach(function (i) { el[i].addEventListener("input", run); });
+  run();
+})();
+</script>
+
+</body>
+</html>

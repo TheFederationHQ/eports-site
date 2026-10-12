@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dropshipping break-even ROAS calculator — the minimum return that stops the bleed | ePORTS</title>
+<meta name="description" content="Free break-even ROAS calculator for dropshipping and ecommerce ad campaigns: enter selling price, product cost, shipping, transaction fee and any other cost, and it works out the minimum return on ad spend you need just to break even.">
+<link rel="canonical" href="./">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css">
+<!-- /tools page: live calculator + real editorial content so it is genuinely
+     useful and ranks for search traffic. Ads may sit on /tools pages LATER
+     (never on /resources) once the site qualifies and a consent setup exists.
+     The .ad-slot boxes below are reserved skeleton placeholders for that. -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator</p>
+    <h1>Dropshipping break-even ROAS calculator</h1>
+    <p class="sub">The minimum return on ad spend that keeps you out of the red. Put your product's
+      numbers in and see the <em>ROAS you have to beat</em> before a single sale is profit.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+
+  <section>
+    <h2><span class="n">The calculator</span> Your break-even return on ad spend</h2>
+    <div class="calc">
+      <div>
+        <div class="field">
+          <label for="SP">Selling price <span class="u">(£)</span></label>
+          <input id="SP" type="number" inputmode="decimal" value="29.99" min="0" step="0.01">
+          <p class="hint">what the buyer pays for the product</p>
+        </div>
+        <div class="field">
+          <label for="C">Product cost <span class="u">(£)</span></label>
+          <input id="C" type="number" inputmode="decimal" value="9.00" min="0" step="0.01">
+          <p class="hint">what you pay your supplier for the item</p>
+        </div>
+        <div class="field">
+          <label for="Sh">Shipping you pay <span class="u">(£)</span></label>
+          <input id="Sh" type="number" inputmode="decimal" value="4.00" min="0" step="0.01">
+          <p class="hint">the delivery cost you cover, not the buyer</p>
+        </div>
+        <div class="field">
+          <label for="f">Transaction fee <span class="u">(%)</span></label>
+          <input id="f" type="number" inputmode="decimal" value="3" min="0" max="99" step="0.1">
+          <p class="hint">payment processing on the sale price</p>
+        </div>
+        <div class="field">
+          <label for="O">Other cost per order <span class="u">(£)</span></label>
+          <input id="O" type="number" inputmode="decimal" value="0" min="0" step="0.01">
+          <p class="hint">packaging, app fees — 0 if none</p>
+        </div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>Your break-even</h3>
+        <div class="row"><span class="k">Gross profit before ads</span> <span class="v" id="oGP">—</span></div>
+        <div class="row"><span class="k">Profit margin before ads</span> <span class="v" id="oMargin">—</span></div>
+        <div class="row"><span class="k">Break-even ROAS</span> <span class="v" id="oBEROAS">—</span></div>
+      </div>
+    </div>
+
+    <noscript>
+      <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The maths:
+      <em>gross profit before ads = selling price − product cost − shipping − (selling price × fee%) −
+      other cost</em>; then <em>break-even ROAS = selling price ÷ gross profit before ads</em>. Or open the
+      <a href="../../resources/dropshipping/">Dropshipping resources page</a> and run the numbers on your
+      own products.</p>
+    </noscript>
+    <p class="cta">Knowing the ROAS you have to beat <em>before</em> you spend is the first discipline in
+      <a href="../../dropshipping/#basics"><em>Dropshipping: Basics</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">How to read it</span> The line every ad has to clear</h2>
+    <p>ROAS is return on ad spend — revenue divided by what you paid to advertise. A ROAS of 3× means
+      every £1 of ads brought back £3 in sales. On its own that sounds healthy, but it tells you nothing
+      until you know the line you have to clear. That line is your <b>break-even ROAS</b>: the exact
+      return at which the profit each order makes <em>before</em> advertising just covers the ad cost, so
+      you finish level — no gain, no loss.</p>
+    <p>Above that ratio the ads are covering these costs; below it they are not, however busy the store looks. Note this is break-even on the variable costs you entered — it does not include returns, discounts, chargebacks or fixed overhead, so treat it as a floor for the ad maths, not a full profit guarantee. A
+      break-even ROAS of 1.86× means every £1 of ad spend must bring back at least £1.86 in revenue just
+      to break even. Beat 1.86× and you profit; fall under it and you are paying to give the product
+      away. This calculator hands you that threshold up front, so you set targets against a real line
+      instead of a hopeful one.</p>
+
+    <h3>The formula, in full</h3>
+    <p><b>Gross profit before ads</b> = selling price − product cost − shipping you pay − (selling price ×
+      fee ÷ 100) − other cost per order. That is what one sale leaves in your hand before you spend a
+      penny on ads. <b>Profit margin before ads</b> = gross profit before ads ÷ selling price × 100 — the
+      same figure as a share of the price. <b>Break-even ROAS</b> = selling price ÷ gross profit before
+      ads: the multiple of ad spend you must earn back so that margin exactly pays for the advertising.</p>
+
+    <h3>A worked example</h3>
+    <p>A £29.99 product costs £9.00 from the supplier, you cover £4.00 of shipping, the payment processor
+      takes 3% (£0.90 on this sale, rounded from £0.8997), and there are no other per-order costs. Gross profit before ads is
+      29.99 − 9.00 − 4.00 − 0.90 − 0 = <b>£16.09</b>, a margin of <b>53.7%</b>. Break-even ROAS is 29.99 ÷
+      16.09 = <b>1.86×</b>. So any campaign returning more than £1.86 for every £1 spent is profitable;
+      anything under it quietly loses money on each order, no matter how many you sell.</p>
+
+    <h3>Edge cases the calculator handles</h3>
+    <ul class="note" style="line-height:1.7">
+      <li><b>A product that cannot profit before ads</b> — where costs, shipping and fees meet or exceed
+        the selling price — shows "—" for break-even ROAS. There is no achievable break-even: no amount
+        of ad efficiency fixes a product that loses money before a single ad runs. Fix the price or the
+        costs first.</li>
+      <li><b>The thinner the margin, the higher the line.</b> A slim gross profit pushes break-even ROAS
+        up fast, because a small slice of the price has to be earned back many times over. A healthy
+        margin pulls the line down toward 2× and below, where real campaigns can live.</li>
+    </ul>
+
+    <h3>Common questions</h3>
+    <h4>Why does a lower margin need a higher break-even ROAS?</h4>
+    <p>Because break-even ROAS is the selling price divided by the profit each sale makes before ads. When
+      that profit is a small slice of the price, you have to earn the price back many times over the
+      profit to cover the same spend — so the multiple you must clear climbs. Widen the margin and the
+      line drops.</p>
+    <h4>Should I aim to run right at break-even?</h4>
+    <p>No — break-even is the floor, not the target. At exactly your break-even ROAS you make nothing;
+      every pound of profit lives <em>above</em> that line. Use this number to set a minimum you refuse to
+      run below, then aim comfortably clear of it so returns, ad-platform swings and slow days still leave
+      you in profit.</p>
+    <h4>Is this financial advice or a guarantee?</h4>
+    <p>No. It's arithmetic on numbers you enter, not financial advice. What
+      you actually earn depends on the product, the ad platform and buyers, none of which this box
+      controls. It simply tells you the return you have to beat before advertising can be called
+      profitable.</p>
+  </section>
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+
+  <section>
+    <div class="shelf">
+      <b>This calculator comes from a book.</b>
+      <p>It's one tool from <em>Dropshipping — Basics</em>, which takes someone from a blank store to a
+        product priced to survive its own ad costs — with the break-even line worked out before the money
+        goes in, not after.</p>
+      <a href="../../dropshipping/">See the Dropshipping series →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+    <a href="../../resources/dropshipping/">Dropshipping downloads</a> ·
+    <a href="../../privacy/">Privacy</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var ids = ["SP", "C", "Sh", "f", "O"], el = {};
+  ids.forEach(function (i) { el[i] = document.getElementById(i); });
+  function num(i) { var v = parseFloat(el[i].value); return isNaN(v) || v < 0 ? 0 : v; }
+  function money(x) {
+    return (x < 0 ? "−" : "") + "£" + Math.abs(x).toLocaleString("en-GB", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+  }
+  function set(id, t) { document.getElementById(id).textContent = t; }
+  function run() {
+    var SP = num("SP"), C = num("C"), Sh = num("Sh"), f = num("f"), O = num("O");
+    var gp = SP - C - Sh - SP * (f / 100) - O;
+    if (gp <= 0) {
+      set("oGP", money(gp));
+      set("oMargin", SP > 0 ? (gp / SP * 100).toFixed(1) + "%" : "—");
+      set("oBEROAS", "—");
+      return;
+    }
+    set("oGP", money(gp));
+    set("oMargin", (gp / SP * 100).toFixed(1) + "%");
+    set("oBEROAS", (SP / gp).toFixed(2) + "×");
+  }
+  ids.forEach(function (i) { el[i].addEventListener("input", run); });
+  run();
+})();
+</script>
+
+</body>
+</html>

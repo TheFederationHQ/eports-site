@@ -1,0 +1,36 @@
+ETSY - IMPRESSIONS EVIDENCE CYCLE  (Chapter 4)
+
+If impressions are your constraint, compete for a SMALLER, winnable phrase,
+not the biggest word. Run it as one evidence cycle - not a redecoration.
+
+  Listing: ___________________________________
+  Target phrase: _____________________________
+    Marketplace Insights: searches ______  listings ______
+      (steady demand + modest competition = the sweet spot)
+    results page genuinely relevant to my item?     Y / N
+
+  THE KEYWORD PACKAGE (one intervention; it tests the phrase):
+    [ ] title: the phrase in natural buyer language
+    [ ] 13 tags: SPLIT the phrase across tags (20-char limit each,
+        spaces included - Etsy matches across tag combinations)
+        + DIFFERENT buyer synonyms, no repeats
+    [ ] category + attributes agree
+    Change nothing else - not the photo, not the price - this window.
+
+  M = organic search impressions (Search Analytics; free for all sellers)
+    baseline (prior 14 days, like weekdays): ______
+  Window: 14+ days; compare like weekdays with like (longer safer -
+    impressions vary day to day). Etsy says an edit can take ~a day to
+    reflect; the noisy early days can't establish a result - judge the
+    later comparable stretch.
+  VERDICT:  supports  /  contradicts  /  inconclusive
+    (inconclusive if whole-shop impressions moved too, or the
+     sample stayed small / noisy)
+
+  Evidence, not proof: a single listing cannot rule out competitors,
+  demand swings or chance. It tells you whether to keep this phrase.
+
+----------------------------------------------------------------------
+From Etsy - Intermediate. The full method is in the book; the free
+worksheets and the lane shelf: eports.global/resources
+ePORTS — your ecom source. eports.global.

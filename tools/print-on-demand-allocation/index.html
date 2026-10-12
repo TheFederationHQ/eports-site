@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Print on demand allocation dashboard — loaded contribution, CAC ceiling, league table | ePORTS</title>
+<meta name="description" content="Free print-on-demand allocation dashboard: loaded (fully-burdened) contribution, the CAC ceiling and break-even ROAS, a coupon's true cost, and contribution per owner-hour. Allocate on evidence, not feel.">
+<link rel="canonical" href="./">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css">
+<!-- /tools page: live calculators + editorial content. Derives from the same
+     pod-calc.js engine the Advanced worksheets use, so tool and download never
+     disagree (see scripts/verify_pod_calculators.cjs). Ad slots deferred. -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator</p>
+    <h1>Allocation dashboard</h1>
+    <p class="sub">Put money where the margin is. Read the four instruments an advanced print-on-demand
+      shop allocates on — <em>what each design really leaves</em>, <em>what you may pay for a buyer</em>,
+      <em>what a coupon truly costs</em>, and <em>which designs earn per hour</em>.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+
+  <section>
+    <h2><span class="n">One</span> Fully-burdened contribution — what a design <em>really</em> leaves</h2>
+    <p class="lead">Start from the unit contribution (price minus base, shipping, platform fees — the
+      Basics/Intermediate number), then take the four business burdens down to the design. Defaults show
+      Cora's hoodie: £9.23 unit → <b>£2.66</b> loaded, <b>£5.06</b> pre-ad.</p>
+    <div class="calc">
+      <div>
+        <div class="field"><label for="U">Unit contribution £ (before burdens)</label>
+          <input id="U" type="number" inputmode="decimal" value="9.23" min="-999" step="0.01"></div>
+        <div class="field"><label for="Ad">− Ads (spend ÷ units)</label>
+          <input id="Ad" type="number" inputmode="decimal" value="2.40" min="0" step="0.01"></div>
+        <div class="field"><label for="Re">− Returns beyond the buffer</label>
+          <input id="Re" type="number" inputmode="decimal" value="0.50" min="0" step="0.01"></div>
+        <div class="field"><label for="Ov">− Overhead + samples (per design)</label>
+          <input id="Ov" type="number" inputmode="decimal" value="0.67" min="0" step="0.01"></div>
+        <div class="field"><label for="Ti">− Your time (hours × rate)</label>
+          <input id="Ti" type="number" inputmode="decimal" value="3.00" min="0" step="0.01"></div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>What this design really leaves</h3>
+        <div class="row"><span class="k">Loaded, pre-ad (the pot for a CAC)</span> <span class="v" id="oPre">—</span></div>
+        <div class="row"><span class="k"><b>Loaded contribution</b> (after ads)</span> <span class="v" id="oLoad">—</span></div>
+      </div>
+    </div>
+    <p class="note">Judge acquisition against the <b>pre-ad</b> figure, never revenue. A loaded figure may be
+      negative — a real loss, a valid answer.</p>
+    <noscript><p class="calc-fallback"><b>The calculators need JavaScript.</b> Every figure here is worked
+      in your browser — nothing stored or sent. Or
+      <a href="../../resources/print-on-demand/files/pod-adv-allocation.xlsx">download the spreadsheet</a>
+      — three sheets (loaded ledger; CAC, ROAS &amp; coupon; league table) with the same formulas.</p></noscript>
+    <p class="cta">Write down what this design <em>really</em> leaves before you decide anything — it's
+      <a href="../../print-on-demand/#advanced">the fully-burdened ledger in <em>Print on Demand: Advanced</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">Two</span> CAC ceiling &amp; break-even ROAS — before a pound goes to ads</h2>
+    <p class="lead">The most you may pay to win a buyer and still keep the profit you require — judged on
+      loaded pre-ad contribution, ad counted once. Defaults show Cora's premium: pre-ad £22.83, keep £12 →
+      ceiling <b>£10.83</b>, break-even ROAS <b>~3.0×</b>.</p>
+    <div class="calc">
+      <div>
+        <div class="field"><label for="Pre">Loaded pre-ad contribution £</label>
+          <input id="Pre" type="number" inputmode="decimal" value="22.83" min="-999" step="0.01">
+          <p class="hint">for Cora's organic premium this equals its loaded contribution — ads are £0. The
+            coupon and league instruments below are seeded with that same £22.83 as their default; edit
+            each freely for another design.</p></div>
+        <div class="field"><label for="Keep">Profit I require per sale £</label>
+          <input id="Keep" type="number" inputmode="decimal" value="12.00" min="0" step="0.01"></div>
+        <div class="field"><label for="Rev">Sale price (revenue) £ — for ROAS</label>
+          <input id="Rev" type="number" inputmode="decimal" value="68" min="0" step="0.01"></div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>Before a pound goes to ads</h3>
+        <div class="row"><span class="k"><b>CAC ceiling</b> (max to win a buyer)</span> <span class="v" id="oCac">—</span></div>
+        <div class="row"><span class="k">Break-even ROAS (revenue ÷ pre-ad)</span> <span class="v" id="oRoas">—</span></div>
+        <div class="row"><span class="k">Verdict</span> <span class="v" id="oAdv">—</span></div>
+      </div>
+    </div>
+    <p class="note">A "3×" the dashboard cheers is break-even here — you need well above it to bank the
+      profit. A ceiling of £0 or less means the product can't be won by paid acquisition at that profit.</p>
+    <p class="cta">Set your CAC cap before a pound goes to ads — it's
+      <a href="../../print-on-demand/#advanced">the scaling gate in <em>Print on Demand: Advanced</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">Three</span> The coupon check — what a discount truly costs</h2>
+    <p class="lead">A % coupon comes off the price, but the % platform fee falls with it, so the real hit is
+      <em>discount × (1 − fee%)</em>, not the sticker discount. Defaults: 15% off the £68 premium at 13%
+      fee → true hit <b>£8.87</b> (not £10.20).</p>
+    <div class="calc">
+      <div>
+        <div class="field"><label for="cP">Price £</label>
+          <input id="cP" type="number" inputmode="decimal" value="68" min="0" step="0.01"></div>
+        <div class="field"><label for="cC">Loaded contribution £</label>
+          <input id="cC" type="number" inputmode="decimal" value="22.83" min="-999" step="0.01"></div>
+        <div class="field"><label for="cO">Coupon % off</label>
+          <input id="cO" type="number" inputmode="decimal" value="15" min="0" max="99" step="1"></div>
+        <div class="field"><label for="cF">Platform fee %</label>
+          <input id="cF" type="number" inputmode="decimal" value="13" min="0" max="99" step="0.1"></div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>What the coupon truly costs</h3>
+        <div class="row"><span class="k">Sticker discount</span> <span class="v" id="oDisc">—</span></div>
+        <div class="row"><span class="k"><b>True hit</b> to contribution</span> <span class="v" id="oDrop">—</span></div>
+        <div class="row"><span class="k">Contribution after</span> <span class="v" id="oAfter">—</span></div>
+      </div>
+    </div>
+    <p class="cta">Write your discount stop-rule <em>now</em>, before the temptation — it's
+      <a href="../../print-on-demand/#advanced">the price discipline in <em>Print on Demand: Advanced</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">Four</span> League-table row — total <em>and</em> per hour</h2>
+    <p class="lead">Rank the catalogue by the resource that binds you. Total = loaded × units; per hour =
+      total ÷ the owner-hours the design ate (diffuse time included). Defaults show the premium: £22.83 ×
+      13 over 5 hours → <b>£297</b> total, <b>~£59</b>/hour.</p>
+    <div class="calc">
+      <div>
+        <div class="field"><label for="lL">Loaded £ per sale</label>
+          <input id="lL" type="number" inputmode="decimal" value="22.83" min="-999" step="0.01"></div>
+        <div class="field"><label for="lU">Units in the window</label>
+          <input id="lU" type="number" inputmode="numeric" value="13" min="0" step="1"></div>
+        <div class="field"><label for="lH">Owner-hours it ate</label>
+          <input id="lH" type="number" inputmode="decimal" value="5" min="0" step="0.1"></div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>Total and per hour</h3>
+        <div class="row"><span class="k"><b>Total contribution</b> (window)</span> <span class="v" id="oTot">—</span></div>
+        <div class="row"><span class="k">Contribution per owner-hour</span> <span class="v" id="oPh">—</span></div>
+      </div>
+    </div>
+    <p class="note">If capacity binds you, rank by <b>per hour</b> — a thin-margin, hands-free design can
+      out-rank a fat one that eats your week.</p>
+    <p class="cta">Rank one design by the hour today — it's
+      <a href="../../print-on-demand/#advanced">the league table in <em>Print on Demand: Advanced</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">How to read it</span> Four instruments, one decision</h2>
+    <p>Most print-on-demand sellers run on gross revenue and gut feel, and it hides the one thing that
+      matters: which designs actually make money once every cost is counted, and where the next pound and
+      the next hour should go. These four instruments answer that, in order.</p>
+    <p><b>Loaded (fully-burdened) contribution</b> tells you what a design <em>really</em> leaves once ads,
+      returns, overhead and an honest cost for your own time come out — not the flattering sticker margin.
+      It keeps the <em>pre-ad</em> figure separate, because that is the only number a customer-acquisition
+      cost should ever be judged against. <b>The CAC ceiling and break-even ROAS</b> tell you the most you
+      can pay to win a buyer before an ad turns a sale into a loss — and expose why a "3× return on ad
+      spend" the dashboard cheers can still be a bleed on a thin product. <b>The coupon check</b> shows a
+      discount's true cost: because the platform's percentage fee falls with the price, the real hit is the
+      discount times one-minus-the-fee-rate, not the sticker figure. And <b>contribution per owner-hour</b>
+      ranks your catalogue by the resource you are actually short of — so a thin-margin, hands-free design
+      can rightly out-rank a fat one that eats your week.</p>
+    <p>Every figure is illustrative and yours to change — type in your own numbers and the sheet recalculates
+      live, entirely in your browser, nothing stored or sent. It is checked against the same test cases as the
+      free downloadable spreadsheet, so the tool and the workbook agree on every figure they share. Together they turn
+      allocation from a feeling into a decision you can defend — the whole method of <em>Print on Demand —
+      Advanced</em>.</p>
+  </section>
+
+  <section>
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+
+    <div class="shelf">
+      <b>This dashboard comes from a book.</b>
+      <p>It is the instrument at the heart of <em>Print on Demand — Advanced</em>, which shows a working
+        seller how to put money where the margin is and make the business durable.</p>
+      <a href="../../print-on-demand/">See the Print on Demand series →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+    <a href="../../resources/print-on-demand/">Print on Demand downloads</a> ·
+    <a href="../../privacy/">Privacy</a>
+  </div>
+</footer>
+
+<script src="../../assets/pod-calc.js?v=20261012"></script>
+<script>
+(function () {
+  function n(id) { var v = parseFloat(document.getElementById(id).value); return isNaN(v) ? 0 : v; }
+  function raw(id) { var v = parseFloat(document.getElementById(id).value); return isNaN(v) ? NaN : v; }
+  function set(id, t) { document.getElementById(id).textContent = t; }
+
+  function loaded() {
+    var r = POD.loadedContribution(raw("U"), n("Ad"), n("Re"), n("Ov"), n("Ti"));
+    if (r.invalid) { set("oPre","—"); set("oLoad","—"); return; }
+    set("oPre", POD.money(r.loadedPreAd)); set("oLoad", POD.money(r.loaded));
+  }
+  function cac() {
+    var c = POD.cacCeiling(raw("Pre"), n("Keep"));
+    var rr = POD.roasBreakeven(raw("Rev"), raw("Pre"));
+    set("oCac", c.invalid ? "—" : POD.money(c.maxCac));
+    set("oRoas", (rr.invalid || !isFinite(rr.breakevenRoas)) ? "—"
+      : rr.breakevenRoas.toFixed(1) + "×");
+    set("oAdv", c.invalid ? "—"
+      : (c.advertisable ? "Advertisable — cap CAC at the ceiling"
+                        : "Not by cold ads — needs a proven cohort"));
+  }
+  function coupon() {
+    var r = POD.couponImpact(raw("cP"), raw("cC"), n("cO"), n("cF"));
+    if (r.invalid) { set("oDisc","—"); set("oDrop","—"); set("oAfter","—"); return; }
+    set("oDisc", POD.money(r.discount)); set("oDrop", POD.money(r.drop));
+    set("oAfter", POD.money(r.after));
+  }
+  function league() {
+    var L = raw("lL"), U = Math.max(0, Math.floor(n("lU"))), H = n("lH");
+    if (isNaN(L)) { set("oTot","—"); set("oPh","—"); return; }
+    var total = L * U;
+    set("oTot", POD.money(total));
+    set("oPh", H > 0 ? POD.money(total / H) : "—");
+  }
+  var groups = [[["U","Ad","Re","Ov","Ti"], loaded],
+                [["Pre","Keep","Rev"], cac],
+                [["cP","cC","cO","cF"], coupon],
+                [["lL","lU","lH"], league]];
+  groups.forEach(function (g) {
+    g[0].forEach(function (id) { document.getElementById(id).addEventListener("input", g[1]); });
+    g[1]();
+  });
+})();
+</script>
+
+</body>
+</html>

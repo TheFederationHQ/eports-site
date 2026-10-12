@@ -1,0 +1,40 @@
+ETSY - MY ONE TRAFFIC CHANNEL: the rule, set in advance  (Chapter 7)
+
+More traffic lets you learn faster - but a channel without a rule is a slot
+machine you feed. Add ONE channel, and write its rule BEFORE you switch on.
+(A break-even + traffic calculator is on eports.global/resources.)
+
+  Channel (pick ONE):  [ ] Etsy Ads    [ ] Pinterest loop
+  Conversion gate (Ch6) passed?   Y / N
+    if N: only a capped LEARNING PURCHASE here - buy traffic to test
+    the page, budget set in advance, NOT judged on profit. Never SCALE
+    spend on a page you haven't proven; ads amplify, they don't fix.
+
+  Avoid: paying for OUTSIDE ads (Facebook/Google) pointed at an Etsy
+  listing - weak attribution, colder audience, and Etsy's cut on top.
+
+  IF ETSY ADS (you set the budget; Etsy sets the bids - there is NO
+  per-click cap you control):
+    [ ] FIRST turn OFF every listing except the one being tested
+        (Manage advertised listings) - Etsy advertises ALL by default.
+    Note: Etsy chooses the eligible searches; you cannot target keywords.
+    This tests the LISTING's conversion, not a keyword (that's Ch4).
+    Contribution/order = take-home - item cost - other variable costs
+      (packaging, shipping I absorb) = £______
+    MAX TEST SPEND (daily budget x days) = £______
+    At the ceiling: PAUSE ads, read a PROVISIONAL verdict, then settle
+      the CPA after the ~30-day attribution window closes.
+    PASS if:  ad spend / attributed orders  <=  contribution
+    STOP if the ceiling is hit with too few attributed orders.
+
+  IF PINTEREST:
+    fixed weekly time budget: ______    the one loop: ______________
+    window: ______   PASS if it brings traceable traffic + orders
+    worth the hours (whole-shop controlled).
+
+  I protect the rule: I will not raise the ceiling without a written reason.
+
+----------------------------------------------------------------------
+From Etsy - Intermediate. The full method is in the book; the free
+worksheets and the lane shelf: eports.global/resources
+ePORTS — your ecom source. eports.global.

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reseller cash forecast — can you afford this buy? (8 weeks, with gates) | ePORTS</title>
+<meta name="description" content="Free eight-week cash and hours forecast for resellers: run a big buy through it and see your open-to-buy week by week, your hours against your ceiling, and a yes-or-no from three gates.">
+<link rel="canonical" href="./">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css?v=20261011b">
+<!-- /tools page (Reselling lane). Mirrors Reselling — Advanced, ch6: four rules a week —
+     capital + profit − draw; committed + buying − cost released; reserved + moved aside;
+     open-to-buy = capital − committed − reserved. Gates: cash, hours, payback. -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator · Reselling</p>
+    <h1>Can you afford this buy?</h1>
+    <p class="sub">A profitable business can run out of money by growing. Run any big buy through the next eight
+      weeks — your free cash, your hours — and let three gates you set in advance say yes or no.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+
+  <section>
+    <h2><span class="n">The forecast</span> Eight weeks, with and without the buy</h2>
+    <div class="calc">
+      <div>
+        <p class="hint" style="margin:0 0 .6rem"><b>Where you are this week</b></p>
+        <div class="field"><label for="cap">Capital <span class="u">(stock at cost + cash in the business account, $)</span></label>
+          <input id="cap" type="number" inputmode="decimal" value="2400" min="0" step="1"></div>
+        <div class="field"><label for="com">Committed <span class="u">(stock you own, at cost, $)</span></label>
+          <input id="com" type="number" inputmode="decimal" value="1050" min="0" step="1"></div>
+        <div class="field"><label for="res">Reserved <span class="u">(float + anything moved aside, $)</span></label>
+          <input id="res" type="number" inputmode="decimal" value="500" min="0" step="1"></div>
+        <p class="hint" style="margin:.6rem 0 .6rem"><b>Your ordinary week</b></p>
+        <div class="field"><label for="buy">Buying <span class="u">($)</span></label>
+          <input id="buy" type="number" inputmode="decimal" value="60" min="0" step="1"></div>
+        <div class="field"><label for="rel">Stock cost released by sales <span class="u">($)</span></label>
+          <input id="rel" type="number" inputmode="decimal" value="65" min="0" step="1"></div>
+        <div class="field"><label for="prof">Profit <span class="u">($)</span></label>
+          <input id="prof" type="number" inputmode="decimal" value="187" min="0" step="1"></div>
+        <div class="field"><label for="draw">Draw — what you pay yourself <span class="u">($)</span></label>
+          <input id="draw" type="number" inputmode="decimal" value="150" min="0" step="1"></div>
+        <div class="field"><label for="rsv">Moved to reserve <span class="u">($)</span></label>
+          <input id="rsv" type="number" inputmode="decimal" value="35" min="0" step="1"></div>
+        <div class="field"><label for="hrs">Your hours <span class="u">(include the weekly review)</span></label>
+          <input id="hrs" type="number" inputmode="decimal" value="10.6" min="0" step="0.1"></div>
+      </div>
+      <div>
+        <p class="hint" style="margin:0 0 .6rem"><b>The buy you're weighing</b></p>
+        <div class="field"><label for="oc">What it costs, paid in week 1 <span class="u">($)</span></label>
+          <input id="oc" type="number" inputmode="decimal" value="600" min="0" step="1"></div>
+        <div class="field"><label for="oi">How many items <span class="u">(count)</span></label>
+          <input id="oi" type="number" inputmode="numeric" value="40" min="1" step="1"></div>
+        <div class="field"><label for="on">Net per item when one sells <span class="u">($)</span></label>
+          <input id="on" type="number" inputmode="decimal" value="19.50" min="0" step="0.01"></div>
+        <div class="field"><label for="os">Sold per week <span class="u">(count)</span></label>
+          <input id="os" type="number" inputmode="decimal" value="4" min="0" step="1"></div>
+        <div class="field"><label for="ow">First sales in week</label>
+          <input id="ow" type="number" inputmode="numeric" value="3" min="1" max="8" step="1"></div>
+        <div class="field"><label for="oh">Extra hours a week it takes <span class="u">(hours)</span></label>
+          <input id="oh" type="number" inputmode="decimal" value="4" min="0" step="0.1"></div>
+        <div class="field"><label for="skip">Ordinary routes you'll skip to make room <span class="u">(week numbers)</span></label>
+          <input id="skip" type="text" value="2, 5">
+          <p class="hint">A skipped route saves its buying and its hours (below).</p></div>
+        <div class="field"><label for="rh">Hours a route takes <span class="u">(hours)</span></label>
+          <input id="rh" type="number" inputmode="decimal" value="3" min="0" step="0.1"></div>
+        <p class="hint" style="margin:.6rem 0 .6rem"><b>Your gates</b></p>
+        <div class="field"><label for="gc">Cash gate: lowest open-to-buy allowed <span class="u">($)</span></label>
+          <input id="gc" type="number" inputmode="decimal" value="150" min="0" step="1"></div>
+        <div class="field"><label for="gh">Hours gate: most hours a week <span class="u">(hours)</span></label>
+          <input id="gh" type="number" inputmode="decimal" value="15" min="0" step="0.1"></div>
+      </div>
+    </div>
+
+    <div class="calc-out" style="margin-top:1rem" aria-live="polite" aria-atomic="true">
+      <h3>The gates</h3>
+      <div class="row"><span class="k">Cash gate — lowest open-to-buy</span> <span class="v" id="g1">—</span></div>
+      <div class="row"><span class="k">Hours gate — busiest week</span> <span class="v" id="g2">—</span></div>
+      <div class="row"><span class="k">Payback gate — week 8 vs no-buy</span> <span class="v" id="g3">—</span></div>
+      <div class="row"><span class="k">Verdict</span> <span class="v verdict" id="gv">—</span></div>
+    </div>
+
+    <div class="viz">
+      <h3>Open-to-buy, week by week</h3>
+      <div id="otb"></div>
+    </div>
+    <div class="viz">
+      <h3>Your hours, week by week</h3>
+      <div id="hours"></div>
+      <p class="viz-hint">Two charts on purpose: money and hours are different scales, so they never share an axis. Bars over the ceiling turn orange and say so when you hover — or open the table under each chart for every number.</p>
+    </div>
+
+    <noscript>
+      <p class="calc-fallback"><b>The forecast needs JavaScript.</b> Each week: <em>capital + profit − draw</em>;
+        <em>committed + buying − cost released</em>; <em>reserved + moved aside</em>; <em>open-to-buy = capital −
+        committed − reserved</em>. Run it once with your ordinary week (the baseline) and once with the buy added.
+        The buy passes only if open-to-buy stays at or above your cash gate every week, your hours stay at or under
+        your ceiling every week, and week 8's open-to-buy is at least the baseline's.</p>
+    </noscript>
+    <p class="cta">Gates written before the offer arrives — and a forecast tested against real weeks — are the
+      method in <a href="../../reselling/#advanced"><em>Reselling — Advanced</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">How to read it</span> Profit is not cash</h2>
+    <p>Profit is what a sale leaves once it's sold. Cash is what's in the account on Saturday. Between them sit the
+      weeks a thing spends on the shelf. A buy takes all its money on day one and gives it back a few items at a time
+      — so a business can be profitable every month and still find, the week after a big buy, that it can't afford
+      its ordinary Saturday.</p>
+    <h3>A worked example</h3>
+    <p>The defaults are the book's: a $600 lot of about forty items, each expected to clear about $19.50, selling
+      four a week from week three, taking four extra hours a week — with two ordinary Saturday routes skipped to make
+      room. Open-to-buy falls from <b>$850</b> to about <b>$257</b> in week one, stays above the $150 gate, and ends
+      week eight at about <b>$1,254</b> against the no-buy baseline's <b>$906</b>. Hours peak at <b>14.6</b>, under a
+      15-hour ceiling. All three gates pass: <b>yes — only if those two routes are actually skipped.</b> Add live selling's three or four
+      hours on top and the hours gate says no.</p>
+    <h3>Common questions</h3>
+    <h4>What is "open-to-buy"?</h4>
+    <p>The cash that's genuinely free to become stock: capital, minus what's already on the shelf at cost, minus what's
+      reserved for postage, supplies and anything else you set aside.</p>
+    <h4>Is this a promise of what will happen?</h4>
+    <p>No — a forecast is a guess built from your own averages. Its value is that you can put each real week beside it
+      and see which assumption was wrong. That's when it starts paying for itself.</p>
+  </section>
+
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+
+  <section>
+    <div class="shelf">
+      <b>This forecast comes from a book.</b>
+      <p>It's chapter 6 of <em>Reselling — Advanced</em>: the eight-week forecast and the gates that say no before
+        you're tempted.</p>
+      <a href="../../reselling/">See the Reselling series →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+    <a href="../../resources/reselling/">Reselling downloads</a> ·
+    <a href="../../privacy/">Privacy</a>
+  </div>
+</footer>
+
+<script src="../../assets/viz.js?v=20261011k"></script>
+<script>
+(function () {
+  var V = window.RVIZ;
+  var ids = ["cap", "com", "res", "buy", "rel", "prof", "draw", "rsv", "hrs", "oc", "oi", "on", "os", "ow", "oh", "rh", "gc", "gh"];
+  function num(i) { var v = parseFloat(document.getElementById(i).value); return isNaN(v) || v < 0 ? NaN : v; }
+  function forecast(p) {
+    var skip = p.skip, costEach = p.oi > 0 ? p.oc / p.oi : 0;
+    var base = [], with_ = [], hours = [];
+    var b = p.cap - p.com - p.res, cap = p.cap, com = p.com, res = p.res, left = p.oi;
+    for (var w = 1; w <= 8; w++) {
+      b += p.prof - p.draw - p.rsv - p.buy + p.rel;
+      var skipped = skip.indexOf(w) >= 0;
+      var buy = (skipped ? 0 : p.buy) + (w === 1 ? p.oc : 0);
+      var sold = w >= p.ow ? Math.min(p.os, left) : 0; left -= sold;
+      cap += p.prof + sold * p.on - p.draw;
+      com += buy - p.rel - sold * costEach;
+      res += p.rsv;
+      base.push(b); with_.push(cap - com - res);
+      hours.push(p.hrs + p.oh - (skipped ? p.rh : 0));
+    }
+    var lo = Math.min.apply(null, with_), hi = Math.max.apply(null, hours), pay = with_[7] - base[7];
+    return { base: base, otb: with_, hours: hours, lo: lo, hi: hi, pay: pay,
+      verdict: (lo >= p.gc && hi <= p.gh && pay >= 0) ? "YES" : "NO",
+      fails: [lo < p.gc ? "cash" : null, hi > p.gh ? "hours" : null, pay < 0 ? "payback" : null].filter(Boolean) };
+  }
+  window.RESELL_FORECAST = forecast;
+  function run() {
+    var p = {}, bad = false;
+    ids.forEach(function (i) { p[i] = num(i); if (isNaN(p[i])) bad = true; });
+    p.skip = document.getElementById("skip").value.split(/[,\s]+/).map(function (s) { return parseInt(s, 10); }).filter(isFinite);
+    var set = function (id, t) { document.getElementById(id).textContent = t; };
+    if (bad || p.ow < 1) { ["g1", "g2", "g3"].forEach(function (k) { set(k, "—"); }); set("gv", "enter every box"); return; }
+    var f = forecast(p);
+    set("g1", V.money0(f.lo) + (f.lo >= p.gc ? " — pass" : " — FAIL"));
+    set("g2", f.hi.toFixed(1) + " h" + (f.hi <= p.gh ? " — pass" : " — FAIL"));
+    set("g3", (f.pay >= 0 ? "+" : "") + V.money0(f.pay) + (f.pay >= 0 ? " — pass" : " — FAIL"));
+    set("gv", f.verdict === "YES" ? "YES" + (p.skip.length ? " — only if those routes are actually skipped" : "") : "NO — " + f.fails.join(", ") + " gate");
+    var xs = ["1", "2", "3", "4", "5", "6", "7", "8"];
+    V.lines(document.getElementById("otb"), xs,
+      [{ name: "With the buy", color: V.C.s1, values: f.otb }, { name: "Without it", color: V.C.s2, values: f.base, dash: true }],
+      { title: "Open-to-buy each week, with and without the buy, against the cash gate", xname: "Week ", zero: true, endLabels: true,
+        threshold: { value: p.gc, label: "cash gate " + V.money0(p.gc) },
+        legend: [{ name: "With the buy", color: V.C.s1 }, { name: "Without it (baseline)", color: V.C.s2, dash: true },
+                 { name: "Cash gate", color: V.C.mut, dash: true }] });
+    V.table(document.getElementById("otb"), "Open-to-buy by week", ["Week", "With the buy", "Without it"],
+      xs.map(function (x, i) { return [x, V.money0(f.otb[i]), V.money0(f.base[i])]; }));
+    V.bars(document.getElementById("hours"), xs, f.hours,
+      { title: "Your hours each week against your ceiling", xname: "Week ", unit: "hours", ceiling: p.gh,
+        ceilingLabel: "",
+        legend: [{ name: "At or under the ceiling", color: V.C.s1 }, { name: "Over the ceiling", color: V.C.s2 },
+                 { name: "Hours ceiling (" + p.gh + " h)", color: V.C.mut, dash: true }] });
+    V.table(document.getElementById("hours"), "Hours by week", ["Week", "Hours"],
+      xs.map(function (x, i) { return [x, f.hours[i].toFixed(1)]; }));
+  }
+  ids.concat(["skip"]).forEach(function (i) { document.getElementById(i).addEventListener("input", run); });
+  window.addEventListener("resize", run);
+  run();
+})();
+</script>
+</body>
+</html>

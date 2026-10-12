@@ -1,0 +1,205 @@
+/* =========================================================================
+   ePORTS — self-hosted webfonts
+   =========================================================================
+   Inter Tight      · SIL Open Font License 1.1 · see OFL-Inter-Tight.txt
+   Source Serif 4   · SIL Open Font License 1.1 · see OFL-Source-Serif-4.txt
+
+   Both are free for commercial use, embeddable in web and print, and may be
+   bundled in an EPUB. The one thing the OFL forbids is selling the font
+   itself. The licence text must travel with the files — do not delete the
+   two OFL-*.txt files in this directory.
+
+   WHY SELF-HOSTED RATHER THAN THE GOOGLE FONTS CDN
+   -------------------------------------------------------------------------
+   Claude Design's first pass imported these from fonts.googleapis.com. That
+   was replaced here for three reasons, in order of how much they cost:
+
+   1. THE COVER RENDER. covers/*.html is rasterised through headless Edge to
+      an exact 1600x2560 PNG. A CDN font may not finish loading before the
+      screenshot fires — the render then silently falls back to a system face
+      and the cover ships in the WRONG TYPEFACE with no error. Silent failure
+      on a shipped artefact is the worst class of bug here.
+   2. GDPR. Loading fonts from Google's CDN transmits the visitor's IP to
+      Google. Munich Regional Court, 20 Jan 2022, found this an unlawful
+      transfer and awarded damages; the reasoning was that the fonts can be
+      self-hosted, so there is no legitimate interest in the transfer. ePORTS
+      sells into the UK and EU. ⚠️ Not legal advice — but self-hosting removes
+      the question entirely, and costs nothing.
+   3. THE EPUB CONTRACT. scripts/package.py is dependency-free by design and
+      an EPUB must render offline. A network import breaks both.
+
+   VARIABLE FONTS — one file covers the whole weight range
+   -------------------------------------------------------------------------
+   Inter Tight     300-800, roman + italic
+   Source Serif 4  400-700, roman + italic
+   Do not add separate files per weight; the browser interpolates.
+
+   SUBSETS — latin and latin-ext only
+   -------------------------------------------------------------------------
+   Covers English, the accented characters in European names, and the £ and
+   € signs. Cyrillic, Greek and Vietnamese are deliberately absent: ~600KB of
+   glyphs no ePORTS reader will render. If a book ever needs them, re-run the
+   download in site/assets/fonts/_manifest.json rather than hand-editing.
+
+   ⚠️ font-display: swap is deliberate. Text paints immediately in the
+   fallback and reflows when the webfont lands. For the COVER RENDER that is
+   not good enough — the render script must wait on document.fonts.ready
+   before screenshotting, or you get the fallback baked in. See the note in
+   covers/ecommerce-00-cover.html.
+   ========================================================================= */
+
+/* ---------- Inter — SCREEN BODY TEXT ----------
+   Added 2026-08-04. Body prose on screen moved off Source Serif 4 and onto
+   Inter, on Femi's report that Times-like serifs are physically tiring to
+   read. Verified first that Source Serif 4 was rendering correctly rather
+   than falling back — it was, so this is the typeface, not a bug.
+
+   Grounds, stated honestly:
+   - Serif vs sans READING SPEED on screen is mixed and mostly statistically
+     insignificant. Nobody should claim a decisive winner.
+   - Where a difference does appear it favours sans on SCREEN (comprehension,
+     cognitive load) and serif on PAPER. The medium splits it.
+   - User PREFERENCE reliably favours sans on screen — and preference governs
+     whether a reader keeps going, which is the thing that matters here.
+   - What actually drives legibility is large x-height, open apertures and LOW
+     STROKE CONTRAST. Source Serif 4's moderate contrast — thick strokes next
+     to thin ones — is what the eye keeps having to resolve. Inter has all
+     three features and was drawn for screens.
+
+   ⚠️ NOT Inter Tight. Tight is the condensed sibling, built for
+   space-constrained UI and display. Google's own guidance: Inter for reading,
+   Inter Tight for tight interfaces. Headings stay on Tight; prose uses this.
+
+   ⚠️ Source Serif 4 is KEPT, not deleted — serif still suits print, and the
+   book pipeline may want it. Do not remove those @font-face rules. */
+@font-face{
+  font-family:"Inter"; font-style:normal; font-weight:300 800; font-display:swap;
+  src:url("./inter-roman-latin.woff2") format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,
+    U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face{
+  font-family:"Inter"; font-style:normal; font-weight:300 800; font-display:swap;
+  src:url("./inter-roman-latin-ext.woff2") format("woff2");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,
+    U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,
+    U+2C60-2C7F,U+A720-A7FF;
+}
+@font-face{
+  font-family:"Inter"; font-style:italic; font-weight:300 800; font-display:swap;
+  src:url("./inter-italic-latin.woff2") format("woff2");
+  unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,
+    U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+@font-face{
+  font-family:"Inter"; font-style:italic; font-weight:300 800; font-display:swap;
+  src:url("./inter-italic-latin-ext.woff2") format("woff2");
+  unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,
+    U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,
+    U+2C60-2C7F,U+A720-A7FF;
+}
+
+/* ---------- Inter Tight — display and interface ---------- */
+@font-face {
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url('./inter-tight-roman-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url('./inter-tight-roman-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Inter Tight';
+  font-style: italic;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url('./inter-tight-italic-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Inter Tight';
+  font-style: italic;
+  font-weight: 300 800;
+  font-display: swap;
+  src: url('./inter-tight-italic-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* ---------- Source Serif 4 — long-form reading ---------- */
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('./source-serif-4-roman-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('./source-serif-4-roman-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('./source-serif-4-italic-latin.woff2') format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Source Serif 4';
+  font-style: italic;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url('./source-serif-4-italic-latin-ext.woff2') format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* ---------- tokens ----------
+   Web and cover surfaces lead with the webfonts. The -epub tokens keep the
+   original system stacks and MUST stay reachable — scripts/package.py builds
+   an EPUB that has to render with no network and no embedded font. Do not
+   collapse these four into two. */
+:root{
+  /* headings, eyebrows, labels, buttons — display, where tight is right */
+  --font-sans: 'Inter Tight', ui-sans-serif, -apple-system, "Segoe UI", system-ui, sans-serif;
+
+  /* ★ SCREEN BODY PROSE. This is the one that decides whether someone keeps
+     reading. Regular Inter, not Tight — see the note above. */
+  --font-body: 'Inter', ui-sans-serif, -apple-system, "Segoe UI", system-ui, sans-serif;
+
+  /* print and EPUB reading. Serif suits paper; the evidence splits by medium. */
+  --font-serif: 'Source Serif 4', Georgia, "Times New Roman", serif;
+
+  /* dependency-free stacks — EPUB must render with no network */
+  --font-sans-epub: ui-sans-serif, -apple-system, "Segoe UI", system-ui, sans-serif;
+  --font-serif-epub: Georgia, "Times New Roman", serif;
+}

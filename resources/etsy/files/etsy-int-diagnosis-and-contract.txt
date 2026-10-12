@@ -1,0 +1,33 @@
+ETSY - THE DIAGNOSIS + THE TEST CONTRACT  (Chapter 3)
+
+A shop is a chain; work its weakest link first. Read your panel top-down,
+name ONE working constraint, then sign the contract BEFORE you touch a
+listing - so the verdict cannot be re-spun to flatter you.
+
+  THE DIAGNOSIS - one working constraint, read top-down
+    Unit I'm diagnosing (one listing / a family): _______________
+    Weakest = the earliest gate with CLEAR adverse evidence,
+    judged vs my shop median AND its own prior ~30 days:
+      [ ] Gate 1  impressions   (a bare trickle = act now)
+      [ ] Gate 2  clicks
+      [ ] Gate 3  conversion
+      [ ] Economics (gates ok, low take-home)
+    The evidence (my own numbers vs my own yardsticks):
+      ______________________________________________
+    So the ONE thing I work on first is: ___________________
+
+  THE TEST CONTRACT - sign BEFORE touching the listing
+    Constraint (gate): ___________________
+    The ONE change (a prediction "if X then M rises"): __________
+    Metric M + baseline (prior ____ days): ______ = ______
+    SUPPORTS  (keep it):    M reaches ______
+    CONTRADICTS (revert):   M at/below ______
+    INCONCLUSIVE: too little data, OR the whole shop moved the
+      same way this window (season, not my change)
+    Window: ____ days   |   don't judge the rate under: ____ visits/impr
+    Signed: __________________   Date: __________
+
+----------------------------------------------------------------------
+From Etsy - Intermediate. The full method is in the book; the free
+worksheets and the lane shelf: eports.global/resources
+ePORTS — your ecom source. eports.global.

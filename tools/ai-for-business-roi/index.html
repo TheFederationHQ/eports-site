@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI ROI calculator — payback period and first-year return | ePORTS</title>
+<meta name="description" content="Free AI ROI calculator: payback period, first-year net and return on an AI or automation project.">
+<link rel="canonical" href="./">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css?v=20261011h">
+<!-- /tools page: live calculator + real editorial content so it is genuinely
+     useful and ranks for search traffic. Ads may sit on /tools pages LATER
+     (never on /resources) once the site qualifies and a consent setup exists.
+     The .ad-slot boxes below are reserved skeleton placeholders for that. -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator</p>
+    <h1>AI ROI calculator</h1>
+    <p class="sub">Work out the payback period, first-year net and return on an AI or automation
+      project — from the hours it saves and what it costs to run, not a vendor's promise.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+
+  <section>
+    <h2><span class="n">The calculator</span> Payback and first-year return</h2>
+    <div class="calc">
+      <div>
+        <div class="field">
+          <label for="S">One-off setup cost <span class="u">(£)</span></label>
+          <input id="S" type="number" inputmode="decimal" value="5000" min="0" step="0.01">
+          <p class="hint">build, integration, training</p>
+        </div>
+        <div class="field">
+          <label for="M">Monthly tool / subscription cost <span class="u">(£)</span></label>
+          <input id="M" type="number" inputmode="decimal" value="200" min="0" step="0.01">
+        </div>
+        <div class="field">
+          <label for="Hrs">Hours saved per month <span class="u">(count)</span></label>
+          <input id="Hrs" type="number" inputmode="decimal" value="40" min="0" step="0.5">
+        </div>
+        <div class="field">
+          <label for="L">Loaded hourly labour cost <span class="u">(£)</span></label>
+          <input id="L" type="number" inputmode="decimal" value="30" min="0" step="0.01">
+          <p class="hint">wage + overhead of whoever did it before</p>
+        </div>
+        <div class="field">
+          <label for="Oth">Other monthly savings <span class="u">(£)</span></label>
+          <input id="Oth" type="number" inputmode="decimal" value="0" min="0" step="0.01">
+          <p class="hint">error reduction, faster turnaround — 0 if unsure</p>
+        </div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>Your return</h3>
+        <div class="row"><span class="k">Monthly gross benefit</span> <span class="v" id="oGross">—</span></div>
+        <div class="row"><span class="k">Monthly net benefit</span> <span class="v" id="oNet">—</span></div>
+        <div class="row"><span class="k">Payback period</span> <span class="v" id="oPayback">—</span></div>
+        <div class="row"><span class="k">First-year net</span> <span class="v" id="oYear1">—</span></div>
+        <div class="row"><span class="k">First-year ROI</span> <span class="v" id="oROI">—</span></div>
+      </div>
+    </div>
+
+        <div class="viz">
+      <h3>Two years of running total, and whether it pays back</h3>
+      <div id="chart" aria-describedby="chart-note"></div>
+      <p class="viz-hint" id="chart-note">Month 0 is the setup cost; each month adds the net benefit. The dashed line is a second, more cautious case where only half the hours you expect are actually saved. Both are arithmetic on your inputs, not a forecast. Hover the chart for any month, or open the table under it.</p>
+      <div id="chart-table"></div>
+    </div>
+
+    <noscript>
+      <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The maths:
+      <em>monthly gross = hours saved × loaded hourly cost + other savings</em>;
+      <em>monthly net = gross − monthly cost</em>; <em>payback = setup cost ÷ monthly net</em>;
+      <em>first-year net = net × 12 − setup cost</em>; <em>ROI = (annual benefit − annual cost) ÷
+      annual cost</em>. Or <a href="../../resources/ai-for-your-business/">grab the free tools on the
+      AI for Your Business resources page</a> and work it through on your own numbers.</p>
+    </noscript>
+    <p class="cta">Deciding where AI actually pays before you spend a penny is the first job in
+      <a href="../../ai-for-your-business/#basics"><em>AI for Your Business: Basics</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">How to read it</span> A project pays only if the saving is real</h2>
+    <p>An AI or automation project costs money twice: once to set up, and then every month to run. It
+      pays back through the time it frees and the costs it removes. This calculator turns those into the
+      three numbers a business owner actually decides on — <b>how many months until it has paid for
+      itself</b>, <b>what it leaves you at the end of year one</b>, and <b>the return on the whole first
+      year's spend</b>.</p>
+    <p>The catch sits in one input. Hours saved are only worth money if that time is genuinely
+      redeployed — billed to another job, spent winning work, or taken off the payroll — and a monthly
+      cost only helps if it actually leaves the business. A calculator can't promise either. It does the
+      arithmetic honestly; the honesty of the hours is on you.</p>
+
+    <h3>The formula, in full</h3>
+    <p><b>Monthly gross benefit</b> = hours saved × loaded hourly labour cost + other monthly savings.
+      <b>Monthly net benefit</b> = gross − monthly tool cost. <b>Payback period</b> = setup cost ÷
+      monthly net (in months) — shown only when the net is positive, because a project that loses money
+      every month never pays back. <b>First-year net</b> = monthly net × 12 − setup cost. <b>First-year
+      ROI</b> = (annual benefit − annual cost) ÷ annual cost, where annual benefit = gross × 12 and
+      annual cost = setup cost + monthly cost × 12.</p>
+
+    <h3>A worked example</h3>
+    <p>Say a project costs £5,000 to set up and £200 a month to run, and it saves 40 hours a month of
+      work that used to cost £30 an hour loaded, with no other savings you're sure of. The gross benefit
+      is 40 × £30 = <b>£1,200 a month</b>; net of the £200 tool cost that's <b>£1,000 a month</b>. It
+      pays for itself in £5,000 ÷ £1,000 = <b>5.0 months</b>, leaves <b>£7,000</b> at the end of year one
+      (£1,000 × 12 − £5,000), and returns <b>94.6%</b> on the first year's spend (£14,400 of benefit
+      against £7,400 of cost). A strong project — as long as those 40 hours were real.</p>
+
+    <h3>Edge cases the calculator handles</h3>
+    <ul class="note" style="line-height:1.7">
+      <li><b>A net benefit of zero or below</b> shows the payback as "—": the project doesn't cover its
+        own monthly cost, so it never pays back, however long you wait.</li>
+      <li><b>A first-year net can be negative</b> even when the monthly net is positive — that just means
+        the setup cost hasn't been earned back inside twelve months yet. Check the payback period to see
+        how far past year one it lands.</li>
+      <li><b>"Other monthly savings"</b> is left at 0 by default on purpose. Only add a figure you could
+        defend — error reduction or faster turnaround you can actually point to — not a hopeful guess.</li>
+    </ul>
+
+    <h3>Common questions</h3>
+    <h4>What counts as the loaded hourly labour cost?</h4>
+    <p>Not just the wage. Take what the person costs the business per hour all in — pay plus the overhead
+      that rides on it (tax, benefits, tools, space) — for whoever did this task before. That's the true
+      value of an hour you hand back to them.</p>
+    <h4>What's the most common mistake with this?</h4>
+    <p>Over-stating the hours saved. It's the single biggest source of a flattering-but-false return.
+      Measure the task honestly before and after — time it for a week each way — rather than estimating.
+      A project that saves 12 real hours beats one that "saves 40" on paper and 10 in truth.</p>
+    <h4>Is this financial advice or a guarantee?</h4>
+    <p>No. It's arithmetic on numbers you enter, and it isn't financial advice. What a project actually
+      returns depends on whether the freed time is redeployed and the costs really leave the business —
+      neither of which this box controls. It just makes the decision honest before you spend.</p>
+  </section>
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+
+  <section>
+    <div class="shelf">
+      <b>This calculator comes from a book.</b>
+      <p>It's one tool from <em>AI for Your Business — Basics</em>, which takes an owner from AI hype-fog
+        to a first project chosen on the numbers: where it pays, what it costs, and when it earns back.</p>
+      <a href="../../ai-for-your-business/">See the AI for Your Business series →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+    <a href="../../resources/ai-for-your-business/">AI for Your Business downloads</a> ·
+    <a href="../../privacy/">Privacy</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var ids = ["S", "M", "Hrs", "L", "Oth"], el = {};
+  ids.forEach(function (i) { el[i] = document.getElementById(i); });
+  function num(i) { var v = parseFloat(el[i].value); return isNaN(v) || v < 0 ? 0 : v; }
+  function money(x) {
+    return (x < 0 ? "−" : "") + "£" + Math.abs(x).toLocaleString("en-GB", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+  }
+  function set(id, t) { document.getElementById(id).textContent = t; }
+  function run() {
+    var S = num("S"), M = num("M"), Hrs = num("Hrs"), L = num("L"), Oth = num("Oth");
+    var gross = Hrs * L + Oth;
+    var net = gross - M;
+    var year1 = net * 12 - S;
+    var annualCost = S + M * 12;
+    var annualBenefit = gross * 12;
+    set("oGross", money(gross));
+    set("oNet", money(net));
+    set("oPayback", net > 0 ? (S / net).toFixed(1) + " months" : "—");
+    set("oYear1", money(year1));
+    set("oROI", annualCost > 0 ? ((annualBenefit - annualCost) / annualCost * 100).toFixed(1) + "%" : "—");
+  }
+  ids.forEach(function (i) { el[i].addEventListener("input", run); });
+  run();
+})();
+</script>
+
+<script src="../../assets/viz.js?v=20261011k"></script>
+<script>
+(function () {
+  "use strict";
+  var V = window.RVIZ, node = document.getElementById("chart"), tnode = document.getElementById("chart-table");
+  function v(id) { var x = parseFloat(document.getElementById(id).value); return isNaN(x) || x < 0 ? 0 : x; }
+  function pct(a, b) { return b > 0 ? Math.round(a / b * 100) + "%" : "—"; }
+  function table(cap, head, rows) { while (tnode.firstChild) tnode.removeChild(tnode.firstChild); V.table(tnode, cap, head, rows); }
+  var timer; function later() { clearTimeout(timer); timer = setTimeout(draw, 60); }
+  document.querySelectorAll("input").forEach(function (i) { i.addEventListener("input", later); });
+  window.addEventListener("resize", later);
+
+  V.currency("£", "en-GB");
+  function draw() {
+    var S = v("S"), M = v("M"), Hrs = v("Hrs"), L = v("L"), Oth = v("Oth");
+    var net = Hrs * L + Oth - M, half = (Hrs / 2) * L + Oth - M;
+    var xs = [], a = [], b = [], rows = [];
+    for (var m = 0; m <= 24; m++) { xs.push(String(m)); a.push(-S + net * m); b.push(-S + half * m);
+      if (m % 3 === 0) rows.push([String(m), V.money(-S + net * m), V.money(-S + half * m)]); }
+    var opt = { title: "Running total over 24 months: " + V.money(a[24]) + " as entered, " + V.money(b[24]) + " if half the hours are saved",
+      threshold: { value: 0, label: "break-even", below: true }, xname: "Month ", yfmt: V.money0, endLabels: true,
+      legend: [{ name: "As you entered it", color: V.C.s1 }, { name: "If only half the hours are saved", color: V.C.s2, dash: true }] };
+    if (net > 0) { var pb = S / net, i = Math.min(24, Math.ceil(pb));
+      if (pb <= 24) opt.marker = { i: i, v: a[i], label: "pays back ≈ month " + pb.toFixed(1), color: V.C.ink }; }
+    V.lines(node, xs, [{ name: "As entered", color: V.C.s1, values: a, dots: false },
+                       { name: "Half the hours", color: V.C.s2, values: b, dash: true, dots: false }], opt);
+    table("Running total, every third month", ["Month", "As you entered it", "If half the hours are saved"], rows);
+    window.EPORTS_CHART = { net: net, half: half, month12: a[12], payback: net > 0 ? S / net : null };
+  }
+  draw();
+})();
+</script>
+
+</body>
+</html>

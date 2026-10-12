@@ -1,0 +1,68 @@
+WHAT GOOD LOOKS LIKE -- YOUR SHARED STANDARD + REVIEW GATE
+From "AI for Your Business — Basics", chapter 6
+================================================================
+
+Left alone, AI writes for everyone, which means it writes for no one -- and if
+five people each decide "good" for themselves, you get five different-sounding
+businesses. This one page fixes that: it tells the tool who "you" is, and gives
+your team one line to check every draft against.
+
+⚠️ Save the five headings INSIDE the tool's saved instructions or template, so
+they're applied to every draft automatically -- not in a folder someone has to
+remember to open. A standard one click away gets used; a standard in a drawer
+gets forgotten by Friday.
+
+
+PART A -- THE STANDARD  (five headings; fill in for one job at a time)
+================================================================
+
+1 - WHO THIS IS FOR
+----------------------------------------------------------------
+  ______________________________________________________________
+
+2 - HOW WE SOUND  (two or three words, and the voice we never use)
+----------------------------------------------------------------
+  We sound: ____________________________________________________
+  We never sound: ______________________________________________
+
+3 - WHAT THIS KIND OF MESSAGE MUST INCLUDE
+----------------------------------------------------------------
+  ______________________________________________________________
+  ______________________________________________________________
+
+4 - WHAT IT MUST NEVER SAY, CLAIM, OR OMIT  (your business-risk rules)
+----------------------------------------------------------------
+  e.g. never promise a date we haven't checked; never leave out a cost;
+  never guarantee availability we don't have.
+  ______________________________________________________________
+  ______________________________________________________________
+
+5 - ONE APPROVED EXAMPLE  (a real one you'd be proud of, names removed)
+----------------------------------------------------------------
+  ______________________________________________________________
+  ______________________________________________________________
+  ______________________________________________________________
+
+
+PART B -- THE REVIEW GATE  (a person guards the door)
+================================================================
+
+Before anything reaches a customer, one named person checks it against the five
+headings, as five quick questions. Thirty seconds, done:
+
+  [ ] Is it written for OUR customer?
+  [ ] Does it sound like us?
+  [ ] Is everything it must include actually there?
+  [ ] Has it broken any "never"?
+  [ ] Is it at least as clear as our approved example?
+
+THE RULE  (not a phase, not a suggestion):
+  No AI-drafted message reaches a customer without ____________________
+  checking it against these five. If they're away, ____________________
+  checks. No check, no send.
+
+
+================================================================
+From AI for Your Business - Basics, chapter 6.
+The full method + the books: eports.global/ai-for-your-business
+ePORTS — your ecom source. eports.global

@@ -1,0 +1,187 @@
+/* ==========================================================================
+   ePORTS — shared resources styling
+   ==========================================================================
+   Extracted 2026-08-09 from site/resources/index.html (the dropshipping page)
+   so the landing + every lane's download page + the /tools calculators share
+   ONE design system and cannot drift. Self-contained, no external dependency.
+
+   Design provenance carried verbatim from the original page — do not "tidy":
+   - Feature complexity LOW, design complexity HIGH (Pieters, Wedel & Batra 2010):
+     four colours, strict grid, deliberate hierarchy.
+   - Saturation not hue (Labrecque et al. 2025): restrained field, exactly ONE
+     saturated accent (--accent), on the single element that must be believed.
+   - Meaning is NEVER encoded in hue alone — pair colour with a word + weight.
+   - Screen body prose is Inter, not a serif (Times-like serifs tire the eye).
+   - Contrast verified by scripts/check_contrast.py; re-run if a colour changes.
+   ========================================================================== */
+:root{
+  --deep:#0C2733; --deep-sunk:#0A1F29; --slate:#2E5566;
+  --steel:#93AFBB; --steel-dim:#7E97A3; --mist:#C6D6DE; --cream:#F5F2EA;
+  --paper:#FBFAF7; --ink:#1A1A1A; --mut:#5A5A5A; --rule:#DCD9D2;
+  --link:#2F6F5E; --accent:#52D6C0;
+  --sans:'Inter',ui-sans-serif,-apple-system,"Segoe UI",system-ui,sans-serif;
+  --serif:'Inter',ui-sans-serif,-apple-system,"Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--serif);font-size:18px;line-height:1.62;-webkit-font-smoothing:antialiased}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.5rem}
+a{color:var(--link);text-underline-offset:.18em}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+
+/* hero — the only dark band, the only accent */
+.hero{background:var(--deep);color:var(--cream);padding:4.5rem 0 3.5rem}
+.hero .eyebrow{font-family:var(--sans);font-size:.78rem;font-weight:600;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--steel);margin:0 0 1.6rem}
+.hero h1{font-family:var(--sans);font-weight:800;letter-spacing:-.03em;
+  font-size:clamp(2.1rem,6vw,3.5rem);line-height:1.04;margin:0 0 1.4rem;text-wrap:balance;max-width:18ch}
+.hero .sub{color:var(--mist);font-size:clamp(1.05rem,2.4vw,1.3rem);line-height:1.5;
+  margin:0 0 2.2rem;max-width:44ch}
+.hero .sub em{font-style:italic;color:var(--cream)}
+
+/* structure */
+section{padding:3.4rem 0;border-top:1px solid var(--rule)}
+section:first-of-type{border-top:0}
+h2{font-family:var(--sans);font-weight:700;letter-spacing:-.02em;
+  font-size:clamp(1.5rem,3.6vw,2rem);line-height:1.16;margin:0 0 .5rem;color:var(--deep);text-wrap:balance}
+h2 .n{display:block;font-size:.72rem;font-weight:600;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--mut);margin-bottom:.7rem}
+h3{font-family:var(--sans);font-size:1.05rem;font-weight:700;margin:2rem 0 .5rem;color:var(--deep)}
+h4{font-family:var(--sans);font-size:.98rem;font-weight:700;margin:1.5rem 0 .35rem;color:var(--deep)}
+.lede{color:var(--mut);margin:0 0 2rem;max-width:60ch}
+p{margin:0 0 1.1rem;max-width:64ch}
+.note{font-family:var(--sans);font-size:.88rem;line-height:1.55;color:var(--mut);max-width:66ch}
+
+/* lane cards — the landing directory */
+.lanes{list-style:none;margin:2rem 0 0;padding:0;display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1.2rem}
+.lane-card{display:flex;flex-direction:column;background:#fff;border:1px solid var(--rule);
+  border-radius:6px;overflow:hidden;text-decoration:none;color:inherit}
+.lane-card:hover{border-color:var(--slate)}
+.lane-card .thumb{height:118px;position:relative;overflow:hidden}
+.lane-card .thumb .lvls{position:absolute;left:14px;bottom:12px;display:flex;gap:6px}
+.lane-card .thumb .lvls span{font-family:var(--sans);font-size:.62rem;font-weight:700;
+  letter-spacing:.03em;padding:2px 7px;border-radius:20px;background:rgba(0,0,0,.28);color:#fff}
+.lane-card .body{padding:1rem 1.15rem 1.2rem}
+.lane-card .body b{font-family:var(--sans);font-size:1.05rem;color:var(--deep);display:block}
+.lane-card .body span{font-family:var(--sans);font-size:.88rem;color:var(--mut);
+  display:block;margin-top:.3rem;line-height:1.45}
+.lane-card .body .go{font-family:var(--sans);font-size:.86rem;font-weight:700;
+  color:var(--link);margin-top:.8rem;display:inline-block}
+.lane-card.soon{opacity:.62}
+.lane-card.soon .body .go{color:var(--mut)}
+
+/* download list — a lane's worksheets */
+.dls{list-style:none;margin:1.6rem 0 0;padding:0}
+.dl{display:grid;grid-template-columns:1fr auto;gap:.3rem 1.4rem;align-items:baseline;
+  padding:1.15rem 0;border-top:1px solid var(--rule)}
+.dl:last-child{border-bottom:1px solid var(--rule)}
+.dl .name{font-family:var(--sans);font-weight:700;font-size:1rem;color:var(--deep)}
+.dl .from{font-family:var(--sans);font-size:.8rem;color:var(--mut);grid-column:1;margin:0}
+.dl .desc{font-size:.95rem;color:var(--ink);grid-column:1;margin:.15rem 0 0;max-width:56ch}
+.dl .get{grid-row:1;grid-column:2;font-family:var(--sans);font-weight:700;font-size:.9rem;
+  white-space:nowrap;text-align:right}
+.dl .fmt{display:inline-block;font-family:var(--sans);font-size:.64rem;font-weight:700;
+  letter-spacing:.06em;text-transform:uppercase;color:var(--mut);border:1px solid var(--rule);
+  border-radius:3px;padding:1px 5px;margin-left:.5rem;vertical-align:middle}
+.dl .live{color:var(--link);border-color:var(--link)}
+
+/* shelf promo — content-first, ALWAYS a footer, never the hero (the funnel) */
+.shelf{background:var(--deep);color:var(--cream);border-radius:6px;padding:1.7rem 1.7rem;margin:2.4rem 0 0}
+.shelf b{font-family:var(--sans);font-size:1.05rem;color:var(--cream);display:block}
+.shelf p{color:var(--mist);font-size:.95rem;margin:.5rem 0 1rem;max-width:54ch}
+.shelf a{font-family:var(--sans);font-weight:700;color:var(--accent);text-decoration:none}
+.shelf a:hover{text-decoration:underline}
+
+/* shelf / buy page: price + buy button */
+.buy{display:flex;align-items:center;gap:1.1rem;flex-wrap:wrap;margin:1.1rem 0 0}
+.price{font-family:var(--sans);font-weight:800;font-size:1.15rem;color:var(--deep)}
+.price .draft{font-weight:400;font-size:.82rem;color:var(--mut)}
+.buy .go{display:inline-block;font-family:var(--sans);font-weight:700;font-size:.92rem;
+  color:var(--cream);background:var(--deep);padding:.55rem 1.1rem;border-radius:5px;text-decoration:none}
+.buy .go:hover{background:var(--link)}
+
+/* live calculator (the /tools pages) */
+.calc{display:grid;grid-template-columns:1fr 1fr;gap:1.6rem;margin:1.8rem 0 0;
+  background:#fff;border:1px solid var(--rule);border-radius:6px;padding:1.6rem 1.7rem}
+@media(max-width:640px){
+  .calc{grid-template-columns:1fr}
+  .dl{grid-template-columns:1fr}
+  .dl .get{grid-row:auto;grid-column:1;margin:.25rem 0 0;white-space:normal}
+  .calc-out .row{flex-wrap:wrap}   /* value drops below a long label rather than overflowing at 320px */
+}
+.calc .field{margin:0 0 1rem}
+.calc .field label{display:block;font-family:var(--sans);font-weight:700;font-size:.9rem;
+  color:var(--deep);margin:0 0 .3rem}
+.calc .field .u{font-weight:400;color:var(--mut)}
+.calc .field input{width:100%;font-family:var(--sans);font-size:1.05rem;color:var(--ink);
+  padding:.55rem .7rem;border:1px solid var(--rule);border-radius:4px;background:#FFFDF6}
+.calc .field input:focus{outline:0;border-color:var(--link);box-shadow:0 0 0 3px rgba(47,111,94,.15)}
+.calc .field .hint{font-family:var(--sans);font-size:.78rem;color:var(--mut);margin:.25rem 0 0}
+.calc-out{background:var(--deep);border-radius:6px;padding:1.4rem 1.5rem;align-self:start}
+.calc-out h3{color:var(--cream);margin:0 0 .8rem;font-size:.95rem}
+.calc-out .row{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+  padding:.6rem 0;border-top:1px solid var(--slate)}
+.calc-out .row:first-of-type{border-top:0}
+.calc-out .row .k{font-family:var(--sans);font-size:.9rem;color:var(--mist);min-width:0;overflow-wrap:anywhere}
+.calc-out .row .v{font-family:var(--sans);font-weight:700;font-size:1.25rem;color:var(--accent);
+  font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.calc-out .row .v.txt{font-size:1rem;color:var(--cream);text-align:right}
+.calc-fallback{font-family:var(--sans);font-size:.9rem;color:var(--mut);
+  border:1px dashed var(--rule);border-radius:4px;padding:1rem 1.2rem;margin:1.2rem 0 0}
+/* per-result commitment CTA — a small nudge under a result, to the specific book */
+.cta{font-family:var(--sans);font-size:.86rem;line-height:1.5;color:var(--mut);
+  margin:1rem 0 0;padding-left:1.1rem;position:relative;max-width:64ch}
+.cta::before{content:"→";position:absolute;left:0;color:var(--link);font-weight:700}
+.cta a{color:var(--link);font-weight:700;text-decoration:none}
+.cta a:hover{text-decoration:underline}
+
+/* footer */
+.foot{border-top:1px solid var(--rule);padding:2.4rem 0 3rem;font-family:var(--sans);
+  font-size:.84rem;color:var(--mut)}
+.foot .mark{font-weight:800;color:var(--deep);letter-spacing:-.01em}
+.foot a{color:var(--mut)}
+
+/* ── Ad slots — /tools/ pages ONLY, never /resources/. ─────────────────
+   RESERVED IN THE DOM NOW, but renders NOTHING to visitors — the whole site
+   stays invisible until launch day, and ads are wired later still (once the
+   site qualifies and a consent/privacy setup exists).
+   · default: display:none — visitors see nothing.
+   · add class "preview": shows the labelled skeleton box (for our eyes only).
+   · add class "filled" + the ad markup: goes live, holding the layout. */
+.ad-slot{ display:none; margin:2.25rem auto; }
+.ad-slot.preview{
+  display:flex; align-items:center; justify-content:center;
+  max-width:728px; min-height:90px;
+  border:1px dashed var(--rule,#cfd6dd);
+  border-radius:10px;
+  background:var(--mist,#f5f7f9);
+  color:var(--mut,#98a0aa);
+  font:600 .68rem/1 var(--sans,system-ui,sans-serif);
+  letter-spacing:.16em; text-transform:uppercase;
+  text-align:center; padding:.5rem;
+}
+.ad-slot.preview::before{ content:"Advertising space · reserved"; }
+.ad-slot.preview[data-ad="rectangle"]{ max-width:336px; min-height:280px; }
+.ad-slot.filled{ display:block; border:0; background:none; padding:0; }
+
+/* ---- live-tool charts, every lane (site/assets/viz.js) ---- */
+.viz{margin:1.4rem 0 .4rem;background:#fff;border:1px solid var(--rule);border-radius:6px;padding:1rem 1rem .8rem}
+.viz h3{margin:0 0 .5rem;font-size:1rem}
+.viz svg{display:block;max-width:100%;height:auto;user-select:none}
+.viz-legend{display:flex;flex-wrap:wrap;gap:.4rem 1rem;margin:.55rem 0 0;font-family:var(--sans);font-size:.82rem;color:var(--ink)}
+.viz-legend span{display:inline-flex;align-items:center;gap:.4rem}
+.viz-legend i{display:inline-block;width:14px;height:10px;border-radius:2px}
+.viz-tip{position:absolute;display:none;z-index:50;background:var(--deep);color:var(--cream);font-family:var(--sans);
+  font-size:.82rem;line-height:1.4;padding:.45rem .6rem;border-radius:4px;pointer-events:none;max-width:260px;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+.viz-table{margin:.6rem 0 0;font-family:var(--sans);font-size:.85rem;max-width:100%;overflow-x:auto}
+.viz-table summary{cursor:pointer;color:var(--link);font-weight:700}
+.viz-table table{border-collapse:collapse;margin:.5rem 0 0;width:100%}
+.viz-table caption{text-align:left;color:var(--mut);font-size:.8rem;padding:0 0 .3rem}
+.viz-table th,.viz-table td{border-bottom:1px solid var(--rule);padding:.3rem .4rem;text-align:left}
+.viz-hint{font-family:var(--sans);font-size:.8rem;color:var(--mut);margin:.35rem 0 0}
+.verdict{font-family:var(--sans);font-weight:800;letter-spacing:.02em}
+.preset{font-family:var(--sans);font-size:.85rem;padding:.4rem .7rem;margin:.2rem .4rem .2rem 0;border:1px solid var(--link);
+  background:#fff;color:var(--link);border-radius:4px;cursor:pointer}
+.preset:hover{background:#F1F7F5}

@@ -1,0 +1,199 @@
+THE DECISION-RULE CARD
+From "AI for Your Business — Advanced", chapter 3
+================================================================
+
+A finding in a document has no trigger, no owner and no moment at which a named
+person must act. It sits outside the working week, and the working week always
+wins. That is why good analysis changes nothing.
+
+This card fixes that for exactly ONE recurring decision. Written down, a
+decision improves. In someone's head, it just ages.
+
+⚠️ ONE RULE, ONE QUARTER. You will spot five decisions that need this. Five
+rules written at once means five unrevised rules in December, and the revision
+is where all the value is.
+
+⚠️ NOTHING HERE IS A BUILD. No wiring, no agent, no workflow. You are writing a
+card and four names. Every firm that skipped straight to automating a decision
+it never wrote down ended up automating its worst assumptions, at speed, with
+nobody able to say why.
+
+
+0 - CHOOSE THE DECISION
+----------------------------------------------------------------
+Two tests, and both must pass.
+
+  [ ] DOES IT CROSS A BOUNDARY between two people?
+      If the same person spots the situation, decides, and lives with the
+      consequence, nothing gets codified -- they just keep doing what they do
+      with a document nearby.
+
+  [ ] DOES IT CURRENTLY REQUIRE A SPECIFIC PERSON'S HEAD?
+      If yes, that's your one. If anyone could do it, it's a process, not a
+      judgment, and it doesn't need a rule.
+
+  [ ] Does it happen at least monthly? (It must, or you'll never accumulate
+      enough cases to revise on.)
+
+  The decision: ________________________________________________
+
+
+THE RULE CARD
+================================================================
+
+1  PATTERN IT CAME FROM
+   (from your chapter-2 record -- how many judged outcomes, and what they
+   cluster on. A rule with no evidence behind it is just a policy.)
+
+   ______________________________________________________________
+   ______________________________________________________________
+
+2  TRIGGER
+   (observable -- something a person notices without interpreting.
+    "A client who seems likely to be confused" is a mood, not a trigger.)
+
+   ______________________________________________________________
+
+3  DEFAULT ACTION
+   (what happens unless someone stops it. A default, not a command.)
+
+   ______________________________________________________________
+
+4  WHAT THE AI DOES
+   At the moment of the decision it produces three lines for a person to read:
+
+      Trigger matched:  yes / no, and on what
+      Recommended:      the default action
+      Because:          the past cases from OUR OWN record it is matching
+
+   ⚠️ THE CITATION RULE, in one line: NO CITED CASE FROM OUR OWN RECORD, NO
+   RECOMMENDATION. If it can't cite, the flag doesn't appear and the decision
+   is made the old way. That single line of policy is what stops a confident-
+   sounding machine inventing grounds that were never in your business -- and
+   it is a management instruction, not a technical control. Read the third
+   line before acting on the second.
+
+   Then it stops. It does not decide, does not send, does not act. If your rule
+   can't be run on paper by a person who has read it, it isn't a rule yet.
+
+5  PROPOSER          ______________________________________________
+   (spots the trigger, puts up the default -- usually whoever's doing the work)
+
+6  REVIEWER, WHO DECIDES  _________________________________________
+   (a DIFFERENT person -- that's the boundary)
+
+7  MAY OVERRIDE ON
+   (name the KIND of reason, not just the person. "Client-specific knowledge --
+    something true of that client the trigger can't see." NOT "being busy.")
+
+   ______________________________________________________________
+
+   A rule with no override gets quietly ignored within a month.
+   A rule with unlimited override was never a rule.
+
+8  EXCEPTION AUTHORITY  ___________________________________________
+   (a THIRD person, for cases outside the stated override grounds. If the
+    reviewer also owns every exception, "exception" quietly becomes "whatever
+    the reviewer prefers.")
+
+9  OUTCOME LOGGER  ________________________________________________
+   (often the recorder from chapter 2 -- and it can be. Say so rather than
+    assuming.)
+
+10 WHAT GETS LOGGED
+   BOTH the followed cases and the overrides, with a reason for the override in
+   one sentence. This is the part everyone drops, and dropping it is what stops
+   the rule ever getting better.
+
+   ⚠️ OVERRIDES ARE NOT FAILURES. They are the most valuable entries you have
+   -- each one is an experienced person telling you exactly where your rule is
+   too crude, in the only language that carries weight: a real case.
+
+11 REVISION DATE  _________________________________________________
+   (a quarter out, in the diary now. On that date the overrides get read and
+    the rule either changes or is confirmed. Confirming counts -- a rule
+    reaffirmed on evidence is stronger than one nobody has examined.)
+
+
+⚠️ FOUR ROLES, FOUR DESKS YOU ALREADY HAVE. This does not mean four new hires.
+Name what people already do, then say which of them is allowed to decide.
+
+
+DECIDE NOW WHAT HAPPENS ON THE FIRST OVERRIDE
+================================================================
+Write this while nothing is at stake, so that when it happens in front of the
+whole team you are reading a line rather than making a ruling:
+
+  An override INSIDE the stated grounds is the reviewer's call. It gets logged
+  with its reason and goes to the revision.
+
+  An override OUTSIDE those grounds goes to the exception authority.
+
+Blur those two and either the reviewer starts asking permission for
+everything, or every awkward case quietly becomes an "exception" that the
+reviewer decides anyway.
+
+There are two easy answers when a senior person overrides in public, and both
+are wrong. OVERRULE THEM and the message lands that the rule outranks judgment
+-- so within a month people follow a rule they can see is wrong, which is worse
+than having none. WAVE IT THROUGH with a shrug and the rule is decorative by
+Thursday.
+
+
+THE OVERRIDE LOG
+================================================================
+  DATE | CASE | FOLLOWED / OVERRIDDEN | REASON (one sentence) | OUTCOME
+  -----+------+-----------------------+-----------------------+---------
+       |      |                       |                       |
+  -----+------+-----------------------+-----------------------+---------
+       |      |                       |                       |
+  -----+------+-----------------------+-----------------------+---------
+       |      |                       |                       |
+  -----+------+-----------------------+-----------------------+---------
+       |      |                       |                       |
+  -----+------+-----------------------+-----------------------+---------
+       |      |                       |                       |
+  -----+------+-----------------------+-----------------------+---------
+       |      |                       |                       |
+  -----+------+-----------------------+-----------------------+---------
+       |      |                       |                       |
+
+  (Copy this block as often as you need. A rule that records only its failures
+   teaches you nothing; one that records only its successes is a marketing
+   document.)
+
+
+AT THE REVISION
+================================================================
+Read the quarter's overrides together, not one at a time. What you are looking
+for is a SHAPE -- four overrides that share a reason are the rule telling you
+what it's blind to.
+
+  Overrides this quarter: ______   Shape they share: ________________
+
+  [ ] The rule CHANGES. New wording:
+
+      ______________________________________________________________
+
+  [ ] The rule is CONFIRMED, on the evidence. (Confirmed twice running? That's
+      a flag, not a comfort -- either it's genuinely settled or nobody's
+      reading. Ask the proposer, not the reviewer. They'll know.)
+
+  [ ] The RECORD needs a new field, because the rule is blind to something the
+      record never captured. (This is the loop closing in the other direction,
+      and it's often the most valuable outcome of a revision.)
+
+  Next revision date: __________________________________________
+
+
+TWO TRAPS
+================================================================
+THE RULE THAT'S REALLY AN AVERAGE. Write "do whatever usually works" and you
+have encoded the middle of your record and thrown away the edges -- and the
+edges are frequently where your advantage lives. A good rule handles the common
+case and NAMES what it doesn't cover.
+
+MORE THAN ONE RULE. See the top of this page. One. Really.
+
+
+ePORTS — your ecom source. eports.global

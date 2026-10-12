@@ -1,0 +1,17 @@
+ePORTS — Print on Demand: upload-ready master (apparel)
+
+- [ ] made from my design brief (my buyer, my idea)
+- [ ] text route, or AI route upscaled to size
+- [ ] fonts / elements licensed to sell
+- [ ] still readable at thumbnail size
+- [ ] transparent PNG, about 4500 x 5400 px, saved
+
+Free ways to get a transparent PNG: design in Photopea, or export from Canva
+and run it through a free background remover (remove.bg, Adobe Express).
+Posters and other products want different sizes — check the product's own
+template.
+
+— More in the ePORTS Print on Demand series -> eports.global/print-on-demand
+  All the worksheets, kept current: eports.global/resources
+
+ePORTS — your ecom source. eports.global.

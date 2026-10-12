@@ -1,0 +1,31 @@
+ETSY - GO / NO-GO: publish the listing  (Chapter 8)
+
+Every piece already exists. This is the last check before the button - a
+pilot's go/no-go, not new work. Six greens, then launch.
+
+  PERMIT green   (ch3 = PROCEED; if AI-made, the disclosure is
+                  written IN the listing description)?       [ ]
+  FIT green      (ch4 = PROCEED)?                             [ ]
+  LEAVE green    (ch2 take-home worth it; ch5 pricing +
+                  shipping decisions ready)?                 [ ]
+  FIND-READY green (ch6 title / tags / attributes / category
+                  filled - search-legible)?                  [ ]
+  CLEAR green    (ch7 lead image / photos / price /
+                  description in)?                           [ ]
+  YOU green      (the ch1 three-check is true of THIS listing)? [ ]
+
+  Complete Etsy: Payments (bank + ID), 2FA, billing, then
+  PUBLISH -> the shop opens and the first listing goes public
+  (0.20 USD listing fee). Add your logo + About after opening.
+
+  Then, in a logged-out / private window, open it and confirm:
+    public listing URL: _______________________________
+    price + shipping show correctly?      [ ]
+    it can be added to basket?            [ ]
+
+  Published on (date): __________
+
+----------------------------------------------------------------------
+From Etsy - Basics. The full method is in the book; the free worksheets
+and the lane shelf: eports.global/resources
+ePORTS — your ecom source. eports.global.

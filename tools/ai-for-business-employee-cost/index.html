@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>True cost of an employee calculator — fully-loaded annual, monthly and hourly cost | ePORTS</title>
+<meta name="description" content="Free true cost of an employee calculator: fully-loaded annual, monthly and hourly cost of a hire, beyond base salary.">
+<link rel="canonical" href="./">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css">
+<!-- /tools page: live calculator + real editorial content so it is genuinely
+     useful and ranks for search traffic. Ads may sit on /tools pages LATER
+     (never on /resources) once the site qualifies and a consent setup exists.
+     The .ad-slot boxes below are reserved skeleton placeholders for that. -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator</p>
+    <h1>True cost of an employee calculator</h1>
+    <p class="sub">Work out the fully-loaded annual, monthly and hourly cost of a hire — what the
+      person really costs the business once taxes, benefits, overhead and hiring are added to the
+      base salary, not the headline wage.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+
+  <section>
+    <h2><span class="n">The calculator</span> The real cost of a hire</h2>
+    <div class="calc">
+      <div>
+        <div class="field">
+          <label for="Sal">Base salary <span class="u">(£)</span></label>
+          <input id="Sal" type="number" inputmode="decimal" value="35000" min="0" step="0.01">
+        </div>
+        <div class="field">
+          <label for="Tax">Employer taxes / on-costs <span class="u">(%)</span></label>
+          <input id="Tax" type="number" inputmode="decimal" value="15" min="0" step="0.1">
+          <p class="hint">employer national insurance / payroll tax + pension</p>
+        </div>
+        <div class="field">
+          <label for="Ben">Benefits + software per year <span class="u">(£)</span></label>
+          <input id="Ben" type="number" inputmode="decimal" value="3000" min="0" step="0.01">
+          <p class="hint">healthcare, tools, phone, licences</p>
+        </div>
+        <div class="field">
+          <label for="Ov">Overhead per year <span class="u">(£)</span></label>
+          <input id="Ov" type="number" inputmode="decimal" value="4000" min="0" step="0.01">
+          <p class="hint">desk, equipment, share of premises, admin</p>
+        </div>
+        <div class="field">
+          <label for="Hire">One-off hiring cost <span class="u">(£)</span></label>
+          <input id="Hire" type="number" inputmode="decimal" value="3000" min="0" step="0.01">
+          <p class="hint">recruiting + onboarding — counted in year one</p>
+        </div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>Your true cost</h3>
+        <div class="row"><span class="k">Ongoing annual cost</span> <span class="v" id="oOngoing">—</span></div>
+        <div class="row"><span class="k">Fully-loaded first-year cost</span> <span class="v" id="oYear1">—</span></div>
+        <div class="row"><span class="k">Effective monthly cost</span> <span class="v" id="oMonth">—</span></div>
+        <div class="row"><span class="k">Real cost per productive hour</span> <span class="v" id="oHour">—</span></div>
+      </div>
+    </div>
+
+    <noscript>
+      <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The maths:
+      <em>on-costs = base salary × tax %</em>;
+      <em>ongoing annual = base salary + on-costs + benefits + overhead</em>;
+      <em>first-year = ongoing + one-off hiring cost</em>; <em>monthly = ongoing ÷ 12</em>;
+      <em>hourly = ongoing ÷ 1,750 productive hours</em>. Or
+      <a href="../../resources/ai-for-your-business/">grab the free tools on the
+      AI for Your Business resources page</a> and work it through on your own numbers.</p>
+    </noscript>
+    <p class="cta">Knowing what a hire truly costs is where the automate-or-hire decision starts in
+      <a href="../../ai-for-your-business/#basics"><em>AI for Your Business: Basics</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">How to read it</span> The wage is only the start of the bill</h2>
+    <p>A salary is the number on the offer letter. The cost is the number that leaves your bank each
+      year — and it is normally bigger. On top of the base pay sit the taxes an employer must pay, a
+      pension contribution, the benefits and software the person uses, and their share of the desk,
+      equipment and premises. This calculator adds those to the wage and hands back the four figures an
+      owner actually plans around — <b>the ongoing annual cost</b>, <b>the fully-loaded cost of year
+      one</b> (which carries the one-off hiring bill), <b>the effective monthly cost</b>, and <b>what an
+      hour of that person's productive time really costs you</b>.</p>
+    <p>The well-known rule of thumb is that the true cost of an employee lands at roughly <b>1.25 to
+      1.4 times</b> the base salary. The default figures here put a £35,000 hire at £47,250 a year — about
+      <b>1.35×</b> the salary — which sits squarely inside that range. Your own multiple will move with the
+      on-cost percentage and the overhead you carry, but if your total lands far outside 1.25–1.4× base,
+      it is worth checking the inputs.</p>
+
+    <h3>The formula, in full</h3>
+    <p><b>On-costs</b> = base salary × (employer tax % ÷ 100). <b>Ongoing annual cost</b> = base salary +
+      on-costs + benefits and software + overhead. <b>Fully-loaded first-year cost</b> = ongoing annual
+      cost + one-off hiring cost, because recruiting and onboarding are paid once, in year one.
+      <b>Effective monthly cost</b> = ongoing annual cost ÷ 12. <b>Real cost per productive hour</b> =
+      ongoing annual cost ÷ 1,750 — because a full-time role is paid for about 2,080 hours a year, but
+      after holiday, sick days and the admin that isn't the job, only around <b>1,750</b> of those hours
+      are actually productive. Dividing by the productive hours, not the paid ones, gives the honest
+      hourly cost.</p>
+
+    <h3>A worked example</h3>
+    <p>Take a £35,000 salary with 15% employer on-costs, £3,000 a year of benefits and software, £4,000 of
+      overhead, and a £3,000 one-off cost to recruit and onboard. The on-costs are 35,000 × 0.15 =
+      <b>£5,250</b>. The ongoing annual cost is 35,000 + 5,250 + 3,000 + 4,000 = <b>£47,250</b>. Year one,
+      carrying the £3,000 hiring bill, is <b>£50,250</b>. That's an effective <b>£3,937.50 a month</b>, and
+      across 1,750 productive hours it works out at <b>£27.00 an hour</b> — nearly a third above the
+      £20/hour the bare salary alone would suggest. The gap between £35,000 and £47,250 is the part most
+      owners forget to budget for.</p>
+
+    <h3>Edge cases the calculator handles</h3>
+    <ul class="note" style="line-height:1.7">
+      <li><b>A blank or negative input</b> is treated as zero, so a stray minus sign or an empty box never
+        produces a nonsense total — it simply drops that line out of the sum.</li>
+      <li><b>The hourly figure uses ongoing cost, not first-year</b>, on purpose. The one-off hiring bill
+        is a year-one event; loading it into every future hour would overstate what the role costs once
+        the person is settled in.</li>
+      <li><b>The multiple of salary drifts by role.</b> A field role with a van and kit, or a role with
+        rich benefits, runs hotter than 1.4×; a lean remote hire can sit nearer 1.25×. The 1.25–1.4× band
+        is a sense-check, not a law — trust your own inputs over it.</li>
+    </ul>
+
+    <h3>Common questions</h3>
+    <h4>Why divide by 1,750 hours and not 2,080?</h4>
+    <p>2,080 is the paid year — 40 hours across 52 weeks. But nobody is productive for all of it. Take out
+      holiday, public holidays, sick days and the meetings and admin that aren't the actual job, and a
+      typical full-timer delivers around 1,750 productive hours. Costing an hour against the productive
+      total, not the paid total, is what makes the hourly figure real rather than flattering.</p>
+    <h4>Should I use this to decide between hiring and automating?</h4>
+    <p>It's one half of that decision. This tells you the true annual and hourly cost of a person; the
+      other half is what a tool or system would cost to do the same work, and how much time it frees.
+      Put this figure next to the <a href="../../tools/ai-for-business-roi/">AI ROI calculator</a> and a
+      <a href="../../resources/ai-for-your-business/">time-savings tool</a>, and the automate-or-hire
+      question becomes a comparison of two honest numbers instead of a gut call.</p>
+    <h4>Is this financial or tax advice?</h4>
+    <p>No. It's arithmetic on the numbers you enter, and it isn't financial or tax advice. The on-cost
+      percentage and the number of productive hours both vary by country, sector and role — employer taxes
+      and pension rules differ everywhere — so use your own figures, and check the local rates that apply
+      to you before you budget off the result.</p>
+  </section>
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+
+  <section>
+    <div class="shelf">
+      <b>This calculator comes from a book.</b>
+      <p>It's one tool from <em>AI for Your Business — Basics</em>, which takes an owner from AI hype-fog
+        to a first project chosen on the numbers: what work costs today, where a tool pays, and when it
+        earns back.</p>
+      <a href="../../ai-for-your-business/">See the AI for Your Business series →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+    <a href="../../resources/ai-for-your-business/">AI for Your Business downloads</a> ·
+    <a href="../../privacy/">Privacy</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var ids = ["Sal", "Tax", "Ben", "Ov", "Hire"], el = {};
+  ids.forEach(function (i) { el[i] = document.getElementById(i); });
+  function num(i) { var v = parseFloat(el[i].value); return isNaN(v) || v < 0 ? 0 : v; }
+  function money(x) {
+    return (x < 0 ? "−" : "") + "£" + Math.abs(x).toLocaleString("en-GB", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+  }
+  function set(id, t) { document.getElementById(id).textContent = t; }
+  function run() {
+    var Sal = num("Sal"), Tax = num("Tax"), Ben = num("Ben"), Ov = num("Ov"), Hire = num("Hire");
+    var onCosts = Sal * (Tax / 100);
+    var ongoing = Sal + onCosts + Ben + Ov;
+    var year1 = ongoing + Hire;
+    var month = ongoing / 12;
+    var hourly = ongoing / 1750;
+    set("oOngoing", money(ongoing));
+    set("oYear1", money(year1));
+    set("oMonth", money(month));
+    set("oHour", money(hourly));
+  }
+  ids.forEach(function (i) { el[i].addEventListener("input", run); });
+  run();
+})();
+</script>
+
+</body>
+</html>

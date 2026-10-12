@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ROAS calculator — your real return on ad spend, and whether it's in the black after your costs | ePORTS</title>
+<meta name="description" content="Free ROAS calculator: your return on ad spend and whether it's positive after the ad spend and the costs you enter.">
+<link rel="canonical" href="./">
+<meta name="robots" content="index,follow">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../../assets/resources.css">
+<!-- /tools page: live calculator + real editorial content so it is genuinely
+     useful and ranks for search traffic. Ads may sit on /tools pages LATER
+     (never on /resources) once the site qualifies and a consent setup exists.
+     The .ad-slot boxes below are reserved skeleton placeholders for that. -->
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Free calculator</p>
+    <h1>ROAS calculator</h1>
+    <p class="sub">Your real return on ad spend — and the line the ROAS number hides. Put in what the
+      campaign brought in, what you spent and what the orders cost, and see <em>whether it's in the black
+      after your costs</em>.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
+
+  <section>
+    <h2><span class="n">The calculator</span> Your return on ad spend, and the contribution under it</h2>
+    <div class="calc">
+      <div>
+        <div class="field">
+          <label for="Rev">Revenue from the ads <span class="u">(£)</span></label>
+          <input id="Rev" type="number" inputmode="decimal" value="2000" min="0" step="0.01">
+          <p class="hint">sales the campaign brought in</p>
+        </div>
+        <div class="field">
+          <label for="Spend">Ad spend <span class="u">(£)</span></label>
+          <input id="Spend" type="number" inputmode="decimal" value="500" min="0" step="0.01">
+          <p class="hint">what you paid the ad platform</p>
+        </div>
+        <div class="field">
+          <label for="Cogs">Product + fulfilment cost of those orders <span class="u">(£)</span></label>
+          <input id="Cogs" type="number" inputmode="decimal" value="700" min="0" step="0.01">
+          <p class="hint">0 to see ROAS on its own</p>
+        </div>
+        <div class="field">
+          <label for="Other">Other variable costs on these orders <span class="u">(£)</span></label>
+          <input id="Other" type="number" inputmode="decimal" value="0" min="0" step="0.01">
+          <p class="hint">payment/platform fees, transaction taxes, expected returns/chargebacks — 0 if already in the cost above</p>
+        </div>
+      </div>
+      <div class="calc-out" aria-live="polite" aria-atomic="true">
+        <h3>Your result</h3>
+        <div class="row"><span class="k">ROAS</span> <span class="v" id="oROAS">—</span></div>
+        <div class="row"><span class="k">Contribution after the costs you entered</span> <span class="v" id="oProfit">—</span></div>
+        <div class="row"><span class="k">Verdict</span> <span class="v" id="oVerdict">—</span></div>
+      </div>
+    </div>
+
+    <noscript>
+      <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The maths:
+      <em>ROAS = revenue ÷ ad spend</em>; then <em>contribution = revenue − ad spend − product and fulfilment
+      cost − other variable costs</em>. If that contribution is above zero you're in the black after the costs
+      you entered; if it's below zero you're not, however good the ROAS looks. Or open the
+      <a href="../../resources/dropshipping/">Dropshipping resources page</a> and run the numbers on your
+      own campaigns.</p>
+    </noscript>
+    <p class="cta">Reading ROAS against the contribution under it — not the number on its own — is the discipline in
+      <a href="../../dropshipping/#basics"><em>Dropshipping: Basics</em> →</a></p>
+  </section>
+
+  <section>
+    <h2><span class="n">How to read it</span> ROAS is not profit</h2>
+    <p>ROAS is return on ad spend — revenue divided by what you paid to advertise. A ROAS of 4× means every
+      £1 of ads brought back £4 in sales. That sounds like plenty, and it's the number most dashboards put
+      front and centre. But <b>a high ROAS is not the same as profit</b>. ROAS only compares revenue to ad
+      spend; it says nothing about what the products in those orders cost you. A 4× ROAS still loses money
+      if your product cost is high enough — which is exactly why the contribution line on this calculator
+      matters more than the ROAS number.</p>
+    <p>So read the two figures together. The ROAS tells you how hard the ads worked at turning spend into
+      revenue. The contribution line tells you whether, after the product and fulfilment cost of those orders
+      and the other variable costs you entered came out, the campaign left you anything. When the contribution
+      is positive you're in the black on the costs you entered; when it's negative you were paying to move
+      stock at a loss, no matter how healthy the ROAS looked on screen. The more of your variable costs you enter
+      in the Other box — fees, taxes, returns — the closer this contribution comes to your real result; leave
+      them out and it's just revenue minus ad spend and product cost, which flatters it. Even with everything
+      in, it's contribution, not full accounting profit — it still leaves out fixed overhead and income or
+      corporation tax.</p>
+
+    <h3>The formula, in full</h3>
+    <p><b>ROAS</b> = revenue from the ads ÷ ad spend. That's the raw efficiency of the spend, shown here as
+      a multiple like 4.0×. <b>Contribution after the costs you entered</b> = revenue − ad spend − product and
+      fulfilment cost of those orders − other variable costs. That's what the campaign left once the
+      advertising, the goods and any fees, taxes and returns you entered came out. The <b>verdict</b> simply
+      reads that contribution: above zero is positive after the costs you entered, exactly zero is break-even
+      on those costs, below zero is negative.</p>
+
+    <h3>A worked example</h3>
+    <p>A campaign brings in £2,000 in sales. You spent £500 on the ads, the products and fulfilment for
+      those orders cost £700, and there were no other variable costs to add. ROAS is 2,000 ÷ 500 =
+      <b>4.0×</b> — strong on paper. Contribution is 2,000 − 500 − 700 − 0 = <b>£800</b>, so the campaign is
+      well in the black on the costs you entered. Now hold the ROAS at 4.0× but add £800 of payment fees,
+      taxes and expected returns in the Other box: contribution becomes 2,000 − 500 − 700 − 800 = <b>£0</b>,
+      exactly break-even. Identical ROAS, and the campaign now clears nothing. The ROAS number did not move;
+      the contribution line is the one that told the truth once the real costs went in.</p>
+
+    <h3>The link to break-even ROAS</h3>
+    <p>If this tool tells you the ROAS you <em>got</em>, its companion tells you the ROAS you <em>needed</em>.
+      Your <b>break-even ROAS</b> is the minimum return that just covers your costs — the exact line where
+      the margin each order makes before advertising equals the ad cost, so you finish level. Work that line
+      out first, then compare it to the real ROAS here: beat the break-even figure and you're contribution-positive,
+      come in under it and you're not. The two tools are the before and after of the same question. Find your minimum
+      with the <a href="../dropshipping-break-even-roas/">break-even ROAS calculator →</a></p>
+
+    <h3>Edge cases the calculator handles</h3>
+    <ul class="note" style="line-height:1.7">
+      <li><b>No ad spend entered</b> — with ad spend at zero there is no return on ad spend to divide, so
+        ROAS shows "—". The contribution line still works, but ROAS needs real spend to mean anything.</li>
+      <li><b>Cost set to zero</b> — leave the product and fulfilment cost at 0 and you see ROAS on its own,
+        with contribution reading revenue minus ad spend only. Useful for a quick ROAS check, but remember
+        that figure ignores what the goods cost, so it flatters a campaign that hasn't paid for its stock
+        yet.</li>
+      <li><b>What the contribution line still leaves out.</b> It only counts what you type in. Unless you've
+        put them in the Other box, it does not include payment or platform fees, transaction taxes, returns,
+        chargebacks, discounts or fixed overhead — any of which can flip a positive result to a negative one.
+        Enter your fees, taxes and expected returns to bring it closer to your real result; even then read it
+        as contribution, not full accounting profit.</li>
+    </ul>
+
+    <h3>Common questions</h3>
+    <h4>My ROAS is high but the verdict says I'm negative — how?</h4>
+    <p>Because ROAS only compares revenue to ad spend and ignores what the products and the other variable
+      costs took out. A 4× ROAS looks great, but if the goods, fulfilment, fees, taxes and returns behind
+      those orders ate more than the revenue left after ad spend, the campaign still runs at a loss. The
+      verdict reads the contribution after every cost you entered, so it catches what the ROAS number alone
+      misses.</p>
+    <h4>What ROAS do I actually need?</h4>
+    <p>That's your break-even ROAS — the minimum return that covers your costs. It depends on your margins,
+      not on any single rule of thumb, so work it out from your own numbers with the
+      <a href="../dropshipping-break-even-roas/">break-even ROAS calculator</a>, then aim comfortably above
+      it so returns and slow days still leave you contribution-positive.</p>
+    <h4>Is this financial advice or a guarantee?</h4>
+    <p>No. It's arithmetic on numbers you enter, not financial advice. What a campaign actually earns depends
+      on the product, the ad platform and buyers, none of which this box controls. It simply turns your real
+      revenue, spend and costs into a ROAS and the contribution left after the costs you entered.</p>
+  </section>
+
+  <!-- reserved ad slot (deferred until the site qualifies) -->
+  <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
+
+  <section>
+    <div class="shelf">
+      <b>This calculator comes from a book.</b>
+      <p>It's one tool from <em>Dropshipping — Basics</em>, which takes someone from a blank store to
+        campaigns read the honest way — ROAS against the contribution under it, not the number on its own.</p>
+      <a href="../../dropshipping/">See the Dropshipping series →</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
+    <a href="../../resources/dropshipping/">Dropshipping downloads</a> ·
+    <a href="../../privacy/">Privacy</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var ids = ["Rev", "Spend", "Cogs", "Other"], el = {};
+  ids.forEach(function (i) { el[i] = document.getElementById(i); });
+  function num(i) { var v = parseFloat(el[i].value); return isNaN(v) || v < 0 ? 0 : v; }
+  function money(x) {
+    var s = Math.abs(x).toLocaleString("en-GB", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    return (x < 0 ? "−£" : "£") + s;
+  }
+  function set(id, t) { document.getElementById(id).textContent = t; }
+  function run() {
+    var Rev = num("Rev"), Spend = num("Spend"), Cogs = num("Cogs"), Other = num("Other");
+    var contribution = Rev - Spend - Cogs - Other;
+    set("oROAS", Spend > 0 ? (Rev / Spend).toFixed(1) + "×" : "—");
+    set("oProfit", money(contribution));
+    set("oVerdict", contribution > 0 ? "Positive after the costs you entered"
+      : (contribution === 0 ? "Break-even on these costs" : "Negative after the costs you entered"));
+  }
+  ids.forEach(function (i) { el[i].addEventListener("input", run); });
+  run();
+})();
+</script>
+
+</body>
+</html>

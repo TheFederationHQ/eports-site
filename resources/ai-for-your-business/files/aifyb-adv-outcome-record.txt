@@ -1,0 +1,197 @@
+THE GOVERNED OUTCOME RECORD
+From "AI for Your Business — Advanced", chapter 2
+================================================================
+
+Your archive is a record of what HAPPENED. What you need is a record of what
+WORKED. They look almost identical and they are not the same thing at all.
+
+Every business records what happened -- the law insists on it. Almost nobody
+records the judgment that sat on top: did that turn out right? A rival can buy
+your tools this afternoon and, given a year, accumulate the same volume of
+what-happened. What they cannot get at any price is your what-worked, because
+the only way to produce it is to have done the work and formed the judgment.
+
+Set this up in under an hour. If it takes longer, you have built the wrong
+thing. There is no database here, nothing to migrate, no archive to clean.
+
+⚠️ DO NOT BACKFILL. Reconstructed judgments are guesses wearing the clothes of
+evidence. Start Monday with entry one.
+
+
+1 - NAME THE ASSET
+----------------------------------------------------------------
+When your selected edge works, what is it drawing on that a rival hasn't got?
+Not the tool. Not the people exactly -- people leave. The thing underneath
+that accumulates.
+
+  The thing underneath my edge that a rival hasn't got is
+
+  ______________________________________________________________
+
+⚠️ If that sentence contains the name of a piece of software, it is wrong. Go
+one level down and ask "and what's underneath that?" until you stop reaching
+for a tool.
+
+If you're not sure, find your candidate in this table:
+
+  YOU SELECTED                  THE ASSET IS USUALLY
+  ---------------------------   -----------------------------------------
+  A record only you have        which of your judgments proved right --
+                                not the files themselves
+  Decisions that compound       the allocation or call itself, and what
+                                followed it
+  Switching costs you've        which commitments you actually met, and
+  earned                        where you failed
+  An offering only you can      the method -- which approach settled which
+  make                          kind of problem
+
+
+2 - DEFINE WHAT "WORKED" MEANS  (before you capture anything)
+----------------------------------------------------------------
+If you don't write this, five people apply five private standards and after
+three months you have a record you can't trust. It must be OBSERVABLE --
+checkable by a second person, from records that already exist.
+
+  "Worked" means: ______________________________________________
+
+  ______________________________________________________________
+
+  Good:  "the client acted on it without needing a second explanation"
+         "the job closed on the first visit, inside the window we promised"
+  Bad:   "the client was happy"  (nobody can check it)
+
+Read it aloud to whoever will be recording. If they say "well, what about
+when...", that's your first exception, not an objection. Log it and move on.
+
+
+3 - THE TWO MOMENTS  (both must already exist)
+----------------------------------------------------------------
+What you judged and what actually happened almost never occur at the same
+time. So capture at two points -- both of them moments the work already pauses.
+
+  THE DECISION MOMENT (fields 1-3, typed by the person who just made the call,
+  while they still hold it in their head. A judgment reconstructed a week later
+  is a memory of one.)
+
+  Ours is: ______________________________________________________
+
+  THE OUTCOME MOMENT (field 4 -- bolt it onto a pause that already exists: the
+  job marked closed, the file archived, the invoice going out.)
+
+  Ours is: ______________________________________________________
+
+⚠️ The commonest way this dies is a NEW ritual -- a Friday review, a weekly
+log, a form somebody has to remember. That survives about four weeks. If you
+can't find an existing moment for either half, that's a signal about the edge,
+not about the record.
+
+
+4 - FOUR FIELDS -- AND NO FIFTH ADDED IN THE MOMENT
+----------------------------------------------------------------
+  1. The situation, in a few words
+  2. What we did
+  3. What we judged at the time
+  4. What actually happened          <-- the outcome link. THIS is the asset.
+
+Every field past four cuts compliance, and a record kept 40% of the time is
+worse than useless -- you can't tell whether the missing entries are the
+failures.
+
+  Worked example, two firms:
+
+  SITUATION      first-year company,      | boiler swap, tight loft
+                 director's loan          | access, Tuesday
+  WHAT WE DID    sent the standard        | sent Danny, booked 2 hrs,
+                 explainer with figures   | took the long ladder
+  WHAT WE        "clear enough -- they've | "he's done three like it,
+  JUDGED         had one before"          | should be one visit"
+  WHAT ACTUALLY  came back with two       | closed first visit,
+  HAPPENED       questions on the balance | out by 3.40
+
+Two sentences at the decision, one at the close. That is the whole instrument.
+
+The fields are not frozen for ever -- you will find something missing, and you
+should. But they change ONLY AT A REVISION, deliberately, with the authority of
+the rule from chapter 3. Never mid-quarter because somebody had a good idea on
+a Tuesday: change the instrument halfway through and you cannot compare
+anything either side of the change.
+
+
+5 - FOUR ROLES, FOUR PEOPLE
+----------------------------------------------------------------
+This is where firms quietly cheat, and the roles are what turn a personal habit
+into something the business owns.
+
+  CANDIDATE OWNER  ______________________  owns whether the edge works.
+                                           Does NOT record and does NOT check
+                                           -- nobody marks their own homework.
+
+  RECORDER         ______________________  does the work, makes the call, logs
+                                           at the decision moment, and CLOSES
+                                           OUT field 4 at the outcome moment.
+
+  CHECKER          ______________________  no stake in the answer. Samples
+                   sampling ____ per ____  against the written definition, and
+                   first sampling date:    looks for entries that never got
+                   ______________________  closed. An orphaned row -- a
+                                           judgment with no outcome -- is what
+                                           kills this quietly.
+
+  YOU              owns none of it, reads the exception log.
+
+⚠️ Four roles is why a sole trader cannot do this. That isn't a boast -- it is
+the reason a small team can build something a solo competitor can't.
+
+
+6 - EXCEPTIONS: LOG THEM, DON'T ARGUE THEM
+----------------------------------------------------------------
+When a case doesn't fit the definition, log it as an exception rather than
+forcing it into a box. Nobody rewrites the definition on the spot -- changing
+the yardstick mid-quarter destroys the comparison. Log it, leave it, move on.
+The authority to revise belongs to the rule you write in chapter 3.
+
+
+7 - THE CAPTURE BOUNDARY  (close chapter 1's permissions question)
+----------------------------------------------------------------
+Chapter 1 gave your candidate a status. Now write the boundary -- the specific
+fields you may record -- in one line the recorder can actually follow.
+
+  Status:   [ ] clear   [ ] irrelevant   [ ] restricted pending advice
+
+  WE MAY RECORD: ______________________________________________
+
+  WE MAY NOT RECORD: __________________________________________
+
+  Routed to (if restricted): __________  Expected back: __________
+
+  Lawful basis for holding it: _________________________________
+  How long we keep it: __________  Who may see it: _____________
+  Responsible for deleting it on request: ______________________
+
+Three routes exist where client material is involved: ASK properly (not
+boilerplate buried in the small print); AMEND at renewal; or RING-FENCE --
+record only what is unambiguously yours and name what's excluded.
+
+⚠️ Where the status is restricted, capture starts ONLY on the fields you have
+explicitly listed as approved above -- never on "everything except" the excluded
+list. If a field isn't on the approved list, it isn't captured. Name the
+excluded material explicitly too, so nobody has to guess on a Tuesday afternoon.
+
+⚠️ Not legal advice. Your professional body, your contracts and your own
+adviser decide what binds you. This sheet only asks whether you could SHOW
+someone, in writing, what you're allowed to reuse.
+
+
+8 - START DATE
+----------------------------------------------------------------
+  We start (forward-only, no backfill): ________________________
+
+By your go/no-go date you'll have somewhere around a hundred judged outcomes.
+That is not a training set and was never meant to be. It is enough for one
+specific job: enough for a person to see one repeating pattern clearly enough
+to write a rule from it. A hundred cases somebody actually judged will show you
+more than ten thousand nobody did -- because the ten thousand don't say which
+ones went well.
+
+
+ePORTS — your ecom source. eports.global

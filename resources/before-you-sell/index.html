@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Before You Sell Anything Online — the companion tools | ePORTS</title>
+<meta name="description" content="Four free tools from Before You Sell Anything Online: find which of the five e-commerce models fits your constraint, see what changed and when, test any claim with three questions, and write your three lines. No email, nothing stored.">
+<link rel="canonical" href="./">
+<link rel="stylesheet" href="../../assets/fonts/fonts.css">
+<meta name="robots" content="index,follow">
+
+<!--
+  ============================================================================
+  ePORTS — /resources
+  ============================================================================
+  WHY THIS PAGE EXISTS, AND WHY IT MUST NOT BECOME A SIGNUP FORM
+  ----------------------------------------------------------------------------
+  Amazon KDP's Hyperlink Guidelines (verified 2026-07-31, primary source:
+  kdp.amazon.com/en_US/help/topic/GQ6JQ7FM6C72HE4X) state plainly:
+
+    PROHIBITED — "Links to web forms that request customer information
+    (e.g., email address, physical address or similar)."
+
+    PERMITTED — links that "meaningfully enhance reader experience", and the
+    listed examples include "supplementary materials (worksheets, patterns,
+    etc.)" and "topical reference websites".
+
+  So the book may link here ONLY for as long as this page is genuinely a
+  supplementary-materials and reference page. Three hard rules follow:
+
+    1. NEVER gate any content behind the email field. Everything above the
+       "Stay current" block must be readable by someone who never scrolls
+       that far.
+    2. NEVER make the email field the page's purpose, its hero, or its first
+       call to action. It sits last, after the value, on purpose.
+    3. KDP also requires SELF-DESCRIBING link text — never "click here".
+       Every outbound link below names its destination.
+
+  Amazon additionally recommends archiving linked pages for longevity, and
+  marking dead ones "(URL inactive)" rather than removing them. Do that at
+  each quarterly re-check rather than silently deleting rows.
+
+  ----------------------------------------------------------------------------
+  DESIGN PROVENANCE — every choice here is traceable, do not "tidy" it away
+  ----------------------------------------------------------------------------
+  * Lead lever = COMMITMENT. docs/SALES_PSYCHOLOGY_PRINCIPLES.md §1.1 / §9: content
+    category leads with commitment. The reader finished the book by writing a
+    three-line decision; this page's job is to help them keep it. Reciprocity
+    carries the email ask (give first, ungated). NO scarcity anywhere — it is
+    the weakest lever at every age. Authority never opens.
+  * Feature complexity LOW, design complexity HIGH (Pieters, Wedel & Batra
+    2010, domain 23 src 1). Four colours, strict grid, deliberate hierarchy.
+    "Reduce features, increase design" — not "make it simpler".
+  * Saturation, not hue (Labrecque et al. 2025, domain 23). ePORTS sits on the
+    SAFETY side of the promise axis — reducing the reader's downside — so:
+    restrained field, exactly ONE saturated accent (#52D6C0), used on the
+    single element that must be believed.
+  * Prototypicality beats novelty at first sight (17ms). This looks like a
+    publisher's reference page because that is what earns trust fastest.
+  * Above the fold answers "am I in the right place?" — not "buy now".
+  * WCAG 2.1 verified with scripts/check_contrast.py on 2026-07-31:
+      on #0C2733 — #F5F2EA 13.87:1 · #93AFBB 6.72:1 · #52D6C0 8.67:1
+                   #C6D6DE 10.40:1
+      on #FBFAF7 — #1A1A1A 16.67:1 · #5A5A5A 6.61:1 · #2F6F5E 5.66:1
+                   #0C2733 14.86:1
+    Re-run the script if you touch a colour.
+  * MEANING IS NEVER ENCODED IN HUE ALONE. Row status is a WORD plus a border
+    weight. ~8% of men have a colour vision deficiency; passing the contrast
+    ratio does not make a design colour-blind safe.
+  * The imprint is "ePORTS", never uppercase. "EPORTS" reads as "E-PORTS" and
+    destroys the lowercase-e mark. Traffic routes on recall, so the written
+    form must match the form people will type.
+
+  ----------------------------------------------------------------------------
+  MAINTENANCE
+  ----------------------------------------------------------------------------
+  Re-check every row quarterly. Update BOTH the row's "last checked" date AND
+  the LAST-CHECKED date in the hero. A stale date on a page whose entire pitch
+  is "we carry the dates" is worse than no page.
+
+  ✅ RESOLVED 2026-08-12 — the optional email-updates form was DELETED (it was
+     inert, action="#", a deceptive promise while non-functional, and KDP bars a
+     book-linked page from carrying a customer-info form). ⚠️ Do NOT restore it
+     here. If an email tool (Klaviyo) is ever wired, host the form on a separate,
+     non-KDP-linked URL, never on this companion page.
+  ============================================================================
+-->
+
+<style>
+:root{
+  /* dark field — carried from covers/ecommerce-00-cover.html */
+  --deep:#0C2733;      /* blue-teal = competence (Labrecque & Milne) */
+  --cream:#F5F2EA;
+  --mist:#C6D6DE;
+  --steel:#93AFBB;
+  --slate:#2E5566;
+  --accent:#52D6C0;    /* the ONE saturated element. Use sparingly. */
+  /* light reading field */
+  --paper:#FBFAF7;
+  --ink:#1A1A1A;
+  --mut:#5A5A5A;
+  --rule:#DCD9D2;
+  --link:#2F6F5E;      /* matches the EPUB accent in scripts/package.py */
+  --sans:ui-sans-serif,-apple-system,"Segoe UI",system-ui,sans-serif;
+  /* ★ Screen body prose is Inter, not a serif — Times-like serifs were
+     reported as physically tiring to read. See assets/fonts/fonts.css. */
+  --serif:'Inter',ui-sans-serif,-apple-system,"Segoe UI",system-ui,sans-serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--serif);font-size:18px;line-height:1.62;
+  -webkit-font-smoothing:antialiased}
+.wrap{max-width:52rem;margin:0 auto;padding:0 1.5rem}
+a{color:var(--link);text-underline-offset:.18em}
+a:focus-visible,button:focus-visible,input:focus-visible{
+  outline:3px solid var(--accent);outline-offset:2px}
+
+/* ---------- hero: the only dark band, and the only accent ---------- */
+.hero{background:var(--deep);color:var(--cream);padding:4.5rem 0 3.5rem}
+.hero .eyebrow{font-family:var(--sans);font-size:.78rem;font-weight:600;
+  letter-spacing:.22em;text-transform:uppercase;color:var(--steel);margin:0 0 1.6rem}
+.hero h1{font-family:var(--sans);font-weight:800;letter-spacing:-.03em;
+  font-size:clamp(2.1rem,6vw,3.5rem);line-height:1.04;margin:0 0 1.4rem;
+  text-wrap:balance;max-width:16ch}
+.hero .sub{color:var(--mist);font-size:clamp(1.05rem,2.4vw,1.3rem);
+  line-height:1.5;margin:0 0 2.2rem;max-width:40ch}
+.hero .sub em{font-style:italic;color:var(--cream)}
+/* the single saturated element on the page */
+.stamp{display:flex;gap:1rem;align-items:flex-start;max-width:38ch}
+.stamp .bar{flex:0 0 5px;align-self:stretch;min-height:3.2rem;background:var(--accent);
+  border-radius:1px}
+.stamp p{margin:0;font-family:var(--sans);font-weight:700;color:var(--accent);
+  font-size:1.05rem;line-height:1.4}
+.stamp span{display:block;font-weight:400;color:var(--steel);font-size:.92rem;
+  margin-top:.35rem}
+
+/* ---------- structure ---------- */
+section{padding:3.4rem 0;border-top:1px solid var(--rule)}
+section:first-of-type{border-top:0}
+h2{font-family:var(--sans);font-weight:700;letter-spacing:-.02em;
+  font-size:clamp(1.5rem,3.6vw,2rem);line-height:1.16;margin:0 0 .5rem;
+  color:var(--deep);text-wrap:balance}
+h2 .n{display:block;font-size:.72rem;font-weight:600;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--mut);margin-bottom:.7rem}
+h3{font-family:var(--sans);font-size:1.05rem;font-weight:700;margin:2rem 0 .5rem;
+  color:var(--deep)}
+.lede{color:var(--mut);margin:0 0 2rem;max-width:60ch}
+p{margin:0 0 1.1rem;max-width:64ch}
+.note{font-family:var(--sans);font-size:.88rem;line-height:1.55;color:var(--mut);
+  max-width:66ch}
+
+/* ---------- the tracker ---------- */
+.tracker{list-style:none;margin:0;padding:0}
+.tracker li{border-left:3px solid var(--rule);padding:.1rem 0 .1rem 1.15rem;
+  margin:0 0 1.9rem}
+.tracker li.changed{border-left-width:7px;border-left-color:var(--deep)}
+.tracker .what{font-family:var(--sans);font-weight:700;font-size:1.02rem;
+  line-height:1.4;color:var(--ink);display:block;margin-bottom:.3rem;max-width:58ch}
+.tracker .meta{font-family:var(--sans);font-size:.82rem;color:var(--mut);
+  margin:0 0 .45rem;display:flex;flex-wrap:wrap;gap:.35rem 1.1rem}
+.tracker .meta b{font-weight:700;color:var(--ink);text-transform:uppercase;
+  letter-spacing:.08em;font-size:.76rem}
+.tracker .body{font-size:.98rem;margin:0 0 .5rem;max-width:60ch}
+.tracker .src{font-family:var(--sans);font-size:.86rem;margin:0}
+
+/* ---------- cards / worksheet ---------- */
+.card{background:#fff;border:1px solid var(--rule);border-radius:4px;
+  padding:1.8rem 1.7rem;margin:0 0 1.4rem}
+.card.dark{background:var(--deep);border-color:var(--deep);color:var(--cream)}
+.card.dark h3{color:var(--cream);margin-top:0}
+.card.dark a{color:var(--accent)}
+.q{list-style:none;counter-reset:q;margin:0;padding:0}
+.q li{counter-increment:q;position:relative;padding-left:2.6rem;margin:0 0 1.15rem}
+.q li:last-child{margin-bottom:0}
+.q li::before{content:counter(q);position:absolute;left:0;top:.05rem;
+  font-family:var(--sans);font-weight:800;font-size:1.5rem;line-height:1;
+  color:var(--steel)}
+.q strong{display:block;font-family:var(--sans);font-size:1rem;line-height:1.4}
+.q span{display:block;font-size:.94rem;color:var(--mist);margin-top:.2rem}
+
+.ws{margin:0}
+.ws label{display:block;font-family:var(--sans);font-weight:700;font-size:.95rem;
+  margin:1.4rem 0 .4rem;color:var(--deep)}
+.ws label:first-child{margin-top:0}
+.ws input{width:100%;font-family:var(--serif);font-size:1.02rem;color:var(--ink);
+  padding:.55rem .1rem;border:0;border-bottom:2px solid var(--rule);
+  background:transparent;border-radius:0}
+.ws input:focus{border-bottom-color:var(--link)}
+.ws .hint{font-family:var(--sans);font-size:.84rem;color:var(--mut);margin:.35rem 0 0}
+.wsfoot{font-family:var(--sans);font-size:.84rem;color:var(--mut);
+  margin:1.6rem 0 0;padding-top:1rem;border-top:1px solid var(--rule)}
+
+/* ---------- constraint map ---------- */
+.map{list-style:none;margin:0;padding:0}
+.map li{display:grid;grid-template-columns:13rem 1fr;gap:.4rem 1.6rem;
+  padding:1.1rem 0;border-top:1px solid var(--rule);align-items:start}
+.map li:last-child{border-bottom:1px solid var(--rule)}
+.map dt,.map .c{font-family:var(--sans);font-weight:700;font-size:.98rem;
+  color:var(--deep);line-height:1.35}
+.map .c small{display:block;font-weight:400;color:var(--mut);font-size:.84rem;
+  margin-top:.15rem}
+.map .m{margin:0}
+.map .m b{font-family:var(--sans);color:var(--link);font-size:.98rem}
+.map .m span{display:block;font-size:.95rem;color:var(--ink);margin-top:.2rem}
+
+/* ---------- source directory ---------- */
+.srcs{list-style:none;margin:0;padding:0}
+.srcs li{padding:.85rem 0;border-top:1px solid var(--rule);
+  display:grid;grid-template-columns:1fr auto;gap:.2rem 1.5rem;align-items:baseline}
+.srcs li:last-child{border-bottom:1px solid var(--rule)}
+.srcs a{font-family:var(--sans);font-weight:600;font-size:.98rem}
+.srcs .w{font-family:var(--sans);font-size:.84rem;color:var(--mut);
+  grid-column:1/-1;max-width:60ch}
+
+/* ---------- email, last on purpose ---------- */
+.signup{background:var(--deep);color:var(--cream);padding:3rem 0;margin-top:1rem}
+.signup h2{color:var(--cream)}
+.signup h2 .n{color:var(--steel)}
+.signup .lede{color:var(--mist)}
+.signup form{display:flex;flex-wrap:wrap;gap:.7rem;max-width:34rem;margin:1.6rem 0 0}
+.signup input[type=email]{flex:1 1 16rem;font-family:var(--sans);font-size:1rem;
+  padding:.8rem .9rem;border:1px solid var(--slate);border-radius:3px;
+  background:#0A1F29;color:var(--cream)}
+.signup input[type=email]::placeholder{color:var(--steel)}
+.signup button{font-family:var(--sans);font-weight:700;font-size:1rem;
+  padding:.8rem 1.5rem;border:0;border-radius:3px;background:var(--accent);
+  color:var(--deep);cursor:pointer}
+.signup .small{font-family:var(--sans);font-size:.84rem;color:var(--steel);
+  margin:1rem 0 0;max-width:52ch}
+
+footer{padding:2.6rem 0 3.4rem;font-family:var(--sans);font-size:.86rem;
+  color:var(--mut)}
+footer .imprint{font-size:1.15rem;font-weight:700;color:var(--deep);
+  letter-spacing:.02em;margin:0 0 .6rem}
+footer .imprint b{font-weight:300;color:var(--mut)}
+footer p{max-width:62ch;margin:0 0 .6rem}
+
+@media (max-width:640px){
+  body{font-size:17px}
+  .hero{padding:3.2rem 0 2.6rem}
+  .map li{grid-template-columns:1fr;gap:.3rem}
+  .srcs li{grid-template-columns:1fr}
+}
+@media print{
+  body{background:#fff;font-size:11pt}
+  .hero,.signup,.card.dark{background:#fff!important;color:#000!important}
+  .hero h1,.hero .sub,.card.dark h3,.q strong,.q span{color:#000!important}
+  .stamp p{color:#000!important}
+  .stamp .bar{background:#000!important}
+  .signup form,.signup button{display:none}
+  a{color:#000;text-decoration:none}
+  a[href^="http"]::after{content:" (" attr(href) ")";font-size:.8em;color:#444}
+  section{page-break-inside:avoid}
+}
+/* controls that need the script are hidden until it runs (it adds .js to <html>) */
+html:not(.js) .js-only{display:none!important}
+/* ---- 01 the map: five models as zones, four constraints as buttons ---- */
+.mapbox{margin-top:1.4rem}
+.cbtns{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 1rem}
+.cbtns button,.pbtn{font:600 .95rem/1.2 var(--serif);padding:.65rem 1rem;border-radius:999px;
+  border:1.5px solid var(--deep);background:var(--paper);color:var(--deep);cursor:pointer;min-height:44px}
+.cbtns button:hover,.pbtn:hover{background:#EEF3F1}
+.cbtns button[aria-pressed="true"]{background:var(--deep);color:var(--cream)}
+.cbtns button:focus-visible,.pbtn:focus-visible,.mapsvg .zone:focus-visible{outline:3px solid var(--link);outline-offset:2px}
+.pbtn.ghost{border-style:dashed}
+.mapgrid{display:grid;grid-template-columns:1fr;gap:1rem}
+#map-chart{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:.4rem}
+.mapsvg{width:100%;height:auto;display:block;font-family:var(--serif)}
+.mapsvg .grid line{stroke:#ECE9E2;stroke-width:1}
+.mapsvg .grid text{fill:var(--mut);font-size:12px}
+.mapsvg .grid text.axis{fill:var(--ink);font-size:12.5px;font-weight:600}
+.mapsvg .zone{fill:#2E5566;fill-opacity:.13;stroke:var(--deep);stroke-width:1.6;cursor:pointer;
+  transition:fill-opacity .25s,stroke-width .25s,opacity .25s}
+.mapsvg .zone.rent{stroke-dasharray:6 4}
+.mapsvg .zone:hover{fill-opacity:.24}
+.mapsvg .leader{stroke:var(--deep);stroke-width:1;stroke-dasharray:2 3;opacity:.7;pointer-events:none}
+.mapsvg.picked .leader{opacity:.25}
+.mapsvg.picked .leader.lit{opacity:.9}
+.mapsvg .zlabel{fill:var(--deep);font-size:13px;font-weight:700;pointer-events:none;transition:opacity .25s}
+.mapsvg.picked .zone{opacity:.35}
+.mapsvg.picked .zlabel{opacity:.4}
+.mapsvg.picked .zone.lit{opacity:1;fill:var(--accent);fill-opacity:.55;stroke-width:2.6}
+.mapsvg.picked .zlabel.lit{opacity:1}
+.mapsvg.picked .zone.avoid{opacity:.6;fill:#fff;stroke:#8A3B2E}
+.mapsvg.picked .zlabel.avoid{opacity:1;fill:#8A3B2E}
+@media (prefers-reduced-motion:reduce){.mapsvg .zone,.mapsvg .zlabel{transition:none}}
+.mapside{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;align-items:start}
+.verdict-box,.info-box{border:1px solid var(--rule);border-radius:12px;padding:1rem 1.1rem;background:#fff}
+.verdict-box{background:var(--deep);border-color:var(--deep);color:var(--mist)}
+.verdict-box .pick{color:var(--cream);font-weight:700;font-size:1.15rem;margin:0 0 .4rem}
+.verdict-box p{margin:.35rem 0;line-height:1.5}
+.verdict-box .next{color:var(--steel);font-size:.9rem}
+.info-box h3{margin:0 0 .5rem;font-size:1.05rem}
+.info-box dl{display:grid;grid-template-columns:auto 1fr;gap:.25rem .8rem;margin:0 0 .6rem;font-size:.92rem}
+.info-box dt{color:var(--mut)}
+.info-box dd{margin:0;font-weight:600}
+.info-box .week{margin:.4rem 0 0;font-size:.95rem;line-height:1.5}
+.info-box .next{color:var(--mut);margin:0;font-size:.92rem}
+.key{font-size:.85rem;color:var(--mut);margin:.8rem 0 .2rem}
+.key .k{display:inline-block;width:22px;height:12px;border:1.6px solid var(--deep);border-radius:3px;
+  vertical-align:-1px;margin-right:.3rem;background:rgba(46,85,102,.13)}
+.key .k.rent{border-style:dashed}
+.onepage{margin-top:2rem;border-top:1px solid var(--rule);padding-top:1.2rem}
+.onepage h3{margin:0 0 .6rem}
+.print-row{margin:1rem 0 0;display:flex;flex-wrap:wrap;gap:.6rem;align-items:center}
+.print-row .hint{color:var(--mut);font-size:.88rem}
+/* ---- 02 change list ages ---- */
+.tracker .age{display:inline-block;margin-left:.6rem;font-size:.8rem;color:var(--mut)}
+.tracker .age.stale{color:#8A3B2E;font-weight:700;border:1px solid #8A3B2E;border-radius:4px;padding:0 .35rem}
+/* ---- 03 card + claim tester ---- */
+.card.dark .cardmark .mark{text-transform:none;letter-spacing:.02em}
+.card.dark .cardmark{color:var(--steel);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;margin:0 0 .6rem}
+.claim{margin-top:1.6rem;border:1px solid var(--rule);border-radius:12px;padding:1.1rem 1.2rem;background:#fff}
+.claim h3{margin:0 0 .3rem}
+.claim .hint{color:var(--mut);margin:0 0 .6rem;font-size:.92rem}
+.claim fieldset{border:0;margin:0;padding:.55rem 0;border-top:1px solid #EFECE6}
+.claim legend{font-weight:600;padding:0;margin-bottom:.35rem;line-height:1.4}
+.claim label{display:inline-flex;align-items:center;gap:.35rem;margin-right:1.2rem;min-height:36px;cursor:pointer}
+.claim-out{margin:.8rem 0 0;padding:.8rem 1rem;border-radius:8px;background:#F3F1EC;border-left:4px solid var(--rule);line-height:1.5}
+.claim-out.ok{border-left-color:var(--link);background:#EAF2EF}
+.claim-out.mid{border-left-color:#B07A1E;background:#F7F0E2}
+.claim-out.bad{border-left-color:#8A3B2E;background:#F6E9E5}
+.claim-out.ok::before{content:"Verdict: ";font-weight:700}
+.claim-out.mid::before{content:"Verdict: ";font-weight:700}
+.claim-out.bad::before{content:"Verdict: ";font-weight:700}
+/* ---- 04 worksheet extras ---- */
+.ws input[type=date]{max-width:16rem}
+@media (max-width:760px){
+  .mapside{grid-template-columns:1fr}
+  .claim label{margin-right:.8rem}
+}
+/* ---- print one tool at a time (see printOnly in before-you-sell.js) ---- */
+#print-area{display:none}
+@media print{
+  body.printing > *:not(#print-area){display:none!important}
+  body.printing #print-area{display:block}
+  #print-area.card-size{width:148mm;padding:8mm;border:1px dashed #999}
+  #print-area .print-row,#print-area .pbtn{display:none!important}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">What&rsquo;s actually true &middot; companion page</p>
+    <h1>Four companion tools for the book.</h1>
+    <p class="sub">From <em>Before You Sell Anything Online</em>. Find which of the five models fits the
+      constraint you actually have, see what changed and when, test any claim you hear, and write the
+      three lines that turn considering into started.</p>
+    <div class="stamp">
+      <div class="bar" aria-hidden="true"></div>
+      <p>Last checked 12&nbsp;October&nbsp;2026.
+        <span>Re-checked quarterly. Free, and nothing on this page is behind an email.</span></p>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ===================== 1. THE MAP (the four constraints) ===================== -->
+<section id="map">
+  <div class="wrap">
+    <h2><span class="n">01 &mdash; The map</span> Which of the five is yours?</h2>
+    <p class="lede">There is no best model, only the one that fits what you&rsquo;re short of. Each
+      zone below is a model&rsquo;s range from the book&rsquo;s comparison table: what it costs to start,
+      and how long until it pays properly. Pick your main constraint and watch which ones light up.</p>
+    <div id="map-live" class="mapbox" hidden>
+      <div class="cbtns" role="group" aria-label="Your main constraint">
+        <button type="button" data-constraint="money" aria-pressed="false">Money is short</button>
+        <button type="button" data-constraint="time" aria-pressed="false">Time is short</button>
+        <button type="button" data-constraint="novice" aria-pressed="false">I&rsquo;ve never done it</button>
+        <button type="button" data-constraint="people" aria-pressed="false">I already have people</button>
+      </div>
+      <div class="mapgrid">
+        <div id="map-chart"></div>
+        <div class="mapside">
+          <div id="map-verdict" class="verdict-box" aria-live="polite">
+            <p class="next">Pick the constraint that dominates for you. Most people have one.</p>
+          </div>
+          <div id="map-info" class="info-box" aria-live="polite">
+            <p class="next">Or tap any zone to see its numbers and its first week.</p>
+          </div>
+        </div>
+      </div>
+      <p class="key"><span class="k own"></span> Solid edge: you own the customer &nbsp;
+        <span class="k rent"></span> Dashed edge: the marketplace owns the customer</p>
+      <p class="note">These ranges are rough guides drawn from what sellers report, not measurements. What you sell, how much you put in and plain luck will all shift them.</p>
+    </div>
+    <p id="map-fallback" class="note">The interactive map needs JavaScript. The same mapping is
+      written out in full just below.</p>
+    <div id="one-page" class="onepage">
+      <h3>The four constraints, on one page</h3>
+      <ul class="map">
+        <li>
+          <div class="c">Money is short<small>Plenty of hours, not much you can risk</small></div>
+          <div class="m"><b>Print on demand, or digital products</b>
+            <span>Both run on your time rather than your cash. Skip dropshipping while money is the
+              limit: opening a store looks cheap, but the advertising is the real cost.</span></div>
+        </li>
+        <li>
+          <div class="c">Time is short<small>Some money to spend, but a job and a life</small></div>
+          <div class="m"><b>A marketplace</b>
+            <span>Your evenings are the scarce thing, and finding buyers for free eats them. A
+              marketplace brings the buyers and takes a cut (on Etsy, 6.5% plus processing), which is worth paying when your hours are worth more than that cut.</span></div>
+        </li>
+        <li>
+          <div class="c">You&rsquo;ve never done it<small>And you&rsquo;re not sure you can</small></div>
+          <div class="m"><b>Whatever can be live this week</b>
+            <span>Choose the quickest route to a real result: one marketplace listing, or a one-page
+              digital product. The first one isn&rsquo;t about income. It&rsquo;s about proving to
+              yourself that you can.</span></div>
+        </li>
+        <li>
+          <div class="c">You already have people<small>Even a small following, even for something
+            else</small></div>
+          <div class="m"><b>Ask them what they would buy</b>
+            <span>Getting strangers to turn up is a large part of the work elsewhere, and you&rsquo;ve
+              already done it. Ask, then build what they ask for.</span></div>
+        </li>
+      </ul>
+      <p class="print-row js-only"><button type="button" class="pbtn" id="print-map">Print this page of the map</button></p>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 1. THE TRACKER ===================== -->
+<section id="changes">
+  <div class="wrap">
+    <h2><span class="n">02 &mdash; What changed, and when</span> The ten things most guides
+      still get wrong</h2>
+    <p class="lede">These are the claims from appendix&nbsp;B of the book. Each one carries
+      the date it changed and the date we last confirmed it. A heavier left bar means the rule changed recently enough that most advice online has not caught
+      up. Each item also says how long ago we checked it, and flags itself once that passes three months.</p>
+
+    <ul class="tracker">
+
+      <li class="changed" data-checked="2026-10-12">
+        <span class="what">Etsy wants your own original design &mdash; reselling or lightly editing someone else&rsquo;s template doesn&rsquo;t qualify</span>
+        <p class="meta"><b>Changed</b> June&nbsp;2025 &nbsp;&middot;&nbsp;
+          <span>Last checked 12 October 2026</span></p>
+        <p class="body">The Creativity Standards require that what you sell was made,
+          designed, handpicked or sourced by you. Reselling a bought template, or a
+          light edit of one, is a policy violation rather than a grey area. It ends the template-resale pitch still circulating. An original you designed can be sold again and again; a bought template, or a light edit of one, cannot.</p>
+        <p class="src">Check it:
+          <a href="https://www.etsy.com/legal/sellers/">Etsy Seller Policy &mdash; House
+          Rules</a> (see the Creativity Standards section)</p>
+      </li>
+
+      <li data-checked="2026-10-12">
+        <span class="what">Etsy fees &mdash; 6.5% transaction fee, charged on the shipping
+          price too</span>
+        <p class="meta"><b>Still current</b> &nbsp;&middot;&nbsp;
+          <span>Last checked 12 October 2026</span></p>
+        <p class="body">Plus a listing fee per item and a separate payment-processing fee
+          on top. The part people miss: the 6.5% applies to the postage you charge as well as the item. Offering &ldquo;free&rdquo; shipping doesn&rsquo;t dodge it if the cost is folded into the price.</p>
+        <p class="src">Check it:
+          <a href="https://www.etsy.com/legal/fees/">Etsy Fees &amp; Payments Policy</a></p>
+      </li>
+
+      <li class="changed" data-checked="2026-10-12">
+        <span class="what">Amazon Associates reportedly cut commissions by up to half, and narrowed its onsite commission</span>
+        <p class="meta"><b>Changed</b> spring&nbsp;2026 (agreement 14&nbsp;April) &nbsp;&middot;&nbsp;
+          <span>Last checked 12 October 2026</span></p>
+        <p class="body">Two changes in the same direction. The reported rate cut (from around March 2026, never published by Amazon) is the big one. The 14 April 2026 agreement also narrowed commission on Amazon&rsquo;s own onsite placements to the exact product linked; ordinary links you send still earn on other items bought in the same visit. Any income figure published before 2026
+          should be treated as fiction.</p>
+        <p class="src">Check it:
+          <a href="https://affiliate-program.amazon.com/help/operating/agreement">Amazon
+          Associates Program Operating Agreement</a> &mdash; and the current fee schedule
+          linked from it</p>
+      </li>
+
+      <li class="changed" data-checked="2026-10-12">
+        <span class="what">Amazon Associates stopped paying recurring commission on
+          subscriptions</span>
+        <p class="meta"><b>Changed</b> January&nbsp;2026 &nbsp;&middot;&nbsp;
+          <span>Last checked 12 October 2026</span></p>
+        <p class="body">The &ldquo;build passive recurring income&rdquo; model that a great
+          deal of affiliate content was built to sell no longer exists in that form on
+          Amazon. One payment, not a stream.</p>
+        <p class="src">Check it: the fee schedule inside the
+          <a href="https://affiliate-program.amazon.com/help/operating/agreement">Associates
+          Program Operating Agreement</a></p>
+      </li>
+
+      <li data-checked="2026-10-12">
+        <span class="what">Google shows an AI summary for about a fifth of search terms, and most searches now end without a click</span>
+        <p class="meta"><b>Still current</b> in 2026 &nbsp;&middot;&nbsp;
+          <span>Last checked 12 October 2026</span></p>
+        <p class="body">SparkToro&rsquo;s analysis of Similarweb data found 68% of US Google searches ended with no click to any website (January&ndash;April 2026); separate Ahrefs research found AI Overviews on 21% of the keywords it tracked.
+          ⚠️ These come from independent search-industry measurement, not from Google, so
+          treat the exact numbers as a range rather than a fact. The direction is consistent across studies: ranking for a question no longer means being visited.</p>
+        <p class="src">Check it: there is no official page for this one. Look for
+          measurement published in the last six months and check who funded it &mdash;
+          question&nbsp;1 applies to this claim as much as to any other.</p>
+      </li>
+
+      <li data-checked="2026-10-12">
+        <span class="what">YouTube does not monetise mass-produced or templated content
+          &mdash; but faceless channels are fine</span>
+        <p class="meta"><b>Still current</b>, clarified July&nbsp;2025 &nbsp;&middot;&nbsp;
+          <span>Last checked 12 October 2026</span></p>
+        <p class="body">This is the most widely misreported rule in the book. The policy
+          targets mass production: templated scripts with words swapped out, slideshows with
+          little or no real narration. A faceless channel with original scripting and real
+          narration is eligible to be monetised. If someone told you faceless was banned, they were
+          reading headlines rather than the policy.</p>
+        <p class="src">Check it:
+          <a href="https://www.youtube.com/howyoutubeworks/policies/monetization-policies/">YouTube
+          monetisation policies</a></p>
+      </li>
+
+      <li data-checked="2026-10-12">
+        <span class="what">TikTok Shop takes 6% in the US (its published table; many sellers report 8% since August 2026) and 9% in the UK, with a reduced rate for new sellers</span>
+        <p class="meta"><b>Still current</b> in 2026 &nbsp;&middot;&nbsp;
+          <span>Last checked 12 October 2026</span></p>
+        <p class="body">The US referral fee covers both commission and payment processing in
+          one number. The new-seller rate of 3% runs for 30 days &mdash; note that it is
+          conditional, not automatic: you have to make a first sale within a set window of
+          onboarding to trigger it. Select jewellery categories sit lower. Refunds carry a
+          separate administration fee.</p>
+        <p class="src">Check it:
+          <a href="https://seller.tiktok.com/">TikTok Shop Seller Center</a> &mdash;
+          confirm your own market and category rather than a blog&rsquo;s summary</p>
+      </li>
+
+      <li data-checked="2026-10-12">
+        <span class="what">TikTok Shop announced a shipping mandate, then reversed it</span>
+        <p class="meta"><b>Reversed</b> January&ndash;February&nbsp;2026 &nbsp;&middot;&nbsp;
+          <span>Last checked 12 October 2026</span></p>
+        <p class="body">Worth keeping on the list precisely because it was undone. A great
+          deal of content was published during the four weeks it stood and never corrected
+          afterwards. When a platform announces something, the useful habit is to check
+          whether it actually took effect before you rebuild anything around it.</p>
+        <p class="src">Check it:
+          <a href="https://seller.tiktok.com/">TikTok Shop Seller Center</a> announcements</p>
+      </li>
+
+      <li data-checked="2026-10-12">
+        <span class="what">Shopify renamed its middle plan from &ldquo;Shopify&rdquo; to
+          &ldquo;Grow&rdquo;</span>
+        <p class="meta"><b>Still current</b> in 2026 &nbsp;&middot;&nbsp;
+          <span>Last checked 12 October 2026</span></p>
+        <p class="body">A small thing with an outsized effect on searching: any tutorial
+          telling you to pick &ldquo;the Shopify plan&rdquo; is now ambiguous, because that
+          is also the brand name. Compare the transaction-fee rows rather than the plan
+          names.</p>
+        <p class="src">Check it:
+          <a href="https://www.shopify.com/pricing">Shopify pricing</a></p>
+      </li>
+
+      <li data-checked="2026-10-12">
+        <span class="what">Pinterest: pin steadily rather than in bursts, and avoid link
+          shorteners</span>
+        <p class="meta"><b>Still current</b> in 2026 &nbsp;&middot;&nbsp;
+          <span>Last checked 12 October 2026</span></p>
+        <p class="body">Commonly quoted as 5&ndash;15 pins a day. ⚠️ That number is
+          community guidance, not a published Pinterest rule &mdash; the published rule is
+          the spam policy, which flags deceptive or obscured destinations. Shorteners hide
+          the destination, which is why they attract trouble. Pinterest matters here because it is built around clicking through to the source: a single post can send someone to your shop without you paying for it.</p>
+        <p class="src">Check it:
+          <a href="https://policy.pinterest.com/en/community-guidelines">Pinterest community
+          guidelines</a> (see the Spam section)</p>
+      </li>
+
+    </ul>
+
+    <p class="note">⚠️ Every row above will eventually be wrong. That is not a defect in the
+      list, it is the reason the list has dates on it. If a date here is more than three
+      months old, treat the row as unverified and check the platform&rsquo;s page yourself
+      &mdash; which is exactly what the three questions below are for.</p>
+  </div>
+</section>
+
+<!-- ===================== 2. THE THREE QUESTIONS ===================== -->
+<section id="three-questions">
+  <div class="wrap">
+    <h2><span class="n">03 &mdash; The habit</span> The three questions</h2>
+    <p class="lede">These work on any business advice, including this book and including
+      this page. They are the part with no expiry date, which is why they appear in every
+      book in the series rather than only in the first one. Print this and keep it
+      somewhere you will see it.</p>
+
+    <div class="card dark" id="qcard">
+        <p class="cardmark">The three questions &middot; <span class="mark">ePORTS</span></p>
+        <ol class="q">
+        <li><strong>Who gets paid if I follow this and it does not work?</strong>
+          <span>Not who is right &mdash; who is paid. It is a faster question and it has a
+          checkable answer.</span></li>
+        <li><strong>What is the date on this specific claim?</strong>
+          <span>Not the date on the video. The date on the claim inside it. A 2026 upload
+          repeating a 2022 fee is a 2022 claim.</span></li>
+        <li><strong>Can I reach the platform&rsquo;s own page in two clicks?</strong>
+          <span>If nobody will show you where the number comes from, that is the
+          answer.</span></li>
+      </ol>
+    </div>
+
+    <p class="note">If a claim fails all three, it is not necessarily wrong &mdash; but it
+      is unverified, and it should be treated as a rumour until you have checked it
+      yourself.</p>
+    <p class="print-row js-only"><button type="button" class="pbtn" id="print-card">Print the card</button>
+      <span class="hint">Prints the card on its own, postcard size.</span></p>
+    <form id="claim" class="claim js-only" onsubmit="return false">
+      <h3>Test a claim you just heard</h3>
+      <p class="hint">Think of one specific claim &mdash; a fee, a &ldquo;this made me &pound;10k&rdquo;, a rule.
+        Answer honestly.</p>
+      <fieldset><legend>Do you know who gets paid if you follow it and it doesn&rsquo;t work?</legend>
+        <label><input type="radio" name="q1" value="pass"> Yes</label>
+        <label><input type="radio" name="q1" value="fail"> No</label></fieldset>
+      <fieldset><legend>Do you know the date of that specific claim &mdash; not the video?</legend>
+        <label><input type="radio" name="q2" value="pass"> Yes</label>
+        <label><input type="radio" name="q2" value="fail"> No</label></fieldset>
+      <fieldset><legend>Can you reach the platform&rsquo;s own page for it in two clicks?</legend>
+        <label><input type="radio" name="q3" value="pass"> Yes</label>
+        <label><input type="radio" name="q3" value="fail"> No</label></fieldset>
+      <p id="claim-out" class="claim-out" aria-live="polite">Answer all three to get a verdict.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ===================== 3. THE WORKSHEET ===================== -->
+<section id="decision">
+  <div class="wrap">
+    <h2><span class="n">04 &mdash; Worksheet</span> Your three lines</h2>
+    <p class="lede">The chapter&nbsp;9 exercise. Three lines, about four minutes. Fill them in, print them, and keep them where you&rsquo;ll see them &mdash; it&rsquo;s the quickest way from &ldquo;thinking about it&rdquo; to &ldquo;started&rdquo;.</p>
+
+    <div class="card">
+      <form class="ws" onsubmit="return false">
+        <label for="l1">The model I am starting with is &mdash;</label>
+        <input id="l1" type="text" autocomplete="off"
+               placeholder="one of: dropshipping · digital products · print on demand · marketplace selling · audience first">
+
+        <label for="l2">I picked it because my main constraint is &mdash;</label>
+        <input id="l2" type="text" autocomplete="off"
+               placeholder="money · time · never having done it · already having an audience">
+        <p class="hint">Name the thing you&rsquo;re short of. That&rsquo;s what you&rsquo;ll check your choice against later &mdash; &ldquo;it looked easiest&rdquo; doesn&rsquo;t count.</p>
+
+        <label for="l3date">I will know by &mdash;</label>
+        <input id="l3date" type="date">
+        <label for="l3">&hellip;whether it is working, and I will judge that by &mdash;</label>
+        <input id="l3" type="text" autocomplete="off"
+               placeholder="a real measure — money, not how it felt">
+        <p class="hint">Most people leave this one blank. A real date and a real number are what keep a project honest.</p>
+      </form>
+      <p class="print-row js-only"><button type="button" class="pbtn" id="print-lines">Print my three lines</button>
+        <button type="button" class="pbtn ghost" id="ics">Add the check date to my calendar</button>
+        <span id="ics-msg" class="hint" aria-live="polite"></span></p>
+      <p class="wsfoot">Now stop reading about the other four. Give your pick about three months, judged on money rather than mood. Picking the wrong one is cheap if you only picked one; trying all five at once is what wastes the year. And whichever you choose, start collecting email addresses from day one &mdash; it&rsquo;s the one thing a platform can&rsquo;t switch off.</p>
+    </div>
+
+    <p class="note">Nothing you type here is sent anywhere, stored, or seen by us. The page&rsquo;s own
+      script only uses it in your browser &mdash; to print the sheet with your answers, or to build the
+      calendar file, which goes straight to your device. Close the tab and it is gone.</p>
+  </div>
+</section>
+
+
+
+</main>
+
+<!-- Section 6 (the optional email-updates form) was REMOVED 2026-08-12:
+     it was inert (action="#") — a deceptive promise while non-functional — and
+     Amazon KDP prohibits a book-linked page carrying a form that requests
+     customer information. The block's own note already sanctioned deletion, and
+     both HTML-audit models flagged it as the top risk. Restore only on a
+     separate, non-KDP-linked URL once an email tool (Klaviyo) is actually wired. -->
+
+<footer>
+  <div class="wrap">
+    <!-- The horizontal lockup. Middle dot, not a pipe — · is already the
+         system separator (eyebrows, series lines, option lists), and a
+         second divider doing the same job makes a system feel assembled
+         rather than designed. Stacked form is on the book title page,
+         where there is vertical room; horizontal is for one-line places
+         like this. NEVER on the cover — a URL is illegible at 100px. -->
+    <p class="imprint">ePORTS <b>&middot; eports.global</b></p>
+    <p>Companion page to <em>Before You Sell Anything Online</em> &mdash; book&nbsp;0 of
+      <em>What&rsquo;s actually true</em>.</p>
+    <p>Nothing here is legal, tax or financial advice. Fees and policies are quoted with the
+      date they were last checked and a link to the source, so that you can verify them
+      rather than trust them.</p>
+  </div>
+</footer>
+
+<script src="../../assets/before-you-sell.js" defer></script>
+</body>
+</html>

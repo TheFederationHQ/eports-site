@@ -63,9 +63,9 @@
     </div>
 
     <noscript>
-      <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The maths:
-      <em>labour = hours × rate</em>; <em>buffer = labour × buffer%</em>; then
-      <em>project price = labour + buffer + fixed costs</em>. Or
+      <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The math:
+      <em>labor = hours × rate</em>; <em>buffer = labor × buffer%</em>; then
+      <em>project price = labor + buffer + fixed costs</em>. Or
       <a href="../../resources/one-person-ai-business/">grab the free one-person-business tools</a>
       and work it out on paper.</p>
     </noscript>
@@ -75,7 +75,7 @@
 
   <section>
     <h2><span class="n">How to read it</span> A quote is your floor, not a market price</h2>
-    <p>A fixed-price quote feels like a single number, but it's really three: the labour you're actually
+    <p>A fixed-price quote feels like a single number, but it's really three: the labor you're actually
       selling, a buffer for the work that always runs longer than you planned, and any hard costs the
       job forces on you. This calculator adds them up so the number you send isn't a hopeful guess — it's
       the point below which the job stops being worth doing.</p>
@@ -85,13 +85,13 @@
       under it by accident.</p>
 
     <h3>The formula, in full</h3>
-    <p><b>Labour</b> = estimated hours × your hourly rate. <b>Buffer</b> = labour × (buffer% ÷ 100) —
-      the cushion for scope creep and overruns. <b>Project price</b> = labour + buffer + fixed costs.
+    <p><b>Labour</b> = estimated hours × your hourly rate. <b>Buffer</b> = labor × (buffer% ÷ 100) —
+      the cushion for scope creep and overruns. <b>Project price</b> = labor + buffer + fixed costs.
       The buffer exists because fixed-price work carries the overrun risk you'd otherwise just bill by
       the hour; on a quote, that risk is yours, so you price it in up front.</p>
 
     <h3>A worked example</h3>
-    <p>Say a job looks like 20 hours at a $75 rate — that's $1,500 of labour. Add a 20% buffer and you
+    <p>Say a job looks like 20 hours at a $75 rate — that's $1,500 of labor. Add a 20% buffer and you
       set aside $300 for the overruns that always turn up. The project also needs $100 of stock images,
       so that goes straight on top. The quote you send is $1,500 + $300 + $100 = <b>$1,900</b>. If the
       work comes in on estimate you keep the buffer; if it runs 20% long, the buffer is exactly what
@@ -99,10 +99,10 @@
 
     <h3>Edge cases the calculator handles</h3>
     <ul class="note" style="line-height:1.7">
-      <li><b>A 0% buffer</b> quotes labour plus fixed costs with no cushion at all — every extra hour
+      <li><b>A 0% buffer</b> quotes labor plus fixed costs with no cushion at all — every extra hour
         then comes straight out of your pay. Real fixed-price work rarely survives at zero.</li>
       <li><b>$0 fixed costs</b> is the common case for pure services — no assets, no subcontractor — so
-        the price is just labour plus buffer.</li>
+        the price is just labor plus buffer.</li>
     </ul>
 
     <h3>Common questions</h3>
@@ -153,10 +153,10 @@
   function set(id, t) { document.getElementById(id).textContent = t; }
   function run() {
     var H = num("H"), R = num("R"), B = num("B"), F = num("F");
-    var labour = H * R;
-    var buffer = labour * (B / 100);
-    var price = labour + buffer + F;
-    set("oLabour", money(labour));
+    var labor = H * R;
+    var buffer = labor * (B / 100);
+    var price = labor + buffer + F;
+    set("oLabour", money(labor));
     set("oBuffer", money(buffer));
     set("oPrice", money(price));
   }

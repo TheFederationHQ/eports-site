@@ -15,7 +15,7 @@
 
   var money = function (x) {
     return (x === "" || x === null || !isFinite(x)) ? "—"
-      : (Number(x) < 0 ? "−" : "") + "£" + Math.abs(Number(x)).toLocaleString("en-GB", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      : (Number(x) < 0 ? "−" : "") + "$" + Math.abs(Number(x)).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   };
   var pct = function (x) {
     return (x === "" || x === null || !isFinite(x)) ? "—"

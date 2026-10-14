@@ -2,53 +2,57 @@ THE CAPPED-TEST RULES PAGE
 From "Digital Products — Intermediate", chapter 11
 ================================================================
 
-The point of a paid traffic test is to buy an ANSWER, not sales. It works only
-if you write the rules before you spend, when you are calm — not during, when
-you are hopeful. Fill this in, then do not deviate from it.
+The point of a paid traffic test is to buy an ANSWER, not sales. Do the free
+version first. Then write these four rules on one page BEFORE you create a
+single ad — when you are calm, not during, when you are hopeful.
 
 
-RULE 1 · THE ZERO-COST ROUTE COMES FIRST
+RULE 1 · THE CAP   (a number you have decided you can lose)
 ----------------------------------------------------------------
-Before any ad spend, have you exhausted the free traffic that already works?
-  My best free channel: ______________________________
-  [ ] Yes, it is running and I have its numbers.  ->  proceed
-  [ ] No.  ->  do that first. Paid traffic amplifies a page that converts; it
-                cannot rescue one that does not.
-
-
-RULE 2 · THE HARD CAP  (a number you have decided you can lose)
-----------------------------------------------------------------
-  Total I will spend on this test:   £__________   (£100–£150 is enough to
+  Total I will spend on this test:   $__________   ($100–$150 is enough to
                                                     learn something)
-  I will stop at this number even if it looks like it is "about to work".
+  Stop at the cap. No extensions — the moment you want to raise it is the
+  moment you are down and want it back.
 
 
-RULE 3 · THE STOP-LOSS  (the daily line)
+RULE 2 · THE STOP-LOSS   (stop early on a clear loss)
 ----------------------------------------------------------------
-  Daily spend:                       £__________
-  If after ______ days the numbers are clearly bad, I stop early. I do not
-  need to spend the whole cap to get the answer.
+  Expected sales per 100 visitors (my conversion rate × 100):  ______
+  I stop early if, after 200 visitors, I have fewer than HALF the sales I
+  expected. (At a 2% rate: fewer than 2 sales against 4 expected.)
+  I do NOT stop early on a good result — a test that looks profitable after
+  forty visitors has told me almost nothing.
 
 
-RULE 4 · WHAT "IT WORKED" MEANS  (decide NOW)
+RULE 3 · ONE VARIABLE
 ----------------------------------------------------------------
-Read the result off your scorecard's CONTRIBUTION per visitor, not revenue per
+  One audience:    ______________________________
+  One message:     ______________________________
+  One destination: ______________________________
+  A test with three differences cannot tell you which one mattered.
+
+
+RULE 4 · A FIXED END DATE   (two weeks — not "until it starts working")
+----------------------------------------------------------------
+  Starts: __________     Ends: __________
+
+
+READING THE RESULT   (decide NOW what "it worked" means)
+----------------------------------------------------------------
+Read it off your scorecard's CONTRIBUTION per visitor, not revenue per
 visitor (revenue still has the platform's cut inside it).
 
-  Contribution per visitor from chapter 9:  £__________
-  Cost per visitor I am paying:              £__________
+  Contribution per visitor from chapter 9:  $__________
+  Cost per visitor I am paying:              $__________
 
-  [ ] Cost per visitor is BELOW my contribution per visitor  ->  it works;
-      you can consider spending more, carefully.
-  [ ] Cost per visitor is ABOVE it  ->  it does not, at this price. You have
-      bought a real answer for the cost of the cap. That is a good use of it.
-
-
-RULE 5 · THE HONEST LIMIT
-----------------------------------------------------------------
-A £150 test tells you about £150 of traffic. It is a probe, not a verdict on
-the whole channel. Treat a clear "no" as final and a marginal "maybe" as a
-reason to fix the page, not to spend more.
+  [ ] It paid for itself (cost per visitor BELOW contribution per visitor)
+      ->  a channel you can scale, carefully.
+  [ ] It clearly cost more than it returned  ->  stop. You bought a real
+      answer for the cost of the cap. That is a good use of it.
+  [ ] Inconclusive — the most common outcome at this size  ->  stop rather
+      than spend more. Small numbers don't become clear with a little more
+      money. A $150 test can detect a LARGE effect, never a small one, so ask
+      it a big question.
 
 ================================================================
   Yours to keep — free, and no strings attached.

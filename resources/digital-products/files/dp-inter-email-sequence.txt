@@ -2,7 +2,7 @@ THE FIVE-EMAIL SEQUENCE — templates you can adapt
 From "Digital Products — Intermediate", chapter 8
 ================================================================
 
-Five emails, sent over about a fortnight, each with one job. Three of the five
+Five emails, sent over about two weeks, each with one job. Three of the five
 give something and ask for nothing — that ratio is not politeness, it is what
 makes the fourth one land. Giving first outperforms asking first by a wide
 margin, especially with the audiences most likely to be reading.
@@ -36,7 +36,7 @@ Subject: the bit most people get wrong
   — [YOUR NAME]
 
 (Ends with nothing. No link, no ask. This email is the reciprocity; adding an
-ask turns it into an advert.)
+ask turns it into an ad.)
 
 
 EMAIL 3 · SHOW   (day 4)
@@ -53,7 +53,7 @@ Subject: what this looked like for [TYPE OF PERSON]
 
 EMAIL 4 · OFFER   (day 7)
 ----------------------------------------------------------------
-Subject: [the outcome], done properly
+Subject: [the outcome], properly
 
   If [THE FREE THING] helped, [THE PAID PRODUCT] does [THE BIGGER JOB]:
   [one line on what changes for them].
@@ -62,12 +62,12 @@ Subject: [the outcome], done properly
 
   — [YOUR NAME]
 
-(Name the product once. State the price. Do not apologise for it.)
+(Name the product once. State the price. Do not apologize for it.)
 
 
-EMAIL 5 · ANSWER   (day 10)
+EMAIL 5 · ANSWER   (day 11)
 ----------------------------------------------------------------
-Subject: [the honest objection]
+Subject: "will this work for me?"
 
   The people who didn't buy after the last email usually had one of three
   reasons — not sure it fits their situation, not sure they'd use it, or it

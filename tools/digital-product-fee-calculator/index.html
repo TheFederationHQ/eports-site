@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,7 +36,7 @@
     <div class="calc">
       <div>
         <div class="field">
-          <label for="P">Sale price <span class="u">(£)</span></label>
+          <label for="P">Sale price <span class="u">($)</span></label>
           <input id="P" type="number" inputmode="decimal" value="19.00" min="0" step="0.01">
           <p class="hint">what the buyer pays</p>
         </div>
@@ -47,9 +47,10 @@
             channel (and some add a fixed fee too), so enter YOUR current rate from the platform's own pricing page.</p>
         </div>
         <div class="field">
-          <label for="Fix">Fixed fee per sale <span class="u">(£)</span></label>
+          <label for="Fix">Fixed fee per sale <span class="u">($)</span></label>
           <input id="Fix" type="number" inputmode="decimal" value="0.50" min="0" step="0.01">
-          <p class="hint">flat per-sale charge, e.g. £0.30–£0.50; 0 if none</p>
+          <p class="hint">flat per-sale charge, e.g. $0.30–$0.50; 0 if none. Where sales tax applies, card
+          processing is charged on it too, so your real fee runs a little higher.</p>
         </div>
       </div>
       <div class="calc-out" aria-live="polite" aria-atomic="true">
@@ -61,24 +62,24 @@
     </div>
 
     <noscript>
-      <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The maths is simple, though:
+      <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The math is simple, though:
       <em>fees = price × fee% + fixed fee</em>; <em>what you keep = price − fees</em>;
       <em>you keep % = (kept ÷ price) × 100</em>. Or
       <a href="../../resources/digital-products/">grab the numbers from the Digital Products resources
       page</a> and work it out on paper.</p>
     </noscript>
     <p class="cta">Knowing your kept amount before you set a price is the first move in
-      <a href="../../digital-products/#basics"><em>Digital Products: Basics</em> →</a></p>
+      <a href="../../digital-products/#basics"><em>Digital Products — Basics</em> →</a></p>
   </section>
 
   <section>
     <h2><span class="n">How to read it</span> The price is never the payout</h2>
-    <p>When someone buys a £19 file, £19 does not land in your account. The platform takes a percentage,
+    <p>When someone buys a $19 file, $19 does not land in your account. The platform takes a percentage,
       the payment processor takes its slice, and some platforms add a flat charge on top of every sale.
       <b>What you keep</b>, after the fees you enter, is the number to build your pricing on. (It's before
       tax and any refunds — those are separate, and yours to account for.)</p>
     <p><b>You keep</b> — the percentage — is the one to watch as your price moves. A fixed fee barely
-      dents a £40 product but takes a real bite out of a £4 one. That is why two products with the same
+      dents a $40 product but takes a real bite out of a $4 one. That is why two products with the same
       headline price can leave you with very different amounts once the fees clear.</p>
 
     <h3>The formula, in full</h3>
@@ -87,18 +88,18 @@
       Enter your platform's own all-in rate and the calculator does the rest.</p>
 
     <h3>A worked example</h3>
-    <p>Sale price £19, an all-in platform fee of 10%, and a fixed fee of £0.50. The percentage part is
-      £19 × 0.10 = £1.90, plus the £0.50 flat charge, so <b>fees are £2.40</b>. That leaves you
-      <b>£16.60</b> — you keep <b>87.4%</b> of the sale. The other 12.6% went to the platform and the
+    <p>Sale price $19, an all-in platform fee of 10%, and a fixed fee of $0.50. The percentage part is
+      $19 × 0.10 = $1.90, plus the $0.50 flat charge, so <b>fees are $2.40</b>. That leaves you
+      <b>$16.60</b> — you keep <b>87.4%</b> of the sale. The other 12.6% went to the platform and the
       processor before you saw a penny of it.</p>
 
     <h3>Edge cases the calculator handles</h3>
     <ul class="note" style="line-height:1.7">
-      <li><b>A low price with a fixed fee.</b> A £3 product with a £0.50 flat charge loses that £0.50
+      <li><b>A low price with a fixed fee.</b> A $3 product with a $0.50 flat charge loses that $0.50
         before any percentage — so the fixed fee alone already takes a sixth of the sale, and the kept
-        percentage drops far below what the same fee does to a £30 product. Cheap products feel the flat
+        percentage drops far below what the same fee does to a $30 product. Cheap products feel the flat
         fee hardest.</li>
-      <li><b>A price of £0 or less</b> has no sale to split, so every line shows "—" rather than a
+      <li><b>A price of $0 or less</b> has no sale to split, so every line shows "—" rather than a
         nonsense figure.</li>
       <li><b>No fixed fee?</b> Enter 0 and the calculator works from the percentage alone.</li>
     </ul>
@@ -113,7 +114,7 @@
       enter <em>your</em> rate here.</p>
     <h4>Should the fixed fee include payment processing?</h4>
     <p>Only the flat part of it. Many processors charge a percentage <em>and</em> a small fixed amount per
-      transaction (something like a few pence plus a percent). Put the percentage part in the fee box and
+      transaction (something like a few cents plus a percent). Put the percentage part in the fee box and
       the flat part in the fixed-fee box. If your platform rolls everything into one percentage, leave the
       fixed fee at 0.</p>
     <h4>Is this my profit?</h4>

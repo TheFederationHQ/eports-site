@@ -3,8 +3,8 @@ From "Digital Products — Advanced", chapter 3
 ================================================================
 
 A premium offer is not your normal product with a bigger number on it. It is a
-different promise: more transformation, more of your delivery, or more of the
-buyer's risk removed. Design it here BEFORE you price it — pricing an offer
+different promise: a bigger transformation, something valuable that is hard to
+get elsewhere, and a defined risk removed. Design it here BEFORE you price it — pricing an offer
 that does not yet exist is how the number gets justified instead of earned.
 
 
@@ -17,15 +17,23 @@ faster, or with a result they could not reach alone.
   The bigger outcome, in one sentence: _________________________________
 
 
-2 · THE DELIVERY BURDEN  (what it costs YOU to deliver)
+2 · HARD TO GET — AND WORTH HAVING  (both halves, or it fails)
 ----------------------------------------------------------------
-Premium usually means something that does not fully scale — your time, a look
-at their situation, a response. Name it, because it sets your floor.
+Could a buyer assemble the same result somewhere else without much trouble? If
+yes, it is not premium. What makes yours hard to get? Your own time is only ONE
+option — and the one with a ceiling on it.
+  [ ] Your time, access or attention
+  [ ] A right they don't otherwise have (commercial use, resale, licensing)
+  [ ] Something you have that they can't easily get (data, worked cases, a tool)
+  [ ] Speed — the same result much sooner
+  [ ] Curation — the judgment of what to leave out
 
-  What I personally have to do per buyer: ______________________________
-  Roughly how long, per buyer:            ______ hours
-  My owner-hour rate (from ch4):          £______
-  So my delivery FLOOR per sale:          £______   (hours × rate)
+  What makes mine hard to get: _________________________________________
+  What the buyer has at stake (time, money, an outcome they fear): ________
+
+  CAPACITY CHECK — only if delivery takes your time:
+  Hours per buyer: ______   My owner-hour rate (ch4): $______
+  Delivery FLOOR per sale:  $______  (hours × rate + any direct costs)   Hard buyer cap: ______
 
 
 3 · THE RISK REMOVED  (why they can say yes)
@@ -39,17 +47,17 @@ Premium buyers pay to remove downside. What are you taking off their plate?
   The risk I remove: ___________________________________________________
 
 
-4 · THE PRICE CHECK  (only now)
+4 · THE PRICE CHECK  (chapter 4 — only after boxes 1–3 are filled in)
 ----------------------------------------------------------------
-  Price I have in mind:        £______
-  Is it comfortably ABOVE the delivery floor from box 2?   Y / N
+  Price I have in mind:        $______
+  If delivery takes your time: comfortably ABOVE the floor from box 2?   Y / N
 
   ⚠️ If NO, that is not a pricing problem — it is a delivery-model problem.
   Redesign what you deliver (box 2) so the floor drops, THEN price. Never sell
   a premium offer below the cost of delivering it.
 
   ⚠️ Anchor against the transformation, never against your own cheaper product.
-  £199 next to a £19 planner reads as "ten times a planner". £199 next to the
+  $199 next to a $19 planner reads as "ten times a planner". $199 next to the
   outcome it produces reads as cheap.
 
 ================================================================

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,11 +24,11 @@
     <h2><span class="n">The calculator</span> Lifetime value and payback</h2>
     <div class="calc">
       <div>
-        <div class="field"><label for="AOV">Average order value <span class="u">(£)</span></label><input id="AOV" type="number" value="44" min="0" step="0.01"></div>
+        <div class="field"><label for="AOV">Average order value <span class="u">($)</span></label><input id="AOV" type="number" value="44" min="0" step="0.01"></div>
         <div class="field"><label for="f">Platform + processing fee <span class="u">(%)</span></label><input id="f" type="number" value="6.5" min="0" max="99" step="0.1"></div>
         <div class="field"><label for="L">Orders per customer over their life</label><input id="L" type="number" value="1.45" min="1" step="0.01">
           <p class="hint">1.0 = they never repeat; must be at least 1</p></div>
-        <div class="field"><label for="CAC">Cost to acquire a customer, CAC <span class="u">(£)</span></label><input id="CAC" type="number" value="28.80" min="0" step="0.01"></div>
+        <div class="field"><label for="CAC">Cost to acquire a customer, CAC <span class="u">($)</span></label><input id="CAC" type="number" value="28.80" min="0" step="0.01"></div>
       </div>
       <div class="calc-out" aria-live="polite" aria-atomic="true">
         <h3>What a customer is worth</h3>
@@ -48,7 +48,7 @@
       <a href="../../resources/digital-products/files/dp-adv-cohort-ltv.xlsx">Download the cohort &amp;
       lifetime-value spreadsheet</a> — same formulas, your numbers.</p></noscript>
     <p class="cta">Know when a customer pays you back before you scale — it's
-      <a href="../../digital-products/#advanced">the cohort economics in <em>Digital Products: Advanced</em> →</a></p>
+      <a href="../../digital-products/#advanced">the cohort economics in <em>Digital Products — Advanced</em> →</a></p>
   </section>
   <section>
     <h2><span class="n">How to read it</span> Contribution, not revenue — and payback, not just value</h2>
@@ -61,11 +61,11 @@
       contribution per order × lifetime orders. <b>Payback</b> is the book's definition: the point at
       which a customer's cumulative contribution covers what they cost to acquire. If your first-order
       contribution already exceeds the acquisition cost, they are <em>recouped in the first order</em>
-      — the strongest position there is. Otherwise it is measured in months, at your repeat cadence.</p>
+      — the strongest position there is. Otherwise it comes on a later order — the result tells you which one.</p>
     <h3>A worked example</h3>
-    <p>£44 average order at 6.5% keeps <b>£41.14</b> of contribution. If a customer buys 1.45 times
-      over their life, their lifetime value is £41.14 × 1.45 = <b>£59.65</b>. If they cost £28.80 to
-      acquire, that is less than the £41.14 they contribute on the very first order — so they are
+    <p>$44 average order at 6.5% keeps <b>$41.14</b> of contribution. If a customer buys 1.45 times
+      over their life, their lifetime value is $41.14 × 1.45 = <b>$59.65</b>. If they cost $28.80 to
+      acquire, that is less than the $41.14 they contribute on the very first order — so they are
       <b>recouped in the first order</b>, and you can spend up to your ceiling with nothing at risk
       beyond it.</p>
     <h3>Edge cases the calculator handles</h3>
@@ -87,7 +87,8 @@
       <a href="../cac-ceiling/">CAC ceiling calculator</a> works out the safe number.</p>
     <h4>Can I keep a copy?</h4>
     <p><a href="../../resources/digital-products/files/dp-adv-cohort-ltv.xlsx">Download the spreadsheet</a>
-      — it turns your own sales history into lifetime value and a payback period.</p>
+      — it turns your own order value, fee, repeat orders and acquisition cost into lifetime value and a
+      payback point.</p>
   </section>
   <div class="ad-slot" data-ad="rectangle" aria-hidden="true"></div>
   <section>
@@ -132,7 +133,7 @@
   document.querySelectorAll("input").forEach(function (i) { i.addEventListener("input", later); });
   window.addEventListener("resize", later);
 
-  V.currency("£", "en-GB");
+  V.currency("$", "en-GB");
   function n(id) { var x = parseFloat(document.getElementById(id).value); return isNaN(x) ? NaN : x; }
   function draw() {
     var AOV = n("AOV"), f = n("f"), L = n("L"), CAC = n("CAC");

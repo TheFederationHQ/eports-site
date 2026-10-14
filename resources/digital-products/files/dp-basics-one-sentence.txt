@@ -3,8 +3,8 @@ From "Digital Products — Basics", chapter 1
 ================================================================
 
 Before you make anything, you write one sentence. It forces the four
-decisions that a product either gets right or dies on: who it is for, who
-it is NOT for, what it actually is, and what changes for the buyer.
+decisions that a product either gets right or dies on: who it is for, what
+problem they have, what it actually is, and what changes for the buyer.
 
 If you cannot fill every blank, you do not yet have a product — you have a
 file you hope someone wants. That is the most expensive mistake in this
@@ -44,12 +44,12 @@ TWO WORKED EXAMPLES
 ----------------------------------------------------------------
 
   This is a fill-in spreadsheet
-  for freelancers who dread January
+  for freelancers who dread April
   who have a shoebox of receipts and no system
   so that their tax return takes an evening instead of a lost weekend.
 
   This is a set of 30 editable social templates
-  for handmade-jewellery sellers with fewer than 1,000 followers
+  for handmade-jewelry sellers with fewer than 1,000 followers
   who know their photos look amateur next to the big shops
   so that every post looks like it belongs to a real brand.
 

@@ -13,8 +13,8 @@ an Etsy Shop" help page.
     (one-time setup fee? Y/N ____)
 
   REUSABLE (set once, attach where needed):
-    shipping profile - dispatch time I can ALWAYS hit: ____ days
-      postage: charged separately  /  folded into "free shipping"
+    shipping profile - processing time I can ALWAYS hit: ____ days
+      shipping: charged separately  /  folded into "free shipping"
     returns / cancellation policy set (clear + livable)?   [ ]
 
   OPTIONAL (still worth it): "about" section + simple logo? [ ]

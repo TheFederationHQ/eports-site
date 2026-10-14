@@ -1,0 +1,42 @@
+DROPSHIPPING - THE CONSTRAINT DIAGNOSTIC  (Chapter 1)
+
+Work through all five signatures, IN ORDER, even after you find one that
+binds - you want to know what is next. The thresholds are working
+guidance, not measured standards; their job is to make you look at five
+specific numbers in order.
+
+  1. CREATIVE SUPPLY                                        -> chapter 2
+     Genuinely different angles launched, last 8 weeks: ______
+     Does performance decay within days and recover on launch? Y / N
+     Binds if: under ~4 a month AND performance tracks launch dates.
+  2. MEASUREMENT                                            -> chapter 3
+     Last month: revenue / ad spend from your BANK: ______
+     What the ad platform claimed: ______   Disagree by: ______%
+     Binds if: they disagree by more than about a fifth.
+  3. MARGIN                                            -> chapters 5 and 6
+     Contribution per order $______ - actual cost per order $______
+     = gap $______ = ______% of the sale price
+     Binds if: the gap is under about 20% of the sale price.
+  4. CASH                                                   -> chapter 7
+     Days from money OUT (product/ad) to money IN (processor): ______
+     Ever delayed a budget rise because the balance felt uncomfortable?
+     Binds if: over about two weeks, or yes.
+  5. CUSTOMER VALUE                                         -> chapter 8
+     Share of orders from someone who bought before: ______%
+     Binds if: under about a tenth and the product could be re-bought.
+
+Fix them in this order anyway: it is dependency, not preference.
+
+  Current ceiling         $________ / month ad spend
+  Binding constraint      ______________________________
+  Signature               ______________________________
+  Next expected           ______________________________
+  Date                    __________
+
+Then: hold ad spend at or slightly below the ceiling until the constraint
+has actually moved. Every dollar above it buys a loss AND noise.
+
+----------------------------------------------------------------------
+From Dropshipping - Advanced. The full method is in the book; every
+free worksheet: eports.global/resources/dropshipping
+ePORTS — your ecom source. eports.global.

@@ -16,7 +16,7 @@ Deploy everything at once, wired together - then try to break it.
 
   PASS CONDITION, written first - for an interruption window of
   ____ days without Etsy access, the business can: keep its records,
-  fulfil the open orders it can reach, fund committed costs, contact
+  fulfill the open orders it can reach, fund committed costs, contact
   its opted-in subscribers within the consent they gave, and submit
   an evidenced appeal. (That is what the drill can prove. Not more.)
 
@@ -26,10 +26,10 @@ Deploy everything at once, wired together - then try to break it.
   audience: opted-in message drafted    [ ]    __________
     (only to people who opted in; never steers an Etsy order).
   appeal: SOP folder -> draft, not sent [ ]    __________
-  fulfilment: off-Etsy postage tested   [ ]    __________
-    (third-party postage tool + order details from my backup;
+  fulfillment: off-Etsy shipping tested   [ ]    __________
+    (third-party shipping tool + order details from my backup;
      a DRAFT/test label if the tool offers one - otherwise walk
-     it to the final step and stop: never buy live postage for
+     it to the final step and stop: never buy live shipping for
      a simulated order).
 
   breaks found: _________________  each FIXED + re-run? [ ]

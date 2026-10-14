@@ -14,7 +14,7 @@ checking. This rule stops that.
 THE PRINCIPLE:
   Never let AI have the final word on anything you're legally or financially
   responsible for. It drafts; a person with the authority checks the facts
-  against a real source, and signs. That's just who carries the can -- you.
+  against a real source, and signs. That's just who takes the blame -- you.
 
 
 THE RULE  (four lines; pin it up)
@@ -35,7 +35,7 @@ THE RULE  (four lines; pin it up)
 ----------------------------------------------------------------
   A system of record OUTSIDE the tool. Name yours:
     Prices ->  ______________________  (e.g. the live rate sheet)
-    Dates / availability ->  ______________________  (e.g. the diary)
+    Dates / availability ->  ______________________  (e.g. the calendar)
     Policies ->  ______________________  (e.g. the written policy)
     ______________________  ->  ______________________
 

@@ -21,7 +21,7 @@ Custodian (the one person who edits this and stamps a new version): ____________
 ----------------------------------------------------------------------
   1. WHO WE ARE, AND WHAT WE SELL
 ----------------------------------------------------------------------
-The business in a paragraph a new starter would understand — the true
+The business in a paragraph a new hire would understand — the true
 version, not the website gloss:
 
 
@@ -59,12 +59,13 @@ guarantee we'll never make, the tone we'll never take):
 
 
 The data rule — which tool takes what. On your APPROVED business/team tool
-(training off by default, a data-processing agreement accepted, transfers
-checked) you may use real customer data for a genuine business reason. On a
-general or personal tool, keep customer/staff personal details out. And on
-ANY tool, never put in: card / bank / password details; special-category
-data (health, ethnicity, religion, sexuality, union, biometrics); or trade
-secrets. (Not legal advice — for real personal data at scale, take proper
+(training off by default, the vendor's data terms accepted, and you know where
+it stores your data) you may use real customer data for a genuine business
+reason. On a general or personal tool, keep customer/staff personal details
+out. And on ANY tool, never put in: card / bank / password details; health,
+financial or children's data where HIPAA, GLBA or COPPA apply to you; or trade
+secrets. Your state's privacy law and every state's data-breach law still
+apply. (Not legal advice — for real personal data at scale, take proper
 advice.) Write your line here:
 
 
@@ -84,7 +85,7 @@ Using the brain is not optional — and, the part that makes that stick,
 it is CHECKABLE:
 
   • Every piece of AI-assisted work carries a marker: which version of
-    the brain it was built from (e.g. "brain v3, 14 March").
+    the brain it was built from (e.g. "brain v3, March 14").
 
   • Before the work moves on, the approver's FIRST look is provenance —
     not quality yet, just: does it carry the brain marker? No marker, or

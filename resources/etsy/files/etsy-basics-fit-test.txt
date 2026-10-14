@@ -8,7 +8,7 @@ makeable, profitable or wanted. Ten minutes, no spend. Force the decision.
   1  Permitted   (Chapter 3 permit record = PROCEED)?        Y / N
   2  Worth it    (Chapter 2 ad-driven take-home justifies
                   my time per sale)?                          Y / N
-  3  Deliverable (digital, or postable on time, sustainably)? Y / N
+  3  Deliverable (digital, or shippable on time, sustainably)? Y / N
   4  Thumbnail-legible (reads well as a small square photo)?  Y / N
   5  Representable (an honest Etsy category exists for it)?   Y / N
 

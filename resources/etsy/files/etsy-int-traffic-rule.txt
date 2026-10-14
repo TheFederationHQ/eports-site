@@ -20,8 +20,8 @@ machine you feed. Add ONE channel, and write its rule BEFORE you switch on.
     Note: Etsy chooses the eligible searches; you cannot target keywords.
     This tests the LISTING's conversion, not a keyword (that's Ch4).
     Contribution/order = take-home - item cost - other variable costs
-      (packaging, shipping I absorb) = £______
-    MAX TEST SPEND (daily budget x days) = £______
+      (packaging, shipping I absorb) = $______
+    MAX TEST SPEND (daily budget x days) = $______
     At the ceiling: PAUSE ads, read a PROVISIONAL verdict, then settle
       the CPA after the ~30-day attribution window closes.
     PASS if:  ad spend / attributed orders  <=  contribution

@@ -21,7 +21,7 @@ pilot's go/no-go, not new work. Six greens, then launch.
   Then, in a logged-out / private window, open it and confirm:
     public listing URL: _______________________________
     price + shipping show correctly?      [ ]
-    it can be added to basket?            [ ]
+    it can be added to the cart?            [ ]
 
   Published on (date): __________
 

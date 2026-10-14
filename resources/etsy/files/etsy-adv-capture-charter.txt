@@ -1,6 +1,6 @@
 ETSY - THE CAPTURE CHARTER + THE INSERT SCRIPT  (Chapter 3)
 
-Two identical-looking emails: the one Etsy passed you to post the order
+Two identical-looking emails: the one Etsy passed you to ship the order
 (a landmine if you market to it) and the one a buyer typed into YOUR form
 on purpose (an asset). The line, in Etsy's own rules: never move or solicit
 a sale off Etsy; never market to a buyer without their express opt-in.
@@ -14,10 +14,10 @@ Sign the boundary BEFORE anything goes live.
    - give a real gift first (care guide / freebie /
      a discount code redeemable on Etsy only)
    - keep a dated consent record (source + date) per subscriber
-   - honour every unsubscribe at once, and deletion rights
+   - honor every unsubscribe at once, and deletion rights
 
   MY SYSTEM WILL NEVER:
-   - add a fulfilment email to my list without opt-in
+   - add a fulfillment email to my list without opt-in
    - solicit or complete a sale off Etsy, or hint at it
    - put a signup QR code or off-site link in any Etsy
      listing, image, banner or message
@@ -43,7 +43,7 @@ Sign the boundary BEFORE anything goes live.
                  The stricter alternative is fully available: build
                  the list only from people who find your website or
                  social channels on their own, and put nothing in the
-                 parcel.
+                 package.
                  Your choice, with the current policy in front of you.
                  (digital item: use your website / social channels -
                   the routes Etsy names; delivered files arrive via

@@ -51,7 +51,7 @@ INTAKE ....... every item gets a row and a cost before the shelf; box
 OFF-PLATFORM . price + row-code sticker -> sales book; cash banked by
                the next business day, reconciled to the book.
 RETURNS ...... a log line the day it lands: item, reason, refund,
-               return postage, outcome.
+               return shipping, outcome.
 RUNNING COSTS  one mileage line per route; receipts photographed.
 
 GATES:
@@ -84,7 +84,7 @@ Condition scale (use the same words every time):
 Tested-and-measured line in every listing: what I checked + measurements.
 Return setting: chosen from MY OWN returns count (eBay's guarantee covers
   not-as-described items whatever the setting; the seller pays return
-  postage on those). Mine: _______________________________
+  shipping on those). Mine: _______________________________
 Never sell: a recalled item, unless its recall notice / the CPSC says it
   may be resold after the remedy (check cpsc.gov/recalls for anything
   electrical, for children, or an unfamiliar brand-and-model); anything I

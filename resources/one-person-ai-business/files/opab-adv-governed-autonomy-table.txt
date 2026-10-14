@@ -2,7 +2,7 @@ THE GOVERNED-AUTONOMY TABLE  —  authority caps + a kill threshold
 From "The One-Person AI Business — Advanced", Chapter 7
 ================================================================
 
-To lift the ATTENTION ceiling, more must run without waiting on your judgement —
+To lift the ATTENTION ceiling, more must run without waiting on your judgment —
 safely. Not by trusting more; by SPECIFYING once what may run alone, up to what
 bound, and what trips it all back. This is the DECISION (the spec), not the
 build — you write what "safe to run alone" means and hand it to whoever (or
@@ -61,7 +61,7 @@ THE FORCING COMMITMENT  (dated)
   Yours to keep — free, and no strings attached.
 
   One tool from the ePORTS One-Person AI Business series. This one is from
-  Advanced — compound revenue per hour: leverage, not labour.
+  Advanced — compound revenue per hour: leverage, not labor.
 
   The full shelf, whenever you're ready:  eports.global/one-person-ai-business
 ================================================================

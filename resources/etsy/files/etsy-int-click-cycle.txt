@@ -8,7 +8,7 @@ and judge the photo where the buyer sees it: small, beside its rivals.
 
   JUDGED IN THE GRID (a design check - open the real results):
     reads at small size?             Y / N
-    stands out from its neighbours?  Y / N
+    stands out from its neighbors?  Y / N
     price in range with the row?     Y / N
 
   THE ONE CHANGE:  [ ] new lead image only

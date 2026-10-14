@@ -1,13 +1,13 @@
 # ePORTS — Print on Demand: plain listing template
 
 Title (5-6 words: what it is + who for): ____________________
-Mockups: 2-3 clean, honest — the design pops on the colour, no over-editing
+Mockups: 2-3 clean, honest — the design pops on the color, no over-editing
 
 Details:
 - blank / material: __________   fit: __________
-- sizes: __________   colours: __________
+- sizes: __________   colors: __________
 - made to order, prints in about __ days
-- price: £______
+- price: $______
 
 Keyword research and SEO come in the Intermediate book — keep this clear,
 not clever.

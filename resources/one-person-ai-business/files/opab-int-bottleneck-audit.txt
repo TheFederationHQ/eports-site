@@ -3,7 +3,7 @@ From "The One-Person AI Business — Intermediate", Chapter 1
 ================================================================
 
 "I'm the bottleneck" is true but useless. A bottleneck has a SHAPE — a
-specific place the flow jams — and until you know the shape you'll systematise
+specific place the flow jams — and until you know the shape you'll systematize
 the wrong thing first. So you measure. For ONE ordinary week you log what you
 do, tagged by function, AS YOU GO — not from memory on Friday, which is where
 this goes wrong.
@@ -44,8 +44,8 @@ THE FOUR THINGS THE LOG TELLS YOU
   1. WHERE THE HOURS ACTUALLY ARE — usually not where you thought.
        Biggest function: ______________________________________
 
-  2. JUDGEMENT vs GRIND — grind is repetitive, rule-shaped, low-decision work.
-     It hands off first and most safely; judgement you keep longest.
+  2. JUDGMENT vs GRIND — grind is repetitive, rule-shaped, low-decision work.
+     It hands off first and most safely; judgment you keep longest.
        The grind inside that function: ________________________
 
   3. FIRST TO DELEGATE — the function that, run without you, frees the most
@@ -62,7 +62,7 @@ ASK YOUR REASONING ENGINE  (to see the pattern you're too close to)
 ----------------------------------------------------------------
   "Here is a week of my hours, tagged by function [paste the log]. Which
    function eats the most time? Within it, which parts are repetitive
-   rule-shaped grind versus real judgement? And which single function, handed
+   rule-shaped grind versus real judgment? And which single function, handed
    off first, would free the most hours for the least risk to quality?"
 
 
@@ -73,7 +73,7 @@ THE FORCING COMMITMENT  (write it, dated — this aims the whole book)
    ______. The first function I will hand off is ______, because ______."
 
 That last line is a commitment: you've named the first thing to take out of your
-own hands, on the evidence, dated — so you can't drift into systematising
+own hands, on the evidence, dated — so you can't drift into systematizing
 whatever merely feels urgent this week.
 
 ================================================================

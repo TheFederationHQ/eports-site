@@ -34,7 +34,7 @@ SCORE EACH AXIS   (g / a / r below = green / amber / red)
 WHAT YOU ACTUALLY OWN
 ----------------------------------------------------------------
 Most of what feels like an asset is RENTED (reach, platform, payment rail).
-Usually only two things are genuinely yours: the OPERATING BRAIN (judgement,
+Usually only two things are genuinely yours: the OPERATING BRAIN (judgment,
 archive, rules — your IP) and the AUDIENCE LIST (portable, though not immune —
 deliverability, consent, domain). Build on those; use them to cut dependence on
 everything else.
@@ -45,7 +45,7 @@ PRIORITY & REMEDIATION  (reds first; failure that would happen fastest or cause 
   Channel concentration → shift acquisition to the owned list (the flywheel).
   Operational single point of failure → a SECOND provider set up and tested (a
     <30-day fallback), plus a monthly export of your list held where YOU control it.
-  Product concentration → a second real revenue line (productised judgement).
+  Product concentration → a second real revenue line (productized judgment).
   Fix #1 (worst): ______________  by [date]: ______
 
 
@@ -60,7 +60,7 @@ THE FORCING COMMITMENT  (dated)
   Yours to keep — free, and no strings attached.
 
   One tool from the ePORTS One-Person AI Business series. This one is from
-  Advanced — compound revenue per hour: leverage, not labour.
+  Advanced — compound revenue per hour: leverage, not labor.
 
   The full shelf, whenever you're ready:  eports.global/one-person-ai-business
 ================================================================

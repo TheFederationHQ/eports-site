@@ -6,7 +6,7 @@ TEST 1 — does it use anything that belongs to someone else?
  [ ] no one else's artwork, characters or lyrics
  [ ] no celebrity name or likeness
  [ ] fonts / stock elements are licensed to SELL
- Rule: if a stranger would recognise a brand, character, lyric or famous
+ Rule: if a stranger would recognize a brand, character, lyric or famous
  person in your design, do not make it.
 
 TEST 2 — is the design genuinely your own?

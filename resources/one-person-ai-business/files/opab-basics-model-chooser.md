@@ -10,11 +10,11 @@ date. The vendor picks on the right **do**, so they are dated and you re-check t
 
 ## Hire by role, not by brand
 
-| The job (this doesn't change) | Reach for it when… | Current fit — ⚠️ dated 2026-08-12, re-check |
+| The job (this doesn't change) | Reach for it when… | Current fit — ⚠️ dated 2026-10-12, re-check |
 |---|---|---|
-| **Reasoning / decision engine** | the cost of a wrong answer is high — a strategy call, pressure-testing your offer, spotting the flaw | a frontier "thinking" tier (Claude Opus-class · GPT-5-class · Gemini Pro-class). ~$3–5 in / $15–30 out per million tokens (a token ≈ ¾ of a word) |
+| **Reasoning / decision engine** | the cost of a wrong answer is high — a strategy call, pressure-testing your offer, spotting the flaw | a frontier "thinking" tier (Claude Opus-class · GPT-5-class · Gemini Pro-class). ~$2–10 in / $10–50 out per million tokens (it varies a lot by model) (a token ≈ ¾ of a word) |
 | **Research engine** | you need *facts from the world* — a competitor's price, what changed this week, what a group complains about | a frontier model with live web access on; a long-context tier when feeding it a lot to read |
-| **Writing engine** | you already *know what to say* and need it said well — the offer, emails, the listing | any frontier chat tier; the *balanced* tiers (Sonnet-class · mid Gemini Flash-class) are cheap and plenty. ~$0.30–3 in / $2–15 out per million tokens |
+| **Writing engine** | you already *know what to say* and need it said well — the offer, emails, the listing | any frontier chat tier; the *balanced* tiers (Sonnet-class · mid Gemini Flash-class) are cheap and plenty. ~$0.75–2 in / $4–10 out per million tokens |
 | **Build engine** | you need the actual thing made — a document, a simple tool, a page | depends on the job: a coding-capable tier for a tool, an image/design tier for visuals, a general model for documents |
 
 **The shape to remember instead of the names:** the major model families generally offer

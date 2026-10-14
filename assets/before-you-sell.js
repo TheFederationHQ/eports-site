@@ -23,7 +23,7 @@
   var MODELS = [
     { id: "drop", name: "Dropshipping", money: [100, 300], months: [3, 6], owner: "you",
       hard: "buying attention profitably",
-      week: "Leave the store for later. Shortlist three products that would still clear £15 once every cost is paid, and get a sample of the strongest one in your hands." },
+      week: "Leave the store for later. Shortlist three products that would still leave $15 before advertising (chapter 2's budget for finding one customer), and get a sample of the strongest one in your hands." },
     { id: "digital", name: "Digital products", money: [0, 50], months: [2, 6], owner: "you",
       hard: "getting found at all",
       week: "Describe the product on a single page and put it in front of five people who really have the problem it solves. Their reaction to the price tells you more than their compliments." },
@@ -44,7 +44,7 @@
     time:   { label: "Time is short", picks: ["market"],
               why: "Your spare hours are what is in short supply, and free traffic swallows them. Let a marketplace bring the buyers; its fee is a fair price for the evenings you get back." },
     novice: { label: "I've never done it", picks: ["market", "digital"],
-              why: "Aim for something live before the week is out: one marketplace listing, or a single-page digital product. That first live item is proof you started, not a pay cheque." },
+              why: "Aim for something live before the week is out: one marketplace listing, or a single-page digital product. That first live item is proof you started, not a paycheck." },
     people: { label: "I already have people", picks: ["audience"],
               why: "Attracting strangers is a large part of the work in the other models, and you have already done it. Your shortcut is to ask the people who listen what they would pay for." }
   };
@@ -66,14 +66,14 @@
     var narrow = W < 520, H = narrow ? 320 : 400, L = narrow ? 60 : 64, R = 18, T = 18, B = 54;
     var xMax = 18, yMax = 320;
     function x(m) { return L + (m / xMax) * (W - L - R); }
-    function y(p) { return H - B - Math.sqrt(p / yMax) * (H - T - B); }   // sqrt: room for the £0–£50 models
+    function y(p) { return H - B - Math.sqrt(p / yMax) * (H - T - B); }   // sqrt: room for the $0–$50 models
     var svg = el("svg", { viewBox: "0 0 " + W + " " + H, role: "img",
       "aria-labelledby": "map-title map-desc", class: "mapsvg" });
     svg.appendChild(el("title", { id: "map-title" }, "The five models by money to start and months to real money"));
     svg.appendChild(el("desc", { id: "map-desc" },
       "Each model is a shaded zone covering its range. Audience first starts at no cost but takes 6 to 18 months; " +
-      "dropshipping needs £100 to £300 and takes 3 to 6 months; digital products and print on demand start under £50; " +
-      "marketplace selling needs £50 to £200. Dashed outlines mark models where the marketplace owns the customer."));
+      "dropshipping needs $100 to $300 and takes 3 to 6 months; digital products and print on demand start under $50; " +
+      "marketplace selling needs $50 to $200. Dashed outlines mark models where the marketplace owns the customer."));
     var g = el("g", { class: "grid" });
     (narrow ? [0, 6, 12, 18] : [0, 3, 6, 9, 12, 15, 18]).forEach(function (m) {
       g.appendChild(el("line", { x1: x(m), x2: x(m), y1: T, y2: H - B }));
@@ -81,7 +81,7 @@
     });
     (narrow ? [0, 50, 100, 300] : [0, 25, 50, 100, 200, 300]).forEach(function (p) {
       g.appendChild(el("line", { x1: L, x2: W - R, y1: y(p), y2: y(p) }));
-      g.appendChild(el("text", { x: L - 8, y: y(p) + 4, "text-anchor": "end" }, "£" + p));
+      g.appendChild(el("text", { x: L - 8, y: y(p) + 4, "text-anchor": "end" }, "$" + p));
     });
     g.appendChild(el("text", { x: (L + W - R) / 2, y: H - 10, "text-anchor": "middle", class: "axis" },
       "Months until it pays properly →"));
@@ -91,17 +91,17 @@
     svg.appendChild(g);
 
     var zones = el("g", {});
-    // [x months, y £, anchor] — each label sits inside its own zone, in a part no other zone covers
+    // [x months, y $, anchor] — each label sits inside its own zone, in a part no other zone covers
     var narrowPos = { drop: [6.4, 250], market: [6.4, 150], digital: [9.5, 38], pod: [9.5, 14] };
     var labelPos = { drop: [3.25, 262, "start"], digital: [2.15, 36, "start"], pod: [8.85, 6, "end"],
                      market: [2.15, 182, "start"], audience: [12, 0, "middle"] };
     MODELS.forEach(function (mo) {
       var y0 = y(mo.money[1]), y1 = y(mo.money[0]);
-      if (y1 - y0 < 14) { y0 -= 7; y1 += 7; }     // a single value (£0) still needs a visible band
+      if (y1 - y0 < 14) { y0 -= 7; y1 += 7; }     // a single value ($0) still needs a visible band
       var r = el("rect", { x: x(mo.months[0]), y: y0, width: x(mo.months[1]) - x(mo.months[0]),
         height: y1 - y0, rx: 6, class: "zone " + (mo.owner === "you" ? "own" : "rent"),
         "data-id": mo.id, tabindex: "0", role: "button",
-        "aria-label": mo.name + ": " + "£" + mo.money[0] + (mo.money[1] !== mo.money[0] ? "–£" + mo.money[1] : "") +
+        "aria-label": mo.name + ": " + "$" + mo.money[0] + (mo.money[1] !== mo.money[0] ? "–$" + mo.money[1] : "") +
           " to start, " + mo.months[0] + "–" + mo.months[1] + " months to real money; hardest part: " + mo.hard +
           "; " + (mo.owner === "you" ? "you own the customer" : "the marketplace owns the customer") });
       zones.appendChild(r);
@@ -128,7 +128,7 @@
       info.innerHTML = "";
       var h = document.createElement("h3"); h.textContent = mo.name; info.appendChild(h);
       var dl = document.createElement("dl");
-      [["To start", "£" + mo.money[0] + (mo.money[1] !== mo.money[0] ? "–£" + mo.money[1] : "")],
+      [["To start", "$" + mo.money[0] + (mo.money[1] !== mo.money[0] ? "–$" + mo.money[1] : "")],
        ["Until it pays properly", mo.months[0] + "–" + mo.months[1] + " months"],
        ["Hardest part", mo.hard],
        ["Who owns the customer", mo.owner]].forEach(function (row) {
@@ -211,7 +211,7 @@
       out.className = "claim-out";
       if (answered < 3) { out.textContent = "Answer all three to get a verdict."; return; }
       if (passed === 3) { out.className += " ok"; out.textContent = "Checkable. You know who's paid, when it was true, and where the source is — now go and read that source yourself."; }
-      else if (passed === 0) { out.className += " bad"; out.textContent = "Fails all three. Not necessarily wrong — but unverified. Treat it as a rumour until you've checked it yourself."; }
+      else if (passed === 0) { out.className += " bad"; out.textContent = "Fails all three. Not necessarily wrong — but unverified. Treat it as a rumor until you've checked it yourself."; }
       else { out.className += " mid"; out.textContent = "Passes " + passed + " of 3. Find the missing answer before you spend money on it."; }
     }
     form.addEventListener("change", update);

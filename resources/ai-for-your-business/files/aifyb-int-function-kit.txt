@@ -54,7 +54,7 @@ cleared them all reaches a customer.
 THE NEVER-DECIDE LINE (things AI drafts but never DECIDES). At least:
   • PRICE   — AI lays out standard rates; a person sets the number sent.
   • PROMISE — any deadline / guarantee / "yes we can" is a person's word.
-  • REFUSAL — who you turn away is a person's judgement.
+  • REFUSAL — who you turn away is a person's judgment.
   Add any other call where a wrong AI answer costs real money:
   • ____________________________________________________________________
 
@@ -77,7 +77,7 @@ SEVERITY & HANDOFF (route by how bad it is; a handoff is a transfer of
 ownership, not a notification — named owner + backup + deadline + the
 whole thread attached):
   Routine (question / mild grumble)  → stays with AI (spot-checked)
-  Remedy ask (wants money / a fix)   → ____________  by: same working day
+  Remedy ask (wants money / a fix)   → ____________  by: same business day
   Hot (angry / complaint / repeat / "get me a human") → ______ within 1 hr
   Serious (threat / safety / injury / vulnerable) → ______ immediately
 
@@ -110,7 +110,7 @@ that bites):
 
 TWO OWNERS (because the work crosses desks):
   Flow owner (owns the whole thing end to end): __________________
-  Exception owner (owns the log of oddities; a 5th repeat triggers a spec
+  Exception owner (owns the log of oddities; a fifth repeat triggers a spec
   change, not a shrug): __________________
 
 ======================================================================
@@ -126,7 +126,7 @@ conditions that must be true by then:
   1. PROOF IT HOLDS — two clean weeks on the measured test (nothing walked
      back, every piece through the route, no unplanned owner rescues).
   2. PROOF IT'S BUILT — operator trained · approver cover named · a
-     one-page "here's the loop" for new starters · escalation line tested
+     one-page "here's the loop" for new hires · escalation line tested
      on a real awkward case.
   3. A FALLBACK for when the tool is down — a narrow emergency path that
      survives the tool itself being unavailable (kept OUTSIDE the tool).

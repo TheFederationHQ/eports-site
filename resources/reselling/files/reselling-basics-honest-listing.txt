@@ -37,12 +37,12 @@ Mine: _____________________________________________________________
 =====================================================================
 5. THE TITLE — how buyers find you, not a sales pitch
 =====================================================================
-Brand + model/style + what it is + size + colour/material + one high-value fact.
+Brand + model/style + what it is + size + color/material + one high-value fact.
 Example: "Levi's 501 Men's Jeans W34 L32 Straight Dark Wash"
 No adjectives, no "L@@K", no repeated words.
 Mine: _____________________________________________________________
 
-[ ] Item-specifics filled in accurately (brand · size · colour · type)
+[ ] Item-specifics filled in accurately (brand · size · color · type)
 [ ] Title, specifics, photos and description all tell the same story
 [ ] No identifier guessed
 [ ] Draft saved — not live — and the intake cost logged

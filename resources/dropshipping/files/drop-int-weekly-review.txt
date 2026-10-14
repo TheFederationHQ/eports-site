@@ -1,0 +1,37 @@
+DROPSHIPPING - THE WEEKLY REVIEW  (Chapter 11)
+
+Same day every week. Fifteen minutes. Five things, in this order. Put it
+in your calendar as a repeating appointment and paste these five items
+into the invitation.
+
+  1. Your five funnel numbers, split by source.      (chapters 1-2)
+  2. Revenue / ad spend for the WEEK, from your own bank and store,
+     against your break-even figure.                  (chapter 6)
+  3. Your dispute rate, against your provider's threshold.  (chapter 8)
+  4. What you changed last week, and what the number did.
+  5. The ONE thing you will change this week. Written before the week.
+
+One change a week. Exception: anything actively bleeding (a broken
+checkout, disputes over the threshold, a supplier who stopped shipping) -
+fix it now and don't count it as the week's change.
+
+THE RECORD - one document, one row per week, from now on
+  Wk  Src     Visits  Cart%  Paid%  R/S  Disp%  Changed        Result
+  --  ------  ------  -----  -----  ---  -----  -------------  ---------
+  __  ______  ______  _____  _____  ___  _____  _____________  _________
+  __  ______  ______  _____  _____  ___  _____  _____________  _________
+  __  ______  ______  _____  _____  ___  _____  _____________  _________
+  Src = best source. Cart% = product views reaching the cart. Paid% =
+  checkouts that pay. R/S = revenue / ad spend. Disp% = dispute rate.
+
+THE FIVE THINGS YOU KEEP WHEN A PRODUCT DIES
+  [ ] The audience knowledge - who responded, which angle landed
+  [ ] The winning angle - angles transfer; creative rarely does
+  [ ] The email and text list - yours, whatever happens to the product
+  [ ] The supplier relationship and any terms you negotiated
+  [ ] The page structure and the four sequences
+
+----------------------------------------------------------------------
+From Dropshipping - Intermediate. The full method is in the book; every
+free worksheet: eports.global/resources/dropshipping
+ePORTS — your ecom source. eports.global.

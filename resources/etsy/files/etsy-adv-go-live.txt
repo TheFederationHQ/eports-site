@@ -2,7 +2,7 @@ ETSY - GO LIVE + THE FIRST-FIFTY TRACKER  (Chapter 4)
 
 The gap between a capture system on paper and one that works is one
 faintly embarrassing act: printing a card and putting it in the next
-parcel. Ship the smallest working version NOW. Top half = today's binding
+package. Ship the smallest working version NOW. Top half = today's binding
 action. Bottom half = fill in when the win actually arrives.
 
   GO LIVE - today's binding action
@@ -10,11 +10,11 @@ action. Bottom half = fill in when the win actually arrives.
   [ ] confirmation (double opt-in) email works and is friendly
   [ ] the gift is delivered automatically on confirming
   [ ] insert printed (home printer is fine) naming where to join
-  [ ] insert goes in the NEXT parcel I pack
-      that parcel's buyer / order #: __________   date: ______
+  [ ] insert goes in the NEXT package I pack
+      that package's buyer / order #: __________   date: ______
 
   OFFER-RUN RULE (pre-set): the offer runs UNCHANGED for the
-  first ______ parcels before I judge or change it.
+  first ______ packages before I judge or change it.
   (A thing changed constantly can never be read.)
 
   FIRST-WIN CHECKPOINT  (fill in when it happens, not today)
@@ -26,9 +26,9 @@ action. Bottom half = fill in when the win actually arrives.
   A banked opt-in = CONFIRMED consent: only people who took the
   affirmative action count; a scraped address creates spam and
   compliance risk, not an audience. No made-up conversion % here:
-  opt-ins are cumulative, at whatever pace your parcels flow.
+  opt-ins are cumulative, at whatever pace your packages flow.
   Fifty is a marker, not a gate - one confirmed opt-in is already a
-  real audience. Do not stall here while the other defences go unbuilt.
+  real audience. Do not stall here while the other defenses go unbuilt.
 
 ----------------------------------------------------------------------
 From Etsy - Advanced. The full method is in the book; the free

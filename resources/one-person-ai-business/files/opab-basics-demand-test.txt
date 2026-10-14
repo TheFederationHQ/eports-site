@@ -28,17 +28,17 @@ is how people fool themselves)
 THE FOUNDING RESERVATION TERMS  (write once, put on every pre-sell)
 ----------------------------------------------------------------
 This box is what separates an honest founding pre-sale from taking money for
-vapour. It costs nothing and it is what makes a stranger comfortable saying yes.
+vapor. It costs nothing and it is what makes a stranger comfortable saying yes.
 
   WHAT THEY GET (the exact deliverable, one line — this is the FLOOR; you may
     sharpen wording/audience/build later but may not deliver LESS without the
     reserver's explicit consent + an immediate refund):
     ______________________________________________________________
 
-  FOUNDING PRICE:  £______  (honoured for these reservers even after the price
+  FOUNDING PRICE:  $______  (honored for these reservers even after the price
     rises for everyone else)
 
-  DEPOSIT:  £______  — CREDITED TOWARD the founding price, not an extra charge.
+  DEPOSIT:  $______  — CREDITED TOWARD the founding price, not an extra charge.
     Balance due on delivery. (So a reserver pays the price once, in two parts.)
 
   DELIVERY DATE:  ______  (a real one you can hit)
@@ -52,9 +52,9 @@ vapour. It costs nothing and it is what makes a stranger comfortable saying yes.
 
 THE ASK  (the shape is fixed)
 ----------------------------------------------------------------
-  "I'm opening [N] founding spots at £X — a one-off early price — delivered by
-   [date]. Reserve yours with a £Y deposit, credited toward the price,
-   refundable on request until delivery, and I'll honour the founding price
+  "I'm opening [N] founding spots at $X — a one-off early price — delivered by
+   [date]. Reserve yours with a $Y deposit, credited toward the price,
+   refundable on request until delivery, and I'll honor the founding price
    when it's ready."
 
   A real price · a real limit · a real delivery date · a real yes-or-no with a

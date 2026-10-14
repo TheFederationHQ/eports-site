@@ -5,7 +5,7 @@ Judge on TOTAL contribution + the funnel evidence, NEVER on unit
 margin alone. A thin design that SELLS can beat a fat one that
 doesn't. First log each design off your chapter-7 dashboard.
 
-  design      views  faves  orders  unit £  total £  verdict
+  design      views  faves  orders  unit $  total $  verdict
   __________  _____  _____  ______  ______  _______  _______
   __________  _____  _____  ______  ______  _______  _______
   __________  _____  _____  ______  ______  _______  _______
@@ -24,7 +24,7 @@ switch it back on) — not deleting. You reclaim ATTENTION.
 SELLING to free up capital is an Advanced move — not this book.
 
 GUARDS: a fair window = a few hundred VIEWS (not just days);
-change ONE thing at a time afterwards.
+change ONE thing at a time afterward.
 
 THE DECISION (write it down — then act):
   KEEP (orders back it): _______________________________________

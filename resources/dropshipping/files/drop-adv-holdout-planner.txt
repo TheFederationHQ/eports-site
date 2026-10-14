@@ -1,0 +1,48 @@
+DROPSHIPPING - THE HOLDOUT EXPERIMENT PLANNER  (Chapter 4)
+
+Does your advertising CAUSE the sales, or just stand next to them?
+Write the prediction and the decision rule BEFORE you start, so the
+result cannot be negotiated with.
+
+EXPERIMENT ONE - THE GEOGRAPHIC HOLDOUT (the stronger evidence)
+  Region paused (a meaningful share of orders): ______________________
+  Paused from __________ to __________ (two weeks). Everything else
+  identical: same creative, same budget elsewhere, same emails.
+                       4-wk avg/wk      test avg/wk      change
+  Region paused        $__________      $__________      ______%
+  Rest of market       $__________      $__________      ______%
+  Implied ad contribution in the region = rest-of-market change minus
+  paused change: ______%   (book: +2% minus -18% = about 20%)
+
+EXPERIMENT TWO - THE STEP CHANGE (only if no clean region exists)
+  Hold total spend flat 2 weeks -> cut by half 2 weeks -> restore.
+  Record weekly revenue, with organic and email separately.
+  Weaker evidence: note that in your record so you don't later remember
+  it as more certain than it was. Treat a small move as inconclusive.
+
+CAN'T AFFORD TO LOSE REVENUE ON PURPOSE? (cash-blocked stores - don't)
+  [ ] Now, free: the one survey question (below)
+  [ ] Now, free: unplanned holdouts already in your data (paused
+      accounts, declined cards, budgets out at 4pm) - dates: __________
+  [ ] Later, cheap: one small region, one week, once a buffer exists
+
+  MY PREDICTION (a number): the paused region will move ______%
+  MY DECISION RULE: "If advertising contribution comes out under
+  ______, I will ____________________________________________."
+
+  THE THREE OUTCOMES - decide now which action each gets
+   Most of it was coming anyway -> shift spend from re-reaching people
+     who know you toward reaching people who don't
+   Roughly proportional -> measurement was about right; move on
+   More than proportional -> ads feed your other channels; a license to
+     spend more IF the cash and margin chapters support it
+  Run it again in six months: the answer goes stale as the store grows.
+
+THE ONE SURVEY QUESTION - order confirmation page, AFTER purchase
+  "How did you first hear about us?"  (free text, or a short list +
+  "other"). One question only. Added on: __________
+
+----------------------------------------------------------------------
+From Dropshipping - Advanced. The full method is in the book; every
+free worksheet: eports.global/resources/dropshipping
+ePORTS — your ecom source. eports.global.

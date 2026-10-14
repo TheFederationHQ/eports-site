@@ -15,7 +15,7 @@ THE POLICY THAT BINDS EVERY FUNCTION AT ONCE (a new function inherits
 these or it doesn't launch):
   • AI never states a policy, price, or fact that isn't in the brain.
   • AI never moves money or admits fault without a person.
-  • Every customer-facing AI is labelled as AI where it matters.
+  • Every customer-facing AI is labeled as AI where it matters.
   • Every function keeps its escalation triggers and its fallback.
 
 THE KILL SWITCH (the answer to "who can stop it"):
@@ -43,8 +43,8 @@ DATA & LIABILITY:
   A fixed quarterly date to confirm the business-tier settings are still
   right and the approved tools are still the ones being used: __ / __ / __
   You are responsible for what your AI tells your customers, whatever your
-  jurisdiction. Put a professional (solicitor / insurer) on the real legal
-  questions. Never let AI have the last word on anything you carry the can
+  jurisdiction. Put a professional (lawyer / insurer) on the real legal
+  questions. Never let AI have the last word on anything you take the blame
   for. (Name the risk; don't take legal advice from a template.)
 
 THE CASCADE DRILL (rehearse it — a policy you haven't tested is fiction).
@@ -53,7 +53,7 @@ THE CASCADE DRILL (rehearse it — a policy you haven't tested is fiction).
   repeats it in quotes, and it lands in account notes as if true. Run the
   clock as a team and answer honestly:
     - Who notices first, and after how long?
-    - Through how many functions has it travelled by then?
+    - Through how many functions has it traveled by then?
     - Who has authority to stop ALL of them — do they use it or hesitate?
     - Which customers already have it in writing; who calls them, by when?
   Close every gap it exposes: authority to stop any function on sight, a

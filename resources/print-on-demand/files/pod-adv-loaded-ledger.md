@@ -2,11 +2,11 @@ ePORTS — Print on Demand: Advanced
 FULLY-BURDENED LEDGER — what each design REALLY leaves (chapter 2)
 
 The Basics unit contribution (price + charged shipping − base −
-fulfilment shipping − platform % − fixed fee − refund buffer) is
+fulfillment shipping − platform % − fixed fee − refund buffer) is
 where you begin, not where you stop. Take four business burdens
 DOWN to each design. Allocate to the design; never a shop average.
 
-    design | unit £ | -ads | -returns* | -ovhd+smp | -TIME** | loaded £
+    design | unit $ | -ads | -returns* | -ovhd+smp | -TIME** | loaded $
     ------ | ------ | ---- | --------- | --------- | ------- | --------
            |        |      |           |           |         |
            |        |      |           |           |         |

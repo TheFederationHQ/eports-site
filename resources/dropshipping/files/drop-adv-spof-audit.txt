@@ -1,0 +1,39 @@
+DROPSHIPPING - THE SINGLE-POINTS-OF-FAILURE AUDIT  (Chapter 12)
+
+Five things that can stop a store your size. You own one of them - the
+last. A risk with a date is a plan; a risk without one is a hope.
+
+  1. PAYMENT PROCESSOR - business stops within the hour
+     Reduction: a second processor approved and configured.   (days)
+  2. AD ACCOUNT - traffic stops immediately
+     Reduction: verification done + one channel you own.     (weeks)
+  3. SUPPLIER - fulfillment stops while spend continues
+     Reduction: a second supplier quoted and trialed.         (weeks)
+  4. PLATFORM - the rules change under you
+     Reduction: own the customer list and the name.          (months)
+  5. YOU - service collapses in about a week
+     Reduction: written procedures + one person who read them. (weeks)
+
+  MY STATUS                 done / in progress / not started   date
+  Second processor          ______________________________   ______
+  Advertiser verification   ______________________________   ______
+  Second supplier trialed   ______________________________   ______
+  Own list + name           ______________________________   ______
+  Procedures + one person   ______________________________   ______
+
+TODAY: apply for a second payment processor; complete advertiser
+verification if you haven't.
+
+THE RECORDS THAT WIN A DISPUTE - kept for every order
+  [ ] Proof of delivery (tracking to the buyer's address)
+  [ ] Proof of what was promised (the page + delivery window as it was)
+  [ ] Proof of the conversation (every message, timestamped, one place)
+  [ ] The customer's own confirmation, where you have it
+
+THE TWO-WEEK TEST - if I were unreachable for two weeks from tomorrow,
+what happens to each job?  Worst one = my next hire: __________________
+
+----------------------------------------------------------------------
+From Dropshipping - Advanced. The full method is in the book; every
+free worksheet: eports.global/resources/dropshipping
+ePORTS — your ecom source. eports.global.

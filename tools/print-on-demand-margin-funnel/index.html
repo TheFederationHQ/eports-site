@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,23 +32,23 @@
     <h2><span class="n">One</span> What a design earns — unit <em>and</em> total</h2>
     <div class="calc">
       <div>
-        <div class="field"><label for="P">Item price <span class="u">(£)</span></label>
+        <div class="field"><label for="P">Item price <span class="u">($)</span></label>
           <input id="P" type="number" inputmode="decimal" value="16" min="0" step="0.01"></div>
-        <div class="field"><label for="S">Shipping you charge <span class="u">(£)</span></label>
+        <div class="field"><label for="S">Shipping you charge <span class="u">($)</span></label>
           <input id="S" type="number" inputmode="decimal" value="0" min="0" step="0.01">
           <p class="hint">0 if you absorb it</p></div>
-        <div class="field"><label for="B">Base cost <span class="u">(£)</span></label>
+        <div class="field"><label for="B">Base cost <span class="u">($)</span></label>
           <input id="B" type="number" inputmode="decimal" value="7" min="0" step="0.01"></div>
-        <div class="field"><label for="Sp">Shipping you pay <span class="u">(£)</span></label>
+        <div class="field"><label for="Sp">Shipping you pay <span class="u">($)</span></label>
           <input id="Sp" type="number" inputmode="decimal" value="4.50" min="0" step="0.01"></div>
         <div class="field"><label for="f">Platform fee <span class="u">(%)</span></label>
           <input id="f" type="number" inputmode="decimal" value="13" min="0" max="99" step="0.1">
-          <p class="hint">all-in — Etsy ~13% UK (with VAT on fees)</p></div>
-        <div class="field"><label for="R">Refund buffer <span class="u">(£)</span></label>
+          <p class="hint">all-in — Etsy ~13% with Offsite Ads orders averaged in</p></div>
+        <div class="field"><label for="R">Refund buffer <span class="u">($)</span></label>
           <input id="R" type="number" inputmode="decimal" value="0.40" min="0" step="0.01"></div>
-        <div class="field"><label for="Fx">Fixed fee per sale <span class="u">(£)</span></label>
-          <input id="Fx" type="number" inputmode="decimal" value="0.43" min="0" step="0.01">
-          <p class="hint">Etsy UK ~£0.43 (listing renewal + fixed processing + VAT)</p></div>
+        <div class="field"><label for="Fx">Fixed fee per sale <span class="u">($)</span></label>
+          <input id="Fx" type="number" inputmode="decimal" value="0.45" min="0" step="0.01">
+          <p class="hint">Etsy US ~$0.45 ($0.20 listing renewal + $0.25 processing)</p></div>
         <div class="field"><label for="N">Sold this window <span class="u">(count)</span></label>
           <input id="N" type="number" inputmode="numeric" value="18" min="0" step="1"></div>
       </div>
@@ -61,7 +61,7 @@
       </div>
     </div>
     <p class="note" style="margin-top:1rem">⚠️ Judge keep-or-cut on <b>total contribution</b>, never unit
-      alone. A "thin" £1.59 design that sells 18 (£28.62) can beat a "fat" one that sells once.</p>
+      alone. A "thin" $1.57 design that sells 18 ($28.26) can beat a "fat" one that sells once.</p>
     <p class="cta">Rank this design by total, not by gut — it's
       <a href="../../print-on-demand/#intermediate">the keep-or-cut method in <em>Print on Demand: Intermediate</em> →</a></p>
   </section>
@@ -72,7 +72,7 @@
       <div>
         <div class="field"><label for="V">Views <span class="u">(this listing)</span></label>
           <input id="V" type="number" inputmode="numeric" value="600" min="0" step="1"></div>
-        <div class="field"><label for="Fv">Favourites</label>
+        <div class="field"><label for="Fv">Favorites</label>
           <input id="Fv" type="number" inputmode="numeric" value="2" min="0" step="1"></div>
         <div class="field"><label for="O">Orders</label>
           <input id="O" type="number" inputmode="numeric" value="0" min="0" step="1"></div>
@@ -96,17 +96,17 @@
     <h2><span class="n">Three</span> The basket lever — two in one order</h2>
     <div class="calc">
       <div>
-        <div class="field"><label for="uA">Design A — unit contribution <span class="u">(£)</span></label>
-          <input id="uA" type="number" inputmode="decimal" value="4.41" min="-999" step="0.01"></div>
+        <div class="field"><label for="uA">Design A — unit contribution <span class="u">($)</span></label>
+          <input id="uA" type="number" inputmode="decimal" value="4.39" min="-999" step="0.01"></div>
         <div class="field"><label for="qA">Design A — quantity</label>
           <input id="qA" type="number" inputmode="numeric" value="1" min="0" step="1"></div>
-        <div class="field"><label for="uB">Design B — unit contribution <span class="u">(£)</span></label>
-          <input id="uB" type="number" inputmode="decimal" value="1.59" min="-999" step="0.01"></div>
+        <div class="field"><label for="uB">Design B — unit contribution <span class="u">($)</span></label>
+          <input id="uB" type="number" inputmode="decimal" value="1.57" min="-999" step="0.01"></div>
         <div class="field"><label for="qB">Design B — quantity</label>
           <input id="qB" type="number" inputmode="numeric" value="1" min="0" step="1"></div>
-        <div class="field"><label for="poF">Per-order fee saved per extra item <span class="u">(£)</span></label>
-          <input id="poF" type="number" inputmode="decimal" value="0.24" min="0" step="0.01">
-          <p class="hint">the per-ORDER part of the fixed fee (Etsy UK ~£0.24)</p></div>
+        <div class="field"><label for="poF">Per-order fee saved per extra item <span class="u">($)</span></label>
+          <input id="poF" type="number" inputmode="decimal" value="0.25" min="0" step="0.01">
+          <p class="hint">the per-ORDER part of the fixed fee (Etsy US ~$0.25)</p></div>
       </div>
       <div class="calc-out" aria-live="polite" aria-atomic="true">
         <h3>One basket vs separate orders</h3>
@@ -117,10 +117,10 @@
     </div>
     <div class="calc" style="margin-top:1rem">
       <div>
-        <div class="field"><label for="cP">Coupon check — item price <span class="u">(£)</span></label>
+        <div class="field"><label for="cP">Coupon check — item price <span class="u">($)</span></label>
           <input id="cP" type="number" inputmode="decimal" value="16" min="0" step="0.01"></div>
-        <div class="field"><label for="cC">Coupon check — its unit contribution <span class="u">(£)</span></label>
-          <input id="cC" type="number" inputmode="decimal" value="1.59" min="-999" step="0.01"></div>
+        <div class="field"><label for="cC">Coupon check — its unit contribution <span class="u">($)</span></label>
+          <input id="cC" type="number" inputmode="decimal" value="1.57" min="-999" step="0.01"></div>
         <div class="field"><label for="cO">Coupon <span class="u">(% off)</span></label>
           <input id="cO" type="number" inputmode="decimal" value="10" min="0" max="99" step="1"></div>
       </div>
@@ -133,9 +133,9 @@
     </div>
     <p class="note" style="margin-top:1rem">A bigger average basket lifts <b>margin</b>, not just revenue —
       because one order pays the per-order fee once. That is what the repeat and cross-sell engine is really
-      buying you. A blanket coupon, though, can gut a thin design. Ten percent off a £16 item knocks £1.60
-      off the price — but you keep ~13% of that in the fee you no longer pay, so a £1.59 contribution falls
-      to about 20p: not below zero, but almost nothing left, and a deeper coupon does turn negative. So set
+      buying you. A blanket coupon, though, can gut a thin design. Ten percent off a $16 item knocks $1.60
+      off the price — but you keep ~13% of that in the fee you no longer pay, so a $1.57 contribution falls
+      to about 18¢: not below zero, but almost nothing left, and a deeper coupon does turn negative. So set
       a minimum-basket floor. (The coupon check uses the platform fee % from the margin box above.)</p>
 
     <noscript><p class="calc-fallback"><b>The calculators need JavaScript.</b> Or
@@ -153,7 +153,7 @@
     <p>The <b>funnel</b> tells you <em>where</em> a design fails, and each pattern points somewhere
       different to look first: few views is a discovery problem (get it seen), plenty of views but almost
       no favorites is a listing problem (photo, title, offer, price), and favorites with no orders is
-      likely friction at the till (price, shipping, thin reviews). None of these is a proven verdict —
+      likely friction at checkout (price, shipping, thin reviews). None of these is a proven verdict —
       they are the first place to look.</p>
     <p>Keep a copy: <a href="../../resources/print-on-demand/files/pod-int-margin-funnel.xlsx">the same
       dashboard as a spreadsheet</a>, and the fill-in
@@ -200,7 +200,7 @@
     if (r.invalid) { set("oFav","—"); set("oConv","—"); set("oCode","—"); set("oDiag",""); return; }
     set("oFav", POD.pct(r.favRate)); set("oConv", POD.pct(r.convRate));
     var labels = { working:"Working — leave it", listing:"Listing not landing",
-                   discovery:"Discovery gap", friction:"Friction at the till" };
+                   discovery:"Discovery gap", friction:"Friction at checkout" };
     set("oCode", labels[r.code] || "—"); set("oDiag", r.diagnosis);
   }
   function basket() {

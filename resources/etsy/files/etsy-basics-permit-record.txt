@@ -8,8 +8,8 @@ Fill this in for ONE product before you make or list it. A blank or an
   A - RIGHTS I CONTROL (someone else's property):
     - No brand name, logo, slogan, team or character?        Y / N
     - No one else's artwork, photo or fan art?               Y / N
-    - Every font / image / asset licensed for resale?        Y / N
-        source + licence: _______________________________
+    - Every font / image / asset licensed for commercial use?        Y / N
+        source + license: _______________________________
 
   B - ETSY PERMITS + REPRESENTS IT:
     - Design genuinely my own (not a resold template/file)?  Y / N

@@ -13,21 +13,21 @@ STEP 1 · SCORE EVERY ACTIVITY BY REVENUE-PER-HOUR
 ----------------------------------------------------------------
   Use RECURRING hours only (the same denominator as your leverage ratio); one-time
   build hours are a separate investment and never go here.
-  Activity                    Net revenue/mo   Recurring hours/mo   £/hour
+  Activity                    Net revenue/mo   Recurring hours/mo   $/hour
   --------------------------  --------------   ------------------   ------
-  _________________________   £__________      ____                 £____
-  _________________________   £__________      ____                 £____
-  _________________________   £__________      ____                 £____
-  My blended leverage ratio:  £______/hour
+  _________________________   $__________      ____                 $____
+  _________________________   $__________      ____                 $____
+  _________________________   $__________      ____                 $____
+  My blended leverage ratio:  $______/hour
   The activity that PAYS but DRAGS (below the ratio): ______________
 
 
 STEP 2 · STAGE ONE — RESCUE FIRST
 ----------------------------------------------------------------
-Can you raise it TO your ratio, or productise it so it stops costing recurring
+Can you raise it TO your ratio, or productize it so it stops costing recurring
 hours?
-  [ ] Reprice toward £______/hour — customers accept?      yes / no
-  [ ] Productise it (see the judgement planner)?           yes / no
+  [ ] Reprice toward $______/hour — customers accept?      yes / no
+  [ ] Productize it (see the judgment planner)?           yes / no
   If either works, the drag is CURED — nothing to cut.
 
 
@@ -35,7 +35,7 @@ STEP 3 · IS IT SECRETLY WORTH KEEPING?  (don't kill blindly)
 ----------------------------------------------------------------
 Keep a low-ratio activity if, with NUMBERS:
   [ ] It FEEDS higher-ratio work (leads/referrals) — attributed downstream
-      revenue: £______  → true return clears the ratio?
+      revenue: $______  → true return clears the ratio?
   [ ] It's strategically load-bearing (credibility/access) — the value shows on
       OTHER lines: ______________
   [ ] The freed hours have NO better home (below-ratio work beats idle time).
@@ -48,14 +48,14 @@ STEP 4 · STAGE TWO — KILL (only if rescue failed AND hours have a named use)
 The freed hours must have a specific, evidenced, higher-leverage home. "I'll cut
 it and see" = an empty calendar and less money.
   The higher-leverage use for the hours: ______________________
-  15 hours ≈ one productised asset every ~6 weeks, OR a sustainable give-first
+  15 hours ≈ one productized asset every ~6 weeks, OR a sustainable give-first
   cadence — the things that compound.
 
 
 THE FORCING COMMITMENT  (dated)
 ----------------------------------------------------------------
-  "________ earns £__/hour, below my ratio of £__. Rescue: [reprice / productise]
-   → [worked / failed]. Keep-check: [downstream £__ / none]. If cut: by [date],
+  "________ earns $__/hour, below my ratio of $__. Rescue: [reprice / productize]
+   → [worked / failed]. Keep-check: [downstream $__ / none]. If cut: by [date],
    with [notice], freed ____ hrs → ____________ (named use), not more of the same.
    What would change my mind: rescue succeeding, or no named use."
 
@@ -63,7 +63,7 @@ THE FORCING COMMITMENT  (dated)
   Yours to keep — free, and no strings attached.
 
   One tool from the ePORTS One-Person AI Business series. This one is from
-  Advanced — compound revenue per hour: leverage, not labour.
+  Advanced — compound revenue per hour: leverage, not labor.
 
   The full shelf, whenever you're ready:  eports.global/one-person-ai-business
 ================================================================

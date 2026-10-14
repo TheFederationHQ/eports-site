@@ -2,13 +2,12 @@ THE STAIRCASE RANGE PLANNER
 From "Digital Products — Intermediate", chapter 3
 ================================================================
 
-A range is not more products. It is the SAME buyer, offered the next step up,
-built mostly from work you have already done. Three rungs off one piece of
-work: an entry, a core, and a premium. The middle one is what most people
-should buy — so it is the one you describe in the most detail.
+A range is not more products. It is the SAME person, taken one step further
+by each product, where each step creates the need for the next. Three rungs
+is enough to start; five products is the ceiling.
 
-Fill this in for one buyer. If two rungs serve different buyers, you have two
-ranges, not one — pick one buyer and start again.
+The test for every rung: DOES OWNING THE PREVIOUS ONE MAKE THIS ONE MORE
+USEFUL? If not, it belongs to a different buyer and it is not in this range.
 
 
 THE ONE BUYER
@@ -17,41 +16,47 @@ THE ONE BUYER
   The problem it walks them through: ____________________________
 
 
-RUNG 1 · ENTRY   (the yes that costs them almost nothing)
+RUNG 1 · THE ENTRY   (cheap, fast, proves you are worth paying)
 ----------------------------------------------------------------
   What it is:        ____________________________
-  Price:             £______
-  Its job:           gets a first "yes" and proves you deliver.
+  Price:             $______
+  Delivers value in minutes, not hours?          Y / N
 
 
-RUNG 2 · CORE   ★ what most people should buy
+RUNG 2 · THE MAIN   (the real work; what most buyers end on)
 ----------------------------------------------------------------
   What it is:        ____________________________
-  Built from Rung 1 PLUS: _______________________ (the added work)
-  Price:             £______
-  Its job:           the real outcome; the rung you describe in most detail.
+  Price:             $______
+  (If you already have one product selling, this is usually it.)
 
 
-RUNG 3 · PREMIUM   (catches the few who always take the top)
+RUNG 3 · THE EXTENSION   (what they need once the main one worked)
 ----------------------------------------------------------------
   What it is:        ____________________________
-  Built from Rung 2 PLUS: _______________________ (usually something that does
-                                                   NOT scale — your time, a look
-                                                   at their actual situation)
-  Price:             £______
-  Its job:           priced so you are content whether it sells or not.
+  Price:             $______
+  Only makes sense to someone who used the main product?   Y / N
+  (The rung people skip, and the highest-margin one: the buyer is already
+   convinced.)
 
 
-⚠️ THE TWO TRAPS
+RUNG 4 · THE DEPTH   (for the minority who want to go further — it can wait)
 ----------------------------------------------------------------
-  * Near-identical prices. If Rung 1 is £19 and Rung 2 is £24, nothing on the
-    page says what the extra five pounds buys — and the cheap one wins. Make
-    the gap mean something.
-  * Collapsing the order bump into the ladder. An order bump (a small add-on at
-    checkout) and a tier do different jobs. Keep the bump where it is.
+  What it is:        ____________________________
+  Price:             $______
+  Build it only after the extension, or you build it for nobody.
 
-  The staircase: £______  ->  £______  ->  £______
-  (Each rung is the same work, one step further. Not three separate products.)
+
+⚠️ THREE WAYS A RANGE STOPS BEING A SET
+----------------------------------------------------------------
+  [ ] DIFFERENT BUYERS — two good products for two audiences means two of
+      everything else, forever. Pick one buyer.
+  [ ] OVERLAP — if the main product already contains the extension, the
+      extension has nothing to sell. Take it out of the main one or don't
+      build it.
+  [ ] A GAP IN THE MIDDLE — an entry at $9 and the next thing at $129 stops
+      most buyers at $9, because nothing has shown them what the $129 is like.
+
+  The staircase: $______  ->  $______  ->  $______  ->  $______
 
 ================================================================
   Yours to keep — free, and no strings attached.

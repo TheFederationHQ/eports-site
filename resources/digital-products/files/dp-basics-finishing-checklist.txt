@@ -5,40 +5,43 @@ From "Digital Products — Basics", chapter 4
 A product is not finished when you are tired of making it. It is finished when
 a stranger can buy it, open it, and get the result — with you nowhere in sight.
 
-Print this. Do not list the product until all five boxes are ticked. Each one
+Print this. Do not list the product until all five boxes are checked. Each one
 is a refund you are choosing not to receive.
 
 
-[ ]  1 · IT DELIVERS THE ONE THING YOU PROMISED
+[ ]  1 · DELIVERS — THE ONE THING YOU PROMISED
         Read your own product sentence (the "so that..." line). Does the file
         actually produce that outcome? Not "contains information about" it —
         PRODUCES it. If the promise is "your tax return in an evening", can a
         buyer follow it start to finish and get there?
 
-[ ]  2 · A STRANGER CAN USE IT WITHOUT YOU
-        Give it to one person who is not you and say nothing. Watch where they
-        hesitate. Every question they have to ask you is a question every buyer
-        will have and cannot ask. Fix the top two before you ship.
+[ ]  2 · INSTRUCTIONS — ONE PAGE, AT THE FRONT, IN PLAIN WORDS
+        The page people skip, and the cheapest quality in this business. Give
+        the product to one person who is not you and say nothing. Every question
+        they have to ask you belongs on that page. Fix the top two before you ship.
 
-[ ]  3 · IT OPENS, ON A DEVICE THAT IS NOT YOURS
+[ ]  3 · OPENS — IN THE SOFTWARE THE BUYER ACTUALLY HAS
         Open the actual file you will deliver on a different device or account.
         Wrong format, a broken font, a missing image, a template locked to your
         login — all invisible to you, all obvious to the buyer. Test the file
         they get, not the file you have.
 
-[ ]  4 · THE LICENCE IS STATED
-        One line in the file and on the listing saying what they may and may
-        not do with it (personal use? client work?). Silence here is the most
-        common dispute in this whole business. (See the licence-wording sheet.)
+[ ]  4 · EXAMPLE — ONE FILLED-IN VERSION, SHOWING WHAT GOOD LOOKS LIKE
+        A blank template is a puzzle. One completed example shows the buyer
+        the finished result in seconds and answers half their questions before
+        they ask them.
 
-[ ]  5 · IT IS NAMED AND PACKAGED LIKE A PRODUCT
+[ ]  5 · NAMED — SO THEY CAN FIND IT AGAIN NEXT WEEK
         A sensible filename, not "final_v3_ACTUAL.pdf". A cover or first page
         that says what it is. The buyer's first ten seconds decide whether they
         feel they bought something real or downloaded a mess.
 
 
-⚠️ If you cannot tick box 1, stop. The other four polish a product that does
+⚠️ If you cannot check box 1, stop. The other four polish a product that does
 not yet do its job, and no amount of polish sells a thing that does not work.
+
+And before you list it: state the license in one line, in the file and on
+the listing (chapter 5 — see the license-wording sheet).
 
 ================================================================
   Yours to keep — free, and no strings attached.

@@ -13,49 +13,44 @@ and STOP at the first "no".
 
 PART 1 · WERE YOU SEEN?   (traffic)
 ----------------------------------------------------------------
-  Visitors in the last 14 days: ______
+  Listing views in the last two weeks: ______
 
-  Fewer than ~100?  ->  This is a TRAFFIC problem. Nothing else matters yet;
+  Almost none?  ->  This is a TRAFFIC problem. Nothing else matters yet;
   a perfect listing nobody sees sells nothing. Do not touch the product or the
-  price. Work only on being found (chapter 9). Stop here.
+  price. Run chapter 9 properly for another two weeks. Stop here.
 
-  100 or more?  ->  You were seen. Go to Part 2.
+  Real views?  ->  You were seen. Go to Part 2.
 
 
-PART 2 · DID THE LISTING EARN A LOOK?   (the shopfront)
+PART 2 · DID THE RIGHT PEOPLE ARRIVE?   (the aim)
 ----------------------------------------------------------------
-  Of those visitors, did a reasonable share actually open / view the listing,
-  or bounce off the title and first image?
+  Views, but no favorites and no messages at all?
 
-  Most bounced?  ->  This is a LISTING problem — the title, the first image,
-  the first line. People are arriving and the shopfront is turning them away
-  in the first seconds (chapter 7 of Basics — the 90-second window). Rewrite
-  the title and the lead image. Stop here.
+  ->  This is an AIM problem: the wrong people are arriving. Rewrite your
+  chapter 1 sentence — the "who" and the problem in their words. Stop here.
 
-  They engaged?  ->  Go to Part 3.
+  Some favorites or messages?  ->  Go to Part 3.
 
 
-PART 3 · DID THE OFFER CONVINCE?   (product · price · who)
+PART 3 · DID THE LISTING CONVINCE THEM?   (the listing)
 ----------------------------------------------------------------
-  People looked properly and still did not buy. One of three is off:
+  Views and favorites, but no sales: the right people came and were not
+  convinced. This is a LISTING problem (chapter 8):
 
-  [ ] WHO — it is aimed at everyone, so it is for no one. Re-read your product
-      sentence; sharpen the "who".
-  [ ] PRICE — it asks for more than the buyer believes it is worth, or so
-      little it reads as low quality. Check it against the demand-check range.
-  [ ] TRUST — nothing on the page makes a stranger believe it will work. No
-      preview, no example, no proof.
+  [ ] FIRST IMAGE — does it show the result, readable at thumbnail size?
+  [ ] TITLE — does it use the words your buyer would actually search?
+  [ ] PREVIEW — can they see enough inside to trust it will work?
 
-  Fix the one that is most obviously true, and give it two weeks. Stop here.
+  Fix the one that is most obviously weak, and give it two weeks. Stop here.
 
 
-PART 4 · DID THE SALE SURVIVE?   (delivery)
+PART 4 · DID THE SALE SURVIVE?   (the product)
 ----------------------------------------------------------------
-  You are getting sales, but refunds or silence follow.
+  You are getting sales, then refunds.
 
-  ->  This is a DELIVERY / PRODUCT problem. The buyer got it and it did not
-  do the job, would not open, or was not what the listing implied. Re-run the
-  finishing checklist on the file a real buyer receives.
+  ->  This is a PRODUCT problem. The buyer got it and it did not do the job,
+  would not open, or was not what the listing implied. Re-run chapter 4's
+  five-item finishing checklist on the file a real buyer receives.
 
 
 THE ONE LINE TO WRITE DOWN

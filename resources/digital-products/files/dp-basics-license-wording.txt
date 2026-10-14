@@ -1,23 +1,23 @@
-LICENCE WORDING YOU CAN ADAPT
+LICENSE WORDING YOU CAN ADAPT
 From "Digital Products — Basics", chapter 5
 ================================================================
 
 When someone buys your digital product, they are not buying the copyright —
-they are buying a LICENCE to use it, on terms you set. If you say nothing,
+they are buying a LICENSE to use it, on terms you set. If you say nothing,
 you invite the two disputes that cost sellers the most: a buyer who resells
 your file, and a buyer who used it for a client and now wants to know if
 that was allowed.
 
-Below are two licences in plain English. Pick the one that fits the product,
+Below are two licenses in plain English. Pick the one that fits the product,
 paste it into the file itself and onto the listing, and change the bracketed
 parts. ⚠️ This is adaptable wording to start from, not legal advice — for a
 high-value product or a specific country's rules, have a professional check it.
 
 
-PERSONAL-USE LICENCE  (the default for most first products)
+PERSONAL-USE LICENSE  (the default for most first products)
 ----------------------------------------------------------------
 
-  Licence for [PRODUCT NAME]
+  License for [PRODUCT NAME]
 
   You are licensed to use this file for your own personal and business use.
   You may adapt it and use it as many times as you like for yourself.
@@ -26,14 +26,14 @@ PERSONAL-USE LICENCE  (the default for most first products)
   or any part of it, and you may NOT present it as your own work or offer it
   as a competing product.
 
-  © [YEAR] [YOUR NAME / BRAND]. All rights reserved. The licence is granted
+  © [YEAR] [YOUR NAME / BRAND]. All rights reserved. The license is granted
   to the purchaser only.
 
 
-COMMERCIAL / EXTENDED LICENCE  (charge more for this)
+COMMERCIAL / EXTENDED LICENSE  (charge more for this)
 ----------------------------------------------------------------
 
-  Commercial licence for [PRODUCT NAME]
+  Commercial license for [PRODUCT NAME]
 
   You are licensed to use this file in your own commercial projects and in
   paid work you deliver to clients. You may adapt it for each project.
@@ -48,8 +48,8 @@ COMMERCIAL / EXTENDED LICENCE  (charge more for this)
 THE ONE LINE TO PUT ON THE LISTING
 ----------------------------------------------------------------
 
-  "Personal-use licence included. Need it for client work? A commercial
-  licence is available — [how to get it]."
+  "Personal-use license included. Need it for client work? A commercial
+  license is available — [how to get it]."
 
 That single line does two jobs: it heads off the client-use question before
 it becomes a refund, and it creates a second, higher-priced version of a

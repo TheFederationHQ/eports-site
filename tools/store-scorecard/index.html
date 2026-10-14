@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,7 +27,7 @@
       <div>
         <div class="field"><label for="Vi">Visitors</label><input id="Vi" type="number" value="1000" min="0" step="1"></div>
         <div class="field"><label for="O">Orders</label><input id="O" type="number" value="20" min="0" step="1"></div>
-        <div class="field"><label for="R">Revenue <span class="u">(£)</span></label><input id="R" type="number" value="575" min="0" step="0.01"></div>
+        <div class="field"><label for="R">Revenue <span class="u">($)</span></label><input id="R" type="number" value="575" min="0" step="0.01"></div>
         <div class="field"><label for="Bu">Buyers <span class="u">(unique people)</span></label><input id="Bu" type="number" value="20" min="0" step="1">
           <p class="hint">one person buying twice is two orders, one buyer</p></div>
         <div class="field"><label for="Rb">Repeat buyers <span class="u">(bought again)</span></label><input id="Rb" type="number" value="5" min="0" step="1">
@@ -73,16 +73,16 @@
       is two orders and one buyer. Conversion uses orders; repeat-purchase rate uses buyers. Mixing
       them is how the numbers quietly lie.</p>
     <h3>A worked example</h3>
-    <p>1,000 visitors, 20 orders, £575 revenue, 20 buyers, 5 who came back within 90 days, 1 refund,
-      6.5% fee: conversion <b>2%</b>, revenue per visitor <b>£0.58</b>, average order <b>£28.75</b>,
-      repeat rate <b>25%</b>, refund rate <b>5%</b>, contribution per order <b>£26.88</b>. That fifth
+    <p>1,000 visitors, 20 orders, $575 revenue, 20 buyers, 5 who came back within 90 days, 1 refund,
+      6.5% fee: conversion <b>2%</b>, revenue per visitor <b>$0.58</b>, average order <b>$28.75</b>,
+      repeat rate <b>25%</b>, refund rate <b>5%</b>, contribution per order <b>$26.88</b>. That fifth
       line — five of the twenty buyers came back within 90 days, a later purchase that is not among
       this month's 20 orders — is usually the most valuable number on the sheet, because it is the one
       nobody else in your position is measuring.</p>
     <h3>Edge cases the calculator handles</h3>
     <ul class="note" style="line-height:1.7">
       <li><b>A month with no orders</b> (or no visitors, or no buyers) shows "—" for any figure that
-        would divide by zero — average order value, conversion, repeat rate — rather than £0 or an
+        would divide by zero — average order value, conversion, repeat rate — rather than $0 or an
         error. A blank is the honest answer when there is nothing to divide.</li>
       <li><b>The repeat rate stays believable</b> because it divides by unique <em>buyers</em>, not
         their orders — count orders there and a loyal customer can push it over 100%.</li>
@@ -123,7 +123,7 @@
   function num(i){ var v=parseFloat(el[i].value); return isNaN(v)?0:v; }
   function run(){
     var s = DPCalc.scorecard(num("Vi"),num("O"),num("R"),num("Bu"),num("Rb"),num("Rf"),num("f"));
-    document.getElementById("o1").textContent = num("Vi").toLocaleString("en-GB");
+    document.getElementById("o1").textContent = num("Vi").toLocaleString("en-US");
     document.getElementById("o2").textContent = DPCalc.pct(s.conversion);
     document.getElementById("o3").textContent = DPCalc.money(s.rpv);
     document.getElementById("o4").textContent = DPCalc.money(s.aov);

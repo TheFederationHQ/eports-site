@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,11 +33,11 @@
     <h2><span class="n">One</span> Fully-burdened contribution — what a design <em>really</em> leaves</h2>
     <p class="lead">Start from the unit contribution (price minus base, shipping, platform fees — the
       Basics/Intermediate number), then take the four business burdens down to the design. Defaults show
-      Cora's hoodie: £9.23 unit → <b>£2.66</b> loaded, <b>£5.06</b> pre-ad.</p>
+      Cora's hoodie: $9.21 unit → <b>$2.64</b> loaded, <b>$5.04</b> pre-ad.</p>
     <div class="calc">
       <div>
-        <div class="field"><label for="U">Unit contribution £ (before burdens)</label>
-          <input id="U" type="number" inputmode="decimal" value="9.23" min="-999" step="0.01"></div>
+        <div class="field"><label for="U">Unit contribution $ (before burdens)</label>
+          <input id="U" type="number" inputmode="decimal" value="9.21" min="-999" step="0.01"></div>
         <div class="field"><label for="Ad">− Ads (spend ÷ units)</label>
           <input id="Ad" type="number" inputmode="decimal" value="2.40" min="0" step="0.01"></div>
         <div class="field"><label for="Re">− Returns beyond the buffer</label>
@@ -64,46 +64,46 @@
   </section>
 
   <section>
-    <h2><span class="n">Two</span> CAC ceiling &amp; break-even ROAS — before a pound goes to ads</h2>
+    <h2><span class="n">Two</span> CAC ceiling &amp; break-even ROAS — before a dollar goes to ads</h2>
     <p class="lead">The most you may pay to win a buyer and still keep the profit you require — judged on
-      loaded pre-ad contribution, ad counted once. Defaults show Cora's premium: pre-ad £22.83, keep £12 →
-      ceiling <b>£10.83</b>, break-even ROAS <b>~3.0×</b>.</p>
+      loaded pre-ad contribution, ad counted once. Defaults show Cora's premium: pre-ad $22.81, keep $12 →
+      ceiling <b>$10.81</b>, break-even ROAS <b>~3.0×</b>.</p>
     <div class="calc">
       <div>
-        <div class="field"><label for="Pre">Loaded pre-ad contribution £</label>
-          <input id="Pre" type="number" inputmode="decimal" value="22.83" min="-999" step="0.01">
-          <p class="hint">for Cora's organic premium this equals its loaded contribution — ads are £0. The
-            coupon and league instruments below are seeded with that same £22.83 as their default; edit
+        <div class="field"><label for="Pre">Loaded pre-ad contribution $</label>
+          <input id="Pre" type="number" inputmode="decimal" value="22.81" min="-999" step="0.01">
+          <p class="hint">for Cora's organic premium this equals its loaded contribution — ads are $0. The
+            coupon and league instruments below are seeded with that same $22.81 as their default; edit
             each freely for another design.</p></div>
-        <div class="field"><label for="Keep">Profit I require per sale £</label>
+        <div class="field"><label for="Keep">Profit I require per sale $</label>
           <input id="Keep" type="number" inputmode="decimal" value="12.00" min="0" step="0.01"></div>
-        <div class="field"><label for="Rev">Sale price (revenue) £ — for ROAS</label>
+        <div class="field"><label for="Rev">Sale price (revenue) $ — for ROAS</label>
           <input id="Rev" type="number" inputmode="decimal" value="68" min="0" step="0.01"></div>
       </div>
       <div class="calc-out" aria-live="polite" aria-atomic="true">
-        <h3>Before a pound goes to ads</h3>
+        <h3>Before a dollar goes to ads</h3>
         <div class="row"><span class="k"><b>CAC ceiling</b> (max to win a buyer)</span> <span class="v" id="oCac">—</span></div>
         <div class="row"><span class="k">Break-even ROAS (revenue ÷ pre-ad)</span> <span class="v" id="oRoas">—</span></div>
         <div class="row"><span class="k">Verdict</span> <span class="v" id="oAdv">—</span></div>
       </div>
     </div>
     <p class="note">A "3×" the dashboard cheers is break-even here — you need well above it to bank the
-      profit. A ceiling of £0 or less means the product can't be won by paid acquisition at that profit.</p>
-    <p class="cta">Set your CAC cap before a pound goes to ads — it's
+      profit. A ceiling of $0 or less means the product can't be won by paid acquisition at that profit.</p>
+    <p class="cta">Set your CAC cap before a dollar goes to ads — it's
       <a href="../../print-on-demand/#advanced">the scaling gate in <em>Print on Demand: Advanced</em> →</a></p>
   </section>
 
   <section>
     <h2><span class="n">Three</span> The coupon check — what a discount truly costs</h2>
     <p class="lead">A % coupon comes off the price, but the % platform fee falls with it, so the real hit is
-      <em>discount × (1 − fee%)</em>, not the sticker discount. Defaults: 15% off the £68 premium at 13%
-      fee → true hit <b>£8.87</b> (not £10.20).</p>
+      <em>discount × (1 − fee%)</em>, not the sticker discount. Defaults: 15% off the $68 premium at 13%
+      fee → true hit <b>$8.87</b> (not $10.20).</p>
     <div class="calc">
       <div>
-        <div class="field"><label for="cP">Price £</label>
+        <div class="field"><label for="cP">Price $</label>
           <input id="cP" type="number" inputmode="decimal" value="68" min="0" step="0.01"></div>
-        <div class="field"><label for="cC">Loaded contribution £</label>
-          <input id="cC" type="number" inputmode="decimal" value="22.83" min="-999" step="0.01"></div>
+        <div class="field"><label for="cC">Loaded contribution $</label>
+          <input id="cC" type="number" inputmode="decimal" value="22.81" min="-999" step="0.01"></div>
         <div class="field"><label for="cO">Coupon % off</label>
           <input id="cO" type="number" inputmode="decimal" value="15" min="0" max="99" step="1"></div>
         <div class="field"><label for="cF">Platform fee %</label>
@@ -123,12 +123,12 @@
   <section>
     <h2><span class="n">Four</span> League-table row — total <em>and</em> per hour</h2>
     <p class="lead">Rank the catalog by the resource that binds you. Total = loaded × units; per hour =
-      total ÷ the owner-hours the design ate (diffuse time included). Defaults show the premium: £22.83 ×
-      13 over 5 hours → <b>£297</b> total, <b>~£59</b>/hour.</p>
+      total ÷ the owner-hours the design ate (diffuse time included). Defaults show the premium: $22.81 ×
+      13 over 5 hours → <b>$297</b> total, <b>~$59</b>/hour.</p>
     <div class="calc">
       <div>
-        <div class="field"><label for="lL">Loaded £ per sale</label>
-          <input id="lL" type="number" inputmode="decimal" value="22.83" min="-999" step="0.01"></div>
+        <div class="field"><label for="lL">Loaded $ per sale</label>
+          <input id="lL" type="number" inputmode="decimal" value="22.81" min="-999" step="0.01"></div>
         <div class="field"><label for="lU">Units in the window</label>
           <input id="lU" type="number" inputmode="numeric" value="13" min="0" step="1"></div>
         <div class="field"><label for="lH">Owner-hours it ate</label>
@@ -149,7 +149,7 @@
   <section>
     <h2><span class="n">How to read it</span> Four instruments, one decision</h2>
     <p>Most print-on-demand sellers run on gross revenue and gut feel, and it hides the one thing that
-      matters: which designs actually make money once every cost is counted, and where the next pound and
+      matters: which designs actually make money once every cost is counted, and where the next dollar and
       the next hour should go. These four instruments answer that, in order.</p>
     <p><b>Loaded (fully-burdened) contribution</b> tells you what a design <em>really</em> leaves once ads,
       returns, overhead and an honest cost for your own time come out — not the flattering sticker margin.

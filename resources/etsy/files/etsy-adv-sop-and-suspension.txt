@@ -8,8 +8,8 @@ rehearse the one emergency panic is guaranteed to make worse.
 
   TASK                          WRITTEN?   LIVES AT
   ----------------------------  --------   ------------------
-  fulfil + ship an order        [ ]        __________________
-    incl. a NON-Etsy postage path (an account Etsy calls
+  fulfill + ship an order        [ ]        __________________
+    incl. a NON-Etsy shipping path (an account Etsy calls
     suspended cannot buy Etsy labels).
   customer message / refund     [ ]        __________________
   weekly money + buffer check   [ ]        __________________

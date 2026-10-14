@@ -1,21 +1,21 @@
 ePORTS — Print on Demand: Advanced
-CAC CEILING + SCALING GATE — before a pound goes to ads (chapter 6)
+CAC CEILING + SCALING GATE — before a dollar goes to ads (chapter 6)
 
 Judge acquisition against LOADED PRE-AD contribution — never revenue,
 never a unit figure — and count the ad ONCE. CAC = ad spend / NEW
 buyers (not orders, not the platform's ROAS).
 
-  Pre-ad contribution per sale (loaded, NO ad): £__________
-  Profit I require per sale: £__________
-  -> FIRST-SALE CAC ceiling (pre-ad minus profit): £__________
-  Cohort pre-ad contribution (ONLY if PROVEN): £__________
-  -> COHORT ceiling (keep ~half is prudent): £__________
+  Pre-ad contribution per sale (loaded, NO ad): $__________
+  Profit I require per sale: $__________
+  -> FIRST-SALE CAC ceiling (pre-ad minus profit): $__________
+  Cohort pre-ad contribution (ONLY if PROVEN): $__________
+  -> COHORT ceiling (keep ~half is prudent): $__________
      Conditions: cohort proven? __   cash to float it? __
   compute both: eports.global/tools/print-on-demand-allocation
 
 THE ROAS TRAP: break-even ROAS = revenue / pre-ad. A "3x" the
-dashboard cheers is break-even on a £68/£22.83 premium and a BLEED
-on a £22/£3 tee (needs ~7.3x just to stop losing). Act on YOUR
+dashboard cheers is break-even on a $68/$22.81 premium and a BLEED
+on a $22/$3 tee (needs ~7.4x just to stop losing). Act on YOUR
 break-even, never the platform's headline.
 
 THE GATE:

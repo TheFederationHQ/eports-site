@@ -42,7 +42,7 @@
         <div class="field">
           <label for="Wk">Working weeks per year <span class="u">(count)</span></label>
           <input id="Wk" type="number" inputmode="numeric" value="46" min="0" max="52" step="1">
-          <p class="hint">52 minus holiday, sick and slack</p>
+          <p class="hint">52 minus vacation, sick days and slack</p>
         </div>
         <div class="field">
           <label for="BH">Billable hours per week <span class="u">(count)</span></label>
@@ -52,7 +52,7 @@
         <div class="field">
           <label for="Up">Self-employed uplift <span class="u">(%)</span></label>
           <input id="Up" type="number" inputmode="decimal" value="30" min="0" step="0.1">
-          <p class="hint">the cash an employer adds on top of salary: employer taxes, pension, benefits, insurance. (Your reduced billable hours already cover time off and admin &mdash; don't count those twice.)</p>
+          <p class="hint">the cash an employer adds on top of salary: employer taxes, retirement match (e.g. a 401(k)), health and other benefits, insurance. (Your reduced billable hours already cover time off and admin &mdash; don't count those twice.)</p>
         </div>
       </div>
       <div class="calc-out" aria-live="polite" aria-atomic="true">
@@ -69,8 +69,8 @@
       then <em>hourly = target ÷ billable hours</em> and <em>day = hourly × 7.5</em>. Do it by hand and the same
       floor falls out.</p>
     </noscript>
-    <p class="cta">Pricing your own time so a salary swap actually pays is chapter one of running a
-      <a href="../../one-person-ai-business/#basics"><em>One-Person AI Business: Basics</em> →</a></p>
+    <p class="cta">Pricing your own time so a salary swap actually pays is covered in
+      <a href="../../one-person-ai-business/#basics"><em>The One-Person AI Business — Basics</em> →</a></p>
   </section>
 
   <section>
@@ -98,7 +98,7 @@
       $60,000 × 1.30 = <b>$78,000</b> a year. You have 25 × 46 = <b>1,150</b> billable hours to bill it in, so
       your hourly floor is $78,000 ÷ 1,150 = <b>$67.83</b>. A standard 7.5-hour day, worked from the
       unrounded hourly rate, is ($78,000 ÷ 1,150) × 7.5 = <b>$508.70</b>. Charge below that and the
-      difference — the employer taxes, the pension, the benefits you now fund yourself — comes out of
+      difference — the employer taxes, the retirement match, the health and other benefits you now fund yourself — comes out of
       your own pocket.</p>
 
     <h3>Edge cases the calculator handles</h3>
@@ -112,16 +112,17 @@
 
     <h3>Common questions</h3>
     <h4>Why can't I just divide the salary by 2,080?</h4>
-    <p>Because 2,080 hours is a fiction for a one-person business. It counts hours you'll spend on holiday, off
+    <p>Because 2,080 hours is a fiction for a one-person business. It counts hours you'll spend on vacation, off
       sick, or between clients as if they were billed, and it ignores the sales, admin and email that eat a
       third to a half of every real week. Divide by 2,080 and you're quietly working the unpaid hours for free
       and paying your own benefits and taxes out of a rate that never allowed for them.</p>
     <h4>What uplift percentage should I use?</h4>
     <p>The uplift is a rough allowance, not a precise figure — a common starting point is somewhere around
-      25–50%, and 30% is a reasonable middle. It stands in for everything an employer used to cover: paid
-      leave, benefits, the employer's share of taxes, downtime between contracts, and unbillable admin. The
-      right number depends on your own country, your benefits gap and how lumpy your work is, so tune it to
-      your situation before you rely on it.</p>
+      25–50%, and 30% is a reasonable middle. It stands in for the cash an employer used to add on top of
+      salary: the employer's share of Social Security and Medicare, health and other benefits, a retirement
+      match, and insurance. Time off, downtime and unbillable admin are already covered by the lower
+      billable hours and working weeks you enter, so don't count them again here. The right number
+      depends on your benefits gap, so tune it to your situation before you rely on it.</p>
     <h4>Is this financial or tax advice, or a guarantee of income?</h4>
     <p>No. It's arithmetic on numbers you enter, and it is not financial or tax advice. The uplift is a rough
       allowance you should tune to your own country and situation, and the result tells you the rate your own
@@ -135,7 +136,7 @@
   <section>
     <div class="shelf">
       <b>This calculator comes from a book.</b>
-      <p>It's one tool from <em>One-Person AI Business — Basics</em>, which takes someone with no team and no
+      <p>It's one tool from <em>The One-Person AI Business — Basics</em>, which takes someone with no team and no
         idea yet to a business a single person can run — priced so it actually pays them, not just keeps them
         busy.</p>
       <a href="../../one-person-ai-business/">See the One-Person AI Business series →</a>

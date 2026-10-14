@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,7 +20,7 @@
   <div class="wrap">
     <p class="eyebrow">Free calculator</p>
     <h1>Dropshipping price calculator</h1>
-    <p class="sub">Work it the other way round: you set the <em>profit margin you want to keep</em>, and it
+    <p class="sub">Work it the other way around: you set the <em>profit margin you want to keep</em>, and it
       tells you the selling price you have to charge to hit it — once the product, the shipping, the fee
       and the ad spend are all covered.</p>
   </div>
@@ -36,23 +36,28 @@
     <div class="calc">
       <div>
         <div class="field">
-          <label for="C">Product cost <span class="u">(£)</span></label>
+          <label for="C">Product cost <span class="u">($)</span></label>
           <input id="C" type="number" inputmode="decimal" value="9.00" min="0" step="0.01">
           <p class="hint">what your supplier charges</p>
         </div>
         <div class="field">
-          <label for="Sh">Shipping you pay <span class="u">(£)</span></label>
+          <label for="Sh">Shipping you pay <span class="u">($)</span></label>
           <input id="Sh" type="number" inputmode="decimal" value="4.00" min="0" step="0.01">
         </div>
         <div class="field">
-          <label for="Ad">Ad cost per order <span class="u">(£)</span></label>
+          <label for="Ad">Ad cost per order <span class="u">($)</span></label>
           <input id="Ad" type="number" inputmode="decimal" value="6.00" min="0" step="0.01">
           <p class="hint">total ad spend ÷ orders</p>
         </div>
         <div class="field">
           <label for="f">Transaction fee <span class="u">(%)</span></label>
-          <input id="f" type="number" inputmode="decimal" value="3" min="0" max="99" step="0.1">
-          <p class="hint">payment + platform % on the sale</p>
+          <input id="f" type="number" inputmode="decimal" value="2.9" min="0" max="99" step="0.1">
+          <p class="hint">payment + platform % on the sale (2.9% on Stripe or Shopify Basic, US)</p>
+        </div>
+        <div class="field">
+          <label for="Fx">Fixed fee per order <span class="u">($)</span></label>
+          <input id="Fx" type="number" inputmode="decimal" value="0.30" min="0" step="0.01">
+          <p class="hint">the flat part of the card fee: 30¢ on Stripe or Shopify Basic (US)</p>
         </div>
         <div class="field">
           <label for="Mg">Target profit margin <span class="u">(%)</span></label>
@@ -70,7 +75,7 @@
     <noscript>
       <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The math:
       <em>denominator = 1 − fee% − margin%</em>;
-      <em>price = (product + shipping + ad cost) ÷ denominator</em>; then
+      <em>price = (product + shipping + ad cost + fixed fee) ÷ denominator</em>; then
       <em>profit = price × margin%</em>. Or
       <a href="../../resources/dropshipping/">grab the dropshipping resources</a> and run your own
       numbers.</p>
@@ -90,25 +95,25 @@
       yet. So the price has to be solved for, not stacked up. That's what the denominator below does.</p>
 
     <h3>The formula, in full</h3>
-    <p>Add your three flat costs — <b>product cost + shipping + ad cost per order</b> — into one figure.
+    <p>Add your flat costs — <b>product cost + shipping + ad cost per order + the fixed fee</b> — into one figure.
       Then work out the <b>denominator</b>: 1 − (fee ÷ 100) − (margin ÷ 100). The <b>required selling
       price</b> = flat costs ÷ denominator. The <b>profit per order</b> = price × (margin ÷ 100). The fee
       and the margin sit in the denominator together because each one claims its percentage of the final
       selling price, which is exactly what you're solving for.</p>
 
     <h3>A worked example</h3>
-    <p>Product cost £9.00, shipping £4.00, ad cost per order £6.00 — that's £19.00 of flat costs. You want
-      a 20% profit margin, and the transaction fee is 3%. The denominator is 1 − 0.03 − 0.20 = 0.77.
-      Divide: £19.00 ÷ 0.77 = £24.675, which rounds <em>up</em> to the next penny — a floor, so you never
-      land a hair under target — giving a required selling price of <b>£24.68</b>. The profit at that
-      price is £24.68 × 0.20 = <b>£4.94</b>. Note what margin means here: profit ÷ selling price, not
+    <p>Product cost $9.00, shipping $4.00, ad cost per order $6.00 and the 30¢ fixed card fee — that's
+      $19.30 of flat costs. You want a 20% profit margin, and the percentage fee is 2.9%. The denominator is
+      1 − 0.029 − 0.20 = 0.771. Divide: $19.30 ÷ 0.771 = $25.032, which rounds <em>up</em> to the next cent
+      — a floor, so you never land a hair under target — giving a required selling price of <b>$25.04</b>.
+      The profit at that price is $25.04 × 0.20 = <b>$5.01</b>. Note what margin means here: profit ÷ selling price, not
       profit ÷ cost.</p>
 
     <h3>Margin on price vs markup on cost</h3>
     <p>These two get mixed up constantly, and confusing them is an easy way to price too low without noticing. <b>Margin</b> is
-      profit measured against the <em>selling price</em> — a 20% margin means £1 of every £5 you take is
-      profit. <b>Markup</b> is profit measured against the <em>cost</em> — a 20% markup on a £9 product
-      adds £1.80. The same percentage gives two different prices, and markup always sounds bigger than the
+      profit measured against the <em>selling price</em> — a 20% margin means $1 of every $5 you take is
+      profit. <b>Markup</b> is profit measured against the <em>cost</em> — a 20% markup on a $9 product
+      adds $1.80. The same percentage gives two different prices, and markup always sounds bigger than the
       margin it actually delivers. This calculator works in margin-on-price throughout, because that's the
       figure that tells you what you keep.</p>
 
@@ -166,22 +171,22 @@
 
 <script>
 (function () {
-  var ids = ["C", "Sh", "Ad", "f", "Mg"], el = {};
+  var ids = ["C", "Sh", "Ad", "Fx", "f", "Mg"], el = {};
   ids.forEach(function (i) { el[i] = document.getElementById(i); });
   function num(i) { var v = parseFloat(el[i].value); return isNaN(v) || v < 0 ? 0 : v; }
   function money(x) {
-    return (x < 0 ? "−" : "") + "£" + Math.abs(x).toLocaleString("en-GB", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    return (x < 0 ? "−" : "") + "$" + Math.abs(x).toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2});
   }
   function set(id, t) { document.getElementById(id).textContent = t; }
   function run() {
-    var C = num("C"), Sh = num("Sh"), Ad = num("Ad"), f = num("f"), Mg = num("Mg");
+    var C = num("C"), Sh = num("Sh"), Ad = num("Ad"), Fx = num("Fx"), f = num("f"), Mg = num("Mg");
     var denom = 1 - f / 100 - Mg / 100;
     if (denom <= 0) {
       set("oPrice", "—");
       set("oProfit", "—");
       return;
     }
-    var price = Math.ceil((C + Sh + Ad) / denom * 100) / 100;
+    var price = Math.ceil((C + Sh + Ad + Fx) / denom * 100) / 100;
     var profit = price * (Mg / 100);
     set("oPrice", money(price));
     set("oProfit", money(profit));

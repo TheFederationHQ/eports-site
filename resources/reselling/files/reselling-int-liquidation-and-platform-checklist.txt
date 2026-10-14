@@ -36,7 +36,7 @@ or over 180 ...... OUT: lot it, sell it locally for cash, or donate it.
 =====================================================================
 [ ] MOVE IT  — heavy/bulky/fragile to local pickup. End the eBay listing THE
                SAME DAY. One-way exit for one old item. Not cross-listing.
-[ ] LOT IT   — 3-6 stragglers of a kind, one listing, one postage, priced at
+[ ] LOT IT   — 3-6 stragglers of a kind, one listing, one shipping, priced at
                what you'd rather have than the items.
 [ ] PRICE IT TO GO — one final price, supported by fresh comps and set to sell
                within 30 days, exit date beside it. Not the start of a slide.
@@ -89,7 +89,7 @@ Liquidation log: date · item · band · exit · cost · cash back.
 [ ] Sale notifications ON for both apps. Sweep every E+M row at every
     shipping window.
 [ ] Oversold anyway? End any live listing, cancel with the TRUE reason,
-    refund promptly, apologise plainly, log it. (On eBay an out-of-stock
+    refund promptly, apologize plainly, log it. (On eBay an out-of-stock
     cancellation is a transaction defect — take it; never game it.)
 [ ] Pilot rule: 10 items, newest bands, same list price, each platform's
     floor on the row.

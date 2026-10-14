@@ -1,12 +1,12 @@
 /* ePORTS — live tools, every lane: tiny SVG chart kit (no libraries).
-   Currency: RVIZ.currency("£", "en-GB") once per page; default $ / en-US.
+   Currency: RVIZ.currency("$", "en-US") once per page; default $ / en-US.
    Palette = the dataviz reference instance, validated light (run 2026-10-11):
    categorical slots 1-4 adjacent CVD ΔE ≥ 9.1, normal ≥ 22.9; slots 3-4 sit
    under 3:1 on white → every chart ships direct labels AND a table view.
    Slot 5 magenta added for five-part stacks; validated ONLY in the order
    keep(s1) · fee(s2) · shipping(s3) · cost(s4) · s5 (s5 beside s2 fails normal vision).
    Ordinal age ramp 250/400/550/700 validated (monotone, light end 2.11:1).
-   Text always wears ink tokens, never the series colour. */
+   Text always wears ink tokens, never the series color. */
 (function () {
   "use strict";
   var NS = "http://www.w3.org/2000/svg";
@@ -43,7 +43,7 @@
     var s = CUR.sym + Math.round(Math.abs(x)).toLocaleString(CUR.loc);
     return neg ? "−" + s : s;
   }
-  // axis ticks: compact once values reach five figures (£12k, £1.5m), so they fit the margin
+  // axis ticks: compact once values reach five figures ($12k, $1.5m), so they fit the margin
   function compact(x) {
     var a = Math.abs(x), neg = x < 0 ? "−" : "";
     if (a >= 1e6) return neg + CUR.sym + (a / 1e6).toFixed(a % 1e6 ? 1 : 0) + "m";
@@ -366,7 +366,7 @@
           p.addEventListener("mouseleave", hideTip);
         }
       });
-      // shelf labels (words, never colour alone) — in a fixed column right of the drawing, at each shelf's height
+      // shelf labels (words, never color alone) — in a fixed column right of the drawing, at each shelf's height
       var maxX = 0;
       faces.forEach(function (f) { f.pts.forEach(function (q) { if (q[0] > maxX) maxX = q[0]; }); });
       var small = W < 460, fs = small ? 10 : 12, lx = Math.min(maxX + 8, W - (small ? 112 : 170));

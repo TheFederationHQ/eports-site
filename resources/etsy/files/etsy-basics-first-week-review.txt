@@ -8,11 +8,11 @@ verdict. Record what you see, decide ONE thing, and do not thrash at noise.
 
   What I actually saw (Etsy's own numbers, not feelings):
     views ______   visits ______
-    favourites ______   orders ______
+    favorites ______   orders ______
 
   Which category fits?  ________________________________
-    (few views/visits = barely shown yet; views but no favourites = a hint
-     something isn't landing; favourites but no order = normal
+    (few views/visits = barely shown yet; views but no favorites = a hint
+     something isn't landing; favorites but no order = normal
      consideration delay -- and at this size, mostly unknowable)
     Honest read at this sample size: "not enough data yet to act on."
 

@@ -1,0 +1,25 @@
+DROPSHIPPING - THE CHECKOUT CHECKLIST  (Chapter 5)
+
+Build the store: one product page. Then run these five checks yourself,
+on your own phone. If any answer is no, fix it before you send a single
+visitor - traffic wasted on a leaking page is the most expensive kind.
+
+  [ ] 1. The TOTAL cost including shipping is visible before checkout.
+  [ ] 2. A buyer can check out WITHOUT creating an account (guest
+         checkout on - it is often off by default).
+  [ ] 3. The real DELIVERY WINDOW (from your sample, in days) is on the
+         product page.
+  [ ] 4. There is a working CONTACT method and a RETURNS policy - and
+         you will honor the policy you state.
+  [ ] 5. The whole thing loads and reads properly on a PHONE.
+
+  Checked on (date): __________   Phone used: ______________________
+  Fixed before launch: _______________________________________________
+
+Two settings on that page lose more sales than any words you write:
+surprise shipping costs at checkout, and forced account creation.
+
+----------------------------------------------------------------------
+From Dropshipping - Basics. The full method is in the book; every
+free worksheet: eports.global/resources/dropshipping
+ePORTS — your ecom source. eports.global.

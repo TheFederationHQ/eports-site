@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>AI automation priority scorer — which task to automate first | ePORTS</title>
-<meta name="description" content="Free AI automation priority scorer: score any business task on how often, how long and how repetitive it is to see what to automate first — with a human-review check for costly mistakes.">
+<meta name="description" content="Free AI automation scorer: score any business task on time, frequency and how well AI fits it, then let the risk of a mistake decide whether it's a first bet — the opportunity-map method from AI for Your Business.">
 <link rel="canonical" href="./">
 <meta name="robots" content="index,follow">
 <link rel="stylesheet" href="../../assets/fonts/fonts.css">
@@ -12,7 +12,12 @@
 <!-- /tools page: live scorer + real editorial content so it is genuinely
      useful and ranks for search traffic. Ads may sit on /tools pages LATER
      (never on /resources) once the site qualifies and a consent setup exists.
-     The .ad-slot boxes below are reserved skeleton placeholders for that. -->
+     The .ad-slot boxes below are reserved skeleton placeholders for that.
+     ⚠️ 2026-10-14: rebuilt to the book's method (AI for Your Business — Basics, ch 2) and the
+     opportunity-map spreadsheet: score = time + frequency + fit, out of 15; risk is a separate gate
+     (1–2 go, 3 go with a person checking, 4–5 not a first bet); 12+ strong, 9–11 possible, under 9
+     later. The earlier page used a different formula (frequency + time + 2 × repetitiveness, /20)
+     under the book's name — three surfaces must never disagree. -->
 </head>
 <body>
 
@@ -20,9 +25,9 @@
   <div class="wrap">
     <p class="eyebrow">Free scorer</p>
     <h1>Which task should you automate first?</h1>
-    <p class="sub">Score a task on three plain value factors and get a clear verdict — plus a check on
-      whether a mistake is costly enough that a human must stay in the loop. So you spend your first
-      AI effort where it actually <em>pays</em>, not where the hype points.</p>
+    <p class="sub">Score a task on the three things that decide whether AI pays — time, frequency and
+      fit — then let the cost of a mistake decide whether it's a <em>first</em> bet. So you spend your
+      first AI effort where it actually <em>pays</em>, not where the hype points.</p>
   </div>
 </header>
 
@@ -36,169 +41,155 @@
     <div class="calc">
       <div>
         <div class="field">
-          <label for="Fq">How often it happens</label>
-          <select id="Fq">
-            <option value="1">1 — rarely</option>
-            <option value="2">2 — a few times a month</option>
-            <option value="3">3 — a few times a week</option>
-            <option value="4" selected>4 — most days</option>
-            <option value="5">5 — many times a day</option>
-          </select>
-          <p class="hint">how frequently someone on your team does this task</p>
-        </div>
-        <div class="field">
-          <label for="Tm">Time each time</label>
+          <label for="Tm">Time — how long it takes each time</label>
           <select id="Tm">
-            <option value="1">1 — seconds</option>
+            <option value="1">1 — a quick reply</option>
             <option value="2">2 — a few minutes</option>
-            <option value="3">3 — quarter of an hour</option>
-            <option value="4" selected>4 — up to an hour</option>
-            <option value="5">5 — hours</option>
+            <option value="3">3 — under an hour</option>
+            <option value="4" selected>4 — a couple of hours</option>
+            <option value="5">5 — half a day</option>
           </select>
           <p class="hint">how long one pass through the task takes a person</p>
         </div>
         <div class="field">
-          <label for="Rp">How repetitive / rules-based</label>
-          <select id="Rp">
-            <option value="1">1 — every case is different</option>
-            <option value="2">2 — mostly different</option>
-            <option value="3">3 — a mix</option>
-            <option value="4" selected>4 — mostly the same steps</option>
-            <option value="5">5 — same steps every time</option>
+          <label for="Fq">Frequency — how often it comes around</label>
+          <select id="Fq">
+            <option value="1">1 — once a quarter</option>
+            <option value="2">2 — monthly</option>
+            <option value="3">3 — weekly</option>
+            <option value="4" selected>4 — a few times a week</option>
+            <option value="5">5 — every single day</option>
           </select>
-          <p class="hint">counts double — it matters most for whether AI can do it</p>
+          <p class="hint">how often someone on your team does it</p>
         </div>
         <div class="field">
-          <label for="Er">Cost of getting it wrong</label>
-          <select id="Er">
-            <option value="1">1 — trivial, easily undone</option>
-            <option value="2">2 — minor</option>
-            <option value="3">3 — noticeable</option>
-            <option value="4" selected>4 — costly to fix</option>
-            <option value="5">5 — serious / expensive</option>
+          <label for="Ft">Fit — is it work AI is good at?</label>
+          <select id="Ft">
+            <option value="1">1 — needs hands or a real judgment call</option>
+            <option value="2">2 — mostly judgment</option>
+            <option value="3">3 — a mix</option>
+            <option value="4" selected>4 — mostly writing, sorting or answering</option>
+            <option value="5">5 — language or data, over and over</option>
           </select>
-          <p class="hint">this does <b>not</b> raise the score — it decides whether a human must stay in the loop</p>
+          <p class="hint">repetitive writing, sorting, answering and summarizing fit best</p>
+        </div>
+        <div class="field">
+          <label for="Rk">Risk — if it went wrong and nobody caught it</label>
+          <select id="Rk">
+            <option value="1">1 — a typo you'd laugh at</option>
+            <option value="2">2 — minor, easily fixed</option>
+            <option value="3" selected>3 — noticeable</option>
+            <option value="4">4 — costly to fix</option>
+            <option value="5">5 — losing a customer, or a legal slip</option>
+          </select>
+          <p class="hint">this does <b>not</b> change the score — it decides whether it's a <em>first</em> bet</p>
         </div>
       </div>
       <div class="calc-out" aria-live="polite" aria-atomic="true">
         <h3>Your result</h3>
-        <div class="row"><span class="k">Priority score (out of 20)</span> <span class="v" id="oScore">—</span></div>
-        <div class="row"><span class="k">Verdict</span> <span class="v" id="oVerdict">—</span></div>
+        <div class="row"><span class="k">Score (out of 15)</span> <span class="v" id="oScore">—</span></div>
+        <div class="row"><span class="k">First bet?</span> <span class="v" id="oVerdict">—</span></div>
         <div class="row"><span class="k">Why</span> <span class="v" id="oReason">—</span></div>
       </div>
     </div>
 
     <noscript>
-      <p class="calc-fallback"><b>The scorer needs JavaScript.</b> The math: rate each factor 1–5, then
-      <em>score = frequency + time + (2 × repetitiveness)</em>, out of 20. Bands:
-      <em>16 or more</em> = automate this first; <em>11–15</em> = strong candidate; <em>7–10</em> =
-      worth automating later; <em>under 7</em> = leave it manual for now. Cost of getting it wrong does
-      not change the score — if it's high (4 or 5), keep a human reviewing every result.</p>
+      <p class="calc-fallback"><b>The scorer needs JavaScript.</b> The method: rate time, frequency and fit
+      1–5 and add them, for a score out of 15. Then risk decides: 4 or 5 is not a first bet; 3 goes ahead
+      only with a person checking the work; 1 or 2 goes ahead. A score of 12 or more is a strong first bet,
+      9 to 11 a possible one, and under 9 one for later.</p>
     </noscript>
-    <p class="cta">Finding the one task that pays first — and building it safely — is the practical spine of
-      <a href="../../ai-for-your-business/#basics"><em>AI for Your Business: Basics</em> →</a></p>
+    <p class="cta">This is the opportunity-map method from
+      <a href="../../ai-for-your-business/#basics"><em>AI for Your Business — Basics</em> →</a> — score
+      ten to fifteen of your team's real tasks the same way and the first bets pick themselves.</p>
   </section>
 
   <section>
     <h2><span class="n">How to read it</span> A score is a shortlist, not a green light</h2>
     <p>The point of the scorer isn't to hand you a decision — it's to stop you automating the loudest task
       instead of the right one. Owners tend to reach for whatever annoyed them most this week. The score
-      pulls you back to what actually pays: work that happens <b>often</b>, eats <b>time</b> each pass, and
-      runs the <b>same way</b> every time. Those three, and only those three, make up the priority score.</p>
-    <p>Read the verdict band as a shortlist position, not a verdict on the whole idea. A high score means
-      "this is a good candidate — worth a real build" — never "switch it on and walk away." A low score is
-      just as useful: it tells you to leave a task with a person and spend your first effort elsewhere.</p>
+      pulls you back to what actually pays: work that eats <b>time</b> each pass, comes around
+      <b>often</b>, and is the kind of work AI is genuinely good at — its <b>fit</b>. Those three, and only
+      those three, make up the score.</p>
+    <p>Read the verdict as a shortlist position, not a verdict on the whole idea. A strong first bet means
+      "this is a good candidate — worth a real test" — never "switch it on and walk away." A "later" is just
+      as useful: it tells you to leave a task with a person for now and spend your first effort elsewhere.</p>
 
     <h3>Value and risk are two different questions</h3>
-    <p>Notice what the fourth input — <b>cost of getting it wrong</b> — does, and what it does <em>not</em>
-      do. It does <b>not</b> raise the score. A task that would be expensive to get wrong is not a
-      <em>better</em> automation candidate for being risky — it's a task that needs more care. So the
-      error-cost is a separate <b>human-review gate</b>: when it's high (a 4 or 5), the verdict tells you
-      to keep a person checking every result, no matter how high the value score climbs. Automating a
-      high-stakes task blindly doesn't remove the risk — it amplifies the very mistake you were worried
-      about, at machine speed. Value tells you <em>whether</em> to automate; error-cost tells you
-      <em>how much of a human</em> to keep in the loop.</p>
+    <p>Notice what the fourth input — <b>risk</b> — does, and what it does <em>not</em> do. It does
+      <b>not</b> raise the score. A task that would be expensive to get wrong is not a <em>better</em>
+      automation candidate for being risky — it's a task that needs more care. So risk is a separate gate:
+      at 1 or 2 you go ahead; at 3 you go ahead only with a person checking the work; at 4 or 5 it is not a
+      first bet, however high it scores. You earn the risky jobs later, once you trust the tool.
+      Automating a high-stakes task blindly doesn't remove the risk — it amplifies the very mistake you were
+      worried about, at machine speed.</p>
 
     <h3>How the score works</h3>
-    <p>Three value factors are each rated 1 to 5. Frequency and time count once; repetitiveness counts
-      <b>twice</b>. So the formula is <b>score = frequency + time + (2 × repetitiveness)</b>, which tops
-      out at 5 + 5 + 10 = <b>20</b> and bottoms out at 1 + 1 + 2 = 4. Then the bands:</p>
+    <p>Time, frequency and fit are each rated 1 to 5 and added, for a score out of <b>15</b> (at least 3).
+      Then risk decides whether it's a first bet:</p>
     <ul class="note" style="line-height:1.7">
-      <li><b>16 or more — Automate this first.</b> Frequent, repetitive, time-hungry: exactly where AI earns
-        its keep. (If a mistake is costly, the verdict becomes "automate — but keep a human reviewing every
-        result.")</li>
-      <li><b>11–15 — Strong candidate.</b> Clearly worth a build. (If a mistake is costly, keep a human
-        reviewing every result.)</li>
-      <li><b>7–10 — Worth automating later.</b> Real value, but something better is probably ahead of it.</li>
-      <li><b>Under 7 — Leave it manual for now.</b> Too rare, too varied, or too quick to be your first bet.</li>
+      <li><b>Risk 4 or 5 — not a first bet.</b> Whatever the score. Come back to it later.</li>
+      <li><b>12 or more — a strong first bet.</b> Time-hungry, frequent, and work AI does well. At risk 3,
+        a person checks the work.</li>
+      <li><b>9 to 11 — possible.</b> Worth a test once your strongest bets are running. At risk 3, a person
+        checks the work.</li>
+      <li><b>Under 9 — later.</b> Too quick, too rare or too poor a fit to be your first bet.</li>
     </ul>
 
-    <h3>Why repetitiveness is weighted double</h3>
-    <p>Because it's the factor that decides whether AI can do the job at all. Today's AI is at its best on
-      work that repeats the same steps in the same shape — the same kind of email, the same intake form, the
-      same lookup — because that's what it can learn and reproduce reliably. The opposite kind of work, the
-      one-off that turns on judgment, context and reading the room, is the <em>worst</em> automation target
-      there is, no matter how often it comes up or how long it takes. A task can be frequent and slow and
-      still be a bad fit if every case is genuinely different. Weighting repetitiveness double keeps the
-      score honest about that: it stops a busy-but-bespoke task from scoring its way to the front of the
-      queue where it doesn't belong.</p>
+    <h3>Why fit matters as much as time</h3>
+    <p>Because fit decides whether AI can do the job at all. Today's AI is at its best on language and data
+      that repeat in the same shape — the same kind of email, the same intake form, the same summary —
+      because that's what it can reproduce reliably. The opposite kind of work, the one-off that turns on
+      hands, judgment, context and reading the room, is the <em>worst</em> automation target there is, no
+      matter how often it comes up or how long it takes. A task can be frequent and slow and still score
+      low on fit — and that's the scorer being honest with you.</p>
 
     <h3>Fix the process before you automate it</h3>
     <p>One warning the score can't give you on its own: automating a broken process just makes it break
       faster. If the task is messy — inconsistent steps, missing information, a hand-off nobody owns — a tool
       will scale the mess, not clean it up. Straighten the process out by hand first, until a person can run
-      it the same way every time. Then automate the version that already works. (You may notice that tidying
-      the steps also raises the repetitiveness score — that's the same truth showing up twice.)</p>
+      it the same way every time. Then automate the version that already works. (Tidying the steps usually
+      raises the fit score too — that's the same truth showing up twice.)</p>
 
     <h3>A worked example</h3>
-    <p>Take answering routine booking calls: it happens many times a day (frequency 5), each call takes a few
-      minutes (time 2), and it follows the same script almost every time (repetitiveness 5). The score is
-      5 + 2 + (2 × 5) = <b>17</b> — and because a fumbled routine call is easily recovered (error-cost 2),
-      the verdict is a clean <b>"automate this first."</b></p>
-    <p>Now change one thing. Keep the same frequency, time and repetitiveness — so the same score of 17 — but
-      make it <em>processing customer refunds</em>, where a wrong amount costs money and trust (error-cost 5).
-      The value is identical, so it's still worth automating. But the verdict changes to <b>"automate — but
-      keep a human reviewing every result,"</b> because a costly mistake here is never something you leave
-      fully hands-off. Same score, different oversight — that's the whole point of separating value from
+    <p>Take drafting replies to routine customer questions: each one takes a few minutes (time 2), they
+      arrive every single day (frequency 5), and it's language, over and over (fit 5). The score is
+      2 + 5 + 5 = <b>12</b> — and because a clumsy draft is caught before it's sent (risk 2), the verdict
+      is a clean <b>"strong first bet."</b></p>
+    <p>Now change one thing. Keep the same time, frequency and fit — so the same score of 12 — but make it
+      <em>processing customer refunds</em>, where a wrong amount costs money and trust (risk 4). The value
+      is identical, but the verdict changes to <b>"not a first bet,"</b> because a costly mistake is never
+      where you start. Same score, different answer — that's the whole point of separating value from
       risk.</p>
 
     <h3>Edge cases the scorer handles</h3>
     <ul class="note" style="line-height:1.7">
-      <li><b>All three value factors at 5</b> score 5 + 5 + 10 = 20 — the clearest possible "automate this
-        first," unless the cost of a mistake is high, in which case it's "automate, with a human reviewing
-        every result."</li>
-      <li><b>All three at 1</b> score 1 + 1 + 2 = 4 — under 7, so "leave it manual for now." Rare, varied and
-        quick: there's nothing to gain.</li>
-      <li><b>Slow but bespoke</b> — an hours-long task (time 5) where every case differs (repetitiveness 1)
-        can't climb far, and that's the point: length alone isn't a reason to automate.</li>
-      <li><b>High score, high stakes</b> — a task can score 20 and still <em>not</em> be hands-off. The
-        error-cost gate holds a human on the result; the score never overrides it.</li>
+      <li><b>All three at 5</b> score 15 — the clearest possible first bet, unless risk is 4 or 5, in which
+        case it waits.</li>
+      <li><b>All three at 1</b> score 3 — "later." Quick, rare and a poor fit: there's nothing to gain.</li>
+      <li><b>Slow but bespoke</b> — a half-day task (time 5) that needs a real judgment call each time
+        (fit 1) can't climb far, and that's the point: length alone isn't a reason to automate.</li>
+      <li><b>Risk 3</b> — never an unqualified "go." At 9 or more the verdict carries "a person checks the work"; under 9 it is "later" either way.</li>
     </ul>
 
     <h3>Common questions</h3>
-    <h4>Why doesn't "cost of getting it wrong" raise the score?</h4>
-    <p>Because a costly mistake is a reason for <b>caution</b>, not enthusiasm. An earlier version of this
-      tool added error-cost to the score — which meant a high-stakes, expensive-if-wrong task scored
-      <em>higher</em> for automation. That's backward and genuinely dangerous: it nudges you to hand your
-      riskiest work to a machine first. So error-cost now does something safer — it sets a human-review gate.
-      High stakes don't stop you automating; they stop you doing it hands-off.</p>
-    <h4>Does a high score mean I should just switch it on?</h4>
-    <p>No. A high score means the task is a good <b>candidate</b> — worth the effort of a real build. It still
-      needs a proper build, a test on live-but-safe work, and a human checking the output before anything goes
-      out the door — especially if the cost of a mistake is high. The score gets you to the starting line; it
-      doesn't run the race.</p>
+    <h4>Why doesn't risk raise the score?</h4>
+    <p>Because a costly mistake is a reason for <b>caution</b>, not enthusiasm. Adding risk to the score would
+      make a high-stakes task look like a <em>better</em> automation target — which is backward, and genuinely
+      dangerous: it nudges you to hand your riskiest work to a machine first. So risk is a gate instead.</p>
+    <h4>Does a strong first bet mean I should just switch it on?</h4>
+    <p>No. It means the task is worth a proper test — on live-but-safe work, against a pass line you set
+      before you start, with a person checking the output before anything goes out the door. The score gets
+      you to the starting line; it doesn't run the race.</p>
     <h4>Is the score a guarantee it'll work?</h4>
     <p>No. It's a shortlisting tool that reflects the numbers you entered. Whether a build actually pays
-      depends on the tools, your data, and how well you set it up — none of which this box controls. Treat the
-      verdict as a sensible place to start looking, not a promise of a result.</p>
-    <h4>What about a task with a low repetitiveness score?</h4>
-    <p>Keep it with a person. Low-repetition, high-judgment work — the calls that need context, discretion or
-      a relationship — is where people are strongest and today's AI is weakest. A low score there isn't a
-      failure to automate; it's the scorer correctly telling you to leave a human in charge.</p>
-    <h4>Can one task score high on time but still not win?</h4>
-    <p>Yes, and that's deliberate. Because repetitiveness counts double, a long task that's different every
-      time will sit below a shorter task that runs the same way each pass. AI rewards sameness, so the score
-      does too.</p>
+      depends on the tools, your data, and how well you set it up — none of which this box controls. Treat
+      the verdict as a sensible place to start looking, not a promise of a result.</p>
+    <h4>Why score ten to fifteen tasks rather than one?</h4>
+    <p>Because a score only means something next to other scores. Scoring one task tells you it's a 12;
+      scoring fifteen tells you it's your best bet. The free opportunity-map spreadsheet on the
+      <a href="../../resources/ai-for-your-business/">AI for Your Business downloads page</a> does exactly
+      that, with the same method.</p>
   </section>
 
   <!-- reserved ad slot (deferred until the site qualifies) -->
@@ -226,37 +217,39 @@
 
 <script>
 (function () {
-  var ids = ["Fq", "Tm", "Rp", "Er"], el = {};
+  // Mirrors the opportunity-map spreadsheet exactly (scripts/build_aifyb_xlsx.py, column H).
+  var ids = ["Tm", "Fq", "Ft", "Rk"], el = {};
   ids.forEach(function (i) { el[i] = document.getElementById(i); });
   function num(i) { var v = parseInt(el[i].value, 10); return isNaN(v) ? 0 : v; }
   function set(id, t) { document.getElementById(id).textContent = t; }
+  function verdictFor(total, risk) {
+    if (risk >= 4) return "No — too risky first";
+    var check = risk === 3 ? " — a person checks the work" : "";
+    if (total >= 12) return "★ Strong first bet" + check;
+    if (total >= 9) return "Possible" + check;
+    return "Later";
+  }
   function run() {
-    var Fq = num("Fq"), Tm = num("Tm"), Rp = num("Rp"), Er = num("Er");
-    var score = Fq + Tm + (2 * Rp);      // automation VALUE only, 4–20
-    var highStakes = Er >= 4;            // cost-of-error is a review GATE, not a score term
-    var verdict, reason;
-    if (score >= 16) {
-      verdict = highStakes ? "Automate — but keep a human reviewing every result" : "Automate this first";
-      reason = "Frequent, repetitive and time-hungry — the clearest place for AI to pay.";
-    } else if (score >= 11) {
-      verdict = highStakes ? "Strong candidate — with a human reviewing every result" : "Strong candidate";
-      reason = "Clearly worth a real build: it happens often enough, and runs the same way enough, to earn its keep.";
-    } else if (score >= 7) {
-      verdict = "Worth automating later";
-      reason = "Real value here, but something better is probably ahead of it in the queue.";
+    var Tm = num("Tm"), Fq = num("Fq"), Ft = num("Ft"), Rk = num("Rk");
+    var total = Tm + Fq + Ft;            // value only, 3–15
+    var verdict = verdictFor(total, Rk), reason;
+    if (Rk >= 4) {
+      reason = "A mistake here would be costly, so it waits — you earn the risky jobs once you trust the tool.";
+    } else if (total >= 12) {
+      reason = "Time-hungry, frequent and a good fit for AI — the clearest place to start.";
+    } else if (total >= 9) {
+      reason = "Real value, but test it once your strongest bets are running.";
     } else {
-      verdict = "Leave it manual for now";
-      reason = "Too rare, too varied or too quick to be your first automation — keep a person on it.";
+      reason = "Too quick, too rare or too poor a fit to be your first bet — keep a person on it for now.";
     }
-    if (highStakes) {
-      reason += " And a mistake here is costly, so it's never fully hands-off — keep a human checking every result.";
-    }
-    set("oScore", score + " / 20");
+    if (Rk === 3 && total >= 9) reason += " At this risk level, a person checks every result.";
+    set("oScore", total + " / 15");
     set("oVerdict", verdict);
     set("oReason", reason);
   }
   ids.forEach(function (i) { el[i].addEventListener("input", run); el[i].addEventListener("change", run); });
   run();
+  window.__aifybVerdict = verdictFor;   // exposed for the parity test
 })();
 </script>
 

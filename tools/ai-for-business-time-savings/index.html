@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -54,7 +54,7 @@
           <input id="P" type="number" inputmode="numeric" value="3" min="0" step="1">
         </div>
         <div class="field">
-          <label for="L">Loaded hourly cost <span class="u">(£)</span></label>
+          <label for="L">Loaded hourly cost <span class="u">($)</span></label>
           <input id="L" type="number" inputmode="decimal" value="30" min="0" step="0.01">
           <p class="hint">wage plus tax, tools and overhead — what an hour of this work really costs</p>
         </div>
@@ -62,7 +62,7 @@
       <div class="calc-out" aria-live="polite" aria-atomic="true">
         <h3>What the task reclaims</h3>
         <div class="row"><span class="k">Minutes saved per week</span> <span class="v" id="oMin">—</span></div>
-        <div class="row"><span class="k">Hours saved per year</span> <span class="v" id="oHrs">—</span></div>
+        <div class="row"><span class="k">Hours saved per year (46 weeks)</span> <span class="v" id="oHrs">—</span></div>
         <div class="row"><span class="k">Money saved per year</span> <span class="v" id="oMoney">—</span></div>
         <p class="note" id="oNote" hidden></p>
       </div>
@@ -71,7 +71,7 @@
     <noscript>
       <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The math:
       <em>minutes saved per week = (before − after) × times per week × people</em>; then
-      <em>hours per year = minutes per week × 52 ÷ 60</em>; then
+      <em>hours per year = minutes per week × 46 ÷ 60</em>; then
       <em>money per year = hours per year × loaded hourly cost</em>. Reclaimed hours only become
       money if they're redeployed to something valuable.</p>
     </noscript>
@@ -88,12 +88,12 @@
     <p>But be careful with the money figure. Reclaimed hours only turn into money if they're
       redeployed to something valuable — more billable work, more sales calls, a project that's
       been waiting. If the freed-up time just becomes slack that quietly fills back up, you've
-      saved hours on paper and nothing in the bank. Treat the yearly pound figure as the
+      saved hours on paper and nothing in the bank. Treat the yearly dollar figure as the
       <em>ceiling</em> of the saving, unlocked only when someone actually uses the time.</p>
 
     <h3>The formula, in full</h3>
     <p><b>Minutes saved per week</b> = (minutes before − minutes after) × times done per week ×
-      people doing it. <b>Hours saved per year</b> = that weekly figure × 52 ÷ 60. <b>Money saved
+      people doing it. <b>Hours saved per year</b> = that weekly figure × 46 ÷ 60 (a 46-week working year, after vacation and holidays). <b>Money saved
       per year</b> = the yearly hours × your loaded hourly cost — the wage plus tax, tools and
       overhead, not the bare salary. If "after" is somehow larger than "before", the saving is
       zero: the task got slower, not faster.</p>
@@ -101,8 +101,8 @@
     <h3>A worked example</h3>
     <p>A task takes 30 minutes by hand and 5 with AI, so each run saves 25 minutes. It's done 20
       times a week across a team of 3, which is 25 × 20 × 3 = <b>1,500 minutes a week</b>. Over a
-      year that's 1,500 × 52 ÷ 60 = <b>1,300 hours</b>. At a loaded cost of £30 an hour, the task
-      reclaims 1,300 × £30 = <b>£39,000 a year</b> — but only if those 1,300 hours go somewhere
+      year that's 1,500 × 46 ÷ 60 = <b>1,150 hours</b>. At a loaded cost of $30 an hour, the task
+      reclaims 1,150 × $30 = <b>$34,500 a year</b> — but only if those 1,150 hours go somewhere
       that matters.</p>
 
     <h3>Edge cases the calculator handles</h3>
@@ -158,16 +158,16 @@
   var ids = ["B", "A", "Fq", "P", "L"], el = {};
   ids.forEach(function (i) { el[i] = document.getElementById(i); });
   function num(i) { var v = parseFloat(el[i].value); return isNaN(v) || v < 0 ? 0 : v; }
-  function whole(x) { return Math.round(x).toLocaleString("en-GB"); }
+  function whole(x) { return Math.round(x).toLocaleString("en-US"); }
   function money(x) {
-    return (x < 0 ? "−" : "") + "£" + Math.abs(Math.round(x)).toLocaleString("en-GB", {minimumFractionDigits: 0, maximumFractionDigits: 0});
+    return (x < 0 ? "−" : "") + "$" + Math.abs(Math.round(x)).toLocaleString("en-US", {minimumFractionDigits: 0, maximumFractionDigits: 0});
   }
   function set(id, t) { document.getElementById(id).textContent = t; }
   function run() {
     var B = num("B"), A = num("A"), Fq = num("Fq"), P = num("P"), L = num("L");
     var perTask = Math.max(B - A, 0);
     var perWeekMin = perTask * Fq * P;
-    var hrsYear = perWeekMin * 52 / 60;
+    var hrsYear = perWeekMin * 46 / 60;   // 46-week working year, same as the book and the saving spreadsheet
     var moneyYear = hrsYear * L;
     set("oMin", whole(perWeekMin) + " min/week");
     set("oHrs", whole(hrsYear) + " hrs/year");

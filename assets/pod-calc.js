@@ -16,7 +16,7 @@
   var fin = function (x) { return typeof x === "number" && isFinite(x); };
   var money = function (x) {
     return (x === "" || x === null || !isFinite(x)) ? "—"
-      : (Number(x) < 0 ? "−" : "") + "£" + Math.abs(Number(x)).toLocaleString("en-GB",
+      : (Number(x) < 0 ? "−" : "") + "$" + Math.abs(Number(x)).toLocaleString("en-US",
           { minimumFractionDigits: 2, maximumFractionDigits: 2 });
   };
   /* Round UP to the next whole penny. A price FLOOR must never display a value
@@ -38,9 +38,9 @@
      total. A platform may also charge a small FIXED fee per sale (Etsy's
      listing fee, plus the fixed part of payment processing) — the same fixedFee
      that priceFloor() already accounts for, so the two tools cannot disagree.
-     Book anchor: £22 item, £0 charged (absorbed), £9 base, £4.80 you pay, 10%
-     fee, £0.50 buffer, £0 fixed -> £5.50 contribution (add a £0.16 listing fee
-     and the same sale nets £5.34). */
+     Book anchor: $22 item, $0 charged (absorbed), $9 base, $4.80 you pay, 10%
+     fee, $0.50 buffer, $0 fixed -> $5.50 contribution (add Etsy's $0.45 fixed fees
+     and the same sale nets $5.05). */
   function contribution(price, shipCharged, base, shipYouPay, feePct, buffer,
                         fixedFee) {
     if (!fin(price) || price < 0 || !fin(feePct) || feePct < 0
@@ -58,8 +58,8 @@
   }
 
   /* P6 — Price floor. Solve for the smallest total a buyer must pay for the
-     product to clear a target contribution, given the fee %. Book anchor: £9
-     base, £4.80 ship, £0 fixed, £0.50 buffer, £4.50 target, 10% -> £20.89.
+     product to clear a target contribution, given the fee %. Book anchor: $9
+     base, $4.80 ship, $0 fixed, $0.50 buffer, $4.50 target, 10% -> $20.89.
      minBuyerTotal is the exact (unrounded) value for round-trip checks;
      minBuyerTotalCeil is what a buyer must actually be charged — rounded UP to
      the next penny so the displayed price never sits below the floor. */
@@ -87,11 +87,11 @@
      falls as the basket grows. `lines` is [{unit, qty}], where `unit` is the
      FULL single-item contribution (as contribution() returns it, INCLUDING the
      whole fixed fee). `perOrderFee` is the per-order portion saved on each extra
-     item (Etsy UK ~£0.24 processing+VAT). Buying the items separately, every
+     item (Etsy US $0.25 processing). Buying the items separately, every
      unit carries its own perOrderFee (already inside `unit`); dropped into ONE
      basket, only the first order pays it, so we add it back for the rest.
-     Book anchor: tee £4.41 + mug £1.59 = £6.00 separate; one basket, £0.24
-     processing saved once -> £6.24 (a £0.24 lift, from basket size alone).
+     Book anchor: tee $4.39 + mug $1.57 = $5.96 separate; one basket, $0.25
+     processing saved once -> $6.21 (a $0.25 lift, from basket size alone).
      A design's `unit` MAY be negative (a real loss) — that is a valid answer,
      not an error; only a negative qty or perOrderFee is nonsense. */
   function orderContribution(lines, perOrderFee) {
@@ -114,10 +114,10 @@
      LOWER price too, so the fee falls with it. The hit to contribution is the
      discount MINUS the fee you no longer pay on it: discount x (1 - fee%).
      (Your base, shipping, buffer and fixed fee don't move.) On a thin design a
-     modest coupon can still gut the margin. Book anchor: a 10% coupon on the £16
-     mug is £1.60 off, but ~13% of that (£0.21) is fee you save, so contribution
-     falls by ~£1.39 — from £1.59 to about £0.20 (not a loss, but almost nothing
-     left); the same 10% off the £38 hoodie leaves ~£5.92, comfortable. A deeper
+     modest coupon can still gut the margin. Book anchor: a 10% coupon on the $16
+     mug is $1.60 off, but ~13% of that ($0.21) is fee you save, so contribution
+     falls by ~$1.39 — from $1.57 to about $0.18 (not a loss, but almost nothing
+     left); the same 10% off the $38 hoodie leaves ~$5.90, comfortable. A deeper
      coupon on the mug DOES turn negative — which is why a blanket coupon needs a
      minimum-basket floor. */
   function couponImpact(price, contribution, pctOff, feePct) {
@@ -132,7 +132,7 @@
              losesMoney: after < 0, invalid: false };
   }
 
-  /* I7c — The funnel read (ch7). Per LISTING, Etsy Stats give views, favourites
+  /* I7c — The funnel read (ch7). Per LISTING, Etsy Stats give views, favorites
      and orders — engagement signals, NOT a strict staircase, and DIFFERENT from
      the shop-level conversion Etsy also reports (orders / VISITS). Given a fair
      window, name the LIKELIEST place to look, never a proven verdict. Tiny
@@ -140,7 +140,7 @@
      the honest read is "not enough data — a discovery question." Thresholds are
      illustrative starting points, not rules. Book scenarios: 600/45/12 working;
      600/2/0 listing not landing; 40/3/0 discovery gap; 300/12/0 ambiguous
-     (favourites, no orders -> friction at the till, investigate). */
+     (favorites, no orders -> friction at checkout, investigate). */
   function funnel(views, faves, orders, minViews) {
     if (anyNeg(views, faves, orders) || !fin(views)) return { invalid: true };
     faves = fin(faves) ? faves : 0;
@@ -153,19 +153,19 @@
     if (!enoughData) {
       code = "discovery";
       diagnosis = "Too few views for a verdict — this is a DISCOVERY question "
-        + "(get it seen), not a judgement on the design. Fix findability, then "
+        + "(get it seen), not a judgment on the design. Fix findability, then "
         + "look again.";
     } else if (orders > 0) {
       code = "working";
       diagnosis = "It is selling — leave it alone. Read again next window.";
     } else if (favRate < 0.015) {
       code = "listing";
-      diagnosis = "Real traffic, almost no favourites — the LISTING isn't "
+      diagnosis = "Real traffic, almost no favorites — the LISTING isn't "
         + "landing. First suspects: the design/offer, the main photo, the "
         + "title, the price.";
     } else {
       code = "friction";
-      diagnosis = "Favourites but no orders — likely FRICTION at the till "
+      diagnosis = "Favorites but no orders — likely FRICTION at checkout "
         + "(price, shipping, thin reviews, delivery time). Investigate; it is "
         + "not yet a verdict.";
     }
@@ -182,9 +182,9 @@
      `loaded` counts ads (post-acquisition — for ranking what a design earns);
      `loadedPreAd` leaves ads OUT (the pot you have to spend winning a buyer —
      the ONLY figure a CAC is ever judged against). Book anchors: hoodie
-     9.23 -ads2.40 -ret0.50 -ovh0.67 -time3.00 -> 2.66 loaded, 5.06 pre-ad;
-     ad-tee 4.41,3.00,0.40,0.50,0.50 -> 0.01 loaded, 3.01 pre-ad; premium
-     27.83,0,1.00,0.67,3.33 -> 22.83 (ads £0, organic). A loaded figure MAY be
+     9.21 -ads2.40 -ret0.50 -ovh0.67 -time3.00 -> 2.64 loaded, 5.04 pre-ad;
+     ad-tee 4.39,3.00,0.40,0.50,0.50 -> 0.01 loaded, 2.99 pre-ad; premium
+     27.81,0,1.00,0.67,3.33 -> 22.81 (ads $0, organic). A loaded figure MAY be
      negative — a real loss, a valid answer; only a negative burden is nonsense. */
   function loadedContribution(unit, ads, returns_, overhead, time) {
     if (!fin(unit) || anyNeg(ads, returns_, overhead, time))
@@ -200,8 +200,8 @@
      profit. Judge CAC against loaded PRE-AD contribution, NEVER revenue, and
      count the ad once. Works on a single sale (strict) or a proven cohort
      (generous). A ceiling <= 0 is a real answer: the product cannot be won by
-     paid acquisition at that profit requirement. Book: premium 22.83 - 12.00 ->
-     10.83; tee 3.01 - 1.50 -> 1.51 (no real channel hits £1.50 cold). */
+     paid acquisition at that profit requirement. Book: premium 22.81 - 12.00 ->
+     10.81; tee 2.99 - 1.50 -> 1.49 (no real channel hits $1.50 cold). */
   function cacCeiling(preAdContribution, requiredProfit) {
     if (!fin(preAdContribution) || anyNeg(requiredProfit))
       return { maxCac: "—", advertisable: null, invalid: true };
@@ -214,7 +214,7 @@
      cheer a "3x". Convert it to YOUR product: you break even on the first sale
      when the ad cost equals the loaded pre-ad contribution, so break-even ROAS =
      revenue / pre-ad. Anything the dashboard shows below this is a loss. Book:
-     premium 68 / 22.83 -> ~3.0x; tee 22 / 3.01 -> ~7.3x (so a "3x" on the tee is
+     premium 68 / 22.81 -> ~3.0x; tee 22 / 2.99 -> ~7.4x (so a "3x" on the tee is
      a bleed). If pre-ad <= 0 the sale loses money at ANY ROAS -> Infinity. */
   function roasBreakeven(revenue, preAdContribution) {
     if (!fin(revenue) || revenue <= 0 || !fin(preAdContribution))
@@ -225,7 +225,7 @@
 
   var pct = function (x) {
     return (x === null || !isFinite(x)) ? "—"
-      : (Number(x) * 100).toLocaleString("en-GB",
+      : (Number(x) * 100).toLocaleString("en-US",
           { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + "%";
   };
 

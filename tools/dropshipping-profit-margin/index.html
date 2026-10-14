@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,26 +35,31 @@
     <div class="calc">
       <div>
         <div class="field">
-          <label for="SP">Selling price <span class="u">(£)</span></label>
+          <label for="SP">Selling price <span class="u">($)</span></label>
           <input id="SP" type="number" inputmode="decimal" value="29.99" min="0" step="0.01">
           <p class="hint">what the buyer pays you for the product</p>
         </div>
         <div class="field">
-          <label for="C">Product cost <span class="u">(£)</span></label>
+          <label for="C">Product cost <span class="u">($)</span></label>
           <input id="C" type="number" inputmode="decimal" value="9.00" min="0" step="0.01">
           <p class="hint">what your supplier charges</p>
         </div>
         <div class="field">
-          <label for="Sh">Shipping you pay <span class="u">(£)</span></label>
+          <label for="Sh">Shipping you pay <span class="u">($)</span></label>
           <input id="Sh" type="number" inputmode="decimal" value="4.00" min="0" step="0.01">
         </div>
         <div class="field">
           <label for="f">Transaction fee <span class="u">(%)</span></label>
-          <input id="f" type="number" inputmode="decimal" value="3" min="0" max="99" step="0.1">
-          <p class="hint">payment + platform % on the sale</p>
+          <input id="f" type="number" inputmode="decimal" value="2.9" min="0" max="99" step="0.1">
+          <p class="hint">payment + platform % on the sale (2.9% on Stripe or Shopify Basic, US)</p>
         </div>
         <div class="field">
-          <label for="Ad">Ad cost per order <span class="u">(£)</span></label>
+          <label for="Fx">Fixed fee per order <span class="u">($)</span></label>
+          <input id="Fx" type="number" inputmode="decimal" value="0.30" min="0" step="0.01">
+          <p class="hint">the flat part of the card fee: 30¢ on Stripe or Shopify Basic (US)</p>
+        </div>
+        <div class="field">
+          <label for="Ad">Ad cost per order <span class="u">($)</span></label>
           <input id="Ad" type="number" inputmode="decimal" value="6.00" min="0" step="0.01">
           <p class="hint">total ad spend ÷ orders</p>
         </div>
@@ -76,7 +81,7 @@
 
     <noscript>
       <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The math:
-      <em>total cost = product + shipping + (selling price × fee%) + ad cost</em>;
+      <em>total cost = product + shipping + (selling price × fee%) + fixed fee + ad cost</em>;
       <em>net profit = selling price − total cost</em>; then
       <em>margin = net profit ÷ selling price</em>. Or
       <a href="../../resources/dropshipping/">grab the dropshipping resources</a> and run your own
@@ -97,21 +102,21 @@
       product can sell all day and still lose a little on every order once the ad cost is counted.</p>
 
     <h3>The formula, in full</h3>
-    <p><b>Total cost per order</b> = product cost + shipping + (selling price × fee ÷ 100) + ad cost per
-      order. <b>Net profit per order</b> = selling price − total cost. <b>Profit margin</b> = net profit
+    <p><b>Total cost per order</b> = product cost + shipping + (selling price × fee ÷ 100) + the fixed fee per
+      order + ad cost per order. <b>Net profit per order</b> = selling price − total cost. <b>Profit margin</b> = net profit
       ÷ selling price, shown as a percentage. The fee is applied to the selling price because that's the
       figure the buyer is charged, which is what payment and platform cuts are taken from.</p>
 
     <h3>A worked example</h3>
-    <p>Sell at £29.99. The product costs £9.00, shipping is £4.00, the transaction fee is 3% (so
-      £29.99 × 0.03 = £0.90), and the ads that won the order cost £6.00. Add those up and the total cost
-      per order is <b>£19.90</b>. Take that off the £29.99 and the net profit is <b>£10.09</b> — a profit
-      margin of <b>33.6%</b>. Healthy. But watch what the £6.00 ad cost is doing: drop your selling price
-      by a few pounds or let the ad cost drift up, and that comfortable third of the price thins out fast.</p>
+    <p>Sell at $29.99. The product costs $9.00, shipping is $4.00, the card fee is 2.9% + 30¢ (so
+      $29.99 × 0.029 = $0.87, plus $0.30 = $1.17), and the ads that won the order cost $6.00. Add those up
+      and the total cost per order is <b>$20.17</b>. Take that off the $29.99 and the net profit is
+      <b>$9.82</b> — a profit margin of <b>32.7%</b>. Healthy. But watch what the $6.00 ad cost is doing: drop your selling price
+      by a few dollars or let the ad cost drift up, and that comfortable third of the price thins out fast.</p>
 
     <h3>Edge cases the calculator handles</h3>
     <ul class="note" style="line-height:1.7">
-      <li><b>A selling price of £0</b> shows "—" for the margin rather than an error, because you can't
+      <li><b>A selling price of $0</b> shows "—" for the margin rather than an error, because you can't
         divide by a price that isn't there.</li>
       <li><b>A negative net profit</b> is shown honestly, not hidden. If total cost climbs above the
         selling price, the net and the margin both go negative — that's the order telling you it costs
@@ -160,16 +165,16 @@
 
 <script>
 (function () {
-  var ids = ["SP", "C", "Sh", "f", "Ad"], el = {};
+  var ids = ["SP", "C", "Sh", "f", "Fx", "Ad"], el = {};
   ids.forEach(function (i) { el[i] = document.getElementById(i); });
   function num(i) { var v = parseFloat(el[i].value); return isNaN(v) || v < 0 ? 0 : v; }
   function money(x) {
-    return (x < 0 ? "−" : "") + "£" + Math.abs(x).toLocaleString("en-GB", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    return (x < 0 ? "−" : "") + "$" + Math.abs(x).toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2});
   }
   function set(id, t) { document.getElementById(id).textContent = t; }
   function run() {
-    var SP = num("SP"), C = num("C"), Sh = num("Sh"), f = num("f"), Ad = num("Ad");
-    var totalCost = C + Sh + SP * (f / 100) + Ad;
+    var SP = num("SP"), C = num("C"), Sh = num("Sh"), f = num("f"), Fx = num("Fx"), Ad = num("Ad");
+    var totalCost = C + Sh + SP * (f / 100) + Fx + Ad;
     var net = SP - totalCost;
     set("oCost", money(totalCost));
     set("oNet", money(net));
@@ -192,10 +197,10 @@
   document.querySelectorAll("input").forEach(function (i) { i.addEventListener("input", later); });
   window.addEventListener("resize", later);
 
-  V.currency("£", "en-GB");
+  V.currency("$", "en-US");
   function draw() {
-    var SP = v("SP"), C = v("C"), Sh = v("Sh"), f = v("f"), Ad = v("Ad");
-    var fee = SP * f / 100, net = SP - (C + Sh + fee + Ad);
+    var SP = v("SP"), C = v("C"), Sh = v("Sh"), f = v("f"), Fx = v("Fx"), Ad = v("Ad");
+    var fee = SP * f / 100 + Fx, net = SP - (C + Sh + fee + Ad);
     var row = { label: "One order",
       segs: [{ name: "You keep", value: Math.max(0, net), color: V.C.s1 },
              { name: "Transaction fee", value: fee, color: V.C.s2 },

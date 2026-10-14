@@ -14,7 +14,7 @@ About ten minutes. Three settings and one search. Don't list anything yet.
        buyers than that saves.
 
 [ ] 3. SHIP-FROM LOCATION + A 1-BUSINESS-DAY HANDLING TIME
-       The location lets eBay calculate real postage for you. One-day
+       The location lets eBay calculate real shipping for you. One-day
        handling is a promise you can keep.
 
 [ ] 4. FIND THE SOLD FILTER AND RUN ONE SEARCH

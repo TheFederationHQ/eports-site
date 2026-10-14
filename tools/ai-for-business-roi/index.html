@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,12 +35,12 @@
     <div class="calc">
       <div>
         <div class="field">
-          <label for="S">One-off setup cost <span class="u">(£)</span></label>
+          <label for="S">One-off setup cost <span class="u">($)</span></label>
           <input id="S" type="number" inputmode="decimal" value="5000" min="0" step="0.01">
           <p class="hint">build, integration, training</p>
         </div>
         <div class="field">
-          <label for="M">Monthly tool / subscription cost <span class="u">(£)</span></label>
+          <label for="M">Monthly tool / subscription cost <span class="u">($)</span></label>
           <input id="M" type="number" inputmode="decimal" value="200" min="0" step="0.01">
         </div>
         <div class="field">
@@ -48,12 +48,12 @@
           <input id="Hrs" type="number" inputmode="decimal" value="40" min="0" step="0.5">
         </div>
         <div class="field">
-          <label for="L">Loaded hourly labor cost <span class="u">(£)</span></label>
+          <label for="L">Loaded hourly labor cost <span class="u">($)</span></label>
           <input id="L" type="number" inputmode="decimal" value="30" min="0" step="0.01">
           <p class="hint">wage + overhead of whoever did it before</p>
         </div>
         <div class="field">
-          <label for="Oth">Other monthly savings <span class="u">(£)</span></label>
+          <label for="Oth">Other monthly savings <span class="u">($)</span></label>
           <input id="Oth" type="number" inputmode="decimal" value="0" min="0" step="0.01">
           <p class="hint">error reduction, faster turnaround — 0 if unsure</p>
         </div>
@@ -83,7 +83,7 @@
       annual cost</em>. Or <a href="../../resources/ai-for-your-business/">grab the free tools on the
       AI for Your Business resources page</a> and work it through on your own numbers.</p>
     </noscript>
-    <p class="cta">Deciding where AI actually pays before you spend a penny is the first job in
+    <p class="cta">Deciding where AI actually pays before you spend a cent is the first job in
       <a href="../../ai-for-your-business/#basics"><em>AI for Your Business: Basics</em> →</a></p>
   </section>
 
@@ -108,12 +108,12 @@
       annual cost = setup cost + monthly cost × 12.</p>
 
     <h3>A worked example</h3>
-    <p>Say a project costs £5,000 to set up and £200 a month to run, and it saves 40 hours a month of
-      work that used to cost £30 an hour loaded, with no other savings you're sure of. The gross benefit
-      is 40 × £30 = <b>£1,200 a month</b>; net of the £200 tool cost that's <b>£1,000 a month</b>. It
-      pays for itself in £5,000 ÷ £1,000 = <b>5.0 months</b>, leaves <b>£7,000</b> at the end of year one
-      (£1,000 × 12 − £5,000), and returns <b>94.6%</b> on the first year's spend (£14,400 of benefit
-      against £7,400 of cost). A strong project — as long as those 40 hours were real.</p>
+    <p>Say a project costs $5,000 to set up and $200 a month to run, and it saves 40 hours a month of
+      work that used to cost $30 an hour loaded, with no other savings you're sure of. The gross benefit
+      is 40 × $30 = <b>$1,200 a month</b>; net of the $200 tool cost that's <b>$1,000 a month</b>. It
+      pays for itself in $5,000 ÷ $1,000 = <b>5.0 months</b>, leaves <b>$7,000</b> at the end of year one
+      ($1,000 × 12 − $5,000), and returns <b>94.6%</b> on the first year's spend ($14,400 of benefit
+      against $7,400 of cost). A strong project — as long as those 40 hours were real.</p>
 
     <h3>Edge cases the calculator handles</h3>
     <ul class="note" style="line-height:1.7">
@@ -169,7 +169,7 @@
   ids.forEach(function (i) { el[i] = document.getElementById(i); });
   function num(i) { var v = parseFloat(el[i].value); return isNaN(v) || v < 0 ? 0 : v; }
   function money(x) {
-    return (x < 0 ? "−" : "") + "£" + Math.abs(x).toLocaleString("en-GB", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    return (x < 0 ? "−" : "") + "$" + Math.abs(x).toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2});
   }
   function set(id, t) { document.getElementById(id).textContent = t; }
   function run() {
@@ -202,7 +202,7 @@
   document.querySelectorAll("input").forEach(function (i) { i.addEventListener("input", later); });
   window.addEventListener("resize", later);
 
-  V.currency("£", "en-GB");
+  V.currency("$", "en-US");
   function draw() {
     var S = v("S"), M = v("M"), Hrs = v("Hrs"), L = v("L"), Oth = v("Oth");
     var net = Hrs * L + Oth - M, half = (Hrs / 2) * L + Oth - M;

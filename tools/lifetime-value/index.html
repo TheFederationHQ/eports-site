@@ -133,7 +133,7 @@
   document.querySelectorAll("input").forEach(function (i) { i.addEventListener("input", later); });
   window.addEventListener("resize", later);
 
-  V.currency("$", "en-GB");
+  V.currency("$", "en-US");
   function n(id) { var x = parseFloat(document.getElementById(id).value); return isNaN(x) ? NaN : x; }
   function draw() {
     var AOV = n("AOV"), f = n("f"), L = n("L"), CAC = n("CAC");

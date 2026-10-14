@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,23 +35,23 @@
     <div class="calc">
       <div>
         <div class="field">
-          <label for="P">Item price <span class="u">(£)</span></label>
+          <label for="P">Item price <span class="u">($)</span></label>
           <input id="P" type="number" inputmode="decimal" value="20.00" min="0" step="0.01">
         </div>
         <div class="field">
-          <label for="Sh">Shipping you charge the buyer <span class="u">(£)</span></label>
+          <label for="Sh">Shipping you charge the buyer <span class="u">($)</span></label>
           <input id="Sh" type="number" inputmode="decimal" value="4.00" min="0" step="0.01">
           <p class="hint">Etsy's transaction fee applies to shipping too</p>
         </div>
         <div class="field">
-          <label for="C">Your cost (blank + printing + the shipping you pay) <span class="u">(£)</span></label>
+          <label for="C">Your cost (blank + printing + the shipping you pay) <span class="u">($)</span></label>
           <input id="C" type="number" inputmode="decimal" value="8.00" min="0" step="0.01">
         </div>
         <div class="field">
-          <label for="listing">Listing fee <span class="u">(£)</span></label>
-          <input id="listing" type="number" inputmode="decimal" value="0.16" min="0" step="0.01">
-          <p class="hint">about £0.16 / $0.20 to create or renew a listing (the GBP amount moves with
-            exchange rates); a multiple-quantity listing renews after each item sells</p>
+          <label for="listing">Listing fee <span class="u">($)</span></label>
+          <input id="listing" type="number" inputmode="decimal" value="0.20" min="0" step="0.01">
+          <p class="hint">$0.20 to create or renew a listing; a multiple-quantity listing renews after each
+            item sells</p>
         </div>
         <div class="field">
           <label for="txn">Transaction fee <span class="u">(%)</span></label>
@@ -59,17 +59,22 @@
         </div>
         <div class="field">
           <label for="proc">Payment processing <span class="u">(%)</span></label>
-          <input id="proc" type="number" inputmode="decimal" value="4" min="0" max="99" step="0.1">
-          <p class="hint">the % part; varies by country</p>
+          <input id="proc" type="number" inputmode="decimal" value="3" min="0" max="99" step="0.1">
+          <p class="hint">the % part: 3% in the US (other countries have their own rate)</p>
         </div>
         <div class="field">
-          <label for="procFix">Processing fixed fee <span class="u">(£)</span></label>
-          <input id="procFix" type="number" inputmode="decimal" value="0.20" min="0" step="0.01">
+          <label for="procFix">Processing fixed fee <span class="u">($)</span></label>
+          <input id="procFix" type="number" inputmode="decimal" value="0.25" min="0" step="0.01">
+        </div>
+        <div class="field">
+          <label for="Tax">Buyer's sales tax rate <span class="u">(%)</span></label>
+          <input id="Tax" type="number" inputmode="decimal" value="0" min="0" max="99" step="0.01">
+          <p class="hint">optional; Etsy collects and remits it, but its processing % is charged on the tax too</p>
         </div>
         <div class="field">
           <label for="Reg">Regulatory / other % fee <span class="u">(%)</span></label>
-          <input id="Reg" type="number" inputmode="decimal" value="0.48" min="0" max="99" step="0.01">
-          <p class="hint">e.g. Etsy's UK Regulatory Operating Fee ~0.48% of the order total; varies by country, 0 if none</p>
+          <input id="Reg" type="number" inputmode="decimal" value="0" min="0" max="99" step="0.01">
+          <p class="hint">none for US sellers; outside the US, sellers in some countries pay Etsy's regulatory operating fee</p>
         </div>
       </div>
       <div class="calc-out" aria-live="polite" aria-atomic="true">
@@ -82,9 +87,10 @@
     </div>
 
     <p class="note" style="margin-top:1rem"><b>Estimate based on the fees you entered.</b> It does NOT
-      include VAT charged on Etsy fees (some countries), Offsite Ads (~12–15% on some sales), currency
-      conversion or other conditional fees — add those yourself. Etsy's fees change and differ by country;
-      enter your current rates from Etsy's own fees page.</p>
+      include Offsite Ads (12–15% on some sales), sales tax some states charge on Etsy's fees, or other
+      conditional fees — add those yourself. Sales tax the buyer pays isn't your money (Etsy collects and
+      remits it), so it's left out of revenue. Etsy's fees change; enter your current rates from Etsy's own
+      fees page.</p>
 
         <div class="viz">
       <h3>Where the buyer's money goes</h3>
@@ -96,8 +102,8 @@
     <noscript>
       <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The math:
       <em>revenue = item price + shipping you charge</em>;
-      <em>fees = listing fee + revenue × transaction% + revenue × processing% + fixed processing fee +
-      revenue × regulatory%</em>; <em>estimated left = revenue − fees</em>; <em>profit = estimated left −
+      <em>fees = listing fee + revenue × transaction% + revenue × (1 + sales tax%) × processing% + fixed
+      processing fee + revenue × regulatory%</em>; <em>estimated left = revenue − fees</em>; <em>profit = estimated left −
       your cost</em>; and <em>margin = profit ÷ revenue</em>. Enter your own current rates from Etsy's
       fees page.</p>
     </noscript>
@@ -113,23 +119,23 @@
       difference between a listing that pays you and one that quietly doesn't.</p>
     <p>The buyer pays the item price plus any shipping you charge — that whole total is your revenue, and
       it's what Etsy's percentage fees are worked out on. So a "free shipping" listing at a higher item
-      price and a lower-price-plus-postage listing are charged the same percentage fees; only the total
+      price and a lower-price-plus-shipping listing are charged the same percentage fees; only the total
       matters.</p>
 
     <h3>The formula, in full</h3>
     <p><b>Revenue</b> = item price + shipping you charge. <b>Etsy fees (the ones entered)</b> = listing
-      fee + revenue × (transaction% ÷ 100) + revenue × (processing% ÷ 100) + the fixed processing fee +
+      fee + revenue × (transaction% ÷ 100) + revenue × (1 + sales tax% ÷ 100) × (processing% ÷ 100) + the fixed processing fee +
       revenue × (regulatory% ÷ 100). <b>Estimated left</b> = revenue − fees. <b>Profit</b> = the estimated
       left − your cost. <b>Margin</b> = profit ÷ revenue, shown as a percentage. The transaction fee, the
       processing percentage and the regulatory fee all apply to the item price <em>and</em> the shipping,
-      which is why shipping is folded into revenue before the percentages are taken.</p>
+      which is why shipping is folded into revenue before the percentages are taken. Processing is also
+      charged on any sales tax the buyer pays, which is why the tax rate nudges it up.</p>
 
     <h3>A worked example</h3>
-    <p>A £20 item with £4 shipping is £24 of revenue. On the standard rates — a £0.16 listing fee, 6.5%
-      transaction, 4% processing, a £0.20 fixed processing fee and a 0.48% regulatory fee — the fees are
-      £0.16 + £1.56 + £0.96 + £0.20 + £0.12 (the 0.48% line, £0.1152) = <b>£3.00</b>. The estimated left is
-      £24 − £3.00 = £21.00. Take off an £8 cost and the profit is <b>£13.00</b>, a margin of £13.00 ÷ £24 =
-      <b>54.2%</b>. Change any rate and every figure moves with it — which is why the boxes ask for
+    <p>A $20 item with $4 shipping is $24 of revenue. On the standard US rates — a $0.20 listing fee, 6.5%
+      transaction, 3% processing and a $0.25 fixed processing fee, with no sales tax entered — the fees are
+      $0.20 + $1.56 + $0.72 + $0.25 = <b>$2.73</b>. The estimated left is $24 − $2.73 = $21.27. Take off an
+      $8 cost and the profit is <b>$13.27</b>, a margin of $13.27 ÷ $24 = <b>55.3%</b>. Change any rate and every figure moves with it — which is why the boxes ask for
       <em>your</em> current rates, not a stand-in.</p>
 
     <h3>Edge cases the calculator handles</h3>
@@ -143,14 +149,13 @@
     <h3>Common questions</h3>
     <h4>What fee rates should I put in?</h4>
     <p>Your own, from Etsy's official fees page — not a comparison article, because Etsy's fees change and
-      differ by country. The defaults here are the standard UK-ish figures (a ~£0.16 / $0.20 listing fee,
-      6.5% transaction, roughly 4% + £0.20 processing), but your transaction and processing rates depend
-      on where you sell. Look up the current numbers for your own shop and type those in.</p>
+      differ by country. The defaults here are the standard US figures (a $0.20 listing fee, 6.5%
+      transaction, 3% + $0.25 processing, no regulatory fee). Outside the US, processing rates differ and
+      some countries add a regulatory operating fee — look up the current numbers for your own shop.</p>
     <h4>Does this include every possible fee?</h4>
     <p>No — these are the standard per-sale fees you enter. Etsy's <em>Offsite Ads</em> fee (a further
       ~12–15% on sales that come through Etsy's advertising) can apply to some orders and isn't included
-      here unless you fold it in, and neither is any VAT charged on the fees themselves or currency
-      conversion. The listing fee is charged to create or renew a listing — a multiple-quantity listing
+      here unless you fold it in, and neither is any sales tax your state charges on the fees themselves. The listing fee is charged to create or renew a listing — a multiple-quantity listing
       renews after each item sells — so treat the numbers as an estimate of the standard fees on one
       sale, not an all-in permanent total.</p>
     <h4>Is this financial advice or a guarantee?</h4>
@@ -183,19 +188,19 @@
 
 <script>
 (function () {
-  var ids = ["P", "Sh", "C", "listing", "txn", "proc", "procFix", "Reg"], el = {};
+  var ids = ["P", "Sh", "C", "listing", "txn", "proc", "procFix", "Tax", "Reg"], el = {};
   ids.forEach(function (i) { el[i] = document.getElementById(i); });
   function num(i) { var v = parseFloat(el[i].value); return isNaN(v) || v < 0 ? 0 : v; }
   function money(x) {
-    return (x < 0 ? "−" : "") + "£" + Math.abs(x).toLocaleString("en-GB", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    return (x < 0 ? "−" : "") + "$" + Math.abs(x).toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2});
   }
   function set(id, t) { document.getElementById(id).textContent = t; }
   function run() {
     var P = num("P"), Sh = num("Sh"), C = num("C"),
         listing = num("listing"), txn = num("txn"), proc = num("proc"), procFix = num("procFix"),
-        Reg = num("Reg");
+        Tax = num("Tax"), Reg = num("Reg");
     var revenue = P + Sh;
-    var fees = listing + revenue * (txn / 100) + revenue * (proc / 100) + procFix + revenue * (Reg / 100);
+    var fees = listing + revenue * (txn / 100) + revenue * (1 + Tax / 100) * (proc / 100) + procFix + revenue * (Reg / 100);
     var keep = revenue - fees;
     var profit = keep - C;
     set("oFees", money(fees));
@@ -203,7 +208,7 @@
     set("oProfit", money(profit));
     if (revenue > 0) {
       var margin = (profit / revenue) * 100;
-      set("oMargin", margin.toLocaleString("en-GB", {minimumFractionDigits: 1, maximumFractionDigits: 1}) + "%");
+      set("oMargin", margin.toLocaleString("en-US", {minimumFractionDigits: 1, maximumFractionDigits: 1}) + "%");
     } else {
       set("oMargin", "—");
     }
@@ -225,11 +230,11 @@
   document.querySelectorAll("input").forEach(function (i) { i.addEventListener("input", later); });
   window.addEventListener("resize", later);
 
-  V.currency("£", "en-GB");
+  V.currency("$", "en-US");
   function draw() {
     var P = v("P"), Sh = v("Sh"), C = v("C"), listing = v("listing"), txn = v("txn"), proc = v("proc"),
-        procFix = v("procFix"), Reg = v("Reg");
-    var rev = P + Sh, t = rev * txn / 100, pr = rev * proc / 100 + procFix, rg = rev * Reg / 100;
+        procFix = v("procFix"), Tax = v("Tax"), Reg = v("Reg");
+    var rev = P + Sh, t = rev * txn / 100, pr = rev * (1 + Tax / 100) * proc / 100 + procFix, rg = rev * Reg / 100;
     var fees = listing + t + pr + rg, profit = rev - fees - C;
     var row = { label: "One sale",
       segs: [{ name: "You keep", value: Math.max(0, profit), color: V.C.s1 },

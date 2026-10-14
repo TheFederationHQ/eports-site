@@ -22,7 +22,7 @@ Do I know whether I need a seller's permit for these?  [ ] yes  [ ] no
 =====================================================================
 THREE — RETURNS THAT NEVER REACHED THE RECORDS
 =====================================================================
-Returns: ____   Refunds: $______   Return postage paid: $______
+Returns: ____   Refunds: $______   Return shipping paid: $______
 Items that came back unsellable: ____ (cost $______)
 In my figures?  [ ] yes  [ ] no
 

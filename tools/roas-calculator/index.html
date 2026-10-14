@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -36,22 +36,22 @@
     <div class="calc">
       <div>
         <div class="field">
-          <label for="Rev">Revenue from the ads <span class="u">(£)</span></label>
+          <label for="Rev">Revenue from the ads <span class="u">($)</span></label>
           <input id="Rev" type="number" inputmode="decimal" value="2000" min="0" step="0.01">
           <p class="hint">sales the campaign brought in</p>
         </div>
         <div class="field">
-          <label for="Spend">Ad spend <span class="u">(£)</span></label>
+          <label for="Spend">Ad spend <span class="u">($)</span></label>
           <input id="Spend" type="number" inputmode="decimal" value="500" min="0" step="0.01">
           <p class="hint">what you paid the ad platform</p>
         </div>
         <div class="field">
-          <label for="Cogs">Product + fulfillment cost of those orders <span class="u">(£)</span></label>
+          <label for="Cogs">Product + fulfillment cost of those orders <span class="u">($)</span></label>
           <input id="Cogs" type="number" inputmode="decimal" value="700" min="0" step="0.01">
           <p class="hint">0 to see ROAS on its own</p>
         </div>
         <div class="field">
-          <label for="Other">Other variable costs on these orders <span class="u">(£)</span></label>
+          <label for="Other">Other variable costs on these orders <span class="u">($)</span></label>
           <input id="Other" type="number" inputmode="decimal" value="0" min="0" step="0.01">
           <p class="hint">payment/platform fees, transaction taxes, expected returns/chargebacks — 0 if already in the cost above</p>
         </div>
@@ -79,7 +79,7 @@
   <section>
     <h2><span class="n">How to read it</span> ROAS is not profit</h2>
     <p>ROAS is return on ad spend — revenue divided by what you paid to advertise. A ROAS of 4× means every
-      £1 of ads brought back £4 in sales. That sounds like plenty, and it's the number most dashboards put
+      $1 of ads brought back $4 in sales. That sounds like plenty, and it's the number most dashboards put
       front and center. But <b>a high ROAS is not the same as profit</b>. ROAS only compares revenue to ad
       spend; it says nothing about what the products in those orders cost you. A 4× ROAS still loses money
       if your product cost is high enough — which is exactly why the contribution line on this calculator
@@ -91,8 +91,7 @@
       stock at a loss, no matter how healthy the ROAS looked on screen. The more of your variable costs you enter
       in the Other box — fees, taxes, returns — the closer this contribution comes to your real result; leave
       them out and it's just revenue minus ad spend and product cost, which flatters it. Even with everything
-      in, it's contribution, not full accounting profit — it still leaves out fixed overhead and income or
-      corporation tax.</p>
+      in, it's contribution, not full accounting profit — it still leaves out fixed overhead and income tax.</p>
 
     <h3>The formula, in full</h3>
     <p><b>ROAS</b> = revenue from the ads ÷ ad spend. That's the raw efficiency of the spend, shown here as
@@ -103,11 +102,11 @@
       on those costs, below zero is negative.</p>
 
     <h3>A worked example</h3>
-    <p>A campaign brings in £2,000 in sales. You spent £500 on the ads, the products and fulfillment for
-      those orders cost £700, and there were no other variable costs to add. ROAS is 2,000 ÷ 500 =
-      <b>4.0×</b> — strong on paper. Contribution is 2,000 − 500 − 700 − 0 = <b>£800</b>, so the campaign is
-      well in the black on the costs you entered. Now hold the ROAS at 4.0× but add £800 of payment fees,
-      taxes and expected returns in the Other box: contribution becomes 2,000 − 500 − 700 − 800 = <b>£0</b>,
+    <p>A campaign brings in $2,000 in sales. You spent $500 on the ads, the products and fulfillment for
+      those orders cost $700, and there were no other variable costs to add. ROAS is 2,000 ÷ 500 =
+      <b>4.0×</b> — strong on paper. Contribution is 2,000 − 500 − 700 − 0 = <b>$800</b>, so the campaign is
+      well in the black on the costs you entered. Now hold the ROAS at 4.0× but add $800 of payment fees,
+      taxes and expected returns in the Other box: contribution becomes 2,000 − 500 − 700 − 800 = <b>$0</b>,
       exactly break-even. Identical ROAS, and the campaign now clears nothing. The ROAS number did not move;
       the contribution line is the one that told the truth once the real costs went in.</p>
 
@@ -180,8 +179,8 @@
   ids.forEach(function (i) { el[i] = document.getElementById(i); });
   function num(i) { var v = parseFloat(el[i].value); return isNaN(v) || v < 0 ? 0 : v; }
   function money(x) {
-    var s = Math.abs(x).toLocaleString("en-GB", {minimumFractionDigits: 2, maximumFractionDigits: 2});
-    return (x < 0 ? "−£" : "£") + s;
+    var s = Math.abs(x).toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    return (x < 0 ? "−$" : "$") + s;
   }
   function set(id, t) { document.getElementById(id).textContent = t; }
   function run() {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,32 +33,32 @@
     <div class="calc">
       <div>
         <div class="field">
-          <label for="B">Base cost <span class="u">(£)</span></label>
+          <label for="B">Base cost <span class="u">($)</span></label>
           <input id="B" type="number" inputmode="decimal" value="9" min="0" step="0.01">
           <p class="hint">the blank + printing your provider charges you</p>
         </div>
         <div class="field">
-          <label for="Sp">Shipping you pay the provider <span class="u">(£)</span></label>
+          <label for="Sp">Shipping you pay the provider <span class="u">($)</span></label>
           <input id="Sp" type="number" inputmode="decimal" value="4.80" min="0" step="0.01">
         </div>
         <div class="field">
-          <label for="Ff">Fixed fees per sale <span class="u">(£)</span></label>
-          <input id="Ff" type="number" inputmode="decimal" value="0" min="0" step="0.01">
-          <p class="hint">flat per-sale charges — Etsy's ~£0.16 listing fee (it renews on each sale) plus the fixed part of card processing (~£0.20 UK); 0 if none</p>
+          <label for="Ff">Fixed fees per sale <span class="u">($)</span></label>
+          <input id="Ff" type="number" inputmode="decimal" value="0.45" min="0" step="0.01">
+          <p class="hint">flat per-sale charges — Etsy's $0.20 listing fee (it renews on each sale) plus the $0.25 fixed part of card processing (US); 0 if none</p>
         </div>
         <div class="field">
-          <label for="R">Refund / misprint buffer <span class="u">(£)</span></label>
+          <label for="R">Refund / misprint buffer <span class="u">($)</span></label>
           <input id="R" type="number" inputmode="decimal" value="0.50" min="0" step="0.01">
         </div>
         <div class="field">
-          <label for="C">Contribution you want per sale <span class="u">(£)</span></label>
+          <label for="C">Contribution you want per sale <span class="u">($)</span></label>
           <input id="C" type="number" inputmode="decimal" value="4.50" min="0" step="0.01">
-          <p class="hint">a beginner floor is about £4–£5</p>
+          <p class="hint">a beginner floor is about $4–$5</p>
         </div>
         <div class="field">
           <label for="f">Platform fee <span class="u">(%)</span></label>
           <input id="f" type="number" inputmode="decimal" value="10" min="0" max="99" step="0.1">
-          <p class="hint">10 for a US ~10% platform · ~12 for UK Etsy with VAT</p>
+          <p class="hint">10 for Etsy's ~10% · ~12 if many orders come through Offsite Ads</p>
         </div>
       </div>
       <div class="calc-out" aria-live="polite" aria-atomic="true">
@@ -98,26 +98,26 @@
       top of the whole payment; rounding up means the shown price never dips a fraction below your floor.</p>
 
     <h3>A worked example</h3>
-    <p>Base cost £9, £4.80 shipping you pay, no fixed fee, a £0.50 buffer, and you want £4.50 a sale, on
-      a platform that charges about 10%. The subtotal is £9 + £4.80 + £0.50 + £4.50 = £18.80. Divide by
-      0.90 (that is £20.88 and a bit) and, rounded up, the buyer must pay at least <b>£20.89</b> in total
-      for this product to clear your floor.
-      Charge £20.89 delivered, or £16 + £4.89 shipping — the total is what counts.</p>
+    <p>Base cost $9, $4.80 shipping you pay, Etsy's $0.45 of fixed fees, a $0.50 buffer, and you want $4.50 a
+      sale, on a platform that charges about 10%. The subtotal is $9 + $4.80 + $0.45 + $0.50 + $4.50 = $19.25.
+      Divide by 0.90 (that is $21.38 and a bit) and, rounded up, the buyer must pay at least <b>$21.39</b> in
+      total for this product to clear your floor.
+      Charge $21.39 delivered, or $16 + $5.39 shipping — the total is what counts.</p>
 
     <h3>Edge cases the calculator handles</h3>
     <ul class="note" style="line-height:1.7">
       <li><b>A fee of 100% or more</b> is impossible to price against, so the result shows "—" rather
         than a nonsense figure.</li>
-      <li><b>A higher fee rate</b> (a UK Etsy seller near 12%, dividing by 0.88) raises the floor — real
+      <li><b>A higher fee rate</b> (a seller near 12% once Offsite Ads orders are averaged in, dividing by 0.88) raises the floor — real
         money, which is why the calculator asks for <em>your</em> rate, not a stand-in.</li>
     </ul>
 
     <h3>Common questions</h3>
     <h4>What fee percentage should I use?</h4>
     <p>Your platform's <em>all-in</em> percentage. Etsy is roughly 10% (6.5% transaction + processing),
-      nearer 12–13% for a UK seller with VAT on the fees. Put your flat per-sale charges in the fixed-fee
-      box — Etsy's ~£0.16 listing fee (it renews on each sale) plus the fixed part of card processing
-      (~£0.20 in the UK). Current figures with dates are on the
+      nearer 12–13% once Offsite Ads orders are averaged in. Put your flat per-sale charges in the fixed-fee
+      box — Etsy's $0.20 listing fee (it renews on each sale) plus the fixed part of card processing
+      ($0.25 in the US). Current figures with dates are on the
       <a href="../../resources/print-on-demand/">Print on Demand resources page</a>.</p>
     <h4>How do I split the total between price and shipping?</h4>
     <p>However you like — the platform and the buyer both see the total, so it makes little difference

@@ -9,7 +9,7 @@ BUILD (turn the blueprint live, all on Etsy):
   [ ] publish the next-in-set piece
   [ ] build the Shop Section; link each listing to its kit-mates
   [ ] create the native Etsy coupon; name the next drop date
-  [ ] start the give-first card in every parcel
+  [ ] start the give-first card in every package
 
 COMMISSION (test each wire as a stranger; fix; retest; then date):
   [ ] Section holds as one set; next drop date shows
@@ -17,18 +17,18 @@ COMMISSION (test each wire as a stranger; fix; retest; then date):
   [ ] coupon takes the RIGHT % off in a real (incognito) cart
   [ ] a WRONG code FAILS  (test the negative case)
   [ ] the coupon doesn't gut a thin design
-        e.g. 10% off a £16 item knocks £1.60 off the price, but the
-        fee on that falls too (~13%), so a £1.59 contribution drops
-        to ~20p — almost nothing (and a deeper coupon goes negative).
-        So set a minimum-basket floor (say £30)
-  [ ] the card is in the packing routine, not just one parcel
+        e.g. 10% off a $16 item knocks $1.60 off the price, but the
+        fee on that falls too (~13%), so a $1.57 contribution drops
+        to ~18¢ — almost nothing (and a deeper coupon goes negative).
+        So set a minimum-basket floor (say $30)
+  [ ] the card is in the packing routine, not just one package
   [ ] any wire that failed was fixed and re-tested
   [ ] MARK IT VERIFIED — with today's date: __________
 
 START-LINE RECORD (your pre-launch numbers, dated — a launch
 cohort can't have a repeat rate yet; this is the "before" photo):
   deployment date: ______   prior repeat rate: ______
-  average order (items / £, last 90 days): ______
+  average order (items / $, last 90 days): ______
   multi-item orders last month: ______   coupon uses: 0
   read after: 60 days — and don't peek till then
 

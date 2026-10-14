@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,27 +35,32 @@
     <div class="calc">
       <div>
         <div class="field">
-          <label for="SP">Selling price <span class="u">(£)</span></label>
+          <label for="SP">Selling price <span class="u">($)</span></label>
           <input id="SP" type="number" inputmode="decimal" value="29.99" min="0" step="0.01">
           <p class="hint">what the buyer pays for the product</p>
         </div>
         <div class="field">
-          <label for="C">Product cost <span class="u">(£)</span></label>
+          <label for="C">Product cost <span class="u">($)</span></label>
           <input id="C" type="number" inputmode="decimal" value="9.00" min="0" step="0.01">
           <p class="hint">what you pay your supplier for the item</p>
         </div>
         <div class="field">
-          <label for="Sh">Shipping you pay <span class="u">(£)</span></label>
+          <label for="Sh">Shipping you pay <span class="u">($)</span></label>
           <input id="Sh" type="number" inputmode="decimal" value="4.00" min="0" step="0.01">
           <p class="hint">the delivery cost you cover, not the buyer</p>
         </div>
         <div class="field">
           <label for="f">Transaction fee <span class="u">(%)</span></label>
-          <input id="f" type="number" inputmode="decimal" value="3" min="0" max="99" step="0.1">
-          <p class="hint">payment processing on the sale price</p>
+          <input id="f" type="number" inputmode="decimal" value="2.9" min="0" max="99" step="0.1">
+          <p class="hint">payment processing on the sale price (2.9% on Stripe or Shopify Basic, US)</p>
         </div>
         <div class="field">
-          <label for="O">Other cost per order <span class="u">(£)</span></label>
+          <label for="Fx">Fixed fee per order <span class="u">($)</span></label>
+          <input id="Fx" type="number" inputmode="decimal" value="0.30" min="0" step="0.01">
+          <p class="hint">the flat part of the card fee: 30¢ on Stripe or Shopify Basic (US)</p>
+        </div>
+        <div class="field">
+          <label for="O">Other cost per order <span class="u">($)</span></label>
           <input id="O" type="number" inputmode="decimal" value="0" min="0" step="0.01">
           <p class="hint">packaging, app fees — 0 if none</p>
         </div>
@@ -71,7 +76,7 @@
     <noscript>
       <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The math:
       <em>gross profit before ads = selling price − product cost − shipping − (selling price × fee%) −
-      other cost</em>; then <em>break-even ROAS = selling price ÷ gross profit before ads</em>. Or open the
+      fixed fee − other cost</em>; then <em>break-even ROAS = selling price ÷ gross profit before ads</em>. Or open the
       <a href="../../resources/dropshipping/">Dropshipping resources page</a> and run the numbers on your
       own products.</p>
     </noscript>
@@ -82,28 +87,29 @@
   <section>
     <h2><span class="n">How to read it</span> The line every ad has to clear</h2>
     <p>ROAS is return on ad spend — revenue divided by what you paid to advertise. A ROAS of 3× means
-      every £1 of ads brought back £3 in sales. On its own that sounds healthy, but it tells you nothing
+      every $1 of ads brought back $3 in sales. On its own that sounds healthy, but it tells you nothing
       until you know the line you have to clear. That line is your <b>break-even ROAS</b>: the exact
       return at which the profit each order makes <em>before</em> advertising just covers the ad cost, so
       you finish level — no gain, no loss.</p>
     <p>Above that ratio the ads are covering these costs; below it they are not, however busy the store looks. Note this is break-even on the variable costs you entered — it does not include returns, discounts, chargebacks or fixed overhead, so treat it as a floor for the ad math, not a full profit guarantee. A
-      break-even ROAS of 1.86× means every £1 of ad spend must bring back at least £1.86 in revenue just
+      break-even ROAS of 1.86× means every $1 of ad spend must bring back at least $1.86 in revenue just
       to break even. Beat 1.86× and you profit; fall under it and you are paying to give the product
       away. This calculator hands you that threshold up front, so you set targets against a real line
       instead of a hopeful one.</p>
 
     <h3>The formula, in full</h3>
     <p><b>Gross profit before ads</b> = selling price − product cost − shipping you pay − (selling price ×
-      fee ÷ 100) − other cost per order. That is what one sale leaves in your hand before you spend a
+      fee ÷ 100) − the fixed fee per order − other cost per order. That is what one sale leaves in your hand before you spend a
       penny on ads. <b>Profit margin before ads</b> = gross profit before ads ÷ selling price × 100 — the
       same figure as a share of the price. <b>Break-even ROAS</b> = selling price ÷ gross profit before
       ads: the multiple of ad spend you must earn back so that margin exactly pays for the advertising.</p>
 
     <h3>A worked example</h3>
-    <p>A £29.99 product costs £9.00 from the supplier, you cover £4.00 of shipping, the payment processor
-      takes 3% (£0.90 on this sale, rounded from £0.8997), and there are no other per-order costs. Gross profit before ads is
-      29.99 − 9.00 − 4.00 − 0.90 − 0 = <b>£16.09</b>, a margin of <b>53.7%</b>. Break-even ROAS is 29.99 ÷
-      16.09 = <b>1.86×</b>. So any campaign returning more than £1.86 for every £1 spent is profitable;
+    <p>A $29.99 product costs $9.00 from the supplier, you cover $4.00 of shipping, the payment processor
+      takes 2.9% + 30¢ ($0.87 + $0.30 = $1.17 on this sale), and there are no other per-order costs. Gross
+      profit before ads is 29.99 − 9.00 − 4.00 − 1.17 − 0 = <b>$15.82</b>, a margin of <b>52.8%</b>.
+      Break-even ROAS is 29.99 ÷ 15.82 = <b>1.90×</b>. So any campaign returning more than $1.90 for every
+      $1 spent is profitable;
       anything under it quietly loses money on each order, no matter how many you sell.</p>
 
     <h3>Edge cases the calculator handles</h3>
@@ -125,7 +131,7 @@
       line drops.</p>
     <h4>Should I aim to run right at break-even?</h4>
     <p>No — break-even is the floor, not the target. At exactly your break-even ROAS you make nothing;
-      every pound of profit lives <em>above</em> that line. Use this number to set a minimum you refuse to
+      every dollar of profit lives <em>above</em> that line. Use this number to set a minimum you refuse to
       run below, then aim comfortably clear of it so returns, ad-platform swings and slow days still leave
       you in profit.</p>
     <h4>Is this financial advice or a guarantee?</h4>
@@ -160,16 +166,16 @@
 
 <script>
 (function () {
-  var ids = ["SP", "C", "Sh", "f", "O"], el = {};
+  var ids = ["SP", "C", "Sh", "f", "Fx", "O"], el = {};
   ids.forEach(function (i) { el[i] = document.getElementById(i); });
   function num(i) { var v = parseFloat(el[i].value); return isNaN(v) || v < 0 ? 0 : v; }
   function money(x) {
-    return (x < 0 ? "−" : "") + "£" + Math.abs(x).toLocaleString("en-GB", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+    return (x < 0 ? "−" : "") + "$" + Math.abs(x).toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2});
   }
   function set(id, t) { document.getElementById(id).textContent = t; }
   function run() {
-    var SP = num("SP"), C = num("C"), Sh = num("Sh"), f = num("f"), O = num("O");
-    var gp = SP - C - Sh - SP * (f / 100) - O;
+    var SP = num("SP"), C = num("C"), Sh = num("Sh"), f = num("f"), Fx = num("Fx"), O = num("O");
+    var gp = SP - C - Sh - SP * (f / 100) - Fx - O;
     if (gp <= 0) {
       set("oGP", money(gp));
       set("oMargin", SP > 0 ? (gp / SP * 100).toFixed(1) + "%" : "—");

@@ -1,0 +1,37 @@
+DROPSHIPPING - THE PLATFORM FEES THE BOOKS USE  (US, dated)
+
+Fees change more often than a book can. These are the US figures the
+three books' worked examples rest on, checked by hand on the date below.
+Verify on each platform's own pricing page before you rely on a figure.
+
+SHOPIFY (your own store)
+  Plans:  Basic $39/month ($29 billed yearly) | Grow $105 ($79) |
+          Advanced $399 ($299)
+  Shopify Payments, online cards:  Basic 2.9% + 30c | Grow 2.7% + 30c |
+          Advanced 2.5% + 30c
+  Using another payment provider adds:  Basic 2% | Grow 1% |
+          Advanced 0.6%
+STRIPE (your own store)        2.9% + 30c per domestic card payment
+PAYPAL                         PayPal Checkout 3.49% + $0.49; standard
+                               card payments 2.99% + $0.49; +1.50% on
+                               international payments
+ETSY (a marketplace that passes processing through)
+  6.5% transaction on item + shipping | 3% + $0.25 processing (charged
+  on the total incl. sales tax) | $0.20 listing
+TIKTOK SHOP (US)
+  6% referral fee in the published table (8% widely reported since
+  August 2026, not confirmed in the table). Reported: 3% for 30 days if
+  your first sale comes within 60 days of onboarding.
+IMPORT DUTY
+  The US $800 duty-free exemption is suspended for every country, so
+  every order your supplier ships from abroad pays duty. Rates change
+  often and depend on the product and where it is made - cost from the
+  LANDED price to a US address, duty included, in writing.
+
+Checked at source: October 13, 2026.   Next review due: January 2027.
+Not legal or tax advice.
+
+----------------------------------------------------------------------
+From Dropshipping - Basics. The full method is in the book; every
+free worksheet: eports.global/resources/dropshipping
+ePORTS — your ecom source. eports.global.

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -34,37 +34,37 @@
     <div class="calc">
       <div>
         <div class="field">
-          <label for="P">Item price <span class="u">(£)</span></label>
+          <label for="P">Item price <span class="u">($)</span></label>
           <input id="P" type="number" inputmode="decimal" value="22" min="0" step="0.01">
           <p class="hint">what the buyer pays for the item</p>
         </div>
         <div class="field">
-          <label for="S">Shipping you charge the buyer <span class="u">(£)</span></label>
+          <label for="S">Shipping you charge the buyer <span class="u">($)</span></label>
           <input id="S" type="number" inputmode="decimal" value="0" min="0" step="0.01">
           <p class="hint">0 if you offer "free" shipping and absorb it</p>
         </div>
         <div class="field">
-          <label for="B">Base cost <span class="u">(£)</span></label>
+          <label for="B">Base cost <span class="u">($)</span></label>
           <input id="B" type="number" inputmode="decimal" value="9" min="0" step="0.01">
           <p class="hint">the blank + printing your provider charges you</p>
         </div>
         <div class="field">
-          <label for="Sp">Shipping you pay the provider <span class="u">(£)</span></label>
+          <label for="Sp">Shipping you pay the provider <span class="u">($)</span></label>
           <input id="Sp" type="number" inputmode="decimal" value="4.80" min="0" step="0.01">
         </div>
         <div class="field">
           <label for="f">Platform fee <span class="u">(%)</span></label>
           <input id="f" type="number" inputmode="decimal" value="10" min="0" max="99" step="0.1">
-          <p class="hint">all-in cut — Etsy ~10% (6.5% + processing), nearer 12–13% UK</p>
+          <p class="hint">all-in cut — Etsy ~10% (6.5% + processing), nearer 12–13% with Offsite Ads</p>
         </div>
         <div class="field">
-          <label for="R">Refund / misprint buffer <span class="u">(£)</span></label>
+          <label for="R">Refund / misprint buffer <span class="u">($)</span></label>
           <input id="R" type="number" inputmode="decimal" value="0.50" min="0" step="0.01">
         </div>
         <div class="field">
-          <label for="Fx">Fixed fee per sale <span class="u">(£)</span></label>
-          <input id="Fx" type="number" inputmode="decimal" value="0" min="0" step="0.01">
-          <p class="hint">flat per-sale charges — Etsy's ~£0.16 listing fee (it renews on each sale) plus the fixed part of card processing (~£0.20 UK); 0 if none</p>
+          <label for="Fx">Fixed fee per sale <span class="u">($)</span></label>
+          <input id="Fx" type="number" inputmode="decimal" value="0.45" min="0" step="0.01">
+          <p class="hint">flat per-sale charges — Etsy's $0.20 listing fee (it renews on each sale) plus the $0.25 fixed part of card processing (US); 0 if none</p>
         </div>
       </div>
       <div class="calc-out" aria-live="polite" aria-atomic="true">
@@ -100,7 +100,7 @@
       it — but it is the honest per-sale reward, and every later decision (how many you must sell, what
       you can spend to find a buyer) runs on it.</p>
     <p>⚠️ <b>Charging the buyer for shipping is not free money.</b> Notice what happens if you move
-      £4.80 from the item price into the shipping box: the buyer still pays the same total, and the
+      $4.80 from the item price into the shipping box: the buyer still pays the same total, and the
       platform still takes its cut on that total — so your contribution barely moves. What actually
       changes it is the total the buyer pays, or your costs.</p>
 
@@ -111,15 +111,15 @@
       flat per-sale charge on top of it (Etsy's listing fee, plus the fixed part of payment processing).</p>
 
     <h3>A worked example</h3>
-    <p>A £22 tee with "free" shipping: base cost £9, you pay £4.80 shipping, a 10% platform fee, and a
-      £0.50 buffer for the odd refund. The buyer pays £22, so the platform takes £2.20. What reaches
-      you is £22 − £9 − £4.80 − £0.50 − £2.20 = <b>£5.50</b> — about a quarter of the sticker price.
-      Add a flat fee — Etsy's ~£0.16 listing fee, say — and the same sale nets <b>£5.34</b>. That is the
+    <p>A $22 tee with "free" shipping: base cost $9, you pay $4.80 shipping, a 10% platform fee, and a
+      $0.50 buffer for the odd refund, plus Etsy's $0.45 of fixed fees ($0.20 listing + $0.25 processing).
+      The buyer pays $22, so the platform takes $2.20. What reaches you is
+      $22 − $9 − $4.80 − $0.50 − $2.20 − $0.45 = <b>$5.05</b> — about a quarter of the sticker price. That is the
       shape of apparel print on demand, and it is why the price has to be set on purpose.</p>
 
     <h3>Edge cases the calculator handles</h3>
     <ul class="note" style="line-height:1.7">
-      <li><b>Free vs charged shipping at the same total.</b> £22 delivered and £17.20 + £4.80 shipping
+      <li><b>Free vs charged shipping at the same total.</b> $22 delivered and $17.20 + $4.80 shipping
         give the same contribution — because the buyer's total, and the fee on it, are the same.</li>
       <li><b>A blank or negative price</b> shows "—" rather than a nonsense figure.</li>
       <li><b>Contribution can come out negative</b> — that is a real answer: the product loses money at
@@ -129,11 +129,11 @@
     <h3>Common questions</h3>
     <h4>What fee percentage should I use?</h4>
     <p>Your platform's <em>all-in</em> figure, as a percentage. On Etsy that is roughly 10% — the 6.5%
-      transaction fee <em>plus</em> payment processing, charged separately — and nearer 12–13% for a UK
-      seller once VAT on the fees is counted. The current figures, with dates, are on the
+      transaction fee <em>plus</em> payment processing, charged separately — and nearer 12–13% once
+      Offsite Ads orders are averaged in. The current figures, with dates, are on the
       <a href="../../resources/print-on-demand/">Print on Demand resources page</a>.</p>
     <h4>What is a healthy contribution?</h4>
-    <p>Working guidance for a beginner: if what reaches you is under about £4–£5 a sale, stop and
+    <p>Working guidance for a beginner: if what reaches you is under about $4–$5 a sale, stop and
       rethink — change the price, the product, the base cost or the shipping — before you go further. A
       thin margin is not always fatal, but it makes everything downstream harder.</p>
     <h4>Can I keep a copy?</h4>
@@ -193,7 +193,7 @@
   document.querySelectorAll("input").forEach(function (i) { i.addEventListener("input", later); });
   window.addEventListener("resize", later);
 
-  V.currency("£", "en-GB");
+  V.currency("$", "en-US");
   function n(id) { var x = parseFloat(document.getElementById(id).value); return isNaN(x) ? 0 : x; }
   function draw() {
     var P = n("P"), S = n("S"), B = n("B"), Sp = n("Sp"), f = n("f"), R = n("R"), Fx = n("Fx");

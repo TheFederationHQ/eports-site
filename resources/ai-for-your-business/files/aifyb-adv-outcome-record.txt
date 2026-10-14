@@ -80,7 +80,7 @@ time. So capture at two points -- both of them moments the work already pauses.
 
   Ours is: ______________________________________________________
 
-⚠️ The commonest way this dies is a NEW ritual -- a Friday review, a weekly
+⚠️ The most common way this dies is a NEW ritual -- a Friday review, a weekly
 log, a form somebody has to remember. That survives about four weeks. If you
 can't find an existing moment for either half, that's a signal about the edge,
 not about the record.
@@ -99,8 +99,8 @@ failures.
 
   Worked example, two firms:
 
-  SITUATION      first-year company,      | boiler swap, tight loft
-                 director's loan          | access, Tuesday
+  SITUATION      first-year company,      | boiler swap, tight attic
+                 shareholder loan         | access, Tuesday
   WHAT WE DID    sent the standard        | sent Danny, booked 2 hrs,
                  explainer with figures   | took the long ladder
   WHAT WE        "clear enough -- they've | "he's done three like it,
@@ -110,7 +110,7 @@ failures.
 
 Two sentences at the decision, one at the close. That is the whole instrument.
 
-The fields are not frozen for ever -- you will find something missing, and you
+The fields are not frozen forever -- you will find something missing, and you
 should. But they change ONLY AT A REVISION, deliberately, with the authority of
 the rule from chapter 3. Never mid-quarter because somebody had a good idea on
 a Tuesday: change the instrument halfway through and you cannot compare
@@ -139,7 +139,7 @@ into something the business owns.
 
   YOU              owns none of it, reads the exception log.
 
-⚠️ Four roles is why a sole trader cannot do this. That isn't a boast -- it is
+⚠️ Four roles is why a one-person business cannot do this. That isn't a boast -- it is
 the reason a small team can build something a solo competitor can't.
 
 
@@ -164,9 +164,7 @@ fields you may record -- in one line the recorder can actually follow.
 
   Routed to (if restricted): __________  Expected back: __________
 
-  Lawful basis for holding it: _________________________________
   How long we keep it: __________  Who may see it: _____________
-  Responsible for deleting it on request: ______________________
 
 Three routes exist where client material is involved: ASK properly (not
 boilerplate buried in the small print); AMEND at renewal; or RING-FENCE --
@@ -186,7 +184,7 @@ someone, in writing, what you're allowed to reuse.
 ----------------------------------------------------------------
   We start (forward-only, no backfill): ________________________
 
-By your go/no-go date you'll have somewhere around a hundred judged outcomes.
+By your go/no-go date you'll have somewhere around 150 judged outcomes.
 That is not a training set and was never meant to be. It is enough for one
 specific job: enough for a person to see one repeating pattern clearly enough
 to write a rule from it. A hundred cases somebody actually judged will show you

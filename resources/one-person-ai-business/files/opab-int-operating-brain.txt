@@ -23,22 +23,22 @@ PART 2 · THE OFFERS  (AI will quote these — get them exactly right)
 ----------------------------------------------------------------
   Offer          What it's for        Price     Includes / does NOT include
   -----------    ------------------    ------    ---------------------------
-  ____________   __________________    £_____    ___________________________
-  ____________   __________________    £_____    ___________________________
+  ____________   __________________    $_____    ___________________________
+  ____________   __________________    $_____    ___________________________
 
 PART 3 · THE VOICE, WITH EXAMPLES  (AI matches examples, not adjectives)
 ----------------------------------------------------------------
   A paragraph you'd be PROUD of (paste a real one):
   ______________________________________________________________
-  A paragraph in the WRONG voice, labelled "NEVER THIS":
+  A paragraph in the WRONG voice, labeled "NEVER THIS":
   ______________________________________________________________
 
 PART 4 · THE DECISION RULES  (the actual product of this chapter)
 ----------------------------------------------------------------
   The things you decide without thinking, written as if-then rules AI can apply.
-  The test of a good rule: it removes a judgement call from your day. "Be
+  The test of a good rule: it removes a judgment call from your day. "Be
   helpful" removes nothing. Write at least TEN, drawn from your chapter-1 log —
-  for the function you're about to hand off, every judgement call, as a rule.
+  for the function you're about to hand off, every judgment call, as a rule.
 
   [ ] IF __________________________ THEN __________________________
   [ ] IF __________________________ THEN __________________________

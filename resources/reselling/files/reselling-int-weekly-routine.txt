@@ -20,7 +20,7 @@ LOG ............ Sunday night, 15 min — one line (below).
 =====================================================================
 THE LISTING SKELETON (set up once for your category)
 =====================================================================
-Title slots: brand · what it is · material · size · colour
+Title slots: brand · what it is · material · size · color
 Description, the same four prompts every time: ___ / ___ / ___ / ___
 Item specifics pre-filled: ______________________________________
 Shipping, handling and return terms: saved once.

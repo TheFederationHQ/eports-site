@@ -9,15 +9,15 @@ FIND THE CANDIDATE PRICE (value first, then check):
   2 Place my HERO product inside that world (below/above what?):
       ________________________________________________________
   3 FLOOR: it must clear build cost + fees with real room.
-  4 Candidate price (value-led): £__________
+  4 Candidate price (value-led): $__________
 
 LOADED CHECK — price minus ALL costs (base, pkg, ship, platform %,
-buffer, fixed, then time + returns) = leaves: £__________
+buffer, fixed, then time + returns) = leaves: $__________
   check it: eports.global/tools/print-on-demand-allocation
 
 ⚠ COUPON MATH (get it right): a % coupon also lowers the % platform
 fee, so the true hit = discount x (1 - fee%), NOT the full discount.
-(15% off £68 at 13% fee = £8.87 lost, not £10.20.)
+(15% off $68 at 13% fee = $8.87 lost, not $10.20.)
 
 STOP RULE — decided NOW, while calm (fix the pass line before you
 look at any result):

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>eBay vs Mercari vs Poshmark vs Depop vs Facebook — what you actually keep | ePORTS</title>
-<meta name="description" content="Free reseller fee calculator: put in one sale and see what you keep on eBay, Mercari, Poshmark, Depop and Facebook Marketplace, side by side, after fees, postage and what you paid.">
+<meta name="description" content="Free reseller fee calculator: put in one sale and see what you keep on eBay, Mercari, Poshmark, Depop and Facebook Marketplace, side by side, after fees, shipping and what you paid.">
 <link rel="canonical" href="./">
 <meta name="robots" content="index,follow">
 <link rel="stylesheet" href="../../assets/fonts/fonts.css">
@@ -20,7 +20,7 @@
   <div class="wrap">
     <p class="eyebrow">Free calculator · Reselling</p>
     <h1>What you actually keep, platform by platform</h1>
-    <p class="sub">One sale, five platforms, side by side — after each one's fees, the postage you pay and what
+    <p class="sub">One sale, five platforms, side by side — after each one's fees, the shipping you pay and what
       you paid for the item. The fee percentage is not what you keep.</p>
   </div>
 </header>
@@ -37,8 +37,8 @@
           <input id="P" type="number" inputmode="decimal" value="34" min="0" step="0.01"></div>
         <div class="field"><label for="S">Shipping you charge the buyer <span class="u">($)</span></label>
           <input id="S" type="number" inputmode="decimal" value="0" min="0" step="0.01">
-          <p class="hint">0 if you offer free shipping and build postage into the price. Not used for Poshmark, where the buyer pays Poshmark's label.</p></div>
-        <div class="field"><label for="Post">Postage it costs you <span class="u">($)</span></label>
+          <p class="hint">0 if you offer free shipping and build shipping into the price. Not used for Poshmark, where the buyer pays Poshmark's label.</p></div>
+        <div class="field"><label for="Post">Shipping it costs you <span class="u">($)</span></label>
           <input id="Post" type="number" inputmode="decimal" value="6" min="0" step="0.01">
           <p class="hint">Your real label cost. Poshmark's prepaid label is paid by the buyer up to 5 lb, so it's $0 there.</p></div>
         <div class="field"><label for="K">What you paid for the item (plus packing) <span class="u">($)</span></label>
@@ -60,10 +60,10 @@
     <div class="viz">
       <h3>Where each sale's money goes</h3>
       <div id="chart" aria-describedby="chart-note"></div>
-      <p class="viz-hint" id="chart-note">Each bar is the whole amount the sale brings in, split into what you keep, the platform's fee, the postage you pay and what the item cost you. Hover a segment for its figure, or open the table under the chart for every number.</p>
+      <p class="viz-hint" id="chart-note">Each bar is the whole amount the sale brings in, split into what you keep, the platform's fee, the shipping you pay and what the item cost you. Hover a segment for its figure, or open the table under the chart for every number.</p>
     </div>
 
-    <p class="note" style="margin-top:1rem"><b>Checked 10–11 October 2026, at each platform's own page.</b>
+    <p class="note" style="margin-top:1rem"><b>Checked 10–October 11, 2026, at each platform's own page.</b>
       eBay: 13.6% of the whole order including sales tax, plus 40¢ per order over $10 (30¢ at $10 or less), most
       categories. Mercari: 10% of the item price plus any shipping the buyer pays. Poshmark: $2.95 under $15, 20%
       from $15; the buyer pays the shipping label. Depop (US): no selling fee; payment processing 3.3% + 45¢ on the
@@ -74,10 +74,10 @@
 
     <noscript>
       <p class="calc-fallback"><b>The calculator needs JavaScript.</b> The math, per platform:
-        <em>you keep = sale price + shipping you charge − the platform's fee − postage you pay − what you paid</em>.
+        <em>you keep = sale price + shipping you charge − the platform's fee − shipping you pay − what you paid</em>.
         Fees: eBay 13.6% × (price + shipping) × (1 + tax) + $0.40 (or $0.30 on orders of $10 or less);
         Mercari 10% × (price + shipping); Poshmark $2.95 under $15, otherwise 20% × price (and no shipping
-        income or postage cost — the buyer pays the label); Depop 3.3% × (price + shipping) × (1 + tax) + $0.45;
+        income or shipping cost — the buyer pays the label); Depop 3.3% × (price + shipping) × (1 + tax) + $0.45;
         Facebook shipped 10% × (price + shipping) × (1 + tax), at least $0.80.</p>
     </noscript>
     <p class="cta">Choosing one platform on purpose, and pricing to a net you can name, is the method in
@@ -88,13 +88,13 @@
     <h2><span class="n">How to read it</span> The cheapest fee isn't always the most you keep</h2>
     <p>A platform's headline percentage is only one line of the sum. What decides what you keep is <em>what the
       percentage is charged on</em> (some include the shipping and the buyer's sales tax), whether there's a fixed
-      charge per order, who pays the postage, and what you paid for the thing in the first place. Put the same sale
+      charge per order, who pays the shipping, and what you paid for the thing in the first place. Put the same sale
       through all five and the order can surprise you.</p>
     <h3>A worked example</h3>
     <p>A $34 kitchen tool, shipped free (so no shipping charged), costing you $6 to post and $4.60 to buy and pack,
       to a buyer paying 8% sales tax. eBay takes 13.6% of $36.72 plus 40¢ — about $5.39 — leaving <b>$18.01</b>.
       Mercari takes $3.40, leaving <b>$20.00</b>. Depop's processing is about $1.66, leaving <b>$21.74</b>. Facebook
-      takes about $3.67, leaving <b>$19.73</b>. Poshmark takes 20% — $6.80 — but you pay no postage, leaving
+      takes about $3.67, leaving <b>$19.73</b>. Poshmark takes 20% — $6.80 — but you pay no shipping, leaving
       <b>$22.60</b>. On paper, Poshmark wins — but its buyer also pays $6.49 for the label, so the same $34 costs them
       $40.49. Whether your buyers will pay that, on that platform, is a question about <em>buyers</em>, not fees.</p>
     <h3>What this can't tell you</h3>
@@ -165,12 +165,12 @@
       return { label: p.name, totalLabel: "keep " + V.money0(p.keep),
         segs: [{ name: "You keep", value: Math.max(0, p.keep), color: V.C.s1 },
                { name: "Platform fee", value: p.fee, color: V.C.s2 },
-               { name: "Postage you pay", value: p.post, color: V.C.s3 },
+               { name: "Shipping you pay", value: p.post, color: V.C.s3 },
                { name: "What you paid", value: p.cost, color: V.C.s4 }] };
     }), { title: "What you keep on each platform, sorted from most to least",
       legend: [{ name: "You keep", color: V.C.s1 }, { name: "Platform fee", color: V.C.s2 },
-               { name: "Postage you pay", color: V.C.s3 }, { name: "What you paid", color: V.C.s4 }] });
-    V.table(chart, "What you keep, by platform", ["Platform", "Comes in", "Fee", "Postage", "Item cost", "You keep"],
+               { name: "Shipping you pay", color: V.C.s3 }, { name: "What you paid", color: V.C.s4 }] });
+    V.table(chart, "What you keep, by platform", ["Platform", "Comes in", "Fee", "Shipping", "Item cost", "You keep"],
       sorted.map(function (p) { return [p.name, V.money(p.income), V.money(p.fee), V.money(p.post), V.money(p.cost), V.money(p.keep)]; }));
   }
   ids.forEach(function (i) { el[i].addEventListener("input", run); });

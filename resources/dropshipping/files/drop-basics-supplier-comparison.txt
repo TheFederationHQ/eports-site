@@ -1,0 +1,48 @@
+DROPSHIPPING - THE SUPPLIER COMPARISON  (Chapter 4 + Appendix C)
+
+Ask three suppliers the SAME questions, so you are comparing answers, not
+moods. Send this, changing nothing but the product name:
+
+  Hello,
+  I'm setting up a small online store in the US and I'm interested in
+  your [product name].
+  Before I list it, could you answer four questions?
+   1. What is a realistic delivery window to the US - not the best case,
+      the normal one?
+   2. What is your process if an item arrives damaged or faulty?
+   3. Can you ship without an invoice or supplier branding in the package?
+   4. Can I order one unit as a sample, and what would that cost?
+  (Chapter 4 also asks: "What is your stock situation on this item?" -
+   add it as question 5 if stock matters for your product.)
+  I'd like to order a sample this week if the answers work.
+  Thanks, [name]
+
+The fifth question is the reply time. You test it; you don't ask it.
+
+                           SUPPLIER 1     SUPPLIER 2     SUPPLIER 3
+  Name / link              ___________    ___________    ___________
+  Sent (date + time)       ___________    ___________    ___________
+  Replied after (hours)    ___________    ___________    ___________
+  Delivery window to US    ___________    ___________    ___________
+  Damaged / faulty process ___________    ___________    ___________
+  Ships unbranded?  Y / N  ___________    ___________    ___________
+  Stock situation          ___________    ___________    ___________
+  Sample cost              $__________    $__________    $__________
+  Landed cost per unit,
+   duty included, to a
+   US address (in writing) $__________    $__________    $__________
+
+RED FLAGS: slow, generic replies that don't answer what you asked.
+
+THE SAMPLE (the one cost you save up for rather than skip):
+  Ordered from: ______________   on: __________
+  Arrived on:   ______________   = ______ days   <- this goes on your page
+  Matches the photographs?  Y / N   Packaging / customs label: ____________
+  Backup supplier saved:    ______________________________________
+
+Don't take a customer's money for something you have never seen.
+
+----------------------------------------------------------------------
+From Dropshipping - Basics. The full method is in the book; every
+free worksheet: eports.global/resources/dropshipping
+ePORTS — your ecom source. eports.global.

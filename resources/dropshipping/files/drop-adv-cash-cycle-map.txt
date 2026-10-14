@@ -1,0 +1,47 @@
+DROPSHIPPING - THE CASH CYCLE MAP  (Chapter 7)
+
+Map your own cycle with a REAL recent order and your actual processor
+payout schedule.
+
+  Day ____  You pay for advertising
+  Day ____  A customer orders and pays your processor
+  Day ____  You pay the supplier for that order
+  Day ____  Supplier ships
+  Day ____  Customer receives
+  Day ____  Processor pays you, less any reserve
+  -----------------------------------------------------------------
+  Cash gap on this order: ______ days of full exposure
+  (book example: ad + order day 0, supplier day 1, ships day 3,
+   received day 14, paid day 7-10 -> a 7-10 day gap)
+
+YOUR CASH CEILING
+  Usable cash (bank, minus a month of fixed costs)       $__________
+  Cash gap in days                                        __________
+  ----------------------------------------------------------------
+  Usable cash / gap in days = max daily OUTLAY           $__________
+  Last month's supplier payments / 30 = per day          $__________
+  ----------------------------------------------------------------
+  Max daily AD SPEND = outlay minus supplier per day     $__________
+
+  Cash ceiling vs the constraint ceiling from chapter 1: $______ / $______
+  If cash is the lower number, it is your binding constraint today -
+  and supplier payment timing is your next conversation.
+
+THE DOUBLING TEST (book: $400/day -> $800/day, 9-day gap, $6,000 bank
+  -> headroom $2,400 becomes -$1,200)
+                          Now           Doubled
+  Daily outlay            $________     $________
+  Cash gap (days)         ________      ________
+  Cash tied up            $________     $________
+  Bank balance            $________     $________
+  Headroom                $________     $________
+
+THE DEFENSIVE QUESTION
+  If my processor extends payouts by a week in my best month, can I
+  still pay for advertising?  Y / N
+  If no: reduce the planned growth rate NOW, while it is a choice.
+
+----------------------------------------------------------------------
+From Dropshipping - Advanced. The full method is in the book; every
+free worksheet: eports.global/resources/dropshipping
+ePORTS — your ecom source. eports.global.

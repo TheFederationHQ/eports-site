@@ -16,7 +16,7 @@ what you cannot yet see - then sign the rule that ends the thrashing.
   D take-home
     after fee?______ [ ]    ______ [ ]    ______ [ ]
 
-  Boxes ticked "can't see it yet":  ______ / 12
+  Boxes checked "can't see it yet":  ______ / 12
 
   THE ONE-CHANGE RULE (the habit the whole book runs on):
     From today, until I have a baseline and a change log -

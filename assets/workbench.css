@@ -1,0 +1,143 @@
+/* =========================================================================
+   ePORTS — WORKBENCH (brand look A, chosen by Femi 2026-10-19)
+   =========================================================================
+   The v0 layer of the redesign. Pages opt in by linking this file INSTEAD of
+   resources.css; nothing else on the site changes until it is moved over on
+   purpose. First page on it: /privacy/. The design-system pass grows this
+   file into the full component set and mirrors it into the ePORTS Design
+   System project — keep the two in step.
+
+   Feeling: warm, capable, real — a friend who has done it, with the numbers
+   on the table. Products first, decoration second.
+
+   Rules that travel with these values:
+   - ONE marigold moment per screen (the primary button, or one hand-drawn
+     mark). Never a marigold field.
+   - Hand-drawn marks (underline, arrow, note) are decoration: aria-hidden,
+     never the only carrier of meaning.
+   - Reading text is Figtree at >=17px. Bricolage Grotesque is display only.
+   - Contrast checked with scripts/check_contrast.py (2026-10-19):
+     ink 12.2:1, muted 5.9:1, link 5.6:1 on --paper; CTA text 6.1:1 on
+     --marigold; cream 12.6:1 and mist 9.6:1 on --bench.
+   ========================================================================= */
+:root{
+  /* light reading field */
+  --paper:#F2EFE8;     /* the desk */
+  --sheet:#FFFDF8;     /* paper on the desk: cards, panels */
+  --ink:#16302D;       /* text + dark bands */
+  --muted:#4A5F5C;     /* secondary text */
+  --rule:#DCD5C7;      /* hairlines */
+  --teal:#0F6B5F;      /* links, ticks, checked badges */
+  --teal-soft:#E1EEEA; /* tinted panels */
+  --marigold:#E8742C;  /* the one warm accent (fills only) */
+  --marker:#C2531A;    /* hand-drawn marks; large/decorative only */
+  --marker-text:#9A4413;/* if a marker colour ever carries words */
+  /* dark band */
+  --bench:#16302D; --cream:#F5F2EA; --mist:#C9D9D4; --glow:#F2A65A;
+
+  --f-display:"Bricolage Grotesque","Figtree",system-ui,sans-serif;
+  --f-body:"Figtree","Segoe UI",system-ui,sans-serif;
+
+  --step--1:.9rem; --step-0:1.0625rem; --step-1:1.25rem; --step-2:1.6rem; --step-3:2.2rem; --step-4:clamp(2.4rem,6vw,3.6rem);
+  --gap:clamp(1rem,2.5vw,1.5rem);
+  --radius:12px;
+  --shadow:0 1px 0 rgba(22,48,45,.06),0 8px 22px -12px rgba(22,48,45,.28);
+  --measure:68ch;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 var(--step-0)/1.65 var(--f-body)}
+img{max-width:100%;height:auto}
+a{color:var(--teal);text-underline-offset:.18em;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:3px solid var(--marigold);outline-offset:3px;border-radius:3px}
+h1,h2,h3{font-family:var(--f-display);line-height:1.08;letter-spacing:-.02em;text-wrap:balance;margin:0;color:inherit}
+h1{font-size:var(--step-4);font-weight:800;letter-spacing:-.035em}
+h2{font-size:var(--step-3);font-weight:800}
+h3{font-size:var(--step-1);font-weight:700;letter-spacing:-.01em}
+p{margin:0}
+.wb-wrap{max-width:72rem;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.wb-read{max-width:var(--measure)}
+.wb-skip{position:absolute;left:-999px;top:0;background:var(--sheet);padding:.6rem 1rem;z-index:10}
+.wb-skip:focus{left:1rem;top:1rem}
+/* skip-link target: takes focus (tabindex=-1) without drawing a ring round the whole page */
+main[tabindex="-1"]:focus{outline:none}
+/* visually hidden, still read by screen readers (keeps the heading outline h1 > h2 > h3) */
+.wb-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* ---- site header ---- */
+.wb-head{background:var(--bench);color:var(--cream)}
+.wb-head .wb-wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:1.1rem}
+.wb-mark{font:800 1.2rem/1 var(--f-display);letter-spacing:-.01em;color:var(--cream);text-decoration:none}
+.wb-nav{display:flex;flex-wrap:wrap;gap:.3rem 1.3rem;font-size:.95rem}
+.wb-nav a{color:var(--mist);text-decoration:none}
+.wb-nav a:hover,.wb-nav a[aria-current]{color:var(--cream);text-decoration:underline}
+
+/* ---- hero band ---- */
+.wb-hero{background:var(--bench);color:var(--cream);padding-block:2.4rem 3.6rem;position:relative;overflow:hidden}
+.wb-hero .wb-wrap{display:grid;gap:1.1rem}
+.wb-eyebrow{font:600 .8rem/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--glow)}
+.wb-hero p.wb-lede{font-size:var(--step-1);line-height:1.55;color:var(--mist);max-width:40rem}
+.wb-hero p.wb-lede em{color:var(--cream);font-style:normal;font-weight:600}
+/* hand-drawn underline under one word */
+.wb-scribble{position:relative;white-space:nowrap}
+.wb-scribble svg{position:absolute;left:-2%;bottom:-.28em;width:104%;height:.42em;overflow:visible}
+.wb-scribble path{fill:none;stroke:var(--marigold);stroke-width:3.4;stroke-linecap:round}
+
+/* ---- "checked" date badge ---- */
+.wb-checked{display:inline-flex;align-items:center;gap:.45rem;font:600 .85rem/1 var(--f-body);color:var(--teal);background:var(--teal-soft);border:1px solid #BFDAD2;border-radius:999px;padding:.45rem .8rem .45rem .6rem;justify-self:start}
+.wb-checked svg{width:1rem;height:1rem;flex:none;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.wb-hero .wb-checked{color:var(--bench);background:var(--mist);border-color:var(--mist)}
+
+/* ---- sections ---- */
+.wb-main{padding-block:0 3.5rem}
+/* minmax(0,1fr): without it the implicit column sizes to its widest child (e.g. a 3-col auto-fit
+   grid) and the page scrolls sideways on phones. Measured 784px at a 320px viewport before this. */
+.wb-section{padding-block:clamp(2.2rem,5vw,3.4rem);border-top:1px solid var(--rule);display:grid;grid-template-columns:minmax(0,1fr);gap:1.4rem}
+.wb-section > header{display:grid;gap:.55rem;max-width:var(--measure)}
+.wb-kicker{font:700 .78rem/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.wb-kicker-gap{margin-bottom:.5rem}
+.wb-prose{display:grid;gap:1rem;max-width:var(--measure)}
+
+/* ---- at-a-glance cards (pulled up into the hero's lower edge) ---- */
+.wb-glance{display:grid;grid-template-columns:repeat(auto-fit,minmax(12.5rem,1fr));gap:var(--gap);margin-top:-2.2rem;position:relative}
+.wb-card{background:var(--sheet);border:1px solid var(--rule);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.15rem 1.2rem 1.25rem;display:grid;gap:.5rem;align-content:start;min-width:0}
+.wb-card .wb-ico{width:2.4rem;height:2.4rem;border-radius:10px;background:var(--teal-soft);display:grid;place-items:center}
+.wb-card .wb-ico svg{width:1.4rem;height:1.4rem;fill:none;stroke:var(--teal);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.wb-card h3{font-size:1.12rem}
+.wb-card p{color:var(--muted);font-size:.98rem;line-height:1.55}
+
+/* ---- term rows: a bold term on the left, the plain-English answer on the right ---- */
+.wb-terms{display:grid;margin:0;border-top:1px solid var(--rule)}
+.wb-terms > div{display:grid;grid-template-columns:minmax(10rem,15rem) minmax(0,1fr);gap:.4rem 2rem;padding-block:1.1rem;border-bottom:1px solid var(--rule)}
+.wb-terms dt{font:700 1.05rem/1.4 var(--f-display);letter-spacing:-.005em}
+.wb-terms dd{margin:0;max-width:var(--measure)}
+@media (max-width:640px){.wb-terms > div{grid-template-columns:1fr}}
+
+/* ---- the "who we are" card ---- */
+.wb-who{display:grid;grid-template-columns:auto minmax(0,1fr);gap:1.2rem;align-items:start;background:var(--sheet);border:1px solid var(--rule);border-radius:var(--radius);box-shadow:var(--shadow);padding:1.4rem 1.5rem;max-width:46rem}
+.wb-who .wb-ico{width:3rem;height:3rem;border-radius:12px;background:var(--bench);display:grid;place-items:center}
+.wb-who .wb-ico svg{width:1.6rem;height:1.6rem;fill:none;stroke:var(--glow);stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.wb-who address{font-style:normal;display:grid;gap:.2rem}
+.wb-who .wb-co{font:800 1.25rem/1.2 var(--f-display)}
+.wb-who p{color:var(--muted);font-size:.98rem;margin-top:.6rem}
+
+/* ---- rights checklist ---- */
+.wb-ticks{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:.6rem 1.4rem;max-width:52rem}
+.wb-ticks li{display:grid;grid-template-columns:1.5rem 1fr;gap:.6rem;align-items:start}
+.wb-ticks svg{width:1.3rem;height:1.3rem;margin-top:.2rem;fill:none;stroke:var(--teal);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---- callout / note ---- */
+.wb-note{background:var(--teal-soft);border-radius:var(--radius);padding:1.1rem 1.25rem;max-width:var(--measure);display:grid;gap:.35rem}
+.wb-fine{font-size:var(--step--1);color:var(--muted);max-width:var(--measure)}
+
+/* ---- footer ---- */
+.wb-foot{background:var(--bench);color:var(--mist);padding-block:2.2rem;font-size:.95rem}
+.wb-foot .wb-wrap{display:flex;flex-wrap:wrap;gap:.8rem 2rem;justify-content:space-between;align-items:center}
+.wb-foot a{color:var(--cream)}
+.wb-foot .wb-mark{font-size:1.05rem}
+.wb-foot nav{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem}
+
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media print{.wb-head,.wb-foot{background:none;color:#000}.wb-hero{background:none;color:#000}.wb-card,.wb-who{box-shadow:none}}

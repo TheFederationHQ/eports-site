@@ -8,114 +8,208 @@
 <link rel="canonical" href="./">
 <meta name="robots" content="index,follow">
 <link rel="stylesheet" href="../assets/fonts/fonts.css">
-<link rel="stylesheet" href="../assets/resources.css">
+<link rel="stylesheet" href="../assets/workbench.css">
 <!-- /privacy — a plain, truthful notice for a static site whose tools run
      client-side. Linked from every /tools and /resources footer. It is the
-     privacy page a Google-Ads landing page needs BEFORE ads are switched on;
-     ad slots are still deferred, and this page says so. Keep it honest: if the
-     site ever adds analytics, ads or a form, update this page and the dated
-     line, and seek consent where the law requires it. Not legal advice. -->
+     privacy page an ad landing page needs BEFORE ads are switched on; ad
+     slots are still deferred, and this page says so. Keep it honest: if the
+     site ever adds analytics, ads, pixels or a form, update this page and the
+     dated line FIRST, and seek consent where the law requires it. Not legal
+     advice. First page on the Workbench look (assets/workbench.css). -->
 </head>
 <body>
+<a class="wb-skip" href="#main">Skip to the notice</a>
 
-<header class="hero">
-  <div class="wrap">
-    <p class="eyebrow">The fine print</p>
-    <h1>Privacy</h1>
-    <p class="sub">The short version: the tools on this site run <em>in your browser</em>. They store
-      nothing and send nothing. We only hold your details if you buy something from us, or if we write to
-      you at your work address, and this page says exactly what that means.</p>
+<header class="wb-head">
+  <div class="wb-wrap">
+    <a class="wb-mark" href="../">ePORTS</a>
+    <nav class="wb-nav" aria-label="Site">
+      <a href="../#books">Subjects</a>
+      <a href="../resources/">Free tools</a>
+      <a href="./" aria-current="page">Privacy</a>
+    </nav>
   </div>
 </header>
 
-<main class="wrap">
+<main id="main" tabindex="-1">
+<section class="wb-hero" aria-labelledby="title">
+  <div class="wb-wrap">
+    <p class="wb-eyebrow">The fine print, in plain English</p>
+    <h1 id="title"><span class="wb-scribble">Privacy<svg viewBox="0 0 100 12" preserveAspectRatio="none" aria-hidden="true"><path d="M2 8 C 22 3, 48 11, 98 4"/></svg></span></h1>
+    <p class="wb-lede">The short version: the tools on this site run <em>in your browser</em>. They store
+      nothing and send nothing. Below: what our web host logs when you visit, and the details we handle
+      if you buy something, email us, or get a work email from us.</p>
+    <span class="wb-checked"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="7"/><path d="M4.8 8.2l2.1 2.1 4.3-4.6"/></svg>Effective <time datetime="2026-10-19">19 Oct 2026</time></span>
+  </div>
+</section>
 
-  <section>
-    <h2><span class="n">In plain English</span> What happens when you use this site</h2>
-    <p>The calculators and dashboards here — the pricing floor, the profit and margin tools, the
-      allocation dashboard — do all of their arithmetic <b>on your own device, inside your browser</b>.
-      The numbers you type are not sent anywhere, not saved between visits, and not seen by us. Close the
-      tab and they are gone.</p>
-    <p>The worksheets and spreadsheets are ordinary files you download directly. Downloading one tells us
-      nothing about you beyond the ordinary web-server request your browser makes for any page.</p>
-  </section>
+<div class="wb-main">
+  <div class="wb-wrap">
 
-  <section>
-    <h2><span class="n">The specifics</span> Cookies, tracking, accounts and ads</h2>
-    <ul class="note" style="line-height:1.8">
-      <li><b>No accounts.</b> There is nothing to sign up for and no login on this site, so browsing it
-        gives us no name, email or password.</li>
-      <li><b>No tracking cookies.</b> The site sets no advertising or analytics cookies. Nothing here
-        follows you around the web.</li>
-      <li><b>"Do Not Track" signals.</b> Because this site does no tracking across other websites, it
-        behaves the same whether or not your browser sends a "Do Not Track" or Global Privacy Control
-        signal. If we ever add tracking, we will honor those signals and say so here first.</li>
-      <li><b>No forms.</b> There is no contact form or newsletter box that collects your details on this
-        site.</li>
-      <li><b>No ads today.</b> These pages carry no advertising at present. If that ever changes, this
-        page will be updated first to say exactly what an ad partner would collect, and you will be asked
-        for consent where the law requires it.</li>
-      <li><b>Ordinary web-host processing.</b> Like almost every website, this site is delivered by a web
-        host that, in the normal course of serving pages, may process standard request data — including
-        your device's network (IP) address, which can count as personal data — under <em>its own</em>
-        privacy policy, which governs what it keeps and for how long. ePORTS itself does not use that data
-        to identify you, build a profile, or track you across sites.</li>
-    </ul>
-  </section>
+    <h2 class="wb-sr">At a glance</h2>
+    <div class="wb-glance" role="list">
+      <div class="wb-card" role="listitem">
+        <span class="wb-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2.5"/><path d="M8 8h8M8 12h8M8 16h4"/></svg></span>
+        <h3>Tools run on your device</h3>
+        <p>The calculators do their sums inside your browser. Close the tab and the numbers are gone.</p>
+      </div>
+      <div class="wb-card" role="listitem">
+        <span class="wb-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/><path d="M3 3l18 18"/></svg></span>
+        <h3>No accounts, no forms</h3>
+        <p>Nothing to sign up for, and no box that asks for your email.</p>
+      </div>
+      <div class="wb-card" role="listitem">
+        <span class="wb-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M8.5 9.5h.01M15.5 9.5h.01M8 14.5c2.2 1.6 5.8 1.6 8 0"/><path d="M4 4l16 16"/></svg></span>
+        <h3>No tracking cookies</h3>
+        <p>No advertising or analytics cookies. Nothing here follows you around the web.</p>
+      </div>
+      <div class="wb-card" role="listitem">
+        <span class="wb-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.5-3 8-7 9.5-4-1.5-7-5-7-9.5V6z"/><path d="M9 12l2.2 2.2L15.5 10"/></svg></span>
+        <h3>Never sold</h3>
+        <p>If you buy, we hold only what we need, and we never sell or share it for marketing.</p>
+      </div>
+    </div>
 
-  <section>
-    <h2><span class="n">When we do hold your details</span> If you buy, or if we write to you</h2>
-    <ul class="note" style="line-height:1.8">
-      <li><b>Who we are.</b> ePORTS is run by The Federation LLC, a Wyoming limited liability company, 30 N Gould St Ste R,
-        Sheridan, WY 82801, USA. Email: <a href="mailto:hello@eports.global">hello@eports.global</a>. We are the
-        "controller" of the details below. We are based outside the UK and have not appointed a UK data
-        protection representative, because our processing is occasional and low-risk (UK GDPR Article 27(2)).
-        We will review that as sales grow, and name a representative here if we appoint one.</li>
-      <li><b>Where your details go.</b> Details we hold are stored in the United States, where we are based.
-        Payhip passes your purchase details to us there under its own terms. Besides Payhip, the only others
-        who handle them are our payment provider (PayPal or Stripe), our email provider, and a professional
-        adviser such as an accountant if we need one. We make no automated decisions about you and do no
-        profiling.</li>
-      <li><b>If you buy a book.</b> Checkout and the download are run by Payhip; under Payhip's end-user
-        license, the download itself is supplied through Payhip Limited. Payment goes to our PayPal or
-        Stripe account, and we never see your card details. Payhip sends us your name, email address,
-        what you bought and when. We use that to help if a file fails, to honour our voluntary refund
-        promise, and for our tax records. Lawful basis: our legitimate interests (support, refunds, and keeping
-        the tax records we are required to keep). We keep those records for six years. Payhip's own privacy policy
-        covers what Payhip holds.</li>
-      <li><b>If we email you at work.</b> We sometimes write once to a named person at a limited company,
-        at their work address, about a book relevant to their business. We use your name, work email and
-        company, taken from where we say in that email (for example your company's website). Lawful basis:
-        our legitimate interest in telling businesses about relevant products. After that single email we
-        keep your name, work email and company for 24 months only so we do not email you again, then
-        delete them. It is not a list for a second email. Reply "stop" and we delete them sooner, keeping
-        only a short note for as long as we send marketing email, so we never contact you again.</li>
-      <li><b>No selling or sharing.</b> We don't sell your details or pass them to anyone for their own
-        marketing.</li>
-    </ul>
-  </section>
+    <section class="wb-section" aria-labelledby="s1">
+      <header><p class="wb-kicker">In plain English</p><h2 id="s1">What happens when you use this site</h2></header>
+      <div class="wb-prose">
+        <p>The calculators and dashboards here — the pricing floor, the profit and margin tools, the
+          allocation dashboard — do all of their arithmetic <b>on your own device, inside your browser</b>.
+          The numbers you type are not sent anywhere, not saved between visits, and not seen by us. Close the
+          tab and they are gone.</p>
+        <p>The worksheets and spreadsheets are ordinary files you download directly. Downloading one tells us
+          nothing about you. Like any page, it is an ordinary request to our web host, which is covered
+          below.</p>
+      </div>
+    </section>
 
-  <section>
-    <h2><span class="n">Links out, and your rights</span> A last few honest notes</h2>
-    <p>Some pages link to other companies — a print provider, a selling platform, a spreadsheet you open
-      in your own software. Once you follow a link, that company's own privacy terms apply, not this one.</p>
-    <p>If we hold details about you (above), you can ask to see them, correct them, have them deleted,
-      limit how we use them, or get a copy to take elsewhere. You can object to us using them for our
-      legitimate interests, and you can always tell us to stop contacting you, at any time, with no reason
-      needed. Email <a href="mailto:hello@eports.global">hello@eports.global</a>. If you're unhappy with how we've
-      handled your details, you can complain to the UK regulator, the Information Commissioner's Office
-      (<a href="https://ico.org.uk/make-a-complaint/">ico.org.uk</a>).</p>
-    <p class="note"><b>Last updated 2026-10-19.</b> This is a plain-language notice, not legal advice. If we
-      add analytics, advertising or a newsletter, this notice and its date will change to match before
-      that goes live.</p>
-  </section>
+    <section class="wb-section" aria-labelledby="s2">
+      <header><p class="wb-kicker">The specifics</p><h2 id="s2">Cookies, tracking, accounts and ads</h2></header>
+      <dl class="wb-terms">
+        <div><dt>No accounts</dt><dd>There is nothing to sign up for and no login on this site, so browsing it
+          gives us no name, email or password.</dd></div>
+        <div><dt>No tracking cookies</dt><dd>The site sets no advertising or analytics cookies. Nothing here
+          follows you around the web.</dd></div>
+        <div><dt>"Do Not Track" signals</dt><dd>Because this site does no tracking across other
+          websites, it behaves the same whether or not your browser sends a "Do Not Track" or Global Privacy
+          Control signal. If we ever add tracking, we will honor those signals and say so here first.</dd></div>
+        <div><dt>No forms</dt><dd>There is no contact form or newsletter box that collects your details on
+          this site.</dd></div>
+        <div><dt>No ads today</dt><dd>These pages carry no advertising at present. If that ever changes, this
+          page will be updated first to say exactly what an ad partner would collect, and you will be asked
+          for consent where the law requires it.</dd></div>
+        <div><dt>What our web host logs</dt><dd>This site is hosted on GitHub Pages. When you visit, GitHub logs
+          and stores your device's network (IP) address for security purposes, whether or not you have a
+          GitHub account. That is GitHub's processing, under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's
+          privacy statement</a>, which governs what it keeps and for how long. ePORTS does not receive those
+          logs, and does not use visitor data to identify you, build a profile, or track you across sites.
+          The numbers you type into a calculator are never part of it: they stay on your device.</dd></div>
+        <div><dt>Other companies, across sites</dt><dd>We do not let other companies collect information about
+          your activity on this site over time or across other websites. There are no ad or analytics
+          partners. If that ever changes, this page will say so before it starts.</dd></div>
+      </dl>
+    </section>
 
+    <section class="wb-section" aria-labelledby="s3">
+      <header><p class="wb-kicker">When we do hold your details</p><h2 id="s3">If you buy, or if we write to you</h2></header>
+
+      <div class="wb-who">
+        <span class="wb-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V9l8-5 8 5v12"/><path d="M9 21v-6h6v6"/></svg></span>
+        <div>
+          <p class="wb-kicker wb-kicker-gap">Who we are</p>
+          <address>
+            <span class="wb-co">The Federation LLC</span>
+            <span>A Wyoming limited liability company</span>
+            <span>30 N Gould St Ste R, Sheridan, WY 82801, USA</span>
+            <span>Email: <a href="mailto:hello@eports.global">hello@eports.global</a></span>
+          </address>
+          <p>ePORTS is run by The Federation LLC. We are the "controller" of the details below. We are based
+            outside the UK and have not appointed a UK data protection representative, because our processing
+            is occasional and low-risk (UK GDPR Article 27(2)). We will review that as sales grow, and name a
+            representative here if we appoint one.</p>
+        </div>
+      </div>
+
+      <dl class="wb-terms">
+        <div><dt>Where your details go</dt><dd>Details we hold are stored in the United States, where we are based.
+          Payhip passes your purchase details to us there under its own terms. Besides Payhip, the only others
+          who handle them are our payment provider (PayPal or Stripe), our email provider, and a professional
+          adviser such as an accountant if we need one. We make no automated decisions about you and do no
+          profiling.</dd></div>
+        <div><dt>If you buy a book</dt><dd>Checkout and the download are run by Payhip; under Payhip's end-user
+          license, the download itself is supplied through Payhip Limited. Payment goes to our PayPal or
+          Stripe account, and we never see your card details. Payhip sends us your name, email address,
+          what you bought and when. We use that to help if a file fails, to honor our voluntary refund
+          promise, and for our tax records. Lawful basis: our legitimate interests (support, refunds, and keeping
+          the tax records we are required to keep). We keep those records for six years. Payhip's own privacy policy
+          covers what Payhip holds.</dd></div>
+        <div><dt>If we email you at work</dt><dd>We sometimes write once to a named person at a limited company,
+          at their work address, about a book relevant to their business. We use your name, work email and
+          company, taken from where we say in that email (for example your company's website). Lawful basis:
+          our legitimate interest in telling businesses about relevant products. After that single email we
+          keep your name, work email and company for 24 months only so we do not email you again, then
+          delete them. It is not a list for a second email. Reply "stop" and we delete them sooner, keeping
+          only a short note for as long as we send marketing email, so we never contact you again.</dd></div>
+        <div><dt>If you email us</dt><dd>If you write to hello@eports.global, we get your email address, your
+          name if you include it, and whatever you choose to tell us. We use it only to reply and to keep a
+          record of what we agreed (for example a refund). Our email provider stores it. We keep the
+          conversation for up to two years after it ends, then delete it, unless it is part of a purchase
+          record we must keep for tax. Lawful basis: our legitimate interests in answering enquiries and
+          keeping a record of correspondence and agreed actions.</dd></div>
+        <div><dt>No selling or sharing</dt><dd>We don't sell your details or pass them to anyone for their own
+          marketing.</dd></div>
+      </dl>
+    </section>
+
+    <section class="wb-section" aria-labelledby="s4">
+      <header><p class="wb-kicker">Your rights</p><h2 id="s4">If we hold details about you, you can ask us to…</h2></header>
+      <ul class="wb-ticks" role="list">
+        <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l3.6 3.6L16 6"/></svg><span>show you what we hold</span></li>
+        <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l3.6 3.6L16 6"/></svg><span>correct it</span></li>
+        <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l3.6 3.6L16 6"/></svg><span>delete it</span></li>
+        <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l3.6 3.6L16 6"/></svg><span>limit how we use it</span></li>
+        <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l3.6 3.6L16 6"/></svg><span>give you a copy to take elsewhere</span></li>
+        <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l3.6 3.6L16 6"/></svg><span>stop using it for our legitimate interests</span></li>
+        <li><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10.5l3.6 3.6L16 6"/></svg><span>stop contacting you, any time, no reason needed</span></li>
+      </ul>
+      <div class="wb-prose">
+        <p>Asking isn't an automatic yes. We won't delete purchase records we must keep for tax (six years),
+          or the short do-not-contact note that stops us emailing you again. A copy to take elsewhere applies
+          where the law gives you that right. If we can't do what you ask, we'll tell you why.</p>
+      </div>
+      <div class="wb-note">
+        <p>Email <a href="mailto:hello@eports.global">hello@eports.global</a>. If UK data protection law applies
+          to you and you're unhappy with how we've handled your details, you can complain to the UK regulator,
+          the Information Commissioner's Office (<a href="https://ico.org.uk/make-a-complaint/">ico.org.uk</a>).</p>
+      </div>
+    </section>
+
+    <section class="wb-section" aria-labelledby="s5">
+      <header><p class="wb-kicker">Links out, and changes</p><h2 id="s5">A last few honest notes</h2></header>
+      <div class="wb-prose">
+        <p>Some pages link to other companies — a print provider, a selling platform, a spreadsheet you open
+          in your own software. Once you follow a link, that company's own privacy terms apply, not this one.</p>
+        <p><b>Effective date: <time datetime="2026-10-19">19 Oct 2026</time>.</b> If this notice changes in any
+          material way, we post the new text on this page and change the effective date before the change
+          takes effect. That posting is how we tell you. It covers any new kind of detail we collect, any new
+          company we share with, and any longer retention period, and it always comes before analytics,
+          advertising, a newsletter or any tracking goes live.</p>
+        <p class="wb-fine">This is a plain-language notice, not legal advice.</p>
+      </div>
+    </section>
+
+  </div>
+</div>
 </main>
 
-<footer class="foot">
-  <div class="wrap">
-    <span class="mark">ePORTS</span> · <a href="../resources/">All free resources</a> ·
-    <a href="../tools/print-on-demand-pricing/">Calculators</a>
+<footer class="wb-foot">
+  <div class="wb-wrap">
+    <span><a class="wb-mark" href="../">ePORTS</a> — your ecom source. eports.global</span>
+    <nav aria-label="Footer">
+      <a href="../resources/">All free resources</a>
+      <a href="../tools/print-on-demand-pricing/">Calculators</a>
+      <a href="./">Privacy</a>
+    </nav>
   </div>
 </footer>
 

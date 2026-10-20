@@ -5,8 +5,8 @@ three books' worked examples rest on, checked by hand on the date below.
 Verify on each platform's own pricing page before you rely on a figure.
 
 SHOPIFY (your own store)
-  Plans:  Basic $39/month ($29 billed yearly) | Grow $105 ($79) |
-          Advanced $399 ($299)
+  Plans:  Basic $39/month ($29 billed yearly) | Grow $105 ($89) |
+          Advanced $399 ($359)
   Shopify Payments, online cards:  Basic 2.9% + 30c | Grow 2.7% + 30c |
           Advanced 2.5% + 30c
   Using another payment provider adds:  Basic 2% | Grow 1% |
@@ -28,7 +28,7 @@ IMPORT DUTY
   often and depend on the product and where it is made - cost from the
   LANDED price to a US address, duty included, in writing.
 
-Checked at source: October 13, 2026.   Next review due: January 2027.
+Checked at source: October 13, 2026 (Shopify plans: October 19, 2026).   Next review due: January 2027.
 Not legal or tax advice.
 
 ----------------------------------------------------------------------

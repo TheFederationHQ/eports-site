@@ -16,6 +16,7 @@
      site ever adds analytics, ads, pixels or a form, update this page and the
      dated line FIRST, and seek consent where the law requires it. Not legal
      advice. First page on the Workbench look (assets/workbench.css). -->
+<link rel="stylesheet" href="../assets/shell.css?v=20261021">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ePORTS">
 <meta property="og:title" content="Privacy — what this site does and does not collect | ePORTS">
@@ -34,19 +35,18 @@
 <meta name="twitter:image:alt" content="ePORTS books and free tools: Privacy — what this site does and does not collect">
 </head>
 <body>
-<a class="wb-skip" href="#main">Skip to the notice</a>
-
-<header class="wb-head">
-  <div class="wb-wrap">
-    <a class="wb-mark" href="../"><i>e</i>PORTS</a>
-    <nav class="wb-nav" aria-label="Site">
-      <a href="../news/">News</a>
-      <a href="../#books">Subjects</a>
-      <a href="../resources/">Free tools</a>
-      <a href="./" aria-current="page">Privacy</a>
-    </nav>
+<!--ep-shell:head-->
+<a class="ep-skip" href="#main">Skip to content</a>
+<header class="ep-head">
+  <div class="ep-wrap">
+    <a class="ep-mark" href="../" aria-label="ePORTS home"><i>e</i>PORTS</a>
+    <nav class="ep-nav" aria-label="Site"><a href="../news/">News</a><a href="../resources/">Free resources</a><a href="../resources/before-you-sell/">Start here</a></nav>
+    <a class="ep-cta" href="../#books">Browse the books</a>
+    <details class="ep-menu"><summary>Menu</summary><nav aria-label="Site menu"><a href="../news/">News</a><a href="../resources/">Free resources</a><a href="../resources/before-you-sell/">Start here</a></nav></details>
   </div>
 </header>
+<!--/ep-shell:head-->
+
 
 <main id="main" tabindex="-1">
 <section class="wb-hero" aria-labelledby="title">
@@ -115,10 +115,12 @@
         <div><dt>No ads today</dt><dd>These pages carry no advertising at present. If that ever changes, this
           page will be updated first to say exactly what an ad partner would collect, and you will be asked
           for consent where the law requires it.</dd></div>
-        <div><dt>What our web host logs</dt><dd>This site is hosted on GitHub Pages. When you visit, GitHub logs
-          and stores your device's network (IP) address for security purposes, whether or not you have a
-          GitHub account. That is GitHub's processing, under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub's
-          privacy statement</a>, which governs what it keeps and for how long. ePORTS does not receive those
+        <div><dt>What our web host logs</dt><dd>This site is hosted on Cloudflare Pages. When you visit, Cloudflare's network
+          handles the request, and in doing so processes your device's network (IP) address, the page you
+          asked for, the page you came from and your browser type, to deliver the page and protect the site
+          from abuse. That is Cloudflare's processing, under <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's
+          privacy policy</a>, which governs what it keeps and for how long. We have not switched on
+          Cloudflare's visitor analytics. ePORTS does not receive those
           logs, and does not use visitor data to identify you, build a profile, or track you across sites.
           The numbers you type into a calculator are never part of it: they stay on your device.</dd></div>
         <div><dt>Other companies, across sites</dt><dd>We do not let other companies collect information about
@@ -157,7 +159,8 @@
           license, the download itself is supplied through Payhip Limited. Payment goes to our PayPal or
           Stripe account, and we never see your card details. Payhip sends us your name, email address,
           what you bought and when. We use that to help if a file fails, to honor our voluntary refund
-          promise, and for our tax records. Lawful basis: our legitimate interests (support, refunds, and keeping
+          promise (if a file won't open, or a book isn't useful to you, email the seller address on your
+          receipt within 14 days and we'll fix it or refund you), and for our tax records. Lawful basis: our legitimate interests (support, refunds, and keeping
           the tax records we are required to keep). We keep those records for six years. Payhip's own privacy policy
           covers what Payhip holds.</dd></div>
         <div><dt>If we email you at work</dt><dd>We sometimes write once to a named person at a limited company,
@@ -219,16 +222,18 @@
 </div>
 </main>
 
-<footer class="wb-foot">
-  <div class="wb-wrap">
-    <span><a class="wb-mark" href="../"><i>e</i>PORTS</a> — your ecom source. eports.global</span>
-    <nav aria-label="Footer">
-      <a href="../resources/">All free resources</a>
-      <a href="../tools/print-on-demand-pricing/">Calculators</a>
-      <a href="./">Privacy</a>
-    </nav>
+<!--ep-shell:foot-->
+<footer class="ep-foot">
+  <div class="ep-wrap">
+    <p class="ep-related">Related: <a href="../tools/print-on-demand-pricing/">Calculators</a></p>
+    <div class="ep-row">
+      <span><a class="ep-mark" href="../"><i>e</i>PORTS</a> — your ecom source. eports.global</span>
+      <nav aria-label="Footer"><a href="../news/">News</a><a href="../resources/">Free resources</a><a href="../about/">About</a><a href="../privacy/">Privacy</a></nav>
+    </div>
+    <p class="ep-legal">Written with AI, then checked by hand. Nothing here is legal, tax or financial advice. Fees and policies carry the date they were last checked and a link to the source, so you can verify them rather than trust them.</p>
   </div>
 </footer>
+<!--/ep-shell:foot-->
 
 </body>
 </html>

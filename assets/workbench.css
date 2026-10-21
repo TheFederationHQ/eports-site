@@ -30,6 +30,7 @@
   --rule:#DCD5C7;      /* hairlines */
   --teal:#0F6B5F;      /* links, ticks, checked badges */
   --teal-soft:#E1EEEA; /* tinted panels */
+  --logo-red:#E6472C; /* the e in the ePORTS logo ONLY: a reddish orange, closer to red (Femi, 21 Oct 2026); 3.6:1 on --bench, 3.4:1 on --paper */
   --marigold:#E8742C;  /* the one warm accent (fills only) */
   --marker:#C2531A;    /* hand-drawn marks; large/decorative only */
   --marker-text:#9A4413;/* if a marker colour ever carries words */
@@ -73,8 +74,8 @@ main[tabindex="-1"]:focus{outline:none}
 .wb-head{background:var(--sheet);color:var(--ink);border-bottom:1px solid var(--rule)}
 .wb-head .wb-wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:1.1rem}
 .wb-mark{font:800 1.2rem/1 var(--f-display);letter-spacing:-.03em;color:var(--ink);text-decoration:none}
-/* the official logo: orange lowercase e (Femi, 21 Oct 2026); markup is <a class="wb-mark"><i>e</i>PORTS</a> or plain text */
-.wb-mark i{font-style:normal;color:var(--marigold)}
+/* the official logo: red lowercase e (Femi, 21 Oct 2026); markup is <a class="wb-mark"><i>e</i>PORTS</a> or plain text */
+.wb-mark i{font-style:normal;color:var(--logo-red)}
 .wb-foot .wb-mark{color:var(--cream)}
 .wb-nav{display:flex;flex-wrap:wrap;gap:.3rem 1.3rem;font-size:.95rem}
 .wb-nav a{color:var(--muted);text-decoration:none;font-weight:600}

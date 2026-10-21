@@ -15,7 +15,8 @@
      mark). Never a marigold field.
    - Hand-drawn marks (underline, arrow, note) are decoration: aria-hidden,
      never the only carrier of meaning.
-   - Reading text is Figtree at >=17px. Bricolage Grotesque is display only.
+   - FONTS (Femi, 21 Oct 2026): "Inter everywhere": headlines, body, the logo. Reading text >=17px.
+     Bricolage Grotesque, Figtree and Caveat came in with the 19 Oct redesign and were retired.
    - Contrast checked with scripts/check_contrast.py (2026-10-19):
      ink 12.2:1, muted 5.9:1, link 5.6:1 on --paper; CTA text 6.1:1 on
      --marigold; cream 12.6:1 and mist 9.6:1 on --bench.
@@ -35,8 +36,8 @@
   /* dark band */
   --bench:#16302D; --cream:#F5F2EA; --mist:#C9D9D4; --glow:#F2A65A;
 
-  --f-display:"Bricolage Grotesque","Figtree",system-ui,sans-serif;
-  --f-body:"Figtree","Segoe UI",system-ui,sans-serif;
+  --f-display:"Inter","Segoe UI",system-ui,sans-serif;
+  --f-body:"Inter","Segoe UI",system-ui,sans-serif;
 
   --step--1:.9rem; --step-0:1.0625rem; --step-1:1.25rem; --step-2:1.6rem; --step-3:2.2rem; --step-4:clamp(2.4rem,6vw,3.6rem);
   --gap:clamp(1rem,2.5vw,1.5rem);
@@ -53,7 +54,7 @@ a{color:var(--teal);text-underline-offset:.18em;text-decoration-thickness:1px}
 a:hover{text-decoration-thickness:2px}
 :focus-visible{outline:3px solid var(--marigold);outline-offset:3px;border-radius:3px}
 h1,h2,h3{font-family:var(--f-display);line-height:1.08;letter-spacing:-.02em;text-wrap:balance;margin:0;color:inherit}
-h1{font-size:var(--step-4);font-weight:800;letter-spacing:-.035em}
+h1{font-size:var(--step-4);font-weight:800;letter-spacing:-.025em}
 h2{font-size:var(--step-3);font-weight:800}
 h3{font-size:var(--step-1);font-weight:700;letter-spacing:-.01em}
 p{margin:0}
@@ -71,7 +72,9 @@ main[tabindex="-1"]:focus{outline:none}
    The dark green lives only in the hero band below, never as a thin top bar. */
 .wb-head{background:var(--sheet);color:var(--ink);border-bottom:1px solid var(--rule)}
 .wb-head .wb-wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:1.1rem}
-.wb-mark{font:800 1.2rem/1 var(--f-display);letter-spacing:-.01em;color:var(--ink);text-decoration:none}
+.wb-mark{font:800 1.2rem/1 var(--f-display);letter-spacing:-.03em;color:var(--ink);text-decoration:none}
+/* the official logo: orange lowercase e (Femi, 21 Oct 2026); markup is <a class="wb-mark"><i>e</i>PORTS</a> or plain text */
+.wb-mark i{font-style:normal;color:var(--marigold)}
 .wb-foot .wb-mark{color:var(--cream)}
 .wb-nav{display:flex;flex-wrap:wrap;gap:.3rem 1.3rem;font-size:.95rem}
 .wb-nav a{color:var(--muted);text-decoration:none;font-weight:600}
@@ -174,7 +177,7 @@ main[tabindex="-1"]:focus{outline:none}
 .wb-stack img:nth-of-type(2){left:28%;top:3%;transform:rotate(1.5deg);z-index:2}
 .wb-stack img:nth-of-type(3){left:52%;top:12%;transform:rotate(8deg)}
 .wb-stack .wb-handnote{position:absolute;left:2%;bottom:0;z-index:3}
-.wb-handnote{font:600 1.35rem/1.1 "Caveat","Segoe Print","Bradley Hand",cursive;color:var(--mist);transform:rotate(-4deg);display:inline-flex;align-items:flex-end;gap:.3rem}
+.wb-handnote{font:italic 600 1.05rem/1.2 var(--f-body);color:var(--mist);transform:rotate(-4deg);display:inline-flex;align-items:flex-end;gap:.3rem}
 .wb-handnote svg{width:3.2rem;height:2.4rem;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
 
 /* ---- subject (lane) cards: homepage grid + menu. --lane = the subject's cover hue ---- */

@@ -89,11 +89,11 @@
 <style>
 :root{
   /* dark field — carried from covers/ecommerce-00-cover.html */
-  --deep:#0C2733;      /* blue-teal = competence (Labrecque & Milne) */
+  --deep:#16302D;      /* ink-green, matching the site header (was navy #0C2733; final review 21 Oct 2026) */
   --cream:#F5F2EA;
   --mist:#C6D6DE;
   --steel:#93AFBB;
-  --slate:#2E5566;
+  --slate:#2C4F49;
   --accent:#52D6C0;    /* the ONE saturated element. Use sparingly. */
   /* light reading field */
   --paper:#FBFAF7;
@@ -221,7 +221,7 @@ p{margin:0 0 1.1rem;max-width:64ch}
 .signup form{display:flex;flex-wrap:wrap;gap:.7rem;max-width:34rem;margin:1.6rem 0 0}
 .signup input[type=email]{flex:1 1 16rem;font-family:var(--sans);font-size:1rem;
   padding:.8rem .9rem;border:1px solid var(--slate);border-radius:3px;
-  background:#0A1F29;color:var(--cream)}
+  background:#102521;color:var(--cream)}
 .signup input[type=email]::placeholder{color:var(--steel)}
 .signup button{font-family:var(--sans);font-weight:700;font-size:1rem;
   padding:.8rem 1.5rem;border:0;border-radius:3px;background:var(--accent);
@@ -270,7 +270,7 @@ html:not(.js) .js-only{display:none!important}
 .mapsvg .grid line{stroke:#ECE9E2;stroke-width:1}
 .mapsvg .grid text{fill:var(--mut);font-size:12px}
 .mapsvg .grid text.axis{fill:var(--ink);font-size:12.5px;font-weight:600}
-.mapsvg .zone{fill:#2E5566;fill-opacity:.13;stroke:var(--deep);stroke-width:1.6;cursor:pointer;
+.mapsvg .zone{fill:#2C4F49;fill-opacity:.13;stroke:var(--deep);stroke-width:1.6;cursor:pointer;
   transition:fill-opacity .25s,stroke-width .25s,opacity .25s}
 .mapsvg .zone.rent{stroke-dasharray:6 4}
 .mapsvg .zone:hover{fill-opacity:.24}
@@ -339,6 +339,7 @@ html:not(.js) .js-only{display:none!important}
   #print-area .print-row,#print-area .pbtn{display:none!important}
 }
 </style>
+<link rel="stylesheet" href="../../assets/shell.css?v=20261021">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ePORTS">
 <meta property="og:title" content="Before You Sell Anything Online — the companion tools | ePORTS">
@@ -357,6 +358,16 @@ html:not(.js) .js-only{display:none!important}
 <meta name="twitter:image:alt" content="ePORTS books and free tools: Before You Sell Anything Online — the companion tools">
 </head>
 <body>
+<!--ep-shell:head-->
+<a class="ep-skip" href="#main">Skip to content</a>
+<header class="ep-head">
+  <div class="ep-wrap">
+    <a class="ep-mark" href="../../" aria-label="ePORTS home"><i>e</i>PORTS</a>
+    <nav class="ep-nav" aria-label="Site"><a href="../../news/">News</a><a href="../../resources/">Free resources</a><a href="../../resources/before-you-sell/" aria-current="page">Start here</a></nav>
+    <details class="ep-menu"><summary>Menu</summary><nav aria-label="Site menu"><a href="../../news/">News</a><a href="../../resources/">Free resources</a><a href="../../resources/before-you-sell/" aria-current="page">Start here</a></nav></details>
+  </div>
+</header>
+<!--/ep-shell:head-->
 
 <header class="hero">
   <div class="wrap">
@@ -373,7 +384,7 @@ html:not(.js) .js-only{display:none!important}
   </div>
 </header>
 
-<main>
+<main id="main">
 
 <!-- ===================== 1. THE MAP (the four constraints) ===================== -->
 <section id="map">
@@ -479,26 +490,14 @@ html:not(.js) .js-only{display:none!important}
         <span class="what">Amazon Associates reportedly cut commissions by up to half, and narrowed its onsite commission</span>
         <p class="meta"><b>Changed</b> spring&nbsp;2026 (agreement 14&nbsp;April) &nbsp;&middot;&nbsp;
           <span>Last checked October 12, 2026</span></p>
-        <p class="body">Two changes in the same direction. The reported rate cut (from around March 2026, never published by Amazon) is the big one. The April 14, 2026 agreement also narrowed commission on Amazon&rsquo;s own onsite placements to the exact product linked; ordinary links you send still earn on other items bought in the same visit. Any income figure published before 2026
-          should be treated as fiction.</p>
+        <p class="body">Two changes in the same direction. The reported rate cut (from around March 2026, never published by Amazon) is the big one. The April 14, 2026 agreement also narrowed commission on Amazon&rsquo;s own onsite placements to the exact product linked; ordinary links you send still earn on other items bought in the same visit. Treat any income figure published before these
+          changes as out of date.</p>
         <p class="src">Check it:
           <a href="https://affiliate-program.amazon.com/help/operating/agreement">Amazon
           Associates Program Operating Agreement</a> &mdash; and the current fee schedule
           linked from it</p>
       </li>
 
-      <li class="changed" data-checked="2026-10-12">
-        <span class="what">Amazon Associates stopped paying recurring commission on
-          subscriptions</span>
-        <p class="meta"><b>Changed</b> January&nbsp;2026 &nbsp;&middot;&nbsp;
-          <span>Last checked October 12, 2026</span></p>
-        <p class="body">The &ldquo;build passive recurring income&rdquo; model that a great
-          deal of affiliate content was built to sell no longer exists in that form on
-          Amazon. One payment, not a stream.</p>
-        <p class="src">Check it: the fee schedule inside the
-          <a href="https://affiliate-program.amazon.com/help/operating/agreement">Associates
-          Program Operating Agreement</a></p>
-      </li>
 
       <li data-checked="2026-10-12">
         <span class="what">Google shows an AI summary for about a fifth of search terms, and most searches now end without a click</span>
@@ -699,5 +698,16 @@ html:not(.js) .js-only{display:none!important}
 </footer>
 
 <script src="../../assets/before-you-sell.js" defer></script>
+<!--ep-shell:foot-->
+<footer class="ep-foot">
+  <div class="ep-wrap">
+    <div class="ep-row">
+      <span><a class="ep-mark" href="../../"><i>e</i>PORTS</a> — your ecom source. eports.global</span>
+      <nav aria-label="Footer"><a href="../../news/">News</a><a href="../../resources/">Free resources</a><a href="../../about/">About</a><a href="../../privacy/">Privacy</a></nav>
+    </div>
+    <p class="ep-legal">Written with AI, then checked by hand. Nothing here is legal, tax or financial advice. Fees and policies carry the date they were last checked and a link to the source, so you can verify them rather than trust them.</p>
+  </div>
+</footer>
+<!--/ep-shell:foot-->
 </body>
 </html>

@@ -1,0 +1,42 @@
+/* ePORTS site shell — ONE header and ONE footer on every page (final pre-deploy review, 21 Oct 2026).
+   Self-contained and prefixed (.ep-*) so it sits safely on both stylesheets: workbench.css (new pages) and
+   resources.css (resource hubs + calculators). Written by scripts/site_shell.py; do not hand-edit page copies.
+   Decided by the panel (site/r1, r1grok): dark ink-green bar that reads as one block with the hero; 26px logo with
+   the red-orange e; one marigold button "Browse the books"; menu News · Free resources · Start here; sticky;
+   on phones the links fold into a no-JS <details> Menu. Contrast: links #C9D9D4 on #16302D 9.6:1; button text
+   #16302D on #E8742C 6.1:1; logo e #E6472C on #16302D 3.6:1 (26px/800 = large text, and logos are exempt). */
+.ep-skip{position:absolute;left:-999px;top:0;z-index:60;background:#FFFDF8;color:#16302D;padding:.6rem 1rem;font:600 .95rem/1 "Inter",system-ui,sans-serif}
+.ep-skip:focus{left:1rem;top:1rem}
+.ep-head{position:sticky;top:0;z-index:50;background:#16302D;color:#F5F2EA;border-bottom:1px solid #24443F;font-family:"Inter",system-ui,sans-serif}
+.ep-head .ep-wrap,.ep-foot .ep-wrap{max-width:72rem;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.ep-head .ep-wrap{display:flex;align-items:center;gap:1.4rem;min-height:68px}
+.ep-mark{font:800 1.62rem/1 "Inter",system-ui,sans-serif;letter-spacing:-.03em;color:#F5F2EA;text-decoration:none;white-space:nowrap}
+.ep-mark i{font-style:normal;color:#E6472C}
+.ep-nav{display:flex;gap:1.4rem;margin-left:auto}
+.ep-nav a,.ep-menu nav a{color:#C9D9D4;text-decoration:none;font:600 .95rem/1.2 "Inter",system-ui,sans-serif}
+.ep-nav a:hover,.ep-nav a[aria-current]{color:#FFFDF8;text-decoration:underline;text-decoration-color:#E8742C;text-decoration-thickness:2px;text-underline-offset:.3em}
+.ep-cta{display:inline-flex;align-items:center;min-height:44px;padding:0 1.05rem;border-radius:10px;background:#E8742C;color:#16302D;font:700 .95rem/1 "Inter",system-ui,sans-serif;text-decoration:none;white-space:nowrap;box-shadow:0 2px 0 #B85A1F}
+.ep-cta:hover{background:#F08A45}
+.ep-menu{display:none}
+.ep-head a:focus-visible,.ep-menu summary:focus-visible,.ep-foot a:focus-visible{outline:3px solid #F2A65A;outline-offset:3px;border-radius:4px}
+@media (max-width:760px){
+  .ep-head .ep-wrap{min-height:58px;gap:.7rem}
+  .ep-mark{font-size:1.38rem}
+  .ep-nav{display:none}
+  .ep-cta{margin-left:auto;min-height:40px;padding:0 .8rem;font-size:.88rem}
+  .ep-menu{display:block;position:static}
+  .ep-menu summary{list-style:none;cursor:pointer;color:#F5F2EA;font:600 .92rem/1 "Inter",system-ui,sans-serif;padding:.7rem .2rem;min-height:44px;display:flex;align-items:center}
+  .ep-menu summary::-webkit-details-marker{display:none}
+  .ep-menu summary::after{content:" \25BE"}
+  .ep-menu[open] summary::after{content:" \25B4"}
+  .ep-menu nav{position:absolute;left:0;right:0;top:100%;background:#16302D;border-bottom:1px solid #24443F;display:grid;padding:.4rem 16px 1rem}
+  .ep-menu nav a{padding:.8rem 0;border-top:1px solid #24443F;font-size:1rem}
+}
+.ep-foot{background:#16302D;color:#C9D9D4;font:400 .95rem/1.6 "Inter",system-ui,sans-serif;padding:2.2rem 0 2.6rem;margin-top:3rem}
+.ep-foot .ep-mark{font-size:1.15rem}
+.ep-foot a{color:#F5F2EA}
+.ep-foot .ep-row{display:flex;flex-wrap:wrap;gap:.8rem 2rem;align-items:center;justify-content:space-between}
+.ep-foot nav{display:flex;flex-wrap:wrap;gap:.4rem 1.3rem}
+.ep-foot .ep-related{margin:0 0 1.2rem;font-size:.9rem;color:#C9D9D4}
+.ep-foot .ep-legal{margin:1.2rem 0 0;font-size:.85rem;max-width:66ch;color:#C9D9D4}
+@media print{.ep-head{position:static}.ep-head,.ep-foot{background:none;color:#000}.ep-cta,.ep-menu,.ep-skip{display:none}}

@@ -15,7 +15,7 @@
    - Contrast verified by scripts/check_contrast.py; re-run if a colour changes.
    ========================================================================== */
 :root{
-  --deep:#0C2733; --deep-sunk:#0A1F29; --slate:#2E5566;
+  --deep:#16302D; --deep-sunk:#102521; --slate:#2C4F49;  /* ink-green, matching workbench.css --bench (was navy #0C2733; final review 21 Oct 2026: one colour world) */
   --steel:#93AFBB; --steel-dim:#7E97A3; --mist:#C6D6DE; --cream:#F5F2EA;
   --paper:#FBFAF7; --ink:#1A1A1A; --mut:#5A5A5A; --rule:#DCD9D2;
   --link:#2F6F5E; --accent:#52D6C0;

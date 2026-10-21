@@ -13,6 +13,7 @@
      useful and ranks for search traffic. Ads may sit on /tools pages LATER
      (never on /resources) once the site qualifies and a consent setup exists.
      The .ad-slot boxes below are reserved skeleton placeholders for that. -->
+<link rel="stylesheet" href="../../assets/shell.css?v=20261021">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="ePORTS">
 <meta property="og:title" content="True cost of an employee calculator — fully-loaded annual, monthly and hourly cost | ePORTS">
@@ -31,6 +32,17 @@
 <meta name="twitter:image:alt" content="ePORTS books and free tools: True cost of an employee calculator — fully-loaded annual, monthly and hourly cost">
 </head>
 <body>
+<!--ep-shell:head-->
+<a class="ep-skip" href="#main">Skip to content</a>
+<header class="ep-head">
+  <div class="ep-wrap">
+    <a class="ep-mark" href="../../" aria-label="ePORTS home"><i>e</i>PORTS</a>
+    <nav class="ep-nav" aria-label="Site"><a href="../../news/">News</a><a href="../../resources/">Free resources</a><a href="../../resources/before-you-sell/">Start here</a></nav>
+    <a class="ep-cta" href="../../#books">Browse the books</a>
+    <details class="ep-menu"><summary>Menu</summary><nav aria-label="Site menu"><a href="../../news/">News</a><a href="../../resources/">Free resources</a><a href="../../resources/before-you-sell/">Start here</a></nav></details>
+  </div>
+</header>
+<!--/ep-shell:head-->
 
 <header class="hero">
   <div class="wrap">
@@ -42,7 +54,7 @@
   </div>
 </header>
 
-<main class="wrap">
+<main id="main" class="wrap">
 
   <!-- reserved ad slot (deferred until the site qualifies) -->
   <div class="ad-slot" data-ad="leaderboard" aria-hidden="true"></div>
@@ -129,7 +141,7 @@
       <b>$5,250</b>. The ongoing annual cost is 35,000 + 5,250 + 3,000 + 4,000 = <b>$47,250</b>. Year one,
       carrying the $3,000 hiring bill, is <b>$50,250</b>. That's an effective <b>$3,937.50 a month</b>, and
       across 1,750 productive hours it works out at <b>$27.00 an hour</b> — 35% above the
-      $20/hour the bare salary alone would suggest. The gap between $35,000 and $47,250 is the part most
+      $20 per productive hour the bare salary alone would suggest ($35,000 ÷ 1,750 hours). The gap between $35,000 and $47,250 is the part most
       owners forget to budget for.</p>
 
     <h3>Edge cases the calculator handles</h3>
@@ -178,13 +190,18 @@
 
 </main>
 
-<footer class="foot">
-  <div class="wrap">
-    <span class="mark">ePORTS</span> · <a href="../../resources/">All free resources</a> ·
-    <a href="../../resources/ai-for-your-business/">AI for Your Business downloads</a> ·
-    <a href="../../privacy/">Privacy</a>
+<!--ep-shell:foot-->
+<footer class="ep-foot">
+  <div class="ep-wrap">
+    <p class="ep-related">Related: <a href="../../resources/ai-for-your-business/">AI for Your Business downloads</a></p>
+    <div class="ep-row">
+      <span><a class="ep-mark" href="../../"><i>e</i>PORTS</a> — your ecom source. eports.global</span>
+      <nav aria-label="Footer"><a href="../../news/">News</a><a href="../../resources/">Free resources</a><a href="../../about/">About</a><a href="../../privacy/">Privacy</a></nav>
+    </div>
+    <p class="ep-legal">Written with AI, then checked by hand. Nothing here is legal, tax or financial advice. Fees and policies carry the date they were last checked and a link to the source, so you can verify them rather than trust them.</p>
   </div>
 </footer>
+<!--/ep-shell:foot-->
 
 <script>
 (function () {

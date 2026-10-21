@@ -335,3 +335,60 @@ main[tabindex="-1"]:focus{outline:none}
 .wb-setbuy{display:flex;flex-wrap:wrap;gap:.3rem 1rem;align-items:baseline}
 /* the fan's tilted right-hand sheet poked 8–14px past a 320px screen (Etsy, 2026-10-20): leave it room */
 @media (max-width:480px){.wb-fan{width:90%;justify-self:start}}
+
+/* =========================================================================
+   NEWSROOM (2026-10-21): /news/ index + article pages, built by scripts/build_news.py
+   Plan: research/CONTENT_ENGINE-2026/GROWTH_STRATEGY.md §3 (3-model AGREE, 20 Oct 2026)
+   ========================================================================= */
+.wb-story{padding-block:clamp(1.6rem,4vw,2.6rem) 3.5rem}
+.wb-story .wb-wrap{display:grid;gap:1.4rem}
+.wb-story-head{display:grid;gap:.9rem;max-width:46rem}
+.wb-story-head h1{font-size:clamp(1.9rem,4.6vw,2.9rem);line-height:1.08}
+.wb-deck{font-size:var(--step-1);line-height:1.5;color:var(--muted);max-width:42rem}
+.wb-share{display:flex;flex-wrap:wrap;gap:.4rem .5rem;align-items:center;font-size:.9rem}
+.wb-share > span{color:var(--muted);font-weight:600;margin-right:.2rem}
+.wb-share a,.wb-share button{font:600 .88rem/1 var(--f-body);color:var(--ink);background:var(--sheet);border:1px solid var(--rule);
+  border-radius:999px;padding:.5rem .8rem;text-decoration:none;cursor:pointer}
+.wb-share a:hover,.wb-share button:hover{border-color:var(--teal);color:var(--teal)}
+.wb-share [data-native]{display:none}
+.js-only{display:none}
+html.js .js-only{display:inline-flex}
+html.js .wb-share [data-native].can{display:inline-flex}
+.wb-hero-img{margin:0;max-width:60rem;display:grid;gap:.5rem}
+.wb-hero-img img,.wb-fig img{display:block;width:100%;height:auto;border-radius:var(--radius);border:1px solid var(--rule);background:var(--paper)}
+.wb-hero-img figcaption,.wb-fig figcaption{font-size:.85rem;color:var(--muted);line-height:1.45}
+.wb-article h2{font-size:var(--step-2);margin-top:1rem}
+.wb-article h3{margin-top:.6rem}
+.wb-article ol,.wb-article ul{margin:0;padding-left:1.3rem;display:grid;gap:.5rem}
+.wb-article blockquote{margin:0;border-left:4px solid var(--marigold);padding:.2rem 0 .2rem 1rem;font-size:1.2rem;line-height:1.5}
+.wb-short{background:var(--teal-soft);border-radius:var(--radius);padding:1rem 1.2rem}
+.wb-fig{margin:.4rem 0;display:grid;gap:.5rem}
+.wb-tablewrap{overflow-x:auto}
+.wb-article table{border-collapse:collapse;width:100%;min-width:26rem;font-size:1rem;line-height:1.45}
+.wb-article th,.wb-article td{text-align:left;padding:.55rem .7rem;border-bottom:1px solid var(--rule);vertical-align:top}
+.wb-article thead th{font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.wb-article td:last-child,.wb-article th:last-child{font-variant-numeric:tabular-nums}
+.wb-adslot{display:none}                     /* filled, with its fixed ad height, only in the deploy that turns ads on */
+.wb-offer{display:grid;grid-template-columns:5.5rem minmax(0,1fr);gap:1rem;align-items:center;background:var(--sheet);
+  border:1px solid var(--rule);border-left:4px solid var(--marigold);border-radius:var(--radius);padding:1rem 1.1rem}
+.wb-offer.tool{grid-template-columns:minmax(0,1fr)}
+.wb-offer img{width:5.5rem;height:auto;border-radius:3px}
+.wb-offer div{display:grid;gap:.5rem}
+.wb-offer p{font-size:1rem;line-height:1.5;margin:0}
+.wb-offer .wb-btn{justify-self:start}
+.wb-sources{font-size:.95rem;line-height:1.5;display:grid;gap:.6rem}
+.wb-sources ol{display:grid;gap:.45rem;padding-left:1.2rem;margin:0}
+.wb-colophon{font-size:.9rem;color:var(--muted);line-height:1.55;border-top:1px solid var(--rule);padding-top:1rem}
+/* news index */
+.wb-lead{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:1.5rem;align-items:center;text-decoration:none;color:inherit}
+.wb-lead img{display:block;width:100%;height:auto;border-radius:var(--radius);border:1px solid var(--rule)}
+.wb-lead h2{font-size:clamp(1.5rem,3.4vw,2.1rem)}
+.wb-lead:hover h2{text-decoration:underline;text-decoration-color:var(--marigold);text-decoration-thickness:2px}
+@media (max-width:760px){.wb-lead{grid-template-columns:minmax(0,1fr)}}
+.wb-wire{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.wb-wire li{border-top:1px solid var(--rule)}
+.wb-wire a{display:grid;grid-template-columns:7.5rem minmax(0,1fr);gap:1rem;padding-block:1rem;text-decoration:none;color:inherit}
+.wb-wire a:hover strong{text-decoration:underline;text-decoration-color:var(--marigold)}
+.wb-wire time{font-size:.85rem;color:var(--muted)}
+@media (max-width:520px){.wb-wire a{grid-template-columns:minmax(0,1fr);gap:.25rem}}
+.wb-article h2.wb-kicker{font:700 .78rem/1 var(--f-body);letter-spacing:.14em;margin-top:.4rem}

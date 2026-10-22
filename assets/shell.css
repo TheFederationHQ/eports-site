@@ -39,4 +39,9 @@
 .ep-foot nav{display:flex;flex-wrap:wrap;gap:.4rem 1.3rem}
 .ep-foot .ep-related{margin:0 0 1.2rem;font-size:.9rem;color:#C9D9D4}
 .ep-foot .ep-legal{margin:1.2rem 0 0;font-size:.85rem;max-width:66ch;color:#C9D9D4}
-@media print{.ep-head{position:static}.ep-head,.ep-foot{background:none;color:#000}.ep-cta,.ep-menu,.ep-skip{display:none}}
+/* Fading cream rule (Femi, 22 Oct 2026; panel GPT + Gemini, Grok dissented): only on pages that open with the dark
+   hero, where it reads as a deliberate edge; on light pages it looked like a grey gap, so they keep the plain border.
+   Inset 1px above the border so dark green sits beneath it; the logo's cream, fading out by 72%. Decorative only. */
+body:has(main > .wb-hero:first-child) .ep-head::after{content:"";position:absolute;left:0;right:0;bottom:1px;height:2px;
+  background:linear-gradient(90deg,#F5F2EA 0%,rgba(245,242,234,.8) 30%,rgba(245,242,234,0) 72%);pointer-events:none}
+@media print{.ep-head::after{display:none}.ep-head{position:static}.ep-head,.ep-foot{background:none;color:#000}.ep-cta,.ep-menu,.ep-skip{display:none}}

@@ -390,6 +390,19 @@ html.js .wb-share [data-native].can{display:inline-flex}
 .wb-lead h2{font-size:clamp(1.5rem,3.4vw,2.1rem)}
 .wb-lead:hover h2{text-decoration:underline;text-decoration-color:var(--marigold);text-decoration-thickness:2px}
 @media (max-width:760px){.wb-lead{grid-template-columns:minmax(0,1fr)}}
+/* ---- Newsroom feed (22 Oct 2026): one column of story cards; the opening is cut after 3 lines ---- */
+.wb-feed{display:grid;gap:2.2rem;max-width:42rem}
+.wb-post{display:grid;gap:.6rem;padding-bottom:2.2rem;border-bottom:1px solid var(--rule)}
+.wb-post-pic img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:var(--radius);border:1px solid var(--rule)}
+.wb-post h2{font-size:clamp(1.35rem,3vw,1.75rem);line-height:1.15}
+.wb-post h2 a{color:inherit;text-decoration:none}
+.wb-post h2 a:hover{text-decoration:underline;text-decoration-color:var(--marigold);text-decoration-thickness:2px}
+.wb-teaser{margin:0;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;line-clamp:3;overflow:hidden}
+.wb-continue{font-weight:700;justify-self:start}
+.wb-more{justify-self:start}
+.wb-pager{display:flex;flex-wrap:wrap;gap:.4rem;align-items:center}
+.wb-pager a{padding:.45rem .75rem;border:1px solid var(--rule);border-radius:var(--radius);text-decoration:none;color:inherit;background:var(--sheet)}
+.wb-pager a[aria-current]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
 .wb-wire{list-style:none;margin:0;padding:0;display:grid;gap:0}
 .wb-wire li{border-top:1px solid var(--rule)}
 .wb-wire a{display:grid;grid-template-columns:7.5rem minmax(0,1fr);gap:1rem;padding-block:1rem;text-decoration:none;color:inherit}

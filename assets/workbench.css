@@ -16,7 +16,8 @@
    - Hand-drawn marks (underline, arrow, note) are decoration: aria-hidden,
      never the only carrier of meaning.
    - FONTS (Femi, 21 Oct 2026): "Inter everywhere": headlines, body, the logo. Reading text >=17px.
-     Bricolage Grotesque, Figtree and Caveat came in with the 19 Oct redesign and were retired.
+     Bricolage Grotesque and Figtree were retired. ONE exception: Caveat 600 for the small hand-written
+     notes (.wb-handnote), Femi's pick on 21 Oct 2026, at a gentle 2° tilt; they are aria-hidden decoration.
    - Contrast checked with scripts/check_contrast.py (2026-10-19):
      ink 12.2:1, muted 5.9:1, link 5.6:1 on --paper; CTA text 6.1:1 on
      --marigold; cream 12.6:1 and mist 9.6:1 on --bench.
@@ -178,7 +179,7 @@ main[tabindex="-1"]:focus{outline:none}
 .wb-stack img:nth-of-type(2){left:28%;top:3%;transform:rotate(1.5deg);z-index:2}
 .wb-stack img:nth-of-type(3){left:52%;top:12%;transform:rotate(8deg)}
 .wb-stack .wb-handnote{position:absolute;left:2%;bottom:0;z-index:3}
-.wb-handnote{font:italic 600 1.05rem/1.2 var(--f-body);color:var(--mist);transform:rotate(-4deg);display:inline-flex;align-items:flex-end;gap:.3rem}
+.wb-handnote{font:600 1.5rem/1.1 "Caveat",var(--f-body);color:var(--mist);transform:rotate(-2deg);display:inline-flex;align-items:flex-end;gap:.3rem}
 .wb-handnote svg{width:3.2rem;height:2.4rem;fill:none;stroke:currentColor;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
 
 /* ---- subject (lane) cards: homepage grid + menu. --lane = the subject's cover hue ---- */

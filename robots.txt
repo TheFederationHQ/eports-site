@@ -1,0 +1,7 @@
+# eports.global: search engines and AI assistants are welcome to read and cite everything here.
+# (Femi, 24 Oct 2026: be found everywhere. Training crawlers are allowed too: our free pages are marketing,
+# and the paid books are not on this site.)
+User-agent: *
+Allow: /
+
+Sitemap: https://eports.global/sitemap.xml

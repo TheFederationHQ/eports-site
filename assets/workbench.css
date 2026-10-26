@@ -1,5 +1,5 @@
 /* =========================================================================
-   ePORTS — WORKBENCH (brand look A, chosen by Femi 2026-10-19)
+   ePORTS — WORKBENCH (brand look A, chosen by the founder 2026-10-19)
    =========================================================================
    The v0 layer of the redesign. Pages opt in by linking this file INSTEAD of
    resources.css; nothing else on the site changes until it is moved over on
@@ -15,9 +15,9 @@
      mark). Never a marigold field.
    - Hand-drawn marks (underline, arrow, note) are decoration: aria-hidden,
      never the only carrier of meaning.
-   - FONTS (Femi, 21 Oct 2026): "Inter everywhere": headlines, body, the logo. Reading text >=17px.
+   - FONTS (the founder, 21 Oct 2026): "Inter everywhere": headlines, body, the logo. Reading text >=17px.
      Bricolage Grotesque and Figtree were retired. ONE exception: Caveat 600 for the small hand-written
-     notes (.wb-handnote), Femi's pick on 21 Oct 2026, at a gentle 2° tilt; they are aria-hidden decoration.
+     notes (.wb-handnote), the founder's pick on 21 Oct 2026, at a gentle 2° tilt; they are aria-hidden decoration.
    - Contrast checked with scripts/check_contrast.py (2026-10-19):
      ink 12.2:1, muted 5.9:1, link 5.6:1 on --paper; CTA text 6.1:1 on
      --marigold; cream 12.6:1 and mist 9.6:1 on --bench.
@@ -31,7 +31,7 @@
   --rule:#DCD5C7;      /* hairlines */
   --teal:#0F6B5F;      /* links, ticks, checked badges */
   --teal-soft:#E1EEEA; /* tinted panels */
-  --logo-red:#E6472C; /* the e in the ePORTS logo ONLY: a reddish orange, closer to red (Femi, 21 Oct 2026); 3.6:1 on --bench, 3.4:1 on --paper */
+  --logo-red:#E6472C; /* the e in the ePORTS logo ONLY: a reddish orange, closer to red (the founder, 21 Oct 2026); 3.6:1 on --bench, 3.4:1 on --paper */
   --marigold:#E8742C;  /* the one warm accent (fills only) */
   --marker:#C2531A;    /* hand-drawn marks; large/decorative only */
   --marker-text:#9A4413;/* if a marker colour ever carries words */
@@ -70,12 +70,12 @@ main[tabindex="-1"]:focus{outline:none}
 .wb-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
 /* ---- site header ----
-   LIGHT on purpose (Femi, 2026-10-19): a dark top bar + orange button reads as Amazon's signature.
+   LIGHT on purpose (the founder, 2026-10-19): a dark top bar + orange button reads as Amazon's signature.
    The dark green lives only in the hero band below, never as a thin top bar. */
 .wb-head{background:var(--sheet);color:var(--ink);border-bottom:1px solid var(--rule)}
 .wb-head .wb-wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:1.1rem}
 .wb-mark{font:800 1.2rem/1 var(--f-display);letter-spacing:-.03em;color:var(--ink);text-decoration:none}
-/* the official logo: red lowercase e (Femi, 21 Oct 2026); markup is <a class="wb-mark"><i>e</i>PORTS</a> or plain text */
+/* the official logo: red lowercase e (the founder, 21 Oct 2026); markup is <a class="wb-mark"><i>e</i>PORTS</a> or plain text */
 .wb-mark i{font-style:normal;color:var(--logo-red)}
 .wb-foot .wb-mark{color:var(--cream)}
 .wb-nav{display:flex;flex-wrap:wrap;gap:.3rem 1.3rem;font-size:.95rem}

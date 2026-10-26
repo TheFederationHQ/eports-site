@@ -12,7 +12,7 @@
 .ep-head .ep-wrap{display:flex;align-items:center;gap:1.4rem;min-height:68px}
 .ep-mark{font:800 1.62rem/1 "Inter",system-ui,sans-serif;letter-spacing:-.03em;color:#F5F2EA;text-decoration:none;white-space:nowrap}
 .ep-mark i{font-style:normal;color:#E6472C}
-/* Logo lockup (Femi, 23 Oct 2026; panel r4 chose it 3 of 3): "your ecom source." sits tight under the wordmark,
+/* Logo lockup (the founder, 23 Oct 2026; panel r4 chose it 3 of 3): "your ecom source." sits tight under the wordmark,
    inside the same link, on every page, so the slogan reads as part of the logo, the way video ads will say it.
    Lowercase in mist (#C9D9D4, 9.6:1 on the bar) so it never competes with the wordmark or the menu. */
 .ep-head .ep-lockup{display:grid;gap:4px;line-height:1}
@@ -46,7 +46,7 @@
 .ep-foot nav{display:flex;flex-wrap:wrap;gap:.4rem 1.3rem}
 .ep-foot .ep-related{margin:0 0 1.2rem;font-size:.9rem;color:#C9D9D4}
 .ep-foot .ep-legal{margin:1.2rem 0 0;font-size:.85rem;max-width:66ch;color:#C9D9D4}
-/* Fading cream rule (Femi, 22 Oct 2026; panel GPT + Gemini, Grok dissented): only on pages that open with the dark
+/* Fading cream rule (the founder, 22 Oct 2026; panel GPT + Gemini, Grok dissented): only on pages that open with the dark
    hero, where it reads as a deliberate edge; on light pages it looked like a grey gap, so they keep the plain border.
    Inset 1px above the border so dark green sits beneath it; the logo's cream, fading out by 72%. Decorative only. */
 body:has(main > .wb-hero:first-child) .ep-head::after{content:"";position:absolute;left:0;right:0;bottom:1px;height:2px;

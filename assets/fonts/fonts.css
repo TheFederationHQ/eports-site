@@ -50,7 +50,7 @@
 
 /* ---------- Inter — SCREEN BODY TEXT ----------
    Added 2026-08-04. Body prose on screen moved off Source Serif 4 and onto
-   Inter, on Femi's report that Times-like serifs are physically tiring to
+   Inter, on the founder's report that Times-like serifs are physically tiring to
    read. Verified first that Source Serif 4 was rendering correctly rather
    than falling back — it was, so this is the typeface, not a bug.
 
@@ -204,10 +204,10 @@
   --font-serif-epub: Georgia, "Times New Roman", serif;
 }
 
-/* ---------- Workbench brand faces (added 2026-10-19, Femi chose look A) ----------
+/* ---------- Workbench brand faces (added 2026-10-19, the founder chose look A) ----------
    Bricolage Grotesque — DISPLAY ONLY (headlines, wordmark-adjacent labels). Variable 500-800, opsz 12-96.
    Figtree — READING TEXT on Workbench pages: open apertures, large x-height, low stroke contrast
-   (Femi's reading-ease rule). Variable 400-700, roman + italic. Both SIL OFL 1.1 — see OFL-*.txt. */
+   (the founder's reading-ease rule). Variable 400-700, roman + italic. Both SIL OFL 1.1 — see OFL-*.txt. */
 @font-face{
   font-family:"Bricolage Grotesque"; font-style:normal; font-weight:500 800; font-display:swap;
   src:url("./bricolage-grotesque-roman-latin.woff2") format("woff2");

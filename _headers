@@ -1,4 +1,4 @@
-# Cloudflare Pages security headers (21 Oct 2026). Femi shared a video on AI-driven attacks on websites; our site is
+# Cloudflare Pages security headers (21 Oct 2026). the founder shared a video on AI-driven attacks on websites; our site is
 # static (no PHP, no database, no logins, no third-party scripts), so the job is to keep it that way and make the
 # browser enforce it. Tested on all 54 pages for blocked resources before shipping (research/SITE-ACTIONS-2026-10/).
 # - CSP: only our own files run; inline is needed by the calculators; no plugins; no framing; forms post only to us.

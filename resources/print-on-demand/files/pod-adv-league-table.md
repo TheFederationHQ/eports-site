@@ -38,4 +38,4 @@ Live dashboard (loaded + total + per-hour + funnel):
 — From Print on Demand: Advanced — the full method: eports.global/print-on-demand
   Every worksheet, free and kept current: eports.global/resources
 
-ePORTS — your ecom source. eports.global.
+ePORTS — your ecom source (eports.global)

@@ -41,4 +41,4 @@ generated or heavily altered ad creative; check each platform's current rules.
 ----------------------------------------------------------------------
 From Dropshipping - Advanced. The full method is in the book; every
 free worksheet: eports.global/resources/dropshipping
-ePORTS — your ecom source. eports.global.
+ePORTS — your ecom source (eports.global)

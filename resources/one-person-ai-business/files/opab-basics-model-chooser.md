@@ -43,4 +43,4 @@ data. Treat everything you type into an AI as if someone else could read it.
 *Yours to keep — free, no strings. A worksheet gives you the "what"; the books give the
 "why". The full shelf, whenever you're ready:* **eports.global/one-person-ai-business**
 
-ePORTS — your ecom source. eports.global.
+ePORTS — your ecom source (eports.global)

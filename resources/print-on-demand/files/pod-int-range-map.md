@@ -31,4 +31,4 @@ market's verdict comes later (chapters 7–8), off real numbers.
 — From Print on Demand: Intermediate — the full method: eports.global/print-on-demand
   Every worksheet, free and kept current: eports.global/resources
 
-ePORTS — your ecom source. eports.global.
+ePORTS — your ecom source (eports.global)

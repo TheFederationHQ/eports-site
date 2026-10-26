@@ -137,4 +137,4 @@ conditions that must be true by then:
   discourage it). Not met → the sunset doesn't happen; book a named review
   date to try again. Proof gates it; the calendar can't force it.
 
-ePORTS — your ecom source. eports.global
+ePORTS — your ecom source (eports.global)

@@ -197,4 +197,4 @@ case and NAMES what it doesn't cover.
 MORE THAN ONE RULE. See the top of this page. One. Really.
 
 
-ePORTS — your ecom source. eports.global
+ePORTS — your ecom source (eports.global)

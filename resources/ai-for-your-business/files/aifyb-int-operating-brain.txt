@@ -106,4 +106,4 @@ same copy; nobody keeps a private one.
 Pin at the top of the brain:  *No brain, no sign-off.*
 ----------------------------------------------------------------------
 
-ePORTS — your ecom source. eports.global
+ePORTS — your ecom source (eports.global)

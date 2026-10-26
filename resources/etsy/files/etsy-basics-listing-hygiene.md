@@ -35,4 +35,4 @@ they want honestly meet your words?
 ----------------------------------------------------------------------
 From Etsy - Basics. The full method is in the book; the free worksheets
 and the lane shelf: eports.global/resources
-ePORTS — your ecom source. eports.global.
+ePORTS — your ecom source (eports.global)

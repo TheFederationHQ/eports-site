@@ -14,4 +14,4 @@ Circle ONE idea and stop — comparing more niches is usually procrastination.
 — More in the ePORTS Print on Demand series -> eports.global/print-on-demand
   All the worksheets, kept current: eports.global/resources
 
-ePORTS — your ecom source. eports.global.
+ePORTS — your ecom source (eports.global)

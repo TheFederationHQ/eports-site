@@ -30,4 +30,4 @@ same buyer is the first brick of a shop that compounds.
 — From Print on Demand: Intermediate — the full method: eports.global/print-on-demand
   Every worksheet, free and kept current: eports.global/resources
 
-ePORTS — your ecom source. eports.global.
+ePORTS — your ecom source (eports.global)

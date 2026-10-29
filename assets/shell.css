@@ -32,10 +32,17 @@
   .ep-nav{display:none}
   .ep-cta{margin-left:auto;min-height:40px;padding:0 .8rem;font-size:.88rem}
   .ep-menu{display:block;position:static}
-  .ep-menu summary{list-style:none;cursor:pointer;color:#F5F2EA;font:600 .92rem/1 "Inter",system-ui,sans-serif;padding:.7rem .2rem;min-height:44px;display:flex;align-items:center}
+  /* Menu reads as a button (Femi, 27 Oct 2026): hamburger + "Menu" inside a cream outline; open = filled cream, icon becomes an X */
+  .ep-menu summary{list-style:none;cursor:pointer;color:#F5F2EA;font:600 .92rem/1 "Inter",system-ui,sans-serif;min-height:40px;padding:0 .7rem;
+    display:flex;align-items:center;gap:.45rem;border:1.5px solid #F5F2EA;border-radius:10px;white-space:nowrap}
   .ep-menu summary::-webkit-details-marker{display:none}
-  .ep-menu summary::after{content:" \25BE"}
-  .ep-menu[open] summary::after{content:" \25B4"}
+  .ep-menu summary:hover{background:rgba(245,242,234,.12)}
+  .ep-menu[open] summary{background:#F5F2EA;color:#16302D}
+  .ep-burger{display:inline-grid;gap:3px;width:16px}
+  .ep-burger i{display:block;height:2px;border-radius:2px;background:currentColor;transition:transform .15s,opacity .15s}
+  .ep-menu[open] .ep-burger i:nth-child(1){transform:translateY(5px) rotate(45deg)}
+  .ep-menu[open] .ep-burger i:nth-child(2){opacity:0}
+  .ep-menu[open] .ep-burger i:nth-child(3){transform:translateY(-5px) rotate(-45deg)}
   .ep-menu nav{position:absolute;left:0;right:0;top:100%;background:#16302D;border-bottom:1px solid #24443F;display:grid;padding:.4rem 16px 1rem}
   .ep-menu nav a{padding:.8rem 0;border-top:1px solid #24443F;font-size:1rem}
 }
@@ -54,4 +61,7 @@ body:has(main > .wb-hero:first-child) .ep-head::after{content:"";position:absolu
 @media print{.ep-head::after{display:none}.ep-head{position:static}.ep-head,.ep-foot{background:none;color:#000}.ep-cta,.ep-menu,.ep-skip{display:none}}
 /* the narrowest phones (320-380px): the row overflowed by 9px even before the lockup; tighten so nothing scrolls sideways */
 @media (max-width:380px){.ep-head .ep-wrap{gap:.45rem}.ep-head .ep-mark{font-size:1.22rem}.ep-head .ep-tag{font-size:.66rem}
-  .ep-cta{padding:0 .6rem;font-size:.8rem}.ep-menu summary{font-size:.85rem;padding:.7rem 0}}
+  .ep-cta{padding:0 .6rem;font-size:.8rem}.ep-menu summary{font-size:.85rem;padding:0 .5rem;gap:.35rem}}
+/* 320-350px phones: the outlined Menu button is wider than the old text link, so squeeze the row a little more */
+@media (max-width:350px){.ep-head .ep-wrap{gap:.3rem}.ep-head .ep-mark{font-size:1.1rem}.ep-head .ep-tag{font-size:.6rem}
+  .ep-cta{padding:0 .45rem;font-size:.76rem}.ep-menu summary{padding:0 .4rem;gap:.3rem;font-size:.8rem}.ep-burger{width:14px}}

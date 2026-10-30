@@ -22,6 +22,36 @@
   .go-list a{display:grid;gap:.2rem;padding:1rem 1.1rem;border:1px solid currentColor;border-radius:.8rem;text-decoration:none}
   .go-list a strong{font-size:1.05rem}
   .go-list a span{font-size:.92rem;font-weight:400;opacity:.85}
+  /* Hero matches the Book 0 video (panel, 30 Oct 2026): the book, its promise and two buy buttons above the fold */
+  .go-hero{display:grid;grid-template-columns:7.5rem 1fr;gap:1rem;align-items:center;background:#0C2733;color:#F5F2EA;border-radius:1rem;padding:1.1rem}
+  .go-hero img{width:100%;height:auto;border-radius:.35rem;box-shadow:0 8px 22px rgba(0,0,0,.35)}
+  .go-hero h1{color:#F5F2EA;font-size:1.35rem}
+  .go-hero p{margin:.35rem 0 0;font-size:.95rem;color:#C6D6DE}
+  .go-buy{display:grid;grid-template-columns:1fr 1fr;gap:.6rem}
+  .go-buy a{display:block;text-align:center;font-weight:800;text-decoration:none;border-radius:.8rem;padding:.95rem .5rem;font-size:1.02rem}
+  .go-buy a.k{background:#52D6C0;color:#0A1F29}
+  .go-buy a.p{border:2px solid #0C2733;color:#0C2733}
+  .go-more{font-size:.95rem;margin:.6rem 0 0;opacity:.8}
+  .go-hi{margin:0;font-weight:800;font-size:1.15rem}
+  /* Desktop: a full-width dramatic stage (Femi, 30 Oct 2026: "more dramatic" on desktop; mobile stays as is) */
+  @media (min-width:900px){
+    .go-wrap{max-width:68rem;padding-top:3rem}
+    .go-hi{font-size:1.5rem;text-align:center}
+    .go-hero{grid-template-columns:20rem 1fr;gap:3.5rem;padding:3.5rem 4rem 9.5rem;border-radius:1.6rem;
+      background:radial-gradient(60rem 30rem at 85% 10%,#1f5c5a 0%,#0C2733 55%,#081d26 100%);
+      box-shadow:0 30px 70px rgba(8,29,38,.35)}
+    .go-hero img{transform:perspective(900px) rotateY(-14deg) rotateX(3deg);box-shadow:24px 30px 50px rgba(0,0,0,.5);border-radius:.5rem}
+    .go-hero h1{font-size:3.3rem;line-height:1.05;letter-spacing:-.02em}
+    .go-hero p{font-size:1.35rem;margin-top:1rem;max-width:30rem}
+    .go-buy{margin:-11rem 4rem 0 27.5rem;position:relative;gap:1rem;align-items:start;height:fit-content}  /* sits inside the hero, under the title */
+    .go-buy a{font-size:1.35rem;padding:1.3rem 1rem;box-shadow:0 12px 28px rgba(8,29,38,.18);transition:transform .15s}
+    .go-buy a:hover{transform:translateY(-2px)}
+    .go-buy a.p{background:transparent;border-color:#F5F2EA;color:#F5F2EA}
+    .go-more{margin-top:3rem}
+    .go-more{text-align:center;margin-top:3rem}
+    .go-list{grid-template-columns:repeat(2,1fr)}
+  }
+  @media (prefers-reduced-motion:reduce){.go-buy a{transition:none}.go-buy a:hover{transform:none}}
 </style>
 <link rel="stylesheet" href="../assets/shell.css?v=20261027">
 <meta property="og:type" content="website">
@@ -56,11 +86,20 @@
 
 <main id="main" tabindex="-1">
 <div class="go-wrap">
-  <h1>From the video? Start here.</h1>
-  <p>Everything we mention in our videos, in one place.</p>
+  <p class="go-hi">From the video? Start here.</p>
+  <div class="go-hero">
+    <img src="../assets/covers/ecommerce-00.jpg" width="240" height="384" alt="Cover of Before You Sell Anything Online by Drew Halden">
+    <div>
+      <h1>Before You Sell Anything Online</h1>
+      <p>Compare the five ways to sell online, and pick the one that fits you.</p>
+    </div>
+  </div>
+  <div class="go-buy">
+    <a class="k" href="https://www.amazon.com/dp/B0HNYQ6DNZ?maas=maas_adg_43A3B44A7AA3A283E9408B8EB593C559_afap_abs&amp;ref_=aa_maas&amp;tag=maas">Kindle $2.99</a>
+    <a class="p" href="https://www.amazon.com/dp/B0HPNW55PX">Paperback $9.99</a>
+  </div>
+  <p class="go-more">More from our videos:</p>
   <ul class="go-list">
-    <li><a class="wb-btn" href="https://www.amazon.com/dp/B0HNYQ6DNZ?maas=maas_adg_43A3B44A7AA3A283E9408B8EB593C559_afap_abs&amp;ref_=aa_maas&amp;tag=maas"><strong>The Kindle book</strong><span>The five ways to make money in e-commerce, and what everyone gets wrong about each one.</span></a></li>
-    <li><a href="https://www.amazon.com/dp/B0HPNW55PX"><strong>The paperback, $9.99</strong><span>The same book in print, from Amazon. Good as a gift for someone starting out.</span></a></li>
     <li><a href="../tools/"><strong>Free seller calculators</strong><span>Fees, profit and pricing for Etsy, TikTok Shop, print on demand and more. No sign-up.</span></a></li>
     <li><a href="https://shop.eports.global/"><strong>All the ePORTS books</strong><span>Eight subjects, each in Basics, Intermediate and Advanced, with worksheets.</span></a></li>
     <li><a href="https://www.etsy.com/listing/4603673571"><strong>TikTok Shop affiliate tracker</strong><span>A spreadsheet for Google Sheets and Excel, on Etsy.</span></a></li>

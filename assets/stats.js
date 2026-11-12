@@ -1,5 +1,5 @@
 /* Visitor and click counting (Femi chose option A, 28 Oct 2026; panel GPT + Gemini + Grok).
-   - Umami Cloud counts page views and the clicks out to Amazon, Etsy and the Payhip shop. No cookies, no
+   - Umami Cloud counts page views and the clicks out to Amazon, Etsy, the Payhip shop and Crosslist (affiliate, 12 Nov 2026). No cookies, no
      fingerprinting; it only runs on eports.global (data-domains), never on previews.
    - Cloudflare Web Analytics is added by Cloudflare Pages itself, not here.
    - Outbound links are never rewritten or redirected, so Amazon Attribution tags reach Amazon untouched.
@@ -77,7 +77,8 @@
 
   // which stores count as "a click towards a sale"
   var STORES = [[/(^|\.)amazon\.[a-z.]+$|(^|\.)amzn\.to$/, "amazon"], [/(^|\.)etsy\.com$/, "etsy"],
-                [/^shop\.eports\.global$|(^|\.)payhip\.com$/, "payhip"]];
+                [/^shop\.eports\.global$|(^|\.)payhip\.com$/, "payhip"],
+                [/(^|\.)crosslist\.com$/, "crosslist"]];
   function storeOf(host) {
     for (var i = 0; i < STORES.length; i++) if (STORES[i][0].test(host)) return STORES[i][1];
     return null;

@@ -420,3 +420,9 @@ html.js .wb-share [data-native].can{display:inline-flex}
 .wb-facts-detail > summary:focus-visible{outline:3px solid #F2A65A;outline-offset:3px;border-radius:6px}
 .wb-facts-detail .wb-changes{margin-bottom:.4rem}
 .wb-facts-detail .wb-facts-more{margin:.4rem 0 1rem}
+/* Latest stories on a subject page (team-lane-news, 4 Nov 2026): up to 3 cards side by side on wide screens */
+.wb-post h3{font-size:clamp(1.15rem,2.2vw,1.35rem);line-height:1.2;margin:0}
+.wb-post h3 a{color:inherit;text-decoration:none}
+.wb-post h3 a:hover{text-decoration:underline;text-decoration-color:var(--marigold);text-decoration-thickness:2px}
+.wb-latest .wb-feed{display:grid;gap:1.6rem;max-width:none}
+@media (min-width:860px){.wb-latest .wb-feed{grid-template-columns:repeat(3,minmax(0,1fr))}.wb-latest .wb-post{border-bottom:0;padding-bottom:0}}

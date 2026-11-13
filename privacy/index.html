@@ -16,7 +16,7 @@
      site ever adds analytics, ads, pixels or a form, update this page and the
      dated line FIRST, and seek consent where the law requires it. Not legal
      advice. First page on the Workbench look (assets/workbench.css). -->
-<link rel="stylesheet" href="../assets/shell.css?v=20261027">
+<link rel="stylesheet" href="../assets/shell.css?v=20261113">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -146,6 +146,11 @@
           &ldquo;Allow&rdquo; on the small banner; our lawful basis there is your consent. Elsewhere it runs unless you
           opt out. Advertising features, ad personalisation and Google signals are off. The switch below turns off
           Umami and Google Analytics together in this browser.<span id="count-switch"></span></dd></div>
+        <div id="feedback"><dt>"Was this page useful?"</dt><dd>Since 13 Nov 2026 every page ends with a short question.
+          Your Yes or No and anything you type in the suggestion box are sent to <a href="https://umami.is/privacy">Umami</a>
+          with the address of the page, the same cookie-free way as the visit counts above, so we can see which pages
+          to fix. It is not linked to you, so please leave out your name, email or anything personal. If counting is
+          switched off in your browser, nothing is sent and the box offers to email your suggestion instead.</dd></div>
         <div id="do-not-sell"><dt>We do not sell or share your information</dt><dd>We do not sell personal information
           or share it for cross-context advertising, and there are no ad partners. Google receives Analytics data as
           our service provider and we have turned off its advertising features and data sharing for ads. To opt out
@@ -277,6 +282,13 @@
 </script>
 
 <!--ep-shell:foot-->
+<aside class="ep-fb" id="ep-fb" aria-label="Page feedback" hidden>
+  <div class="ep-wrap">
+    <div class="ep-fb-ask"><p class="ep-fb-h">Was this page useful?</p><button type="button" data-fb="yes">Yes</button><button type="button" data-fb="no">No</button><button type="button" class="ep-fb-link" data-fb="suggest">Suggest an improvement</button></div>
+    <div class="ep-fb-more" hidden><p class="ep-fb-h"><span class="ep-fb-thanks">Thanks.</span> <a class="ep-fb-join" href="../newsletter/" hidden>Get the next fee change free by email</a></p><label for="ep-fb-text" class="ep-fb-q">What would make this page better?</label><textarea id="ep-fb-text" rows="3" placeholder="A missing fee, a confusing step, a tool you wish we had…"></textarea><p class="ep-fb-note"><span class="ep-fb-left">400 characters left</span> · Please leave out your name and email. <a href="../privacy/#feedback">How this is used</a></p><button type="button" data-fb="send">Send suggestion</button></div>
+    <div class="ep-fb-done" hidden><p class="ep-fb-h ep-fb-sent">Thank you.</p><a class="ep-fb-mail" hidden>Email it to hello@eports.global instead</a></div>
+  </div>
+</aside>
 <footer class="ep-foot">
   <div class="ep-wrap">
     <p class="ep-related">Related: <a href="../tools/print-on-demand-pricing/">Calculators</a></p>
@@ -288,6 +300,7 @@
   </div>
 </footer>
 <script defer src="../assets/stats.js?v=20261028"></script>
+<script defer src="../assets/feedback.js?v=20261030"></script>
 <!--/ep-shell:foot-->
 
 </body>

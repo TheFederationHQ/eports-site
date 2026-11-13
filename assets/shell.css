@@ -8,7 +8,7 @@
 .ep-skip{position:absolute;left:-999px;top:0;z-index:60;background:#FFFDF8;color:#16302D;padding:.6rem 1rem;font:600 .95rem/1 "Inter",system-ui,sans-serif}
 .ep-skip:focus{left:1rem;top:1rem}
 .ep-head{position:sticky;top:0;z-index:50;background:#16302D;color:#F5F2EA;border-bottom:1px solid #24443F;font-family:"Inter",system-ui,sans-serif}
-.ep-head .ep-wrap,.ep-foot .ep-wrap{max-width:72rem;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.ep-head .ep-wrap,.ep-foot .ep-wrap,.ep-fb .ep-wrap{max-width:72rem;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
 .ep-head .ep-wrap{display:flex;align-items:center;gap:1.4rem;min-height:68px}
 .ep-mark{font:800 1.62rem/1 "Inter",system-ui,sans-serif;letter-spacing:-.03em;color:#F5F2EA;text-decoration:none;white-space:nowrap}
 .ep-mark i{font-style:normal;color:#E6472C}
@@ -53,12 +53,28 @@
 .ep-foot nav{display:flex;flex-wrap:wrap;gap:.4rem 1.3rem}
 .ep-foot .ep-related{margin:0 0 1.2rem;font-size:.9rem;color:#C9D9D4}
 .ep-foot .ep-legal{margin:1.2rem 0 0;font-size:.85rem;max-width:66ch;color:#C9D9D4}
+/* "Was this page useful?" box above the footer (30 Oct 2026; scripts/site_shell.py feedback(), assets/feedback.js) */
+.ep-fb[hidden],.ep-fb [hidden]{display:none!important}
+.ep-fb{background:#EFEADD;color:#16302D;font:400 .95rem/1.5 "Inter",system-ui,sans-serif;padding:1.4rem 0;margin-top:3rem;border-top:1px solid #DDD5C2}
+.ep-fb:not([hidden]) + .ep-foot{margin-top:0}
+.ep-fb .ep-fb-ask{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem}
+.ep-fb .ep-fb-h{margin:0 .6rem 0 0;font-weight:600;font-size:1rem}
+.ep-fb-more .ep-fb-h,.ep-fb-done .ep-fb-h{margin:0 0 .6rem}
+.ep-fb button{font:600 .95rem/1 "Inter",system-ui,sans-serif;min-height:44px;padding:0 1.1rem;border-radius:999px;border:2px solid #16302D;background:#16302D;color:#F5F2EA;cursor:pointer}
+.ep-fb button[data-fb="no"]{background:transparent;color:#16302D}
+.ep-fb button.ep-fb-link{background:none;border-color:transparent;color:#16302D;text-decoration:underline;padding:0 .4rem}
+.ep-fb a{color:#16302D;font-weight:600}
+.ep-fb .ep-fb-join{margin-left:.5rem;font-weight:600}
+.ep-fb label{display:block;margin:0 0 .4rem}
+.ep-fb textarea{display:block;box-sizing:border-box;width:100%;max-width:40rem;font:400 1rem/1.4 "Inter",system-ui,sans-serif;padding:.6rem .7rem;border:1.5px solid #8A9A94;border-radius:8px;background:#FFF;color:#16302D}
+.ep-fb .ep-fb-note{margin:.4rem 0 .8rem;font-size:.85rem;color:#3D5752}
+.ep-fb button:focus-visible,.ep-fb a:focus-visible,.ep-fb textarea:focus-visible{outline:3px solid #B5651D;outline-offset:2px}
 /* Fading cream rule (the founder, 22 Oct 2026; panel GPT + Gemini, Grok dissented): only on pages that open with the dark
    hero, where it reads as a deliberate edge; on light pages it looked like a grey gap, so they keep the plain border.
    Inset 1px above the border so dark green sits beneath it; the logo's cream, fading out by 72%. Decorative only. */
 body:has(main > .wb-hero:first-child) .ep-head::after{content:"";position:absolute;left:0;right:0;bottom:1px;height:2px;
   background:linear-gradient(90deg,#F5F2EA 0%,rgba(245,242,234,.8) 30%,rgba(245,242,234,0) 72%);pointer-events:none}
-@media print{.ep-head::after{display:none}.ep-head{position:static}.ep-head,.ep-foot{background:none;color:#000}.ep-cta,.ep-menu,.ep-skip{display:none}}
+@media print{.ep-head::after{display:none}.ep-head{position:static}.ep-head,.ep-foot{background:none;color:#000}.ep-cta,.ep-menu,.ep-skip,.ep-fb{display:none}}
 /* the narrowest phones (320-380px): the row overflowed by 9px even before the lockup; tighten so nothing scrolls sideways */
 @media (max-width:380px){.ep-head .ep-wrap{gap:.45rem}.ep-head .ep-mark{font-size:1.22rem}.ep-head .ep-tag{font-size:.66rem}
   .ep-cta{padding:0 .6rem;font-size:.8rem}.ep-menu summary{font-size:.85rem;padding:0 .5rem;gap:.35rem}}

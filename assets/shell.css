@@ -52,6 +52,8 @@
 .ep-foot .ep-row{display:flex;flex-wrap:wrap;gap:.8rem 2rem;align-items:center;justify-content:space-between}
 .ep-foot nav{display:flex;flex-wrap:wrap;gap:.4rem 1.3rem}
 .ep-foot .ep-related{margin:0 0 1.2rem;font-size:.9rem;color:#C9D9D4}
+.ep-foot .ep-social{display:flex;flex-wrap:wrap;gap:.4rem 1.1rem;margin:1rem 0 0;font-size:.9rem}
+.ep-foot .ep-social span{color:#C9D9D4}
 .ep-foot .ep-legal{margin:1.2rem 0 0;font-size:.85rem;max-width:66ch;color:#C9D9D4}
 /* "Was this page useful?" box above the footer (30 Oct 2026; scripts/site_shell.py feedback(), assets/feedback.js) */
 .ep-fb[hidden],.ep-fb [hidden]{display:none!important}

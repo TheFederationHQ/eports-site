@@ -220,3 +220,23 @@ main.d-main{padding-bottom:3rem}
 .d-mbar{display:none}
 @media(max-width:860px){.d-mbar:not([hidden]){display:flex;justify-content:space-between;align-items:center;gap:1rem;position:fixed;left:12px;right:12px;bottom:12px;z-index:40;background:var(--bench);color:var(--cream);border-radius:12px;padding:.85rem 1rem;text-decoration:none;font-weight:700;box-shadow:0 12px 30px -10px rgba(0,0,0,.6)}
 .d-mbar b{color:#16302D;background:var(--marigold);border-radius:8px;padding:.5rem .7rem;font-size:.9rem}}
+/* NAICS code lookup (wave 2, 15 Nov 2026) */
+.d-tree{display:grid;gap:1rem}
+.d-grp4{background:var(--sheet);border:1px solid var(--rule);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow)}
+.d-grp4 h3{font-size:1.02rem;margin:0 0 .6rem;line-height:1.35}
+.d-grp4 h3 .cd{color:var(--teal);margin-right:.35rem}
+.d-codes{list-style:none;margin:0;padding:0;display:grid;gap:.15rem}
+.d-codes li{display:flex;align-items:center;gap:.7rem;padding:.5rem .4rem;border-radius:10px}
+.d-codes li.lv5{font-size:.84rem;color:var(--muted);padding:.55rem .4rem .1rem}
+.d-codes li.lv6:nth-child(odd){background:#F8F5EE}
+.d-codes li:target{outline:3px solid var(--glow,#F2A65A);background:#FFF4E6}
+.d-codes .cd{font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:.02em;min-width:4.2rem;color:var(--ink)}
+.d-codes a.cd{color:var(--teal)}
+.d-codes .tt{flex:1;line-height:1.35}
+.d-copy{font:700 .78rem/1 var(--f);border:1px solid var(--rule);background:var(--sheet);color:var(--teal);border-radius:999px;padding:.5rem .75rem;cursor:pointer;min-height:2.2rem}
+.d-copy:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
+.d-res{margin-top:.8rem;max-height:22rem;overflow:auto}
+.d-res:empty{display:none}
+.d-res .none{color:var(--muted);font-size:.9rem}
+.d-toc-in{display:flex;flex-wrap:wrap;gap:.4rem}
+.d-toc-in a{font:600 .85rem/1.2 var(--f);border:1px solid var(--rule);background:var(--sheet);color:var(--ink);border-radius:999px;padding:.5rem .8rem;text-decoration:none}

@@ -253,3 +253,7 @@ main.d-main{padding-bottom:3rem}
 .d-pl .lk a{font:700 .8rem/1 var(--f);border:1px solid var(--rule);border-radius:999px;padding:.5rem .8rem;color:var(--teal);text-decoration:none}
 .d-pl .lk a:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
 .d-pl[hidden]{display:none}
+.d-lic p{font-size:.9rem;color:var(--muted);line-height:1.5;margin:0}
+.d-lic .lk .d-btn{padding:.55rem .9rem;font-size:.82rem;color:#fff}
+.d-lic{scroll-margin-top:5.5rem}
+.d-pl .lk{align-items:center;flex-wrap:wrap}.d-pl .lk a{white-space:nowrap}

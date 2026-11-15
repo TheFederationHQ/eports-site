@@ -257,3 +257,9 @@ main.d-main{padding-bottom:3rem}
 .d-lic .lk .d-btn{padding:.55rem .9rem;font-size:.82rem;color:#fff}
 .d-lic{scroll-margin-top:5.5rem}
 .d-pl .lk{align-items:center;flex-wrap:wrap}.d-pl .lk a{white-space:nowrap}
+/* Frost dates (15 Nov 2026) */
+.d-btn-alt{background:var(--bench);box-shadow:none}
+.d-steps-plain{display:grid;gap:.7rem;max-width:46rem}
+.d-steps-plain p{margin:0;line-height:1.6}
+.d-frost tr[hidden]{display:none}
+#result .d-tile b{font-size:clamp(1.4rem,3.5vw,1.9rem)}

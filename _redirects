@@ -1,6 +1,8 @@
 # /go/shop/ links: written by scripts/build_directory.py. Change a target in SHOP there, not here.
 /go/shop/autel-maxicharger/ https://www.amazon.com/s?k=Autel+MaxiCharger+home 302
 /go/shop/autel-maxicharger https://www.amazon.com/s?k=Autel+MaxiCharger+home 302
+/go/shop/beginner-telescope/ https://www.amazon.com/s?k=beginner+telescope+for+adults+and+kids 302
+/go/shop/beginner-telescope https://www.amazon.com/s?k=beginner+telescope+for+adults+and+kids 302
 /go/shop/chargepoint-home-flex/ https://www.amazon.com/s?k=ChargePoint+Home+Flex 302
 /go/shop/chargepoint-home-flex https://www.amazon.com/s?k=ChargePoint+Home+Flex 302
 /go/shop/co-alarm/ https://www.amazon.com/s?k=battery+carbon+monoxide+alarm 302
@@ -23,6 +25,8 @@
 /go/shop/nacs-j1772-adapter https://www.amazon.com/s?k=NACS+to+J1772+adapter+UL+listed 302
 /go/shop/power-station-2000/ https://www.amazon.com/s?k=2000W+portable+power+station 302
 /go/shop/power-station-2000 https://www.amazon.com/s?k=2000W+portable+power+station 302
+/go/shop/star-projector/ https://www.amazon.com/s?k=home+planetarium+star+projector 302
+/go/shop/star-projector https://www.amazon.com/s?k=home+planetarium+star+projector 302
 /go/shop/tesla-wall-connector/ https://www.amazon.com/s?k=Tesla+Universal+Wall+Connector 302
 /go/shop/tesla-wall-connector https://www.amazon.com/s?k=Tesla+Universal+Wall+Connector 302
 /go/shop/transfer-switch/ https://www.amazon.com/s?k=generator+transfer+switch+kit 302

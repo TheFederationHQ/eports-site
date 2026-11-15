@@ -240,3 +240,16 @@ main.d-main{padding-bottom:3rem}
 .d-res .none{color:var(--muted);font-size:.9rem}
 .d-toc-in{display:flex;flex-wrap:wrap;gap:.4rem}
 .d-toc-in a{font:600 .85rem/1.2 var(--f);border:1px solid var(--rule);background:var(--sheet);color:var(--ink);border-radius:999px;padding:.5rem .8rem;text-decoration:none}
+/* Planetarium finder (15 Nov 2026) */
+.d-frow{display:flex;gap:.6rem;margin-top:.7rem;flex-wrap:wrap}
+.d-frow select{flex:1;min-width:10rem;font:600 .95rem/1 var(--f);padding:.75rem .8rem;border:1.5px solid var(--rule);border-radius:10px;background:#fff;color:var(--ink)}
+.d-pls{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,17rem),1fr));gap:.8rem}
+.d-pl{background:var(--sheet);border:1px solid var(--rule);border-radius:var(--radius);padding:1rem 1.1rem;box-shadow:var(--shadow);display:grid;gap:.35rem;align-content:start}
+.d-pl .mk{font:700 .7rem/1 var(--f);letter-spacing:.14em;text-transform:uppercase;color:var(--teal)}
+.d-pl b{font-size:1.02rem;line-height:1.3}
+.d-pl .meta{display:flex;flex-wrap:wrap;gap:.3rem .8rem;font-size:.86rem;color:var(--muted)}
+.d-pl .dist{font-weight:800;color:var(--marigold-deep);font-size:.9rem}
+.d-pl .lk{display:flex;gap:.5rem;margin-top:.3rem}
+.d-pl .lk a{font:700 .8rem/1 var(--f);border:1px solid var(--rule);border-radius:999px;padding:.5rem .8rem;color:var(--teal);text-decoration:none}
+.d-pl .lk a:hover{background:var(--teal);color:#fff;border-color:var(--teal)}
+.d-pl[hidden]{display:none}
